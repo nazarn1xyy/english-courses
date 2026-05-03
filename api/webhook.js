@@ -68,6 +68,27 @@ const CATEGORIES = {
   other: { name: 'Інше', emoji: '📦' }
 };
 
+// Достижения
+const ACHIEVEMENTS = {
+  first_word: { name: 'Перше слово', emoji: '🌱', description: 'Вивчив перше слово', requirement: 1, type: 'words' },
+  word_explorer: { name: 'Дослідник слів', emoji: '🔍', description: 'Вивчив 10 слів', requirement: 10, type: 'words' },
+  word_collector: { name: 'Колекціонер слів', emoji: '📚', description: 'Вивчив 50 слів', requirement: 50, type: 'words' },
+  word_master: { name: 'Майстер слів', emoji: '🎓', description: 'Вивчив 100 слів', requirement: 100, type: 'words' },
+  word_guru: { name: 'Гуру слів', emoji: '👑', description: 'Вивчив 500 слів', requirement: 500, type: 'words' },
+  word_legend: { name: 'Легенда слів', emoji: '🏆', description: 'Вивчив всі 1021 слово', requirement: 1021, type: 'words' },
+
+  first_quiz: { name: 'Перший квіз', emoji: '🎯', description: 'Пройшов перший квіз', requirement: 1, type: 'quizzes' },
+  quiz_fan: { name: 'Фанат квізів', emoji: '🎮', description: 'Пройшов 10 квізів', requirement: 10, type: 'quizzes' },
+  quiz_expert: { name: 'Експерт квізів', emoji: '🏅', description: 'Пройшов 50 квізів', requirement: 50, type: 'quizzes' },
+
+  perfect_quiz: { name: 'Ідеальний квіз', emoji: '💯', description: 'Відповів правильно на всі питання в квізі', requirement: 1, type: 'perfect' },
+  streak_3: { name: 'Тижневий марафон', emoji: '🔥', description: '7 днів підряд', requirement: 7, type: 'streak' },
+  streak_30: { name: 'Місячний марафон', emoji: '🌟', description: '30 днів підряд', requirement: 30, type: 'streak' },
+
+  favorite_10: { name: 'Колекціонер обраного', emoji: '⭐', description: '10 слів в обраному', requirement: 10, type: 'favorites' },
+  no_mistakes: { name: 'Без помилок', emoji: '✨', description: 'Повторив всі помилки', requirement: 1, type: 'no_mistakes' }
+};
+
 // Постоянная клавиатура (reply keyboard)
 const MAIN_KEYBOARD = {
   keyboard: [
@@ -84,7 +105,10 @@ const MAIN_KEYBOARD = {
       { text: '🔄 Повторити помилки' }
     ],
     [
-      { text: '📊 Статистика' },
+      { text: '🏆 Досягнення' },
+      { text: '📊 Статистика' }
+    ],
+    [
       { text: 'ℹ️ Допомога' }
     ]
   ],
@@ -304,7 +328,62 @@ function getUserStats(userId) {
     session.stats.mistakeWords = new Set();
   }
 
+  // Добавляем achievements если его нет (для существующих пользователей)
+  if (!session.stats.achievements) {
+    session.stats.achievements = new Set();
+  }
+
   return session.stats;
+}
+
+// Функция для проверки и награждения достижениями
+function checkAchievements(userId, ctx) {
+  const stats = getUserStats(userId);
+  const newAchievements = [];
+
+  // Проверяем достижения по словам
+  Object.entries(ACHIEVEMENTS).forEach(([key, achievement]) => {
+    if (stats.achievements.has(key)) return; // Уже получено
+
+    let earned = false;
+
+    switch (achievement.type) {
+      case 'words':
+        earned = stats.wordsLearned.size >= achievement.requirement;
+        break;
+      case 'quizzes':
+        earned = stats.quizzesTaken >= achievement.requirement;
+        break;
+      case 'streak':
+        earned = stats.streak >= achievement.requirement;
+        break;
+      case 'favorites':
+        earned = stats.favoriteWords.size >= achievement.requirement;
+        break;
+      case 'no_mistakes':
+        earned = stats.mistakeWords.size === 0 && stats.quizzesTaken > 0;
+        break;
+    }
+
+    if (earned) {
+      stats.achievements.add(key);
+      newAchievements.push(achievement);
+    }
+  });
+
+  // Отправляем уведомление о новых достижениях
+  if (newAchievements.length > 0 && ctx) {
+    const message = newAchievements.map(a =>
+      `${a.emoji} *${a.name}*\n${a.description}`
+    ).join('\n\n');
+
+    ctx.reply(
+      `🎉 Нові досягнення!\n\n${message}`,
+      { parse_mode: 'Markdown' }
+    );
+  }
+
+  return newAchievements;
 }
 
 // Функция для обновления streak (серии дней)
@@ -374,6 +453,9 @@ function setupHandlers(bot) {
     updateStreak(userId);
 
     const isFavorite = stats.favoriteWords.has(word.word);
+
+    // Проверяем достижения
+    checkAchievements(userId, ctx);
 
     return ctx.reply(formatWordMessage(word, userId), {
       parse_mode: 'Markdown',
@@ -489,6 +571,54 @@ function setupHandlers(bot) {
     );
   });
 
+  bot.command('achievements', (ctx) => {
+    const userId = ctx.from.id;
+    const stats = getUserStats(userId);
+
+    if (stats.achievements.size === 0) {
+      return ctx.reply(
+        '🏆 У вас поки немає досягнень.\n\nВивчайте слова, проходьте квізи та отримуйте нагороди!',
+        { reply_markup: MAIN_KEYBOARD }
+      );
+    }
+
+    // Формируем список полученных достижений
+    const earnedList = Array.from(stats.achievements).map(key => {
+      const achievement = ACHIEVEMENTS[key];
+      return `${achievement.emoji} *${achievement.name}*\n   ${achievement.description}`;
+    }).join('\n\n');
+
+    // Формируем список доступных достижений
+    const availableList = Object.entries(ACHIEVEMENTS)
+      .filter(([key]) => !stats.achievements.has(key))
+      .slice(0, 5) // Показываем только первые 5
+      .map(([key, achievement]) => {
+        let progress = '';
+        switch (achievement.type) {
+          case 'words':
+            progress = `(${stats.wordsLearned.size}/${achievement.requirement})`;
+            break;
+          case 'quizzes':
+            progress = `(${stats.quizzesTaken}/${achievement.requirement})`;
+            break;
+          case 'streak':
+            progress = `(${stats.streak}/${achievement.requirement})`;
+            break;
+          case 'favorites':
+            progress = `(${stats.favoriteWords.size}/${achievement.requirement})`;
+            break;
+        }
+        return `🔒 ${achievement.name} ${progress}\n   ${achievement.description}`;
+      }).join('\n\n');
+
+    return ctx.reply(
+      `🏆 Твої досягнення: ${stats.achievements.size}/${Object.keys(ACHIEVEMENTS).length}\n\n` +
+      `✅ *Отримано:*\n\n${earnedList}\n\n` +
+      `🔒 *Доступно:*\n\n${availableList}`,
+      { parse_mode: 'Markdown', reply_markup: MAIN_KEYBOARD }
+    );
+  });
+
   bot.command('quiz', (ctx) => {
     return ctx.reply(
       '🎯 Оберіть напрямок квізу:',
@@ -509,6 +639,7 @@ function setupHandlers(bot) {
       `📚 Вивчено слів: ${stats.wordsLearned.size}/1021\n` +
       `⭐ Обране: ${stats.favoriteWords.size} слів\n` +
       `🔄 Помилок: ${stats.mistakeWords.size} слів\n` +
+      `🏆 Досягнень: ${stats.achievements.size}/${Object.keys(ACHIEVEMENTS).length}\n` +
       `🎯 Пройдено квізів: ${stats.quizzesTaken}\n` +
       `⭐ Середній результат: ${avgScore}/5\n` +
       `🔥 Серія днів: ${stats.streak}`,
@@ -645,6 +776,54 @@ function setupHandlers(bot) {
       );
     }
 
+    if (text === '🏆 Досягнення') {
+      const userId = ctx.from.id;
+      const stats = getUserStats(userId);
+
+      if (stats.achievements.size === 0) {
+        return ctx.reply(
+          '🏆 У вас поки немає досягнень.\n\nВивчайте слова, проходьте квізи та отримуйте нагороди!',
+          { reply_markup: MAIN_KEYBOARD }
+        );
+      }
+
+      // Формируем список полученных достижений
+      const earnedList = Array.from(stats.achievements).map(key => {
+        const achievement = ACHIEVEMENTS[key];
+        return `${achievement.emoji} *${achievement.name}*\n   ${achievement.description}`;
+      }).join('\n\n');
+
+      // Формируем список доступных достижений
+      const availableList = Object.entries(ACHIEVEMENTS)
+        .filter(([key]) => !stats.achievements.has(key))
+        .slice(0, 5) // Показываем только первые 5
+        .map(([key, achievement]) => {
+          let progress = '';
+          switch (achievement.type) {
+            case 'words':
+              progress = `(${stats.wordsLearned.size}/${achievement.requirement})`;
+              break;
+            case 'quizzes':
+              progress = `(${stats.quizzesTaken}/${achievement.requirement})`;
+              break;
+            case 'streak':
+              progress = `(${stats.streak}/${achievement.requirement})`;
+              break;
+            case 'favorites':
+              progress = `(${stats.favoriteWords.size}/${achievement.requirement})`;
+              break;
+          }
+          return `🔒 ${achievement.name} ${progress}\n   ${achievement.description}`;
+        }).join('\n\n');
+
+      return ctx.reply(
+        `🏆 Твої досягнення: ${stats.achievements.size}/${Object.keys(ACHIEVEMENTS).length}\n\n` +
+        `✅ *Отримано:*\n\n${earnedList}\n\n` +
+        `🔒 *Доступно:*\n\n${availableList}`,
+        { parse_mode: 'Markdown', reply_markup: MAIN_KEYBOARD }
+      );
+    }
+
     if (text === '🎯 Квіз') {
       return ctx.reply(
         '🎯 Оберіть напрямок квізу:',
@@ -665,6 +844,7 @@ function setupHandlers(bot) {
         `📚 Вивчено слів: ${stats.wordsLearned.size}/1021\n` +
         `⭐ Обране: ${stats.favoriteWords.size} слів\n` +
         `🔄 Помилок: ${stats.mistakeWords.size} слів\n` +
+        `🏆 Досягнень: ${stats.achievements.size}/${Object.keys(ACHIEVEMENTS).length}\n` +
         `🎯 Пройдено квізів: ${stats.quizzesTaken}\n` +
         `⭐ Середній результат: ${avgScore}/5\n` +
         `🔥 Серія днів: ${stats.streak}`,
@@ -1041,6 +1221,19 @@ function sendQuizQuestion(ctx, userId) {
     if (session && session.questions) {
       session.questions.forEach(q => stats.wordsLearned.add(q.word));
     }
+
+    // Проверяем достижение "Идеальный квиз"
+    if (finalScore === quizSize && !stats.achievements.has('perfect_quiz')) {
+      stats.achievements.add('perfect_quiz');
+      const achievement = ACHIEVEMENTS.perfect_quiz;
+      ctx.reply(
+        `🎉 Нове досягнення!\n\n${achievement.emoji} *${achievement.name}*\n${achievement.description}`,
+        { parse_mode: 'Markdown' }
+      );
+    }
+
+    // Проверяем другие достижения
+    checkAchievements(userId, ctx);
 
     userSessions.delete(userId);
 
