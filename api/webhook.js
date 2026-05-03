@@ -145,8 +145,8 @@ function setupHandlers(bot) {
       session.currentQuestion++;
       userSessions.set(parseInt(userId), session);
 
-      // Убираем setTimeout - отправляем сразу
-      return sendQuizQuestion(ctx, parseInt(userId));
+      // Редактируем сообщение вместо отправки нового
+      return editQuizQuestion(ctx, parseInt(userId));
     }
   });
 }
@@ -184,6 +184,44 @@ function sendQuizQuestion(ctx, userId) {
   };
 
   return ctx.reply(
+    `❓ Питання ${session.currentQuestion + 1}/5\n\nЯк перекладається слово:\n*${currentWord.word}*`,
+    { parse_mode: 'Markdown', reply_markup: keyboard }
+  );
+}
+
+function editQuizQuestion(ctx, userId) {
+  const session = userSessions.get(userId);
+
+  if (!session || session.currentQuestion >= session.words.length) {
+    const finalScore = session ? session.score : 0;
+    userSessions.delete(userId);
+
+    const emoji = finalScore === 5 ? '🏆 Відмінно!' : finalScore >= 3 ? '👍 Добре!' : '💪 Продовжуй вчитися!';
+    return ctx.editMessageText(
+      `✅ Квіз завершено!\n\nВаш результат: ${finalScore}/5\n\n${emoji}`,
+      { parse_mode: 'Markdown' }
+    );
+  }
+
+  const currentWord = session.words[session.currentQuestion];
+  const correctAnswer = currentWord.translation;
+
+  // Оптимизированная генерация неправильных ответов
+  const wrongAnswers = vocabulary
+    .filter(w => w.word !== currentWord.word)
+    .slice(0, 3)
+    .map(w => w.translation);
+
+  const allAnswers = shuffleArray([correctAnswer, ...wrongAnswers]);
+
+  const keyboard = {
+    inline_keyboard: allAnswers.map((answer, index) => [{
+      text: answer,
+      callback_data: `quiz_${userId}_${answer === correctAnswer ? 'correct' : 'wrong'}_${index}`
+    }])
+  };
+
+  return ctx.editMessageText(
     `❓ Питання ${session.currentQuestion + 1}/5\n\nЯк перекладається слово:\n*${currentWord.word}*`,
     { parse_mode: 'Markdown', reply_markup: keyboard }
   );
