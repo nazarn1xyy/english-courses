@@ -1,7 +1,7 @@
 [
   {
     "word": "apple",
-    "translation": "яблоко"
+    "translation": "яблуко"
   },
   {
     "word": "book",
@@ -17,27 +17,27 @@
   },
   {
     "word": "eye",
-    "translation": "глаз"
+    "translation": "око"
   },
   {
     "word": "fish",
-    "translation": "рыба"
+    "translation": "риба"
   },
   {
     "word": "girl",
-    "translation": "девушка"
+    "translation": "дівчина"
   },
   {
     "word": "house",
-    "translation": "дом"
+    "translation": "будинок"
   },
   {
     "word": "ice",
-    "translation": "лёд"
+    "translation": "лід"
   },
   {
     "word": "jump",
-    "translation": "прыгать"
+    "translation": "стрибати"
   },
   {
     "word": "key",
@@ -49,11 +49,11 @@
   },
   {
     "word": "moon",
-    "translation": "луна"
+    "translation": "місяць"
   },
   {
     "word": "night",
-    "translation": "ночь"
+    "translation": "ніч"
   },
   {
     "word": "orange",
@@ -69,11 +69,11 @@
   },
   {
     "word": "rain",
-    "translation": "дождь"
+    "translation": "дощ"
   },
   {
     "word": "sun",
-    "translation": "солнце"
+    "translation": "сонце"
   },
   {
     "word": "tree",
@@ -81,7 +81,7 @@
   },
   {
     "word": "umbrella",
-    "translation": "зонт"
+    "translation": "парасоля"
   },
   {
     "word": "voice",
@@ -97,19 +97,19 @@
   },
   {
     "word": "year",
-    "translation": "год"
+    "translation": "рік"
   },
   {
     "word": "zero",
-    "translation": "ноль"
+    "translation": "нуль"
   },
   {
     "word": "air",
-    "translation": "воздух"
+    "translation": "повітря"
   },
   {
     "word": "baby",
-    "translation": "ребёнок"
+    "translation": "дитина"
   },
   {
     "word": "cake",
@@ -117,7 +117,7 @@
   },
   {
     "word": "door",
-    "translation": "дверь"
+    "translation": "двері"
   },
   {
     "word": "earth",
@@ -125,11 +125,11 @@
   },
   {
     "word": "face",
-    "translation": "лицо"
+    "translation": "обличчя"
   },
   {
     "word": "game",
-    "translation": "игра"
+    "translation": "гра"
   },
   {
     "word": "hand",
@@ -137,11 +137,11 @@
   },
   {
     "word": "idea",
-    "translation": "идея"
+    "translation": "ідея"
   },
   {
     "word": "job",
-    "translation": "работа"
+    "translation": "робота"
   },
   {
     "word": "king",
@@ -149,7 +149,7 @@
   },
   {
     "word": "life",
-    "translation": "жизнь"
+    "translation": "життя"
   },
   {
     "word": "map",
@@ -157,11 +157,11 @@
   },
   {
     "word": "name",
-    "translation": "имя"
+    "translation": "ім'я"
   },
   {
     "word": "open",
-    "translation": "открывать"
+    "translation": "відкривати"
   },
   {
     "word": "park",
@@ -169,7 +169,7 @@
   },
   {
     "word": "question",
-    "translation": "вопрос"
+    "translation": "питання"
   },
   {
     "word": "road",
@@ -181,11 +181,11 @@
   },
   {
     "word": "time",
-    "translation": "время"
+    "translation": "час"
   },
   {
     "word": "use",
-    "translation": "использовать"
+    "translation": "використовувати"
   },
   {
     "word": "view",
@@ -193,15 +193,15 @@
   },
   {
     "word": "walk",
-    "translation": "ходить"
+    "translation": "ходити"
   },
   {
     "word": "exit",
-    "translation": "выход"
+    "translation": "вихід"
   },
   {
     "word": "yard",
-    "translation": "двор"
+    "translation": "двір"
   },
   {
     "word": "zone",
@@ -209,15 +209,15 @@
   },
   {
     "word": "arm",
-    "translation": "рука/рычаг"
+    "translation": "рука"
   },
   {
     "word": "bed",
-    "translation": "кровать"
+    "translation": "ліжко"
   },
   {
     "word": "city",
-    "translation": "город"
+    "translation": "місто"
   },
   {
     "word": "day",
@@ -225,7 +225,7 @@
   },
   {
     "word": "ear",
-    "translation": "ухо"
+    "translation": "вухо"
   },
   {
     "word": "fog",
@@ -237,19 +237,19 @@
   },
   {
     "word": "hat",
-    "translation": "шляпа"
+    "translation": "капелюх"
   },
   {
     "word": "ink",
-    "translation": "чернила"
+    "translation": "чорнило"
   },
   {
     "word": "joy",
-    "translation": "радость"
+    "translation": "радість"
   },
   {
     "word": "kid",
-    "translation": "ребёнок"
+    "translation": "дитина"
   },
   {
     "word": "leg",
@@ -261,19 +261,23 @@
   },
   {
     "word": "nose",
-    "translation": "нос"
+    "translation": "ніс"
   },
   {
     "word": "oil",
-    "translation": "масло"
+    "translation": "олія"
   },
   {
     "word": "page",
-    "translation": "страница"
+    "translation": "сторінка"
   },
   {
     "word": "ring",
-    "translation": "кольцо"
+    "translation": "кільце"
+  },
+  {
+    "word": "sand",
+    "translation": "пісок"
   },
   {
     "word": "tea",
@@ -281,7 +285,7 @@
   },
   {
     "word": "unit",
-    "translation": "единица"
+    "translation": "одиниця"
   },
   {
     "word": "vine",
@@ -289,11 +293,11 @@
   },
   {
     "word": "wind",
-    "translation": "ветер"
+    "translation": "вітер"
   },
   {
     "word": "exam",
-    "translation": "экзамен"
+    "translation": "іспит"
   },
   {
     "word": "zoo",
@@ -301,7 +305,7 @@
   },
   {
     "word": "age",
-    "translation": "возраст"
+    "translation": "вік"
   },
   {
     "word": "bus",
@@ -313,11 +317,11 @@
   },
   {
     "word": "desk",
-    "translation": "стол"
+    "translation": "стіл"
   },
   {
     "word": "egg",
-    "translation": "яйцо"
+    "translation": "яйце"
   },
   {
     "word": "fan",
@@ -325,15 +329,15 @@
   },
   {
     "word": "gun",
-    "translation": "оружие"
+    "translation": "зброя"
   },
   {
     "word": "hip",
-    "translation": "бедро"
+    "translation": "стегно"
   },
   {
     "word": "inn",
-    "translation": "гостиница"
+    "translation": "готель"
   },
   {
     "word": "jar",
@@ -341,7 +345,7 @@
   },
   {
     "word": "kit",
-    "translation": "набор"
+    "translation": "набір"
   },
   {
     "word": "lip",
@@ -349,11 +353,11 @@
   },
   {
     "word": "mud",
-    "translation": "грязь"
+    "translation": "бруд"
   },
   {
     "word": "net",
-    "translation": "сеть"
+    "translation": "мережа"
   },
   {
     "word": "oak",
@@ -361,11 +365,11 @@
   },
   {
     "word": "pig",
-    "translation": "свинья"
+    "translation": "свиня"
   },
   {
     "word": "rug",
-    "translation": "ковёр"
+    "translation": "килим"
   },
   {
     "word": "sea",
@@ -373,7 +377,7 @@
   },
   {
     "word": "tin",
-    "translation": "жесть"
+    "translation": "жерсть"
   },
   {
     "word": "urn",
@@ -385,11 +389,11 @@
   },
   {
     "word": "wig",
-    "translation": "парик"
+    "translation": "перука"
   },
   {
     "word": "ax",
-    "translation": "топор"
+    "translation": "сокира"
   },
   {
     "word": "yam",
@@ -397,35 +401,35 @@
   },
   {
     "word": "ability",
-    "translation": "способность"
+    "translation": "здатність"
   },
   {
     "word": "above",
-    "translation": "выше"
+    "translation": "вище"
   },
   {
     "word": "absent",
-    "translation": "отсутствующий"
+    "translation": "відсутній"
   },
   {
     "word": "accept",
-    "translation": "принимать"
+    "translation": "приймати"
   },
   {
     "word": "accident",
-    "translation": "авария"
+    "translation": "аварія"
   },
   {
     "word": "account",
-    "translation": "счёт"
+    "translation": "рахунок"
   },
   {
     "word": "accurate",
-    "translation": "точный"
+    "translation": "точний"
   },
   {
     "word": "achieve",
-    "translation": "достигать"
+    "translation": "досягати"
   },
   {
     "word": "across",
@@ -433,51 +437,51 @@
   },
   {
     "word": "action",
-    "translation": "действие"
+    "translation": "дія"
   },
   {
     "word": "active",
-    "translation": "активный"
+    "translation": "активний"
   },
   {
     "word": "add",
-    "translation": "добавлять"
+    "translation": "додавати"
   },
   {
     "word": "address",
-    "translation": "адрес"
+    "translation": "адреса"
   },
   {
     "word": "adult",
-    "translation": "взрослый"
+    "translation": "дорослий"
   },
   {
     "word": "advance",
-    "translation": "продвигаться"
+    "translation": "просуватися"
   },
   {
     "word": "advice",
-    "translation": "совет"
+    "translation": "порада"
   },
   {
     "word": "affect",
-    "translation": "влиять"
+    "translation": "впливати"
   },
   {
     "word": "afraid",
-    "translation": "боящийся"
+    "translation": "наляканий"
   },
   {
     "word": "after",
-    "translation": "после"
+    "translation": "після"
   },
   {
     "word": "again",
-    "translation": "снова"
+    "translation": "знову"
   },
   {
     "word": "against",
-    "translation": "против"
+    "translation": "проти"
   },
   {
     "word": "agent",
@@ -485,19 +489,19 @@
   },
   {
     "word": "agree",
-    "translation": "соглашаться"
+    "translation": "погоджуватися"
   },
   {
     "word": "ahead",
-    "translation": "впереди"
+    "translation": "попереду"
   },
   {
     "word": "allow",
-    "translation": "позволять"
+    "translation": "дозволяти"
   },
   {
     "word": "almost",
-    "translation": "почти"
+    "translation": "майже"
   },
   {
     "word": "alone",
@@ -505,51 +509,51 @@
   },
   {
     "word": "already",
-    "translation": "уже"
+    "translation": "вже"
   },
   {
     "word": "also",
-    "translation": "также"
+    "translation": "також"
   },
   {
     "word": "always",
-    "translation": "всегда"
+    "translation": "завжди"
   },
   {
     "word": "among",
-    "translation": "среди"
+    "translation": "серед"
   },
   {
     "word": "amount",
-    "translation": "количество"
+    "translation": "кількість"
   },
   {
     "word": "ancient",
-    "translation": "древний"
+    "translation": "давній"
   },
   {
     "word": "anger",
-    "translation": "гнев"
+    "translation": "гнів"
   },
   {
     "word": "animal",
-    "translation": "животное"
+    "translation": "тварина"
   },
   {
     "word": "answer",
-    "translation": "ответ"
+    "translation": "відповідь"
   },
   {
     "word": "anyone",
-    "translation": "кто угодно"
+    "translation": "будь-хто"
   },
   {
     "word": "appear",
-    "translation": "появляться"
+    "translation": "з'являтися"
   },
   {
     "word": "apply",
-    "translation": "применять"
+    "translation": "застосовувати"
   },
   {
     "word": "area",
@@ -557,19 +561,19 @@
   },
   {
     "word": "argue",
-    "translation": "спорить"
+    "translation": "сперечатися"
   },
   {
     "word": "around",
-    "translation": "вокруг"
+    "translation": "навколо"
   },
   {
     "word": "arrive",
-    "translation": "прибывать"
+    "translation": "прибувати"
   },
   {
     "word": "article",
-    "translation": "статья"
+    "translation": "стаття"
   },
   {
     "word": "artist",
@@ -581,11 +585,11 @@
   },
   {
     "word": "attack",
-    "translation": "атаковать"
+    "translation": "атакувати"
   },
   {
     "word": "attract",
-    "translation": "привлекать"
+    "translation": "приваблювати"
   },
   {
     "word": "author",
@@ -593,19 +597,19 @@
   },
   {
     "word": "avoid",
-    "translation": "избегать"
+    "translation": "уникати"
   },
   {
     "word": "award",
-    "translation": "награда"
+    "translation": "нагорода"
   },
   {
     "word": "aware",
-    "translation": "осознающий"
+    "translation": "обізнаний"
   },
   {
     "word": "awful",
-    "translation": "ужасный"
+    "translation": "жахливий"
   },
   {
     "word": "balance",
@@ -617,7 +621,7 @@
   },
   {
     "word": "basic",
-    "translation": "базовый"
+    "translation": "базовий"
   },
   {
     "word": "battle",
@@ -629,71 +633,71 @@
   },
   {
     "word": "beauty",
-    "translation": "красота"
+    "translation": "краса"
   },
   {
     "word": "begin",
-    "translation": "начинать"
+    "translation": "починати"
   },
   {
     "word": "belong",
-    "translation": "принадлежать"
+    "translation": "належати"
   },
   {
     "word": "benefit",
-    "translation": "польза"
+    "translation": "користь"
   },
   {
     "word": "between",
-    "translation": "между"
+    "translation": "між"
   },
   {
     "word": "beyond",
-    "translation": "за пределами"
+    "translation": "за межами"
   },
   {
     "word": "billion",
-    "translation": "миллиард"
+    "translation": "мільярд"
   },
   {
     "word": "bitter",
-    "translation": "горький"
+    "translation": "гіркий"
   },
   {
     "word": "black",
-    "translation": "чёрный"
+    "translation": "чорний"
   },
   {
     "word": "blame",
-    "translation": "винить"
+    "translation": "звинувачувати"
   },
   {
     "word": "blank",
-    "translation": "пустой"
+    "translation": "порожній"
   },
   {
     "word": "blind",
-    "translation": "слепой"
+    "translation": "сліпий"
   },
   {
     "word": "blood",
-    "translation": "кровь"
+    "translation": "кров"
   },
   {
     "word": "blow",
-    "translation": "дуть"
+    "translation": "дути"
   },
   {
     "word": "board",
-    "translation": "доска"
+    "translation": "дошка"
   },
   {
     "word": "border",
-    "translation": "граница"
+    "translation": "кордон"
   },
   {
     "word": "borrow",
-    "translation": "одалживать"
+    "translation": "позичати"
   },
   {
     "word": "boss",
@@ -705,31 +709,31 @@
   },
   {
     "word": "branch",
-    "translation": "ветка"
+    "translation": "гілка"
   },
   {
     "word": "brave",
-    "translation": "смелый"
+    "translation": "сміливий"
   },
   {
     "word": "break",
-    "translation": "ломать"
+    "translation": "ламати"
   },
   {
     "word": "breath",
-    "translation": "дыхание"
+    "translation": "дихання"
   },
   {
     "word": "bridge",
-    "translation": "мост"
+    "translation": "міст"
   },
   {
     "word": "bright",
-    "translation": "яркий"
+    "translation": "яскравий"
   },
   {
     "word": "bring",
-    "translation": "приносить"
+    "translation": "приносити"
   },
   {
     "word": "broad",
@@ -741,19 +745,19 @@
   },
   {
     "word": "brown",
-    "translation": "коричневый"
+    "translation": "коричневий"
   },
   {
     "word": "build",
-    "translation": "строить"
+    "translation": "будувати"
   },
   {
     "word": "burn",
-    "translation": "гореть"
+    "translation": "горіти"
   },
   {
     "word": "busy",
-    "translation": "занятой"
+    "translation": "зайнятий"
   },
   {
     "word": "button",
@@ -761,11 +765,11 @@
   },
   {
     "word": "buyer",
-    "translation": "покупатель"
+    "translation": "покупець"
   },
   {
     "word": "cabinet",
-    "translation": "шкаф"
+    "translation": "шафа"
   },
   {
     "word": "cable",
@@ -773,11 +777,11 @@
   },
   {
     "word": "call",
-    "translation": "звонить"
+    "translation": "телефонувати"
   },
   {
     "word": "calm",
-    "translation": "спокойный"
+    "translation": "спокійний"
   },
   {
     "word": "camera",
@@ -785,19 +789,19 @@
   },
   {
     "word": "cancel",
-    "translation": "отменить"
+    "translation": "скасувати"
   },
   {
     "word": "capital",
-    "translation": "столица"
+    "translation": "столиця"
   },
   {
     "word": "captain",
-    "translation": "капитан"
+    "translation": "капітан"
   },
   {
     "word": "careful",
-    "translation": "осторожный"
+    "translation": "обережний"
   },
   {
     "word": "carry",
@@ -805,11 +809,11 @@
   },
   {
     "word": "cash",
-    "translation": "наличные"
+    "translation": "готівка"
   },
   {
     "word": "catch",
-    "translation": "ловить"
+    "translation": "ловити"
   },
   {
     "word": "cause",
@@ -817,15 +821,15 @@
   },
   {
     "word": "central",
-    "translation": "центральный"
+    "translation": "центральний"
   },
   {
     "word": "century",
-    "translation": "век"
+    "translation": "століття"
   },
   {
     "word": "chain",
-    "translation": "цепь"
+    "translation": "ланцюг"
   },
   {
     "word": "chance",
@@ -833,11 +837,11 @@
   },
   {
     "word": "change",
-    "translation": "менять"
+    "translation": "змінювати"
   },
   {
     "word": "chapter",
-    "translation": "глава"
+    "translation": "розділ"
   },
   {
     "word": "charge",
@@ -845,55 +849,55 @@
   },
   {
     "word": "cheap",
-    "translation": "дешёвый"
+    "translation": "дешевий"
   },
   {
     "word": "check",
-    "translation": "проверять"
+    "translation": "перевіряти"
   },
   {
     "word": "choose",
-    "translation": "выбирать"
+    "translation": "вибирати"
   },
   {
     "word": "circle",
-    "translation": "круг"
+    "translation": "коло"
   },
   {
     "word": "claim",
-    "translation": "утверждать"
+    "translation": "стверджувати"
   },
   {
     "word": "class",
-    "translation": "класс"
+    "translation": "клас"
   },
   {
     "word": "clean",
-    "translation": "чистый"
+    "translation": "чистий"
   },
   {
     "word": "clear",
-    "translation": "ясный"
+    "translation": "ясний"
   },
   {
     "word": "clever",
-    "translation": "умный"
+    "translation": "розумний"
   },
   {
     "word": "client",
-    "translation": "клиент"
+    "translation": "клієнт"
   },
   {
     "word": "climb",
-    "translation": "взбираться"
+    "translation": "видиратися"
   },
   {
     "word": "close",
-    "translation": "закрывать"
+    "translation": "закривати"
   },
   {
     "word": "cloud",
-    "translation": "облако"
+    "translation": "хмара"
   },
   {
     "word": "coach",
@@ -905,47 +909,47 @@
   },
   {
     "word": "collect",
-    "translation": "собирать"
+    "translation": "збирати"
   },
   {
     "word": "color",
-    "translation": "цвет"
+    "translation": "колір"
   },
   {
     "word": "come",
-    "translation": "приходить"
+    "translation": "приходити"
   },
   {
     "word": "common",
-    "translation": "общий"
+    "translation": "спільний"
   },
   {
     "word": "compare",
-    "translation": "сравнивать"
+    "translation": "порівнювати"
   },
   {
     "word": "complete",
-    "translation": "завершать"
+    "translation": "завершувати"
   },
   {
     "word": "complex",
-    "translation": "сложный"
+    "translation": "складний"
   },
   {
     "word": "concern",
-    "translation": "беспокойство"
+    "translation": "занепокоєння"
   },
   {
     "word": "confirm",
-    "translation": "подтверждать"
+    "translation": "підтверджувати"
   },
   {
     "word": "connect",
-    "translation": "соединять"
+    "translation": "з'єднувати"
   },
   {
     "word": "consider",
-    "translation": "рассматривать"
+    "translation": "розглядати"
   },
   {
     "word": "contact",
@@ -953,11 +957,11 @@
   },
   {
     "word": "contain",
-    "translation": "содержать"
+    "translation": "містити"
   },
   {
     "word": "content",
-    "translation": "содержимое"
+    "translation": "вміст"
   },
   {
     "word": "control",
@@ -965,51 +969,51 @@
   },
   {
     "word": "cook",
-    "translation": "готовить"
+    "translation": "готувати"
   },
   {
     "word": "copy",
-    "translation": "копировать"
+    "translation": "копіювати"
   },
   {
     "word": "corner",
-    "translation": "угол"
+    "translation": "кут"
   },
   {
     "word": "correct",
-    "translation": "правильный"
+    "translation": "правильний"
   },
   {
     "word": "cost",
-    "translation": "стоимость"
+    "translation": "вартість"
   },
   {
     "word": "count",
-    "translation": "считать"
+    "translation": "рахувати"
   },
   {
     "word": "country",
-    "translation": "страна"
+    "translation": "країна"
   },
   {
     "word": "cover",
-    "translation": "крышка"
+    "translation": "кришка"
   },
   {
     "word": "create",
-    "translation": "создавать"
+    "translation": "створювати"
   },
   {
     "word": "crime",
-    "translation": "преступление"
+    "translation": "злочин"
   },
   {
     "word": "cross",
-    "translation": "пересекать"
+    "translation": "перетинати"
   },
   {
     "word": "crowd",
-    "translation": "толпа"
+    "translation": "натовп"
   },
   {
     "word": "culture",
@@ -1017,39 +1021,39 @@
   },
   {
     "word": "current",
-    "translation": "текущий"
+    "translation": "поточний"
   },
   {
     "word": "customer",
-    "translation": "покупатель"
+    "translation": "покупець"
   },
   {
     "word": "cut",
-    "translation": "резать"
+    "translation": "різати"
   },
   {
     "word": "damage",
-    "translation": "повреждение"
+    "translation": "пошкодження"
   },
   {
     "word": "danger",
-    "translation": "опасность"
+    "translation": "небезпека"
   },
   {
     "word": "dark",
-    "translation": "тёмный"
+    "translation": "темний"
   },
   {
     "word": "data",
-    "translation": "данные"
+    "translation": "дані"
   },
   {
     "word": "dead",
-    "translation": "мёртвый"
+    "translation": "мертвий"
   },
   {
     "word": "deal",
-    "translation": "сделка"
+    "translation": "угода"
   },
   {
     "word": "death",
@@ -1057,27 +1061,27 @@
   },
   {
     "word": "decide",
-    "translation": "решать"
+    "translation": "вирішувати"
   },
   {
     "word": "deep",
-    "translation": "глубокий"
+    "translation": "глибокий"
   },
   {
     "word": "degree",
-    "translation": "степень"
+    "translation": "ступінь"
   },
   {
     "word": "delay",
-    "translation": "задержка"
+    "translation": "затримка"
   },
   {
     "word": "deliver",
-    "translation": "доставлять"
+    "translation": "доставляти"
   },
   {
     "word": "demand",
-    "translation": "спрос"
+    "translation": "попит"
   },
   {
     "word": "design",
@@ -1085,67 +1089,67 @@
   },
   {
     "word": "develop",
-    "translation": "развивать"
+    "translation": "розвивати"
   },
   {
     "word": "die",
-    "translation": "умирать"
+    "translation": "вмирати"
   },
   {
     "word": "differ",
-    "translation": "отличаться"
+    "translation": "відрізнятися"
   },
   {
     "word": "direct",
-    "translation": "прямой"
+    "translation": "прямий"
   },
   {
     "word": "discover",
-    "translation": "открывать"
+    "translation": "відкривати"
   },
   {
     "word": "discuss",
-    "translation": "обсуждать"
+    "translation": "обговорювати"
   },
   {
     "word": "distance",
-    "translation": "расстояние"
+    "translation": "відстань"
   },
   {
     "word": "divide",
-    "translation": "делить"
+    "translation": "ділити"
   },
   {
     "word": "doubt",
-    "translation": "сомнение"
+    "translation": "сумнів"
   },
   {
     "word": "dream",
-    "translation": "мечта"
+    "translation": "мрія"
   },
   {
     "word": "drive",
-    "translation": "ехать"
+    "translation": "їхати"
   },
   {
     "word": "drop",
-    "translation": "падать"
+    "translation": "падати"
   },
   {
     "word": "duty",
-    "translation": "долг"
+    "translation": "обов'язок"
   },
   {
     "word": "early",
-    "translation": "ранний"
+    "translation": "ранній"
   },
   {
     "word": "earn",
-    "translation": "зарабатывать"
+    "translation": "заробляти"
   },
   {
     "word": "easy",
-    "translation": "лёгкий"
+    "translation": "легкий"
   },
   {
     "word": "edge",
@@ -1153,123 +1157,123 @@
   },
   {
     "word": "effect",
-    "translation": "эффект"
+    "translation": "ефект"
   },
   {
     "word": "effort",
-    "translation": "усилие"
+    "translation": "зусилля"
   },
   {
     "word": "either",
-    "translation": "либо"
+    "translation": "або"
   },
   {
     "word": "empty",
-    "translation": "пустой"
+    "translation": "порожній"
   },
   {
     "word": "end",
-    "translation": "конец"
+    "translation": "кінець"
   },
   {
     "word": "enemy",
-    "translation": "враг"
+    "translation": "ворог"
   },
   {
     "word": "energy",
-    "translation": "энергия"
+    "translation": "енергія"
   },
   {
     "word": "enjoy",
-    "translation": "наслаждаться"
+    "translation": "насолоджуватися"
   },
   {
     "word": "enough",
-    "translation": "достаточно"
+    "translation": "достатньо"
   },
   {
     "word": "enter",
-    "translation": "входить"
+    "translation": "входити"
   },
   {
     "word": "equal",
-    "translation": "равный"
+    "translation": "рівний"
   },
   {
     "word": "escape",
-    "translation": "сбегать"
+    "translation": "тікати"
   },
   {
     "word": "even",
-    "translation": "даже"
+    "translation": "навіть"
   },
   {
     "word": "event",
-    "translation": "событие"
+    "translation": "подія"
   },
   {
     "word": "every",
-    "translation": "каждый"
+    "translation": "кожний"
   },
   {
     "word": "exact",
-    "translation": "точный"
+    "translation": "точний"
   },
   {
     "word": "exist",
-    "translation": "существовать"
+    "translation": "існувати"
   },
   {
     "word": "expect",
-    "translation": "ожидать"
+    "translation": "очікувати"
   },
   {
     "word": "explain",
-    "translation": "объяснять"
+    "translation": "пояснювати"
   },
   {
     "word": "explore",
-    "translation": "исследовать"
+    "translation": "досліджувати"
   },
   {
     "word": "express",
-    "translation": "выражать"
+    "translation": "виражати"
   },
   {
     "word": "extra",
-    "translation": "дополнительный"
+    "translation": "додатковий"
   },
   {
     "word": "fail",
-    "translation": "терпеть неудачу"
+    "translation": "зазнавати невдачі"
   },
   {
     "word": "fair",
-    "translation": "справедливый"
+    "translation": "справедливий"
   },
   {
     "word": "fall",
-    "translation": "падать"
+    "translation": "падати"
   },
   {
     "word": "false",
-    "translation": "ложный"
+    "translation": "хибний"
   },
   {
     "word": "famous",
-    "translation": "знаменитый"
+    "translation": "знаменитий"
   },
   {
     "word": "far",
-    "translation": "далёкий"
+    "translation": "далекий"
   },
   {
     "word": "fast",
-    "translation": "быстрый"
+    "translation": "швидкий"
   },
   {
     "word": "favor",
-    "translation": "одолжение"
+    "translation": "послуга"
   },
   {
     "word": "fear",
@@ -1277,23 +1281,23 @@
   },
   {
     "word": "feel",
-    "translation": "чувствовать"
+    "translation": "відчувати"
   },
   {
     "word": "fight",
-    "translation": "бороться"
+    "translation": "боротися"
   },
   {
     "word": "fill",
-    "translation": "наполнять"
+    "translation": "наповнювати"
   },
   {
     "word": "final",
-    "translation": "финальный"
+    "translation": "фінальний"
   },
   {
     "word": "find",
-    "translation": "находить"
+    "translation": "знаходити"
   },
   {
     "word": "fine",
@@ -1301,31 +1305,31 @@
   },
   {
     "word": "finger",
-    "translation": "палец"
+    "translation": "палець"
   },
   {
     "word": "fire",
-    "translation": "огонь"
+    "translation": "вогонь"
   },
   {
     "word": "first",
-    "translation": "первый"
+    "translation": "перший"
   },
   {
     "word": "fix",
-    "translation": "чинить"
+    "translation": "лагодити"
   },
   {
     "word": "flat",
-    "translation": "плоский"
+    "translation": "плаский"
   },
   {
     "word": "floor",
-    "translation": "пол"
+    "translation": "підлога"
   },
   {
     "word": "flow",
-    "translation": "течь"
+    "translation": "текти"
   },
   {
     "word": "focus",
@@ -1333,7 +1337,7 @@
   },
   {
     "word": "follow",
-    "translation": "следовать"
+    "translation": "слідувати"
   },
   {
     "word": "force",
@@ -1341,7 +1345,7 @@
   },
   {
     "word": "forget",
-    "translation": "забывать"
+    "translation": "забувати"
   },
   {
     "word": "form",
@@ -1349,15 +1353,15 @@
   },
   {
     "word": "forward",
-    "translation": "вперёд"
+    "translation": "вперед"
   },
   {
     "word": "free",
-    "translation": "свободный"
+    "translation": "вільний"
   },
   {
     "word": "fresh",
-    "translation": "свежий"
+    "translation": "свіжий"
   },
   {
     "word": "friend",
@@ -1369,39 +1373,39 @@
   },
   {
     "word": "full",
-    "translation": "полный"
+    "translation": "повний"
   },
   {
     "word": "future",
-    "translation": "будущее"
+    "translation": "майбутнє"
   },
   {
     "word": "gather",
-    "translation": "собираться"
+    "translation": "збиратися"
   },
   {
     "word": "general",
-    "translation": "общий"
+    "translation": "загальний"
   },
   {
     "word": "give",
-    "translation": "давать"
+    "translation": "давати"
   },
   {
     "word": "global",
-    "translation": "глобальный"
+    "translation": "глобальний"
   },
   {
     "word": "goal",
-    "translation": "цель"
+    "translation": "ціль"
   },
   {
     "word": "good",
-    "translation": "хороший"
+    "translation": "гарний"
   },
   {
     "word": "government",
-    "translation": "правительство"
+    "translation": "уряд"
   },
   {
     "word": "great",
@@ -1409,43 +1413,43 @@
   },
   {
     "word": "green",
-    "translation": "зелёный"
+    "translation": "зелений"
   },
   {
     "word": "group",
-    "translation": "группа"
+    "translation": "група"
   },
   {
     "word": "grow",
-    "translation": "расти"
+    "translation": "рости"
   },
   {
     "word": "guess",
-    "translation": "угадывать"
+    "translation": "вгадувати"
   },
   {
     "word": "guide",
-    "translation": "гид"
+    "translation": "гід"
   },
   {
     "word": "happy",
-    "translation": "счастливый"
+    "translation": "щасливий"
   },
   {
     "word": "hard",
-    "translation": "твёрдый"
+    "translation": "твердий"
   },
   {
     "word": "harm",
-    "translation": "вред"
+    "translation": "шкода"
   },
   {
     "word": "hate",
-    "translation": "ненавидеть"
+    "translation": "ненавидіти"
   },
   {
     "word": "have",
-    "translation": "иметь"
+    "translation": "мати"
   },
   {
     "word": "head",
@@ -1453,59 +1457,59 @@
   },
   {
     "word": "health",
-    "translation": "здоровье"
+    "translation": "здоров'я"
   },
   {
     "word": "heart",
-    "translation": "сердце"
+    "translation": "серце"
   },
   {
     "word": "heavy",
-    "translation": "тяжёлый"
+    "translation": "важкий"
   },
   {
     "word": "help",
-    "translation": "помогать"
+    "translation": "допомагати"
   },
   {
     "word": "high",
-    "translation": "высокий"
+    "translation": "високий"
   },
   {
     "word": "history",
-    "translation": "история"
+    "translation": "історія"
   },
   {
     "word": "hold",
-    "translation": "держать"
+    "translation": "тримати"
   },
   {
     "word": "home",
-    "translation": "дом"
+    "translation": "дім"
   },
   {
     "word": "hope",
-    "translation": "надежда"
+    "translation": "надія"
   },
   {
     "word": "hot",
-    "translation": "горячий"
+    "translation": "гарячий"
   },
   {
     "word": "hour",
-    "translation": "час"
+    "translation": "година"
   },
   {
     "word": "huge",
-    "translation": "огромный"
+    "translation": "величезний"
   },
   {
     "word": "human",
-    "translation": "человек"
+    "translation": "людина"
   },
   {
     "word": "humor",
-    "translation": "юмор"
+    "translation": "гумор"
   },
   {
     "word": "hunger",
@@ -1513,91 +1517,91 @@
   },
   {
     "word": "hunt",
-    "translation": "охотиться"
+    "translation": "полювати"
   },
   {
     "word": "hurry",
-    "translation": "торопиться"
+    "translation": "поспішати"
   },
   {
     "word": "hurt",
-    "translation": "причинять боль"
+    "translation": "завдавати болю"
   },
   {
     "word": "imagine",
-    "translation": "воображать"
+    "translation": "уявляти"
   },
   {
     "word": "impact",
-    "translation": "влияние"
+    "translation": "вплив"
   },
   {
     "word": "improve",
-    "translation": "улучшать"
+    "translation": "покращувати"
   },
   {
     "word": "include",
-    "translation": "включать"
+    "translation": "включати"
   },
   {
     "word": "increase",
-    "translation": "увеличивать"
+    "translation": "збільшувати"
   },
   {
     "word": "information",
-    "translation": "информация"
+    "translation": "інформація"
   },
   {
     "word": "inside",
-    "translation": "внутри"
+    "translation": "всередині"
   },
   {
     "word": "instead",
-    "translation": "вместо"
+    "translation": "замість"
   },
   {
     "word": "interest",
-    "translation": "интерес"
+    "translation": "інтерес"
   },
   {
     "word": "interview",
-    "translation": "интервью"
+    "translation": "інтерв'ю"
   },
   {
     "word": "introduce",
-    "translation": "представлять"
+    "translation": "представляти"
   },
   {
     "word": "invest",
-    "translation": "инвестировать"
+    "translation": "інвестувати"
   },
   {
     "word": "invite",
-    "translation": "приглашать"
+    "translation": "запрошувати"
   },
   {
     "word": "island",
-    "translation": "остров"
+    "translation": "острів"
   },
   {
     "word": "issue",
-    "translation": "вопрос"
+    "translation": "питання"
   },
   {
     "word": "journey",
-    "translation": "путешествие"
+    "translation": "подорож"
   },
   {
     "word": "judge",
-    "translation": "судить"
+    "translation": "судити"
   },
   {
     "word": "keep",
-    "translation": "держать"
+    "translation": "тримати"
   },
   {
     "word": "knowledge",
-    "translation": "знание"
+    "translation": "знання"
   },
   {
     "word": "land",
@@ -1605,23 +1609,23 @@
   },
   {
     "word": "language",
-    "translation": "язык"
+    "translation": "мова"
   },
   {
     "word": "large",
-    "translation": "большой"
+    "translation": "великий"
   },
   {
     "word": "last",
-    "translation": "последний"
+    "translation": "останній"
   },
   {
     "word": "later",
-    "translation": "позже"
+    "translation": "пізніше"
   },
   {
     "word": "laugh",
-    "translation": "смеяться"
+    "translation": "сміятися"
   },
   {
     "word": "law",
@@ -1633,91 +1637,91 @@
   },
   {
     "word": "learn",
-    "translation": "учиться"
+    "translation": "вчитися"
   },
   {
     "word": "leave",
-    "translation": "покидать"
+    "translation": "покидати"
   },
   {
     "word": "level",
-    "translation": "уровень"
+    "translation": "рівень"
   },
   {
     "word": "light",
-    "translation": "свет"
+    "translation": "світло"
   },
   {
     "word": "likely",
-    "translation": "вероятно"
+    "translation": "імовірно"
   },
   {
     "word": "limit",
-    "translation": "лимит"
+    "translation": "ліміт"
   },
   {
     "word": "listen",
-    "translation": "слушать"
+    "translation": "слухати"
   },
   {
     "word": "live",
-    "translation": "жить"
+    "translation": "жити"
   },
   {
     "word": "local",
-    "translation": "местный"
+    "translation": "місцевий"
   },
   {
     "word": "long",
-    "translation": "длинный"
+    "translation": "довгий"
   },
   {
     "word": "look",
-    "translation": "смотреть"
+    "translation": "дивитися"
   },
   {
     "word": "lose",
-    "translation": "терять"
+    "translation": "втрачати"
   },
   {
     "word": "love",
-    "translation": "любовь"
+    "translation": "любов"
   },
   {
     "word": "lower",
-    "translation": "нижний"
+    "translation": "нижній"
   },
   {
     "word": "lucky",
-    "translation": "удачливый"
+    "translation": "удачливий"
   },
   {
     "word": "main",
-    "translation": "главный"
+    "translation": "головний"
   },
   {
     "word": "major",
-    "translation": "главный"
+    "translation": "головний"
   },
   {
     "word": "manage",
-    "translation": "управлять"
+    "translation": "керувати"
   },
   {
     "word": "market",
-    "translation": "рынок"
+    "translation": "ринок"
   },
   {
     "word": "matter",
-    "translation": "иметь значение"
+    "translation": "мати значення"
   },
   {
     "word": "mean",
-    "translation": "означать"
+    "translation": "означати"
   },
   {
     "word": "meet",
-    "translation": "встречать"
+    "translation": "зустрічати"
   },
   {
     "word": "member",
@@ -1725,15 +1729,15 @@
   },
   {
     "word": "memory",
-    "translation": "память"
+    "translation": "пам'ять"
   },
   {
     "word": "mention",
-    "translation": "упоминать"
+    "translation": "згадувати"
   },
   {
     "word": "message",
-    "translation": "сообщение"
+    "translation": "повідомлення"
   },
   {
     "word": "method",
@@ -1745,19 +1749,19 @@
   },
   {
     "word": "might",
-    "translation": "мощь"
+    "translation": "міць"
   },
   {
     "word": "mind",
-    "translation": "разум"
+    "translation": "розум"
   },
   {
     "word": "minute",
-    "translation": "минута"
+    "translation": "хвилина"
   },
   {
     "word": "miss",
-    "translation": "скучать"
+    "translation": "сумувати"
   },
   {
     "word": "model",
@@ -1765,71 +1769,71 @@
   },
   {
     "word": "money",
-    "translation": "деньги"
+    "translation": "гроші"
   },
   {
     "word": "month",
-    "translation": "месяц"
+    "translation": "місяць"
   },
   {
     "word": "morning",
-    "translation": "утро"
+    "translation": "ранок"
   },
   {
     "word": "most",
-    "translation": "большинство"
+    "translation": "більшість"
   },
   {
     "word": "mother",
-    "translation": "мать"
+    "translation": "мати"
   },
   {
     "word": "move",
-    "translation": "двигаться"
+    "translation": "рухатися"
   },
   {
     "word": "much",
-    "translation": "много"
+    "translation": "багато"
   },
   {
     "word": "music",
-    "translation": "музыка"
+    "translation": "музика"
   },
   {
     "word": "natural",
-    "translation": "натуральный"
+    "translation": "природний"
   },
   {
     "word": "need",
-    "translation": "нуждаться"
+    "translation": "потребувати"
   },
   {
     "word": "never",
-    "translation": "никогда"
+    "translation": "ніколи"
   },
   {
     "word": "new",
-    "translation": "новый"
+    "translation": "новий"
   },
   {
     "word": "next",
-    "translation": "следующий"
+    "translation": "наступний"
   },
   {
     "word": "nice",
-    "translation": "приятный"
+    "translation": "приємний"
   },
   {
     "word": "normal",
-    "translation": "нормальный"
+    "translation": "нормальний"
   },
   {
     "word": "nothing",
-    "translation": "ничего"
+    "translation": "нічого"
   },
   {
     "word": "notice",
-    "translation": "замечать"
+    "translation": "помічати"
   },
   {
     "word": "number",
@@ -1837,11 +1841,11 @@
   },
   {
     "word": "object",
-    "translation": "объект"
+    "translation": "об'єкт"
   },
   {
     "word": "offer",
-    "translation": "предложение"
+    "translation": "пропозиція"
   },
   {
     "word": "often",
@@ -1849,15 +1853,15 @@
   },
   {
     "word": "once",
-    "translation": "однажды"
+    "translation": "одного разу"
   },
   {
     "word": "only",
-    "translation": "только"
+    "translation": "тільки"
   },
   {
     "word": "option",
-    "translation": "вариант"
+    "translation": "варіант"
   },
   {
     "word": "order",
@@ -1865,11 +1869,11 @@
   },
   {
     "word": "other",
-    "translation": "другой"
+    "translation": "інший"
   },
   {
     "word": "outside",
-    "translation": "снаружи"
+    "translation": "зовні"
   },
   {
     "word": "over",
@@ -1877,31 +1881,31 @@
   },
   {
     "word": "own",
-    "translation": "владеть"
+    "translation": "володіти"
   },
   {
     "word": "pain",
-    "translation": "боль"
+    "translation": "біль"
   },
   {
     "word": "part",
-    "translation": "часть"
+    "translation": "частина"
   },
   {
     "word": "pass",
-    "translation": "проходить"
+    "translation": "проходити"
   },
   {
     "word": "past",
-    "translation": "прошлое"
+    "translation": "минуле"
   },
   {
     "word": "path",
-    "translation": "путь"
+    "translation": "шлях"
   },
   {
     "word": "pattern",
-    "translation": "узор"
+    "translation": "візерунок"
   },
   {
     "word": "peace",
@@ -1913,15 +1917,15 @@
   },
   {
     "word": "perfect",
-    "translation": "идеальный"
+    "translation": "ідеальний"
   },
   {
     "word": "perform",
-    "translation": "выступать"
+    "translation": "виступати"
   },
   {
     "word": "person",
-    "translation": "человек"
+    "translation": "людина"
   },
   {
     "word": "picture",
@@ -1929,7 +1933,7 @@
   },
   {
     "word": "place",
-    "translation": "место"
+    "translation": "місце"
   },
   {
     "word": "plan",
@@ -1937,7 +1941,7 @@
   },
   {
     "word": "play",
-    "translation": "играть"
+    "translation": "грати"
   },
   {
     "word": "point",
@@ -1945,107 +1949,107 @@
   },
   {
     "word": "policy",
-    "translation": "политика"
+    "translation": "політика"
   },
   {
     "word": "poor",
-    "translation": "бедный"
+    "translation": "бідний"
   },
   {
     "word": "popular",
-    "translation": "популярный"
+    "translation": "популярний"
   },
   {
     "word": "power",
-    "translation": "власть"
+    "translation": "влада"
   },
   {
     "word": "present",
-    "translation": "настоящий"
+    "translation": "теперішній"
   },
   {
     "word": "press",
-    "translation": "нажимать"
+    "translation": "натискати"
   },
   {
     "word": "prevent",
-    "translation": "предотвращать"
+    "translation": "запобігати"
   },
   {
     "word": "price",
-    "translation": "цена"
+    "translation": "ціна"
   },
   {
     "word": "process",
-    "translation": "процесс"
+    "translation": "процес"
   },
   {
     "word": "produce",
-    "translation": "производить"
+    "translation": "виробляти"
   },
   {
     "word": "profit",
-    "translation": "прибыль"
+    "translation": "прибуток"
   },
   {
     "word": "program",
-    "translation": "программа"
+    "translation": "програма"
   },
   {
     "word": "project",
-    "translation": "проект"
+    "translation": "проєкт"
   },
   {
     "word": "promise",
-    "translation": "обещание"
+    "translation": "обіцянка"
   },
   {
     "word": "protect",
-    "translation": "защищать"
+    "translation": "захищати"
   },
   {
     "word": "prove",
-    "translation": "доказывать"
+    "translation": "доводити"
   },
   {
     "word": "provide",
-    "translation": "предоставлять"
+    "translation": "надавати"
   },
   {
     "word": "public",
-    "translation": "общественный"
+    "translation": "громадський"
   },
   {
     "word": "pull",
-    "translation": "тянуть"
+    "translation": "тягнути"
   },
   {
     "word": "push",
-    "translation": "толкать"
+    "translation": "штовхати"
   },
   {
     "word": "put",
-    "translation": "класть"
+    "translation": "класти"
   },
   {
     "word": "raise",
-    "translation": "поднимать"
+    "translation": "піднімати"
   },
   {
     "word": "reach",
-    "translation": "достигать"
+    "translation": "досягати"
   },
   {
     "word": "read",
-    "translation": "читать"
+    "translation": "читати"
   },
   {
     "word": "ready",
-    "translation": "готовый"
+    "translation": "готовий"
   },
   {
     "word": "real",
-    "translation": "настоящий"
+    "translation": "справжній"
   },
   {
     "word": "reason",
@@ -2053,59 +2057,59 @@
   },
   {
     "word": "receive",
-    "translation": "получать"
+    "translation": "отримувати"
   },
   {
     "word": "record",
-    "translation": "запись"
+    "translation": "запис"
   },
   {
     "word": "reduce",
-    "translation": "уменьшать"
+    "translation": "зменшувати"
   },
   {
     "word": "refuse",
-    "translation": "отказывать"
+    "translation": "відмовляти"
   },
   {
     "word": "relate",
-    "translation": "связывать"
+    "translation": "пов'язувати"
   },
   {
     "word": "remain",
-    "translation": "оставаться"
+    "translation": "залишатися"
   },
   {
     "word": "remember",
-    "translation": "помнить"
+    "translation": "пам'ятати"
   },
   {
     "word": "remove",
-    "translation": "удалять"
+    "translation": "видаляти"
   },
   {
     "word": "repeat",
-    "translation": "повторять"
+    "translation": "повторювати"
   },
   {
     "word": "replace",
-    "translation": "заменять"
+    "translation": "замінювати"
   },
   {
     "word": "report",
-    "translation": "доклад"
+    "translation": "доповідь"
   },
   {
     "word": "require",
-    "translation": "требовать"
+    "translation": "вимагати"
   },
   {
     "word": "research",
-    "translation": "исследование"
+    "translation": "дослідження"
   },
   {
     "word": "respect",
-    "translation": "уважение"
+    "translation": "повага"
   },
   {
     "word": "result",
@@ -2113,27 +2117,27 @@
   },
   {
     "word": "return",
-    "translation": "возвращать"
+    "translation": "повертати"
   },
   {
     "word": "reveal",
-    "translation": "раскрывать"
+    "translation": "розкривати"
   },
   {
     "word": "rich",
-    "translation": "богатый"
+    "translation": "багатий"
   },
   {
     "word": "right",
-    "translation": "правый"
+    "translation": "правий"
   },
   {
     "word": "rise",
-    "translation": "подниматься"
+    "translation": "підніматися"
   },
   {
     "word": "risk",
-    "translation": "риск"
+    "translation": "ризик"
   },
   {
     "word": "rule",
@@ -2141,23 +2145,23 @@
   },
   {
     "word": "run",
-    "translation": "бежать"
+    "translation": "бігти"
   },
   {
     "word": "safe",
-    "translation": "безопасный"
+    "translation": "безпечний"
   },
   {
     "word": "same",
-    "translation": "одинаковый"
+    "translation": "однаковий"
   },
   {
     "word": "save",
-    "translation": "спасать"
+    "translation": "рятувати"
   },
   {
     "word": "say",
-    "translation": "говорить"
+    "translation": "говорити"
   },
   {
     "word": "scene",
@@ -2169,11 +2173,11 @@
   },
   {
     "word": "search",
-    "translation": "искать"
+    "translation": "шукати"
   },
   {
     "word": "season",
-    "translation": "сезон"
+    "translation": "пора року"
   },
   {
     "word": "secret",
@@ -2181,35 +2185,35 @@
   },
   {
     "word": "seem",
-    "translation": "казаться"
+    "translation": "здаватися"
   },
   {
     "word": "sell",
-    "translation": "продавать"
+    "translation": "продавати"
   },
   {
     "word": "send",
-    "translation": "отправлять"
+    "translation": "надсилати"
   },
   {
     "word": "sense",
-    "translation": "чувство"
+    "translation": "відчуття"
   },
   {
     "word": "service",
-    "translation": "услуга"
+    "translation": "послуга"
   },
   {
     "word": "set",
-    "translation": "устанавливать"
+    "translation": "встановлювати"
   },
   {
     "word": "share",
-    "translation": "делиться"
+    "translation": "ділитися"
   },
   {
     "word": "show",
-    "translation": "показывать"
+    "translation": "показувати"
   },
   {
     "word": "sign",
@@ -2217,31 +2221,31 @@
   },
   {
     "word": "simple",
-    "translation": "простой"
+    "translation": "простий"
   },
   {
     "word": "since",
-    "translation": "с тех пор"
+    "translation": "з тих пір"
   },
   {
     "word": "situation",
-    "translation": "ситуация"
+    "translation": "ситуація"
   },
   {
     "word": "size",
-    "translation": "размер"
+    "translation": "розмір"
   },
   {
     "word": "skill",
-    "translation": "навык"
+    "translation": "навичка"
   },
   {
     "word": "sleep",
-    "translation": "спать"
+    "translation": "спати"
   },
   {
     "word": "slow",
-    "translation": "медленный"
+    "translation": "повільний"
   },
   {
     "word": "small",
@@ -2249,15 +2253,15 @@
   },
   {
     "word": "smart",
-    "translation": "умный"
+    "translation": "розумний"
   },
   {
     "word": "smile",
-    "translation": "улыбаться"
+    "translation": "посміхатися"
   },
   {
     "word": "solve",
-    "translation": "решать"
+    "translation": "вирішувати"
   },
   {
     "word": "soon",
@@ -2265,7 +2269,7 @@
   },
   {
     "word": "sorry",
-    "translation": "сожалеть"
+    "translation": "шкодувати"
   },
   {
     "word": "sound",
@@ -2273,43 +2277,43 @@
   },
   {
     "word": "speak",
-    "translation": "говорить"
+    "translation": "говорити"
   },
   {
     "word": "special",
-    "translation": "особенный"
+    "translation": "особливий"
   },
   {
     "word": "spend",
-    "translation": "тратить"
+    "translation": "витрачати"
   },
   {
     "word": "spread",
-    "translation": "распространять"
+    "translation": "поширювати"
   },
   {
     "word": "stand",
-    "translation": "стоять"
+    "translation": "стояти"
   },
   {
     "word": "start",
-    "translation": "начинать"
+    "translation": "починати"
   },
   {
     "word": "stay",
-    "translation": "оставаться"
+    "translation": "залишатися"
   },
   {
     "word": "step",
-    "translation": "шаг"
+    "translation": "крок"
   },
   {
     "word": "still",
-    "translation": "всё ещё"
+    "translation": "ще"
   },
   {
     "word": "stop",
-    "translation": "останавливать"
+    "translation": "зупиняти"
   },
   {
     "word": "store",
@@ -2317,11 +2321,11 @@
   },
   {
     "word": "story",
-    "translation": "история"
+    "translation": "історія"
   },
   {
     "word": "strong",
-    "translation": "сильный"
+    "translation": "сильний"
   },
   {
     "word": "student",
@@ -2329,7 +2333,7 @@
   },
   {
     "word": "study",
-    "translation": "учиться"
+    "translation": "навчатися"
   },
   {
     "word": "subject",
@@ -2337,27 +2341,27 @@
   },
   {
     "word": "success",
-    "translation": "успех"
+    "translation": "успіх"
   },
   {
     "word": "such",
-    "translation": "такой"
+    "translation": "такий"
   },
   {
     "word": "suggest",
-    "translation": "предлагать"
+    "translation": "пропонувати"
   },
   {
     "word": "support",
-    "translation": "поддержка"
+    "translation": "підтримка"
   },
   {
     "word": "sure",
-    "translation": "уверенный"
+    "translation": "впевнений"
   },
   {
     "word": "switch",
-    "translation": "переключать"
+    "translation": "перемикати"
   },
   {
     "word": "system",
@@ -2365,23 +2369,23 @@
   },
   {
     "word": "table",
-    "translation": "стол"
+    "translation": "стіл"
   },
   {
     "word": "take",
-    "translation": "брать"
+    "translation": "брати"
   },
   {
     "word": "talk",
-    "translation": "говорить"
+    "translation": "розмовляти"
   },
   {
     "word": "task",
-    "translation": "задача"
+    "translation": "завдання"
   },
   {
     "word": "teach",
-    "translation": "учить"
+    "translation": "навчати"
   },
   {
     "word": "team",
@@ -2389,11 +2393,11 @@
   },
   {
     "word": "tell",
-    "translation": "говорить"
+    "translation": "розповідати"
   },
   {
     "word": "term",
-    "translation": "срок"
+    "translation": "строк"
   },
   {
     "word": "test",
@@ -2401,31 +2405,31 @@
   },
   {
     "word": "thank",
-    "translation": "благодарить"
+    "translation": "дякувати"
   },
   {
     "word": "think",
-    "translation": "думать"
+    "translation": "думати"
   },
   {
     "word": "though",
-    "translation": "хотя"
+    "translation": "хоча"
   },
   {
     "word": "through",
-    "translation": "через"
+    "translation": "крізь"
   },
   {
     "word": "throw",
-    "translation": "бросать"
+    "translation": "кидати"
   },
   {
     "word": "today",
-    "translation": "сегодня"
+    "translation": "сьогодні"
   },
   {
     "word": "together",
-    "translation": "вместе"
+    "translation": "разом"
   },
   {
     "word": "tomorrow",
@@ -2433,27 +2437,27 @@
   },
   {
     "word": "touch",
-    "translation": "касаться"
+    "translation": "торкатися"
   },
   {
     "word": "toward",
-    "translation": "к"
+    "translation": "до"
   },
   {
     "word": "town",
-    "translation": "город"
+    "translation": "місто"
   },
   {
     "word": "train",
-    "translation": "тренировать"
+    "translation": "тренувати"
   },
   {
     "word": "travel",
-    "translation": "путешествовать"
+    "translation": "подорожувати"
   },
   {
     "word": "trust",
-    "translation": "доверять"
+    "translation": "довіряти"
   },
   {
     "word": "truth",
@@ -2461,11 +2465,11 @@
   },
   {
     "word": "try",
-    "translation": "пытаться"
+    "translation": "намагатися"
   },
   {
     "word": "turn",
-    "translation": "поворачивать"
+    "translation": "повертати"
   },
   {
     "word": "type",
@@ -2473,15 +2477,15 @@
   },
   {
     "word": "understand",
-    "translation": "понимать"
+    "translation": "розуміти"
   },
   {
     "word": "until",
-    "translation": "пока"
+    "translation": "поки"
   },
   {
     "word": "update",
-    "translation": "обновлять"
+    "translation": "оновлювати"
   },
   {
     "word": "upon",
@@ -2489,47 +2493,47 @@
   },
   {
     "word": "value",
-    "translation": "ценность"
+    "translation": "цінність"
   },
   {
     "word": "various",
-    "translation": "различный"
+    "translation": "різний"
   },
   {
     "word": "visit",
-    "translation": "посещать"
+    "translation": "відвідувати"
   },
   {
     "word": "wait",
-    "translation": "ждать"
+    "translation": "чекати"
   },
   {
     "word": "want",
-    "translation": "хотеть"
+    "translation": "хотіти"
   },
   {
     "word": "warm",
-    "translation": "тёплый"
+    "translation": "теплий"
   },
   {
     "word": "watch",
-    "translation": "наблюдать"
+    "translation": "спостерігати"
   },
   {
     "word": "week",
-    "translation": "неделя"
+    "translation": "тиждень"
   },
   {
     "word": "welcome",
-    "translation": "приветствовать"
+    "translation": "вітати"
   },
   {
     "word": "well",
-    "translation": "хорошо"
+    "translation": "добре"
   },
   {
     "word": "white",
-    "translation": "белый"
+    "translation": "білий"
   },
   {
     "word": "wide",
@@ -2537,23 +2541,23 @@
   },
   {
     "word": "win",
-    "translation": "побеждать"
+    "translation": "перемагати"
   },
   {
     "word": "wish",
-    "translation": "желать"
+    "translation": "бажати"
   },
   {
     "word": "within",
-    "translation": "внутри"
+    "translation": "всередині"
   },
   {
     "word": "woman",
-    "translation": "женщина"
+    "translation": "жінка"
   },
   {
     "word": "wonder",
-    "translation": "удивляться"
+    "translation": "дивуватися"
   },
   {
     "word": "word",
@@ -2561,47 +2565,47 @@
   },
   {
     "word": "work",
-    "translation": "работать"
+    "translation": "працювати"
   },
   {
     "word": "world",
-    "translation": "мир"
+    "translation": "світ"
   },
   {
     "word": "worry",
-    "translation": "беспокоиться"
+    "translation": "турбуватися"
   },
   {
     "word": "worth",
-    "translation": "стоить"
+    "translation": "коштувати"
   },
   {
     "word": "write",
-    "translation": "писать"
+    "translation": "писати"
   },
   {
     "word": "wrong",
-    "translation": "неправильный"
+    "translation": "неправильний"
   },
   {
     "word": "young",
-    "translation": "молодой"
+    "translation": "молодий"
   },
   {
     "word": "abolish",
-    "translation": "отменять"
+    "translation": "скасовувати"
   },
   {
     "word": "absorb",
-    "translation": "поглощать"
+    "translation": "поглинати"
   },
   {
     "word": "abstract",
-    "translation": "абстрактный"
+    "translation": "абстрактний"
   },
   {
     "word": "abuse",
-    "translation": "злоупотреблять"
+    "translation": "зловживати"
   },
   {
     "word": "access",
@@ -2609,127 +2613,127 @@
   },
   {
     "word": "adapt",
-    "translation": "адаптироваться"
+    "translation": "адаптуватися"
   },
   {
     "word": "adjust",
-    "translation": "настраивать"
+    "translation": "налаштовувати"
   },
   {
     "word": "admire",
-    "translation": "восхищаться"
+    "translation": "захоплюватися"
   },
   {
     "word": "admit",
-    "translation": "признавать"
+    "translation": "визнавати"
   },
   {
     "word": "adopt",
-    "translation": "принимать"
+    "translation": "приймати"
   },
   {
     "word": "advertise",
-    "translation": "рекламировать"
+    "translation": "рекламувати"
   },
   {
     "word": "aggressive",
-    "translation": "агрессивный"
+    "translation": "агресивний"
   },
   {
     "word": "aid",
-    "translation": "помощь"
+    "translation": "допомога"
   },
   {
     "word": "allocate",
-    "translation": "распределять"
+    "translation": "розподіляти"
   },
   {
     "word": "analyze",
-    "translation": "анализировать"
+    "translation": "аналізувати"
   },
   {
     "word": "announce",
-    "translation": "объявлять"
+    "translation": "оголошувати"
   },
   {
     "word": "anxiety",
-    "translation": "тревога"
+    "translation": "тривога"
   },
   {
     "word": "appreciate",
-    "translation": "ценить"
+    "translation": "цінувати"
   },
   {
     "word": "approach",
-    "translation": "подход"
+    "translation": "підхід"
   },
   {
     "word": "approve",
-    "translation": "одобрять"
+    "translation": "схвалювати"
   },
   {
     "word": "arrange",
-    "translation": "организовывать"
+    "translation": "організовувати"
   },
   {
     "word": "arrest",
-    "translation": "арест"
+    "translation": "арешт"
   },
   {
     "word": "assign",
-    "translation": "назначать"
+    "translation": "призначати"
   },
   {
     "word": "assist",
-    "translation": "помогать"
+    "translation": "допомагати"
   },
   {
     "word": "assume",
-    "translation": "предполагать"
+    "translation": "припускати"
   },
   {
     "word": "attempt",
-    "translation": "попытка"
+    "translation": "спроба"
   },
   {
     "word": "attend",
-    "translation": "посещать"
+    "translation": "відвідувати"
   },
   {
     "word": "attitude",
-    "translation": "отношение"
+    "translation": "ставлення"
   },
   {
     "word": "auction",
-    "translation": "аукцион"
+    "translation": "аукціон"
   },
   {
     "word": "audience",
-    "translation": "аудитория"
+    "translation": "аудиторія"
   },
   {
     "word": "available",
-    "translation": "доступный"
+    "translation": "доступний"
   },
   {
     "word": "average",
-    "translation": "среднее"
+    "translation": "середнє"
   },
   {
     "word": "barrier",
-    "translation": "барьер"
+    "translation": "бар'єр"
   },
   {
     "word": "behaviour",
-    "translation": "поведение"
+    "translation": "поведінка"
   },
   {
     "word": "believe",
-    "translation": "верить"
+    "translation": "вірити"
   },
   {
     "word": "bond",
-    "translation": "связь"
+    "translation": "зв'язок"
   },
   {
     "word": "bonus",
@@ -2737,7 +2741,7 @@
   },
   {
     "word": "boost",
-    "translation": "повышать"
+    "translation": "підвищувати"
   },
   {
     "word": "budget",
@@ -2745,75 +2749,75 @@
   },
   {
     "word": "burden",
-    "translation": "бремя"
+    "translation": "тягар"
   },
   {
     "word": "calculate",
-    "translation": "вычислять"
+    "translation": "обчислювати"
   },
   {
     "word": "capacity",
-    "translation": "вместимость"
+    "translation": "місткість"
   },
   {
     "word": "career",
-    "translation": "карьера"
+    "translation": "кар'єра"
   },
   {
     "word": "challenge",
-    "translation": "вызов"
+    "translation": "виклик"
   },
   {
     "word": "charity",
-    "translation": "благотворительность"
+    "translation": "благодійність"
   },
   {
     "word": "choice",
-    "translation": "выбор"
+    "translation": "вибір"
   },
   {
     "word": "citizen",
-    "translation": "гражданин"
+    "translation": "громадянин"
   },
   {
     "word": "collapse",
-    "translation": "рушиться"
+    "translation": "руйнуватися"
   },
   {
     "word": "colleague",
-    "translation": "коллега"
+    "translation": "колега"
   },
   {
     "word": "combine",
-    "translation": "комбинировать"
+    "translation": "комбінувати"
   },
   {
     "word": "commit",
-    "translation": "совершать"
+    "translation": "вчиняти"
   },
   {
     "word": "compete",
-    "translation": "конкурировать"
+    "translation": "конкурувати"
   },
   {
     "word": "complain",
-    "translation": "жаловаться"
+    "translation": "скаржитися"
   },
   {
     "word": "compose",
-    "translation": "составлять"
+    "translation": "складати"
   },
   {
     "word": "concept",
-    "translation": "концепция"
+    "translation": "концепція"
   },
   {
     "word": "conflict",
-    "translation": "конфликт"
+    "translation": "конфлікт"
   },
   {
     "word": "consume",
-    "translation": "потреблять"
+    "translation": "споживати"
   },
   {
     "word": "contract",
@@ -2821,31 +2825,31 @@
   },
   {
     "word": "contribute",
-    "translation": "вносить вклад"
+    "translation": "вносити внесок"
   },
   {
     "word": "convince",
-    "translation": "убеждать"
+    "translation": "переконувати"
   },
   {
     "word": "cooperate",
-    "translation": "сотрудничать"
+    "translation": "співпрацювати"
   },
   {
     "word": "courage",
-    "translation": "смелость"
+    "translation": "сміливість"
   },
   {
     "word": "creative",
-    "translation": "творческий"
+    "translation": "творчий"
   },
   {
     "word": "critical",
-    "translation": "критический"
+    "translation": "критичний"
   },
   {
     "word": "curiosity",
-    "translation": "любопытство"
+    "translation": "цікавість"
   },
   {
     "word": "deadline",
@@ -2853,27 +2857,27 @@
   },
   {
     "word": "debate",
-    "translation": "дебаты"
+    "translation": "дебати"
   },
   {
     "word": "decrease",
-    "translation": "уменьшать"
+    "translation": "зменшувати"
   },
   {
     "word": "define",
-    "translation": "определять"
+    "translation": "визначати"
   },
   {
     "word": "demonstrate",
-    "translation": "демонстрировать"
+    "translation": "демонструвати"
   },
   {
     "word": "depend",
-    "translation": "зависеть"
+    "translation": "залежати"
   },
   {
     "word": "describe",
-    "translation": "описывать"
+    "translation": "описувати"
   },
   {
     "word": "detail",
@@ -2881,123 +2885,123 @@
   },
   {
     "word": "determine",
-    "translation": "определять"
+    "translation": "визначати"
   },
   {
     "word": "digital",
-    "translation": "цифровой"
+    "translation": "цифровий"
   },
   {
     "word": "disability",
-    "translation": "инвалидность"
+    "translation": "інвалідність"
   },
   {
     "word": "disappear",
-    "translation": "исчезать"
+    "translation": "зникати"
   },
   {
     "word": "discipline",
-    "translation": "дисциплина"
+    "translation": "дисципліна"
   },
   {
     "word": "discrimination",
-    "translation": "дискриминация"
+    "translation": "дискримінація"
   },
   {
     "word": "diversity",
-    "translation": "разнообразие"
+    "translation": "різноманіття"
   },
   {
     "word": "domestic",
-    "translation": "домашний"
+    "translation": "домашній"
   },
   {
     "word": "download",
-    "translation": "скачивать"
+    "translation": "завантажувати"
   },
   {
     "word": "dynamic",
-    "translation": "динамичный"
+    "translation": "динамічний"
   },
   {
     "word": "economy",
-    "translation": "экономика"
+    "translation": "економіка"
   },
   {
     "word": "education",
-    "translation": "образование"
+    "translation": "освіта"
   },
   {
     "word": "effective",
-    "translation": "эффективный"
+    "translation": "ефективний"
   },
   {
     "word": "efficient",
-    "translation": "эффективный"
+    "translation": "результативний"
   },
   {
     "word": "eliminate",
-    "translation": "устранять"
+    "translation": "усувати"
   },
   {
     "word": "emotion",
-    "translation": "эмоция"
+    "translation": "емоція"
   },
   {
     "word": "emphasize",
-    "translation": "подчёркивать"
+    "translation": "підкреслювати"
   },
   {
     "word": "encourage",
-    "translation": "поощрять"
+    "translation": "заохочувати"
   },
   {
     "word": "environment",
-    "translation": "окружающая среда"
+    "translation": "довкілля"
   },
   {
     "word": "equality",
-    "translation": "равенство"
+    "translation": "рівність"
   },
   {
     "word": "evaluate",
-    "translation": "оценивать"
+    "translation": "оцінювати"
   },
   {
     "word": "evidence",
-    "translation": "доказательство"
+    "translation": "доказ"
   },
   {
     "word": "evolve",
-    "translation": "эволюционировать"
+    "translation": "еволюціонувати"
   },
   {
     "word": "exception",
-    "translation": "исключение"
+    "translation": "виняток"
   },
   {
     "word": "exchange",
-    "translation": "обмен"
+    "translation": "обмін"
   },
   {
     "word": "execute",
-    "translation": "выполнять"
+    "translation": "виконувати"
   },
   {
     "word": "expand",
-    "translation": "расширять"
+    "translation": "розширювати"
   },
   {
     "word": "experience",
-    "translation": "опыт"
+    "translation": "досвід"
   },
   {
     "word": "experiment",
-    "translation": "эксперимент"
+    "translation": "експеримент"
   },
   {
     "word": "extreme",
-    "translation": "крайний"
+    "translation": "крайній"
   },
   {
     "word": "factor",
@@ -3005,15 +3009,15 @@
   },
   {
     "word": "feature",
-    "translation": "особенность"
+    "translation": "особливість"
   },
   {
     "word": "feedback",
-    "translation": "обратная связь"
+    "translation": "зворотній зв'язок"
   },
   {
     "word": "flexible",
-    "translation": "гибкий"
+    "translation": "гнучкий"
   },
   {
     "word": "foundation",
@@ -3029,23 +3033,23 @@
   },
   {
     "word": "frustration",
-    "translation": "разочарование"
+    "translation": "розчарування"
   },
   {
     "word": "function",
-    "translation": "функция"
+    "translation": "функція"
   },
   {
     "word": "fundamental",
-    "translation": "фундаментальный"
+    "translation": "фундаментальний"
   },
   {
     "word": "generate",
-    "translation": "генерировать"
+    "translation": "генерувати"
   },
   {
     "word": "genuine",
-    "translation": "подлинный"
+    "translation": "справжній"
   },
   {
     "word": "gesture",
@@ -3053,135 +3057,135 @@
   },
   {
     "word": "grateful",
-    "translation": "благодарный"
+    "translation": "вдячний"
   },
   {
     "word": "guarantee",
-    "translation": "гарантировать"
+    "translation": "гарантувати"
   },
   {
     "word": "habit",
-    "translation": "привычка"
+    "translation": "звичка"
   },
   {
     "word": "highlight",
-    "translation": "выделять"
+    "translation": "виділяти"
   },
   {
     "word": "honest",
-    "translation": "честный"
+    "translation": "чесний"
   },
   {
     "word": "identity",
-    "translation": "идентичность"
+    "translation": "ідентичність"
   },
   {
     "word": "immediate",
-    "translation": "немедленный"
+    "translation": "негайний"
   },
   {
     "word": "implement",
-    "translation": "внедрять"
+    "translation": "впроваджувати"
   },
   {
     "word": "independent",
-    "translation": "независимый"
+    "translation": "незалежний"
   },
   {
     "word": "individual",
-    "translation": "индивидуальный"
+    "translation": "індивідуальний"
   },
   {
     "word": "influence",
-    "translation": "влиять"
+    "translation": "впливати"
   },
   {
     "word": "initiative",
-    "translation": "инициатива"
+    "translation": "ініціатива"
   },
   {
     "word": "innovation",
-    "translation": "инновация"
+    "translation": "інновація"
   },
   {
     "word": "insight",
-    "translation": "понимание"
+    "translation": "розуміння"
   },
   {
     "word": "inspire",
-    "translation": "вдохновлять"
+    "translation": "надихати"
   },
   {
     "word": "interact",
-    "translation": "взаимодействовать"
+    "translation": "взаємодіяти"
   },
   {
     "word": "interpret",
-    "translation": "интерпретировать"
+    "translation": "інтерпретувати"
   },
   {
     "word": "investigate",
-    "translation": "расследовать"
+    "translation": "розслідувати"
   },
   {
     "word": "justify",
-    "translation": "оправдывать"
+    "translation": "виправдовувати"
   },
   {
     "word": "launch",
-    "translation": "запускать"
+    "translation": "запускати"
   },
   {
     "word": "leadership",
-    "translation": "лидерство"
+    "translation": "лідерство"
   },
   {
     "word": "logical",
-    "translation": "логичный"
+    "translation": "логічний"
   },
   {
     "word": "maintain",
-    "translation": "поддерживать"
+    "translation": "підтримувати"
   },
   {
     "word": "maximize",
-    "translation": "максимизировать"
+    "translation": "максимізувати"
   },
   {
     "word": "measure",
-    "translation": "измерять"
+    "translation": "вимірювати"
   },
   {
     "word": "minimize",
-    "translation": "минимизировать"
+    "translation": "мінімізувати"
   },
   {
     "word": "mission",
-    "translation": "миссия"
+    "translation": "місія"
   },
   {
     "word": "monitor",
-    "translation": "мониторить"
+    "translation": "моніторити"
   },
   {
     "word": "motivate",
-    "translation": "мотивировать"
+    "translation": "мотивувати"
   },
   {
     "word": "negotiate",
-    "translation": "переговоры"
+    "translation": "вести переговори"
   },
   {
     "word": "objective",
-    "translation": "цель"
+    "translation": "ціль"
   },
   {
     "word": "obstacle",
-    "translation": "препятствие"
+    "translation": "перешкода"
   },
   {
     "word": "obtain",
-    "translation": "получать"
+    "translation": "отримувати"
   },
   {
     "word": "outcome",
@@ -3189,19 +3193,19 @@
   },
   {
     "word": "overcome",
-    "translation": "преодолевать"
+    "translation": "долати"
   },
   {
     "word": "participate",
-    "translation": "участвовать"
+    "translation": "брати участь"
   },
   {
     "word": "passion",
-    "translation": "страсть"
+    "translation": "пристрасть"
   },
   {
     "word": "perceive",
-    "translation": "воспринимать"
+    "translation": "сприймати"
   },
   {
     "word": "perspective",
@@ -3209,27 +3213,27 @@
   },
   {
     "word": "positive",
-    "translation": "позитивный"
+    "translation": "позитивний"
   },
   {
     "word": "potential",
-    "translation": "потенциал"
+    "translation": "потенціал"
   },
   {
     "word": "practical",
-    "translation": "практичный"
+    "translation": "практичний"
   },
   {
     "word": "precise",
-    "translation": "точный"
+    "translation": "точний"
   },
   {
     "word": "predict",
-    "translation": "предсказывать"
+    "translation": "передбачати"
   },
   {
     "word": "priority",
-    "translation": "приоритет"
+    "translation": "пріоритет"
   },
   {
     "word": "problem",
@@ -3237,31 +3241,31 @@
   },
   {
     "word": "promote",
-    "translation": "продвигать"
+    "translation": "просувати"
   },
   {
     "word": "propose",
-    "translation": "предлагать"
+    "translation": "пропонувати"
   },
   {
     "word": "purpose",
-    "translation": "цель"
+    "translation": "мета"
   },
   {
     "word": "quality",
-    "translation": "качество"
+    "translation": "якість"
   },
   {
     "word": "recognize",
-    "translation": "признавать"
+    "translation": "визнавати"
   },
   {
     "word": "recommend",
-    "translation": "рекомендовать"
+    "translation": "рекомендувати"
   },
   {
     "word": "reflect",
-    "translation": "отражать"
+    "translation": "відображати"
   },
   {
     "word": "reform",
@@ -3269,19 +3273,19 @@
   },
   {
     "word": "reinforce",
-    "translation": "подкреплять"
+    "translation": "підкріплювати"
   },
   {
     "word": "relevant",
-    "translation": "актуальный"
+    "translation": "актуальний"
   },
   {
     "word": "reliable",
-    "translation": "надёжный"
+    "translation": "надійний"
   },
   {
     "word": "represent",
-    "translation": "представлять"
+    "translation": "представляти"
   },
   {
     "word": "resource",
@@ -3289,43 +3293,43 @@
   },
   {
     "word": "respond",
-    "translation": "отвечать"
+    "translation": "відповідати"
   },
   {
     "word": "responsible",
-    "translation": "ответственный"
+    "translation": "відповідальний"
   },
   {
     "word": "review",
-    "translation": "пересматривать"
+    "translation": "переглядати"
   },
   {
     "word": "revolution",
-    "translation": "революция"
+    "translation": "революція"
   },
   {
     "word": "reward",
-    "translation": "награда"
+    "translation": "нагорода"
   },
   {
     "word": "significant",
-    "translation": "значительный"
+    "translation": "значний"
   },
   {
     "word": "solution",
-    "translation": "решение"
+    "translation": "рішення"
   },
   {
     "word": "specific",
-    "translation": "конкретный"
+    "translation": "конкретний"
   },
   {
     "word": "strategy",
-    "translation": "стратегия"
+    "translation": "стратегія"
   },
   {
     "word": "strengthen",
-    "translation": "укреплять"
+    "translation": "зміцнювати"
   },
   {
     "word": "structure",
@@ -3333,7 +3337,7 @@
   },
   {
     "word": "sustainable",
-    "translation": "устойчивый"
+    "translation": "сталий"
   },
   {
     "word": "talent",
@@ -3341,11 +3345,11 @@
   },
   {
     "word": "technology",
-    "translation": "технология"
+    "translation": "технологія"
   },
   {
     "word": "transparent",
-    "translation": "прозрачный"
+    "translation": "прозорий"
   },
   {
     "word": "trend",
@@ -3353,67 +3357,67 @@
   },
   {
     "word": "unique",
-    "translation": "уникальный"
+    "translation": "унікальний"
   },
   {
     "word": "upload",
-    "translation": "загружать"
+    "translation": "завантажувати"
   },
   {
     "word": "version",
-    "translation": "версия"
+    "translation": "версія"
   },
   {
     "word": "vision",
-    "translation": "видение"
+    "translation": "бачення"
   },
   {
     "word": "volunteer",
-    "translation": "волонтёр"
+    "translation": "волонтер"
   },
   {
     "word": "vulnerable",
-    "translation": "уязвимый"
+    "translation": "вразливий"
   },
   {
     "word": "welfare",
-    "translation": "благосостояние"
+    "translation": "добробут"
   },
   {
     "word": "willing",
-    "translation": "готовый"
+    "translation": "готовий"
   },
   {
     "word": "wisdom",
-    "translation": "мудрость"
+    "translation": "мудрість"
   },
   {
     "word": "accomplish",
-    "translation": "выполнять"
+    "translation": "виконувати"
   },
   {
     "word": "acknowledge",
-    "translation": "признавать"
+    "translation": "визнавати"
   },
   {
     "word": "acquisition",
-    "translation": "приобретение"
+    "translation": "придбання"
   },
   {
     "word": "adequate",
-    "translation": "достаточный"
+    "translation": "достатній"
   },
   {
     "word": "advocate",
-    "translation": "защищать"
+    "translation": "захищати"
   },
   {
     "word": "ambiguous",
-    "translation": "двусмысленный"
+    "translation": "двозначний"
   },
   {
     "word": "ambitious",
-    "translation": "амбициозный"
+    "translation": "амбітний"
   },
   {
     "word": "atmosphere",
@@ -3421,35 +3425,35 @@
   },
   {
     "word": "authentic",
-    "translation": "подлинный"
+    "translation": "автентичний"
   },
   {
     "word": "automate",
-    "translation": "автоматизировать"
+    "translation": "автоматизувати"
   },
   {
     "word": "benchmark",
-    "translation": "эталон"
+    "translation": "еталон"
   },
   {
     "word": "collaborate",
-    "translation": "сотрудничать"
+    "translation": "співпрацювати"
   },
   {
     "word": "compassion",
-    "translation": "сострадание"
+    "translation": "співчуття"
   },
   {
     "word": "comprehensive",
-    "translation": "всесторонний"
+    "translation": "всебічний"
   },
   {
     "word": "consistent",
-    "translation": "последовательный"
+    "translation": "послідовний"
   },
   {
     "word": "construct",
-    "translation": "строить"
+    "translation": "будувати"
   },
   {
     "word": "context",
@@ -3457,59 +3461,59 @@
   },
   {
     "word": "continuous",
-    "translation": "непрерывный"
+    "translation": "безперервний"
   },
   {
     "word": "crucial",
-    "translation": "важный"
+    "translation": "важливий"
   },
   {
     "word": "customize",
-    "translation": "настраивать"
+    "translation": "налаштовувати"
   },
   {
     "word": "dedicate",
-    "translation": "посвящать"
+    "translation": "присвячувати"
   },
   {
     "word": "delegate",
-    "translation": "делегировать"
+    "translation": "делегувати"
   },
   {
     "word": "deliberate",
-    "translation": "преднамеренный"
+    "translation": "навмисний"
   },
   {
     "word": "diagnose",
-    "translation": "диагностировать"
+    "translation": "діагностувати"
   },
   {
     "word": "distinguish",
-    "translation": "различать"
+    "translation": "розрізняти"
   },
   {
     "word": "elaborate",
-    "translation": "разрабатывать"
+    "translation": "розробляти"
   },
   {
     "word": "enhance",
-    "translation": "улучшать"
+    "translation": "покращувати"
   },
   {
     "word": "enormous",
-    "translation": "огромный"
+    "translation": "величезний"
   },
   {
     "word": "establish",
-    "translation": "устанавливать"
+    "translation": "встановлювати"
   },
   {
     "word": "estimate",
-    "translation": "оценивать"
+    "translation": "оцінювати"
   },
   {
     "word": "facilitate",
-    "translation": "облегчать"
+    "translation": "полегшувати"
   },
   {
     "word": "framework",
@@ -3517,91 +3521,91 @@
   },
   {
     "word": "gratitude",
-    "translation": "благодарность"
+    "translation": "вдячність"
   },
   {
     "word": "hypothesis",
-    "translation": "гипотеза"
+    "translation": "гіпотеза"
   },
   {
     "word": "illustrate",
-    "translation": "иллюстрировать"
+    "translation": "ілюструвати"
   },
   {
     "word": "immense",
-    "translation": "огромный"
+    "translation": "безмежний"
   },
   {
     "word": "inevitable",
-    "translation": "неизбежный"
+    "translation": "неминучий"
   },
   {
     "word": "infrastructure",
-    "translation": "инфраструктура"
+    "translation": "інфраструктура"
   },
   {
     "word": "integrate",
-    "translation": "интегрировать"
+    "translation": "інтегрувати"
   },
   {
     "word": "intellectual",
-    "translation": "интеллектуальный"
+    "translation": "інтелектуальний"
   },
   {
     "word": "international",
-    "translation": "международный"
+    "translation": "міжнародний"
   },
   {
     "word": "interrupt",
-    "translation": "прерывать"
+    "translation": "переривати"
   },
   {
     "word": "limitation",
-    "translation": "ограничение"
+    "translation": "обмеження"
   },
   {
     "word": "mechanism",
-    "translation": "механизм"
+    "translation": "механізм"
   },
   {
     "word": "methodology",
-    "translation": "методология"
+    "translation": "методологія"
   },
   {
     "word": "milestone",
-    "translation": "веха"
+    "translation": "віха"
   },
   {
     "word": "narrative",
-    "translation": "нарратив"
+    "translation": "наратив"
   },
   {
     "word": "opportunity",
-    "translation": "возможность"
+    "translation": "можливість"
   },
   {
     "word": "optimize",
-    "translation": "оптимизировать"
+    "translation": "оптимізувати"
   },
   {
     "word": "organization",
-    "translation": "организация"
+    "translation": "організація"
   },
   {
     "word": "outstanding",
-    "translation": "выдающийся"
+    "translation": "видатний"
   },
   {
     "word": "phenomenon",
-    "translation": "явление"
+    "translation": "явище"
   },
   {
     "word": "philosophy",
-    "translation": "философия"
+    "translation": "філософія"
   },
   {
     "word": "preference",
-    "translation": "предпочтение"
+    "translation": "перевага"
   },
   {
     "word": "principle",
@@ -3609,39 +3613,39 @@
   },
   {
     "word": "productivity",
-    "translation": "производительность"
+    "translation": "продуктивність"
   },
   {
     "word": "profound",
-    "translation": "глубокий"
+    "translation": "глибокий"
   },
   {
     "word": "proportion",
-    "translation": "пропорция"
+    "translation": "пропорція"
   },
   {
     "word": "psychology",
-    "translation": "психология"
+    "translation": "психологія"
   },
   {
     "word": "recognition",
-    "translation": "признание"
+    "translation": "визнання"
   },
   {
     "word": "requirement",
-    "translation": "требование"
+    "translation": "вимога"
   },
   {
     "word": "resilience",
-    "translation": "устойчивость"
+    "translation": "стійкість"
   },
   {
     "word": "responsibility",
-    "translation": "ответственность"
+    "translation": "відповідальність"
   },
   {
     "word": "sophisticated",
-    "translation": "сложный"
+    "translation": "складний"
   },
   {
     "word": "stereotype",
@@ -3649,75 +3653,75 @@
   },
   {
     "word": "stimulate",
-    "translation": "стимулировать"
+    "translation": "стимулювати"
   },
   {
     "word": "subsequent",
-    "translation": "последующий"
+    "translation": "наступний"
   },
   {
     "word": "substantial",
-    "translation": "существенный"
+    "translation": "суттєвий"
   },
   {
     "word": "transformation",
-    "translation": "трансформация"
+    "translation": "трансформація"
   },
   {
     "word": "undermine",
-    "translation": "подрывать"
+    "translation": "підривати"
   },
   {
     "word": "universal",
-    "translation": "универсальный"
+    "translation": "універсальний"
   },
   {
     "word": "utilize",
-    "translation": "использовать"
+    "translation": "використовувати"
   },
   {
     "word": "variable",
-    "translation": "переменная"
+    "translation": "змінна"
   },
   {
     "word": "verification",
-    "translation": "проверка"
+    "translation": "перевірка"
   },
   {
     "word": "virtually",
-    "translation": "практически"
+    "translation": "практично"
   },
   {
     "word": "widespread",
-    "translation": "широко распространённый"
+    "translation": "поширений"
   },
   {
     "word": "abandon",
-    "translation": "бросать"
+    "translation": "кидати"
   },
   {
     "word": "accelerate",
-    "translation": "ускорять"
+    "translation": "прискорювати"
   },
   {
     "word": "accommodate",
-    "translation": "размещать"
+    "translation": "розміщувати"
   },
   {
     "word": "accumulate",
-    "translation": "накапливать"
+    "translation": "накопичувати"
   },
   {
     "word": "aftermath",
-    "translation": "последствия"
+    "translation": "наслідки"
   },
   {
     "word": "alienate",
-    "translation": "отчуждать"
+    "translation": "відчужувати"
   },
   {
     "word": "allegation",
-    "translation": "обвинение"
+    "translation": "звинувачення"
   },
   {
     "word": "alliance",
@@ -3729,39 +3733,39 @@
   },
   {
     "word": "ambition",
-    "translation": "амбиция"
+    "translation": "амбіція"
   },
   {
     "word": "anticipate",
-    "translation": "предвидеть"
+    "translation": "передбачати"
   },
   {
     "word": "appetite",
-    "translation": "аппетит"
+    "translation": "апетит"
   },
   {
     "word": "architect",
-    "translation": "архитектор"
+    "translation": "архітектор"
   },
   {
     "word": "assembly",
-    "translation": "собрание"
+    "translation": "збори"
   },
   {
     "word": "assertion",
-    "translation": "утверждение"
+    "translation": "твердження"
   },
   {
     "word": "assessment",
-    "translation": "оценка"
+    "translation": "оцінювання"
   },
   {
     "word": "association",
-    "translation": "ассоциация"
+    "translation": "асоціація"
   },
   {
     "word": "assumption",
-    "translation": "предположение"
+    "translation": "припущення"
   },
   {
     "word": "astronaut",
@@ -3769,27 +3773,27 @@
   },
   {
     "word": "attachment",
-    "translation": "привязанность"
+    "translation": "прив'язаність"
   },
   {
     "word": "authority",
-    "translation": "авторитет"
+    "translation": "влада"
   },
   {
     "word": "automation",
-    "translation": "автоматизация"
+    "translation": "автоматизація"
   },
   {
     "word": "awareness",
-    "translation": "осознанность"
+    "translation": "обізнаність"
   },
   {
     "word": "bargain",
-    "translation": "сделка"
+    "translation": "угода"
   },
   {
     "word": "biochemistry",
-    "translation": "биохимия"
+    "translation": "біохімія"
   },
   {
     "word": "blockchain",
@@ -3797,15 +3801,15 @@
   },
   {
     "word": "blueprint",
-    "translation": "чертёж"
+    "translation": "креслення"
   },
   {
     "word": "breakthrough",
-    "translation": "прорыв"
+    "translation": "прорив"
   },
   {
     "word": "bureaucracy",
-    "translation": "бюрократия"
+    "translation": "бюрократія"
   },
   {
     "word": "catastrophe",
@@ -3813,79 +3817,79 @@
   },
   {
     "word": "circumstance",
-    "translation": "обстоятельство"
+    "translation": "обставина"
   },
   {
     "word": "civilization",
-    "translation": "цивилизация"
+    "translation": "цивілізація"
   },
   {
     "word": "classification",
-    "translation": "классификация"
+    "translation": "класифікація"
   },
   {
     "word": "coincidence",
-    "translation": "совпадение"
+    "translation": "збіг"
   },
   {
     "word": "communication",
-    "translation": "общение"
+    "translation": "спілкування"
   },
   {
     "word": "community",
-    "translation": "сообщество"
+    "translation": "спільнота"
   },
   {
     "word": "competition",
-    "translation": "соревнование"
+    "translation": "змагання"
   },
   {
     "word": "complication",
-    "translation": "осложнение"
+    "translation": "ускладнення"
   },
   {
     "word": "concentration",
-    "translation": "концентрация"
+    "translation": "концентрація"
   },
   {
     "word": "consequence",
-    "translation": "последствие"
+    "translation": "наслідок"
   },
   {
     "word": "conservation",
-    "translation": "сохранение"
+    "translation": "збереження"
   },
   {
     "word": "considerable",
-    "translation": "значительный"
+    "translation": "значний"
   },
   {
     "word": "conspiracy",
-    "translation": "заговор"
+    "translation": "змова"
   },
   {
     "word": "constitution",
-    "translation": "конституция"
+    "translation": "конституція"
   },
   {
     "word": "contradiction",
-    "translation": "противоречие"
+    "translation": "суперечність"
   },
   {
     "word": "controversy",
-    "translation": "споры"
+    "translation": "суперечки"
   },
   {
     "word": "conversation",
-    "translation": "разговор"
+    "translation": "розмова"
   },
   {
     "word": "corporation",
-    "translation": "корпорация"
+    "translation": "корпорація"
   },
   {
     "word": "correlation",
-    "translation": "корреляция"
+    "translation": "кореляція"
   },
   {
     "word": "counterpart",
@@ -3893,118 +3897,190 @@
   },
   {
     "word": "creativity",
-    "translation": "творчество"
+    "translation": "творчість"
   },
   {
     "word": "cultivation",
-    "translation": "культивирование"
+    "translation": "культивування"
   },
   {
     "word": "declaration",
-    "translation": "декларация"
+    "translation": "декларація"
   },
   {
     "word": "democracy",
-    "translation": "демократия"
+    "translation": "демократія"
   },
   {
     "word": "demonstration",
-    "translation": "демонстрация"
+    "translation": "демонстрація"
   },
   {
     "word": "determination",
-    "translation": "решимость"
+    "translation": "рішучість"
   },
   {
     "word": "development",
-    "translation": "развитие"
+    "translation": "розвиток"
   },
   {
     "word": "disadvantage",
-    "translation": "недостаток"
+    "translation": "недолік"
   },
   {
     "word": "disappointment",
-    "translation": "разочарование"
+    "translation": "розчарування"
   },
   {
     "word": "distribution",
-    "translation": "распределение"
+    "translation": "розподіл"
   },
   {
     "word": "documentation",
-    "translation": "документация"
+    "translation": "документація"
   },
   {
     "word": "domination",
-    "translation": "доминирование"
+    "translation": "домінування"
   },
   {
     "word": "efficiency",
-    "translation": "эффективность"
+    "translation": "ефективність"
   },
   {
     "word": "elaboration",
-    "translation": "разработка"
+    "translation": "розробка"
   },
   {
     "word": "emergency",
-    "translation": "чрезвычайная ситуация"
+    "translation": "надзвичайна ситуація"
   },
   {
     "word": "empowerment",
-    "translation": "расширение прав"
+    "translation": "розширення прав"
   },
   {
     "word": "encouragement",
-    "translation": "поощрение"
+    "translation": "заохочення"
   },
   {
     "word": "entertainment",
-    "translation": "развлечение"
+    "translation": "розваги"
   },
   {
     "word": "enthusiasm",
-    "translation": "энтузиазм"
+    "translation": "ентузіазм"
   },
   {
     "word": "entrepreneurship",
-    "translation": "предпринимательство"
+    "translation": "підприємництво"
   },
   {
     "word": "environmental",
-    "translation": "экологический"
+    "translation": "екологічний"
   },
   {
     "word": "establishment",
-    "translation": "учреждение"
+    "translation": "установа"
   },
   {
     "word": "examination",
-    "translation": "обследование"
+    "translation": "обстеження"
   },
   {
     "word": "expectation",
-    "translation": "ожидание"
+    "translation": "очікування"
   },
   {
     "word": "exploitation",
-    "translation": "эксплуатация"
+    "translation": "експлуатація"
   },
   {
     "word": "exploration",
-    "translation": "исследование"
+    "translation": "дослідження"
   },
   {
     "word": "extraordinary",
-    "translation": "экстраординарный"
+    "translation": "надзвичайний"
   },
   {
     "word": "facilitation",
-    "translation": "фасилитация"
+    "translation": "фасилітація"
   },
   {
     "word": "fascination",
-    "translation": "восхищение"
+    "translation": "захоплення"
+  },
+  {
+    "word": "globalization",
+    "translation": "глобалізація"
+  },
+  {
+    "word": "implementation",
+    "translation": "реалізація"
+  },
+  {
+    "word": "independence",
+    "translation": "незалежність"
+  },
+  {
+    "word": "industrialization",
+    "translation": "індустріалізація"
+  },
+  {
+    "word": "interpretation",
+    "translation": "інтерпретація"
+  },
+  {
+    "word": "investigation",
+    "translation": "розслідування"
+  },
+  {
+    "word": "marginalization",
+    "translation": "маргіналізація"
+  },
+  {
+    "word": "modernization",
+    "translation": "модернізація"
+  },
+  {
+    "word": "participation",
+    "translation": "участь"
+  },
+  {
+    "word": "polarization",
+    "translation": "поляризація"
+  },
+  {
+    "word": "privatization",
+    "translation": "приватизація"
+  },
+  {
+    "word": "professionalism",
+    "translation": "професіоналізм"
+  },
+  {
+    "word": "reconstruction",
+    "translation": "реконструкція"
+  },
+  {
+    "word": "representation",
+    "translation": "представництво"
+  },
+  {
+    "word": "specialization",
+    "translation": "спеціалізація"
+  },
+  {
+    "word": "standardization",
+    "translation": "стандартизація"
+  },
+  {
+    "word": "urbanization",
+    "translation": "урбанізація"
+  },
+  {
+    "word": "vulnerability",
+    "translation": "вразливість"
   }
 ]
