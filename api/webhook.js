@@ -34,7 +34,10 @@ const MAIN_KEYBOARD = {
       { text: '🎯 Квіз' }
     ],
     [
-      { text: '📊 Статистика' },
+      { text: '📅 Слово дня' },
+      { text: '📊 Статистика' }
+    ],
+    [
       { text: 'ℹ️ Допомога' }
     ]
   ],
@@ -87,6 +90,14 @@ function getBot() {
 // Быстрая функция для случайного элемента
 function getRandomItem(arr) {
   return arr[Math.floor(Math.random() * arr.length)];
+}
+
+// Функция для получения слова дня (детерминированная на основе даты)
+function getWordOfTheDay() {
+  const today = new Date();
+  const dayOfYear = Math.floor((today - new Date(today.getFullYear(), 0, 0)) / 86400000);
+  const index = dayOfYear % vocabulary.length;
+  return vocabulary[index];
 }
 
 // Быстрая функция для перемешивания массива (Fisher-Yates)
@@ -218,6 +229,25 @@ function setupHandlers(bot) {
     });
   });
 
+  bot.command('wordofday', (ctx) => {
+    const userId = ctx.from.id;
+    const word = getWordOfTheDay();
+
+    // Обновляем статистику
+    const stats = getUserStats(userId);
+    stats.wordsLearned.add(word.word);
+    updateStreak(userId);
+
+    const today = new Date().toLocaleDateString('uk-UA', { day: 'numeric', month: 'long', year: 'numeric' });
+    const progress = `📚 Вивчено: ${stats.wordsLearned.size}/1021`;
+    const exampleText = word.example ? `\n\n💬 Приклад:\n${word.example}` : '';
+
+    return ctx.reply(
+      `📅 Слово дня (${today}):\n\n🇬🇧 *${word.word}*\n🇺🇦 ${word.translation}${exampleText}\n\n${progress}`,
+      { parse_mode: 'Markdown', reply_markup: MAIN_KEYBOARD }
+    );
+  });
+
   bot.command('quiz', (ctx) => {
     return ctx.reply(
       '🎯 Оберіть напрямок квізу:',
@@ -260,6 +290,25 @@ function setupHandlers(bot) {
         parse_mode: 'Markdown',
         reply_markup: WORD_KEYBOARD
       });
+    }
+
+    if (text === '📅 Слово дня') {
+      const userId = ctx.from.id;
+      const word = getWordOfTheDay();
+
+      // Обновляем статистику
+      const stats = getUserStats(userId);
+      stats.wordsLearned.add(word.word);
+      updateStreak(userId);
+
+      const today = new Date().toLocaleDateString('uk-UA', { day: 'numeric', month: 'long', year: 'numeric' });
+      const progress = `📚 Вивчено: ${stats.wordsLearned.size}/1021`;
+      const exampleText = word.example ? `\n\n💬 Приклад:\n${word.example}` : '';
+
+      return ctx.reply(
+        `📅 Слово дня (${today}):\n\n🇬🇧 *${word.word}*\n🇺🇦 ${word.translation}${exampleText}\n\n${progress}`,
+        { parse_mode: 'Markdown', reply_markup: MAIN_KEYBOARD }
+      );
     }
 
     if (text === '🎯 Квіз') {
