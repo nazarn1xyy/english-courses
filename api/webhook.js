@@ -81,9 +81,10 @@ const MAIN_KEYBOARD = {
     ],
     [
       { text: '⭐ Обране' },
-      { text: '📊 Статистика' }
+      { text: '🔄 Повторити помилки' }
     ],
     [
+      { text: '📊 Статистика' },
       { text: 'ℹ️ Допомога' }
     ]
   ],
@@ -274,7 +275,8 @@ function getUserStats(userId) {
         quizScores: [],
         lastActiveDate: null,
         streak: 0,
-        favoriteWords: new Set()
+        favoriteWords: new Set(),
+        mistakeWords: new Set()
       }
     };
     userSessions.set(userId, session);
@@ -287,13 +289,19 @@ function getUserStats(userId) {
       quizScores: [],
       lastActiveDate: null,
       streak: 0,
-      favoriteWords: new Set()
+      favoriteWords: new Set(),
+      mistakeWords: new Set()
     };
   }
 
   // Добавляем favoriteWords если его нет (для существующих пользователей)
   if (!session.stats.favoriteWords) {
     session.stats.favoriteWords = new Set();
+  }
+
+  // Добавляем mistakeWords если его нет (для существующих пользователей)
+  if (!session.stats.mistakeWords) {
+    session.stats.mistakeWords = new Set();
   }
 
   return session.stats;
@@ -440,6 +448,47 @@ function setupHandlers(bot) {
     );
   });
 
+  bot.command('mistakes', (ctx) => {
+    const userId = ctx.from.id;
+    const stats = getUserStats(userId);
+
+    if (stats.mistakeWords.size === 0) {
+      return ctx.reply(
+        '🔄 У вас поки немає помилок у квізах.\n\nПройдіть квіз, щоб побачити слова, в яких ви помилилися!',
+        { reply_markup: MAIN_KEYBOARD }
+      );
+    }
+
+    // Получаем случайное слово из ошибок
+    const mistakeWordsArray = Array.from(stats.mistakeWords);
+    const randomWord = mistakeWordsArray[Math.floor(Math.random() * mistakeWordsArray.length)];
+    const word = vocabulary.find(w => w.word === randomWord);
+
+    if (!word) {
+      return ctx.reply('Помилка: слово не знайдено', { reply_markup: MAIN_KEYBOARD });
+    }
+
+    const progress = `🔄 Помилок: ${stats.mistakeWords.size} слів`;
+    const exampleText = word.example ? `\n\n💬 Приклад:\n${word.example}` : '';
+
+    return ctx.reply(
+      `🔄 Слово з помилками:\n\n🇬🇧 *${word.word}*\n🇺🇦 ${word.translation}${exampleText}\n\n${progress}`,
+      {
+        parse_mode: 'Markdown',
+        reply_markup: {
+          inline_keyboard: [
+            [
+              { text: 'Ще слово з помилок 🔄', callback_data: 'next_mistake' }
+            ],
+            [
+              { text: '✅ Вивчив це слово', callback_data: `clear_mistake_${word.word}` }
+            ]
+          ]
+        }
+      }
+    );
+  });
+
   bot.command('quiz', (ctx) => {
     return ctx.reply(
       '🎯 Оберіть напрямок квізу:',
@@ -459,6 +508,7 @@ function setupHandlers(bot) {
       `📊 Твоя статистика:\n\n` +
       `📚 Вивчено слів: ${stats.wordsLearned.size}/1021\n` +
       `⭐ Обране: ${stats.favoriteWords.size} слів\n` +
+      `🔄 Помилок: ${stats.mistakeWords.size} слів\n` +
       `🎯 Пройдено квізів: ${stats.quizzesTaken}\n` +
       `⭐ Середній результат: ${avgScore}/5\n` +
       `🔥 Серія днів: ${stats.streak}`,
@@ -554,6 +604,47 @@ function setupHandlers(bot) {
       );
     }
 
+    if (text === '🔄 Повторити помилки') {
+      const userId = ctx.from.id;
+      const stats = getUserStats(userId);
+
+      if (stats.mistakeWords.size === 0) {
+        return ctx.reply(
+          '🔄 У вас поки немає помилок у квізах.\n\nПройдіть квіз, щоб побачити слова, в яких ви помилилися!',
+          { reply_markup: MAIN_KEYBOARD }
+        );
+      }
+
+      // Получаем случайное слово из ошибок
+      const mistakeWordsArray = Array.from(stats.mistakeWords);
+      const randomWord = mistakeWordsArray[Math.floor(Math.random() * mistakeWordsArray.length)];
+      const word = vocabulary.find(w => w.word === randomWord);
+
+      if (!word) {
+        return ctx.reply('Помилка: слово не знайдено', { reply_markup: MAIN_KEYBOARD });
+      }
+
+      const progress = `🔄 Помилок: ${stats.mistakeWords.size} слів`;
+      const exampleText = word.example ? `\n\n💬 Приклад:\n${word.example}` : '';
+
+      return ctx.reply(
+        `🔄 Слово з помилками:\n\n🇬🇧 *${word.word}*\n🇺🇦 ${word.translation}${exampleText}\n\n${progress}`,
+        {
+          parse_mode: 'Markdown',
+          reply_markup: {
+            inline_keyboard: [
+              [
+                { text: 'Ще слово з помилок 🔄', callback_data: 'next_mistake' }
+              ],
+              [
+                { text: '✅ Вивчив це слово', callback_data: `clear_mistake_${word.word}` }
+              ]
+            ]
+          }
+        }
+      );
+    }
+
     if (text === '🎯 Квіз') {
       return ctx.reply(
         '🎯 Оберіть напрямок квізу:',
@@ -573,6 +664,7 @@ function setupHandlers(bot) {
         `📊 Твоя статистика:\n\n` +
         `📚 Вивчено слів: ${stats.wordsLearned.size}/1021\n` +
         `⭐ Обране: ${stats.favoriteWords.size} слів\n` +
+        `🔄 Помилок: ${stats.mistakeWords.size} слів\n` +
         `🎯 Пройдено квізів: ${stats.quizzesTaken}\n` +
         `⭐ Середній результат: ${avgScore}/5\n` +
         `🔥 Серія днів: ${stats.streak}`,
@@ -808,6 +900,96 @@ function setupHandlers(bot) {
       );
     }
 
+    // Обработка кнопки "Ще слово з помилок"
+    if (data === 'next_mistake') {
+      const userId = ctx.from.id;
+      const stats = getUserStats(userId);
+
+      if (stats.mistakeWords.size === 0) {
+        await ctx.answerCbQuery('У вас немає помилок');
+        return;
+      }
+
+      // Получаем случайное слово из ошибок
+      const mistakeWordsArray = Array.from(stats.mistakeWords);
+      const randomWord = mistakeWordsArray[Math.floor(Math.random() * mistakeWordsArray.length)];
+      const word = vocabulary.find(w => w.word === randomWord);
+
+      if (!word) {
+        await ctx.answerCbQuery('Помилка: слово не знайдено');
+        return;
+      }
+
+      const progress = `🔄 Помилок: ${stats.mistakeWords.size} слів`;
+      const exampleText = word.example ? `\n\n💬 Приклад:\n${word.example}` : '';
+
+      await ctx.answerCbQuery();
+      return ctx.editMessageText(
+        `🔄 Слово з помилками:\n\n🇬🇧 *${word.word}*\n🇺🇦 ${word.translation}${exampleText}\n\n${progress}`,
+        {
+          parse_mode: 'Markdown',
+          reply_markup: {
+            inline_keyboard: [
+              [
+                { text: 'Ще слово з помилок 🔄', callback_data: 'next_mistake' }
+              ],
+              [
+                { text: '✅ Вивчив це слово', callback_data: `clear_mistake_${word.word}` }
+              ]
+            ]
+          }
+        }
+      );
+    }
+
+    // Обработка кнопки "Вивчив це слово"
+    if (data.startsWith('clear_mistake_')) {
+      const wordText = data.replace('clear_mistake_', '');
+      const userId = ctx.from.id;
+      const stats = getUserStats(userId);
+
+      stats.mistakeWords.delete(wordText);
+
+      await ctx.answerCbQuery('✅ Видалено зі списку помилок!');
+
+      // Если больше нет ошибок, показываем сообщение
+      if (stats.mistakeWords.size === 0) {
+        return ctx.editMessageText(
+          '🎉 Вітаю! Ви повторили всі слова з помилками!\n\nПройдіть новий квіз, щоб продовжити навчання.',
+          { reply_markup: { inline_keyboard: [] } }
+        );
+      }
+
+      // Показываем следующее слово
+      const mistakeWordsArray = Array.from(stats.mistakeWords);
+      const randomWord = mistakeWordsArray[Math.floor(Math.random() * mistakeWordsArray.length)];
+      const word = vocabulary.find(w => w.word === randomWord);
+
+      if (!word) {
+        return ctx.editMessageText('Помилка: слово не знайдено');
+      }
+
+      const progress = `🔄 Помилок: ${stats.mistakeWords.size} слів`;
+      const exampleText = word.example ? `\n\n💬 Приклад:\n${word.example}` : '';
+
+      return ctx.editMessageText(
+        `🔄 Слово з помилками:\n\n🇬🇧 *${word.word}*\n🇺🇦 ${word.translation}${exampleText}\n\n${progress}`,
+        {
+          parse_mode: 'Markdown',
+          reply_markup: {
+            inline_keyboard: [
+              [
+                { text: 'Ще слово з помилок 🔄', callback_data: 'next_mistake' }
+              ],
+              [
+                { text: '✅ Вивчив це слово', callback_data: `clear_mistake_${word.word}` }
+              ]
+            ]
+          }
+        }
+      );
+    }
+
     // Обработка ответов в квизе
     if (data.startsWith('quiz_')) {
       const [, userId, result] = data.split('_');
@@ -818,11 +1000,19 @@ function setupHandlers(bot) {
       }
 
       const currentQuestion = session.questions[session.currentQuestion];
+      const stats = getUserStats(parseInt(userId));
 
       if (result === 'correct') {
         session.score++;
         await ctx.answerCbQuery('✅ Правильно!');
       } else {
+        // Добавляем слово в список ошибок
+        const wordObj = vocabulary.find(w =>
+          w.word === currentQuestion.word || w.translation === currentQuestion.word
+        );
+        if (wordObj) {
+          stats.mistakeWords.add(wordObj.word);
+        }
         await ctx.answerCbQuery(`❌ Неправильно! Правильна відповідь: ${currentQuestion.correctAnswer}`);
       }
 
