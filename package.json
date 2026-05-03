@@ -1,0 +1,19 @@
+{
+  "name": "english-learning-bot",
+  "version": "1.0.0",
+  "description": "Telegram bot for learning English with daily words and quizzes",
+  "main": "api/webhook.js",
+  "scripts": {
+    "dev": "vercel dev",
+    "deploy": "vercel --prod"
+  },
+  "keywords": ["telegram", "bot", "english", "learning", "vercel"],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "telegraf": "^4.16.3"
+  },
+  "engines": {
+    "node": ">=18.x"
+  }
+}
