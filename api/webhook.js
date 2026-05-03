@@ -26,17 +26,19 @@ const MESSAGES = {
   help: '📚 Как пользоваться ботом:\n\n📖 Случайное слово - Узнай новое английское слово с переводом\n🎯 Квиз - Проверь свои знания в коротком квизе (5 вопросов)\n\nУчи английский каждый день! 🚀'
 };
 
-// Инлайн клавиатура с командами
+// Постоянная клавиатура (reply keyboard)
 const MAIN_KEYBOARD = {
-  inline_keyboard: [
+  keyboard: [
     [
-      { text: '📖 Случайное слово', callback_data: 'cmd_word' },
-      { text: '🎯 Квиз', callback_data: 'cmd_quiz' }
+      { text: '📖 Случайное слово' },
+      { text: '🎯 Квиз' }
     ],
     [
-      { text: 'ℹ️ Помощь', callback_data: 'cmd_help' }
+      { text: 'ℹ️ Помощь' }
     ]
-  ]
+  ],
+  resize_keyboard: true,
+  persistent: true
 };
 
 // Инициализация бота один раз (переиспользуется между вызовами)
@@ -91,41 +93,38 @@ function setupHandlers(bot) {
     return sendQuizQuestion(ctx, userId);
   });
 
+  // Обработка текстовых сообщений с кнопок клавиатуры
+  bot.on('text', (ctx) => {
+    const text = ctx.message.text;
+
+    if (text === '📖 Случайное слово') {
+      const word = getRandomItem(vocabulary);
+      return ctx.reply(
+        `📖 Слово:\n\n🇬🇧 *${word.word}*\n🇷🇺 ${word.translation}`,
+        { parse_mode: 'Markdown', reply_markup: MAIN_KEYBOARD }
+      );
+    }
+
+    if (text === '🎯 Квиз') {
+      const userId = ctx.from.id;
+      const quizWords = shuffleArray(vocabulary).slice(0, 5);
+
+      userSessions.set(userId, {
+        words: quizWords,
+        currentQuestion: 0,
+        score: 0
+      });
+
+      return sendQuizQuestion(ctx, userId);
+    }
+
+    if (text === 'ℹ️ Помощь') {
+      return ctx.reply(MESSAGES.help, { reply_markup: MAIN_KEYBOARD });
+    }
+  });
+
   bot.on('callback_query', async (ctx) => {
     const data = ctx.callbackQuery.data;
-
-    // Обработка команд из главного меню
-    if (data.startsWith('cmd_')) {
-      const command = data.replace('cmd_', '');
-
-      if (command === 'word') {
-        const word = getRandomItem(vocabulary);
-        await ctx.answerCbQuery();
-        return ctx.reply(
-          `📖 Слово:\n\n🇬🇧 *${word.word}*\n🇷🇺 ${word.translation}`,
-          { parse_mode: 'Markdown', reply_markup: MAIN_KEYBOARD }
-        );
-      }
-
-      if (command === 'quiz') {
-        const userId = ctx.from.id;
-        const quizWords = shuffleArray(vocabulary).slice(0, 5);
-
-        userSessions.set(userId, {
-          words: quizWords,
-          currentQuestion: 0,
-          score: 0
-        });
-
-        await ctx.answerCbQuery();
-        return sendQuizQuestion(ctx, userId);
-      }
-
-      if (command === 'help') {
-        await ctx.answerCbQuery();
-        return ctx.reply(MESSAGES.help, { reply_markup: MAIN_KEYBOARD });
-      }
-    }
 
     // Обработка ответов в квизе
     if (data.startsWith('quiz_')) {
