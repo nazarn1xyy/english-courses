@@ -115,8 +115,21 @@ function setupHandlers(bot) {
     const userId = ctx.from.id;
     const quizWords = shuffleArray(vocabulary).slice(0, 5);
 
+    // Preload всех вопросов с ответами
+    const questions = quizWords.map(word => {
+      const correctAnswer = word.translation;
+      const wrongAnswers = getWrongAnswers(word.word, 3);
+      const allAnswers = shuffleArray([correctAnswer, ...wrongAnswers]);
+
+      return {
+        word: word.word,
+        correctAnswer: correctAnswer,
+        answers: allAnswers
+      };
+    });
+
     userSessions.set(userId, {
-      words: quizWords,
+      questions: questions,
       currentQuestion: 0,
       score: 0
     });
@@ -140,8 +153,21 @@ function setupHandlers(bot) {
       const userId = ctx.from.id;
       const quizWords = shuffleArray(vocabulary).slice(0, 5);
 
+      // Preload всех вопросов с ответами
+      const questions = quizWords.map(word => {
+        const correctAnswer = word.translation;
+        const wrongAnswers = getWrongAnswers(word.word, 3);
+        const allAnswers = shuffleArray([correctAnswer, ...wrongAnswers]);
+
+        return {
+          word: word.word,
+          correctAnswer: correctAnswer,
+          answers: allAnswers
+        };
+      });
+
       userSessions.set(userId, {
-        words: quizWords,
+        questions: questions,
         currentQuestion: 0,
         score: 0
       });
@@ -195,7 +221,7 @@ function setupHandlers(bot) {
 function sendQuizQuestion(ctx, userId) {
   const session = userSessions.get(userId);
 
-  if (!session || session.currentQuestion >= session.words.length) {
+  if (!session || session.currentQuestion >= session.questions.length) {
     const finalScore = session ? session.score : 0;
     userSessions.delete(userId);
 
@@ -206,22 +232,17 @@ function sendQuizQuestion(ctx, userId) {
     );
   }
 
-  const currentWord = session.words[session.currentQuestion];
-  const correctAnswer = currentWord.translation;
-
-  // Оптимизированная генерация неправильных ответов
-  const wrongAnswers = getWrongAnswers(currentWord.word, 3);
-  const allAnswers = shuffleArray([correctAnswer, ...wrongAnswers]);
+  const question = session.questions[session.currentQuestion];
 
   const keyboard = {
-    inline_keyboard: allAnswers.map((answer, index) => [{
+    inline_keyboard: question.answers.map((answer, index) => [{
       text: answer,
-      callback_data: `quiz_${userId}_${answer === correctAnswer ? 'correct' : 'wrong'}_${index}`
+      callback_data: `quiz_${userId}_${answer === question.correctAnswer ? 'correct' : 'wrong'}_${index}`
     }])
   };
 
   return ctx.reply(
-    `❓ Питання ${session.currentQuestion + 1}/5\n\nЯк перекладається слово:\n*${currentWord.word}*`,
+    `❓ Питання ${session.currentQuestion + 1}/5\n\nЯк перекладається слово:\n*${question.word}*`,
     { parse_mode: 'Markdown', reply_markup: keyboard }
   );
 }
@@ -229,7 +250,7 @@ function sendQuizQuestion(ctx, userId) {
 function editQuizQuestion(ctx, userId) {
   const session = userSessions.get(userId);
 
-  if (!session || session.currentQuestion >= session.words.length) {
+  if (!session || session.currentQuestion >= session.questions.length) {
     const finalScore = session ? session.score : 0;
     userSessions.delete(userId);
 
@@ -240,22 +261,17 @@ function editQuizQuestion(ctx, userId) {
     );
   }
 
-  const currentWord = session.words[session.currentQuestion];
-  const correctAnswer = currentWord.translation;
-
-  // Оптимизированная генерация неправильных ответов
-  const wrongAnswers = getWrongAnswers(currentWord.word, 3);
-  const allAnswers = shuffleArray([correctAnswer, ...wrongAnswers]);
+  const question = session.questions[session.currentQuestion];
 
   const keyboard = {
-    inline_keyboard: allAnswers.map((answer, index) => [{
+    inline_keyboard: question.answers.map((answer, index) => [{
       text: answer,
-      callback_data: `quiz_${userId}_${answer === correctAnswer ? 'correct' : 'wrong'}_${index}`
+      callback_data: `quiz_${userId}_${answer === question.correctAnswer ? 'correct' : 'wrong'}_${index}`
     }])
   };
 
   return ctx.editMessageText(
-    `❓ Питання ${session.currentQuestion + 1}/5\n\nЯк перекладається слово:\n*${currentWord.word}*`,
+    `❓ Питання ${session.currentQuestion + 1}/5\n\nЯк перекладається слово:\n*${question.word}*`,
     { parse_mode: 'Markdown', reply_markup: keyboard }
   );
 }
