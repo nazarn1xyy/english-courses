@@ -22,19 +22,19 @@ const userSessions = new Map();
 
 // Переиспользуемые сообщения
 const MESSAGES = {
-  start: `👋 Привет! Я бот для изучения английского языка.\n\n📚 База: ${vocabulary.length} слов\n\nВыбери действие из меню ниже:`,
-  help: '📚 Как пользоваться ботом:\n\n📖 Случайное слово - Узнай новое английское слово с переводом\n🎯 Квиз - Проверь свои знания в коротком квизе (5 вопросов)\n\nУчи английский каждый день! 🚀'
+  start: `👋 Привіт! Я бот для вивчення англійської мови.\n\n📚 База: ${vocabulary.length} слів\n\nОбери дію з меню нижче:`,
+  help: '📚 Як користуватися ботом:\n\n📖 Випадкове слово - Дізнайся нове англійське слово з перекладом\n🎯 Квіз - Перевір свої знання в короткому квізі (5 питань)\n\nВивчай англійську щодня! 🚀'
 };
 
 // Постоянная клавиатура (reply keyboard)
 const MAIN_KEYBOARD = {
   keyboard: [
     [
-      { text: '📖 Случайное слово' },
-      { text: '🎯 Квиз' }
+      { text: '📖 Випадкове слово' },
+      { text: '🎯 Квіз' }
     ],
     [
-      { text: 'ℹ️ Помощь' }
+      { text: 'ℹ️ Допомога' }
     ]
   ],
   resize_keyboard: true,
@@ -75,7 +75,7 @@ function setupHandlers(bot) {
   bot.command('word', (ctx) => {
     const word = getRandomItem(vocabulary);
     return ctx.reply(
-      `📖 Слово:\n\n🇬🇧 *${word.word}*\n🇷🇺 ${word.translation}`,
+      `📖 Слово:\n\n🇬🇧 *${word.word}*\n🇺🇦 ${word.translation}`,
       { parse_mode: 'Markdown', reply_markup: MAIN_KEYBOARD }
     );
   });
@@ -97,15 +97,15 @@ function setupHandlers(bot) {
   bot.on('text', (ctx) => {
     const text = ctx.message.text;
 
-    if (text === '📖 Случайное слово') {
+    if (text === '📖 Випадкове слово') {
       const word = getRandomItem(vocabulary);
       return ctx.reply(
-        `📖 Слово:\n\n🇬🇧 *${word.word}*\n🇷🇺 ${word.translation}`,
+        `📖 Слово:\n\n🇬🇧 *${word.word}*\n🇺🇦 ${word.translation}`,
         { parse_mode: 'Markdown', reply_markup: MAIN_KEYBOARD }
       );
     }
 
-    if (text === '🎯 Квиз') {
+    if (text === '🎯 Квіз') {
       const userId = ctx.from.id;
       const quizWords = shuffleArray(vocabulary).slice(0, 5);
 
@@ -118,7 +118,7 @@ function setupHandlers(bot) {
       return sendQuizQuestion(ctx, userId);
     }
 
-    if (text === 'ℹ️ Помощь') {
+    if (text === 'ℹ️ Допомога') {
       return ctx.reply(MESSAGES.help, { reply_markup: MAIN_KEYBOARD });
     }
   });
@@ -132,7 +132,7 @@ function setupHandlers(bot) {
       const session = userSessions.get(parseInt(userId));
 
       if (!session) {
-        return ctx.answerCbQuery('Сессия истекла. Начните новый квиз с /quiz');
+        return ctx.answerCbQuery('Сесія закінчилася. Почніть новий квіз');
       }
 
       if (result === 'correct') {
@@ -158,9 +158,9 @@ function sendQuizQuestion(ctx, userId) {
     const finalScore = session ? session.score : 0;
     userSessions.delete(userId);
 
-    const emoji = finalScore === 5 ? '🏆 Отлично!' : finalScore >= 3 ? '👍 Хорошо!' : '💪 Продолжай учиться!';
+    const emoji = finalScore === 5 ? '🏆 Відмінно!' : finalScore >= 3 ? '👍 Добре!' : '💪 Продовжуй вчитися!';
     return ctx.reply(
-      `✅ Квиз завершен!\n\nВаш результат: ${finalScore}/5\n\n${emoji}`,
+      `✅ Квіз завершено!\n\nВаш результат: ${finalScore}/5\n\n${emoji}`,
       { reply_markup: MAIN_KEYBOARD }
     );
   }
@@ -184,7 +184,7 @@ function sendQuizQuestion(ctx, userId) {
   };
 
   return ctx.reply(
-    `❓ Вопрос ${session.currentQuestion + 1}/5\n\nКак переводится слово:\n*${currentWord.word}*`,
+    `❓ Питання ${session.currentQuestion + 1}/5\n\nЯк перекладається слово:\n*${currentWord.word}*`,
     { parse_mode: 'Markdown', reply_markup: keyboard }
   );
 }
