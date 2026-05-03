@@ -80,7 +80,10 @@ const MAIN_KEYBOARD = {
       { text: '📂 Категорії' }
     ],
     [
-      { text: '📊 Статистика' },
+      { text: '⭐ Обране' },
+      { text: '📊 Статистика' }
+    ],
+    [
       { text: 'ℹ️ Допомога' }
     ]
   ],
@@ -119,6 +122,22 @@ const WORD_KEYBOARD = {
     { text: 'Ще слово 🔄', callback_data: 'next_word' }
   ]]
 };
+
+// Функция для создания клавиатуры слова с кнопкой избранного
+function getWordKeyboard(word, userId, isFavorite) {
+  const favoriteButton = isFavorite
+    ? { text: '⭐ Видалити з обраного', callback_data: `unfav_${word}` }
+    : { text: '⭐ В обране', callback_data: `fav_${word}` };
+
+  return {
+    inline_keyboard: [
+      [
+        { text: 'Ще слово 🔄', callback_data: 'next_word' }
+      ],
+      [favoriteButton]
+    ]
+  };
+}
 
 // Инициализация бота один раз (переиспользуется между вызовами)
 let bot;
@@ -254,7 +273,8 @@ function getUserStats(userId) {
         quizzesTaken: 0,
         quizScores: [],
         lastActiveDate: null,
-        streak: 0
+        streak: 0,
+        favoriteWords: new Set()
       }
     };
     userSessions.set(userId, session);
@@ -266,8 +286,14 @@ function getUserStats(userId) {
       quizzesTaken: 0,
       quizScores: [],
       lastActiveDate: null,
-      streak: 0
+      streak: 0,
+      favoriteWords: new Set()
     };
+  }
+
+  // Добавляем favoriteWords если его нет (для существующих пользователей)
+  if (!session.stats.favoriteWords) {
+    session.stats.favoriteWords = new Set();
   }
 
   return session.stats;
@@ -339,9 +365,11 @@ function setupHandlers(bot) {
     stats.wordsLearned.add(word.word);
     updateStreak(userId);
 
+    const isFavorite = stats.favoriteWords.has(word.word);
+
     return ctx.reply(formatWordMessage(word, userId), {
       parse_mode: 'Markdown',
-      reply_markup: WORD_KEYBOARD
+      reply_markup: getWordKeyboard(word.word, userId, isFavorite)
     });
   });
 
@@ -371,6 +399,47 @@ function setupHandlers(bot) {
     );
   });
 
+  bot.command('favorites', (ctx) => {
+    const userId = ctx.from.id;
+    const stats = getUserStats(userId);
+
+    if (stats.favoriteWords.size === 0) {
+      return ctx.reply(
+        '⭐ У вас поки немає обраних слів.\n\nДодавайте слова в обране, натискаючи кнопку "⭐ В обране" під словом!',
+        { reply_markup: MAIN_KEYBOARD }
+      );
+    }
+
+    // Получаем случайное слово из избранного
+    const favoriteWordsArray = Array.from(stats.favoriteWords);
+    const randomWord = favoriteWordsArray[Math.floor(Math.random() * favoriteWordsArray.length)];
+    const word = vocabulary.find(w => w.word === randomWord);
+
+    if (!word) {
+      return ctx.reply('Помилка: слово не знайдено', { reply_markup: MAIN_KEYBOARD });
+    }
+
+    const progress = `⭐ Обране: ${stats.favoriteWords.size} слів`;
+    const exampleText = word.example ? `\n\n💬 Приклад:\n${word.example}` : '';
+
+    return ctx.reply(
+      `⭐ Обране слово:\n\n🇬🇧 *${word.word}*\n🇺🇦 ${word.translation}${exampleText}\n\n${progress}`,
+      {
+        parse_mode: 'Markdown',
+        reply_markup: {
+          inline_keyboard: [
+            [
+              { text: 'Ще обране слово 🔄', callback_data: 'next_favorite' }
+            ],
+            [
+              { text: '⭐ Видалити з обраного', callback_data: `unfav_${word.word}` }
+            ]
+          ]
+        }
+      }
+    );
+  });
+
   bot.command('quiz', (ctx) => {
     return ctx.reply(
       '🎯 Оберіть напрямок квізу:',
@@ -389,6 +458,7 @@ function setupHandlers(bot) {
     return ctx.reply(
       `📊 Твоя статистика:\n\n` +
       `📚 Вивчено слів: ${stats.wordsLearned.size}/1021\n` +
+      `⭐ Обране: ${stats.favoriteWords.size} слів\n` +
       `🎯 Пройдено квізів: ${stats.quizzesTaken}\n` +
       `⭐ Середній результат: ${avgScore}/5\n` +
       `🔥 Серія днів: ${stats.streak}`,
@@ -409,9 +479,11 @@ function setupHandlers(bot) {
       stats.wordsLearned.add(word.word);
       updateStreak(userId);
 
+      const isFavorite = stats.favoriteWords.has(word.word);
+
       return ctx.reply(formatWordMessage(word, userId), {
         parse_mode: 'Markdown',
-        reply_markup: WORD_KEYBOARD
+        reply_markup: getWordKeyboard(word.word, userId, isFavorite)
       });
     }
 
@@ -441,6 +513,47 @@ function setupHandlers(bot) {
       );
     }
 
+    if (text === '⭐ Обране') {
+      const userId = ctx.from.id;
+      const stats = getUserStats(userId);
+
+      if (stats.favoriteWords.size === 0) {
+        return ctx.reply(
+          '⭐ У вас поки немає обраних слів.\n\nДодавайте слова в обране, натискаючи кнопку "⭐ В обране" під словом!',
+          { reply_markup: MAIN_KEYBOARD }
+        );
+      }
+
+      // Получаем случайное слово из избранного
+      const favoriteWordsArray = Array.from(stats.favoriteWords);
+      const randomWord = favoriteWordsArray[Math.floor(Math.random() * favoriteWordsArray.length)];
+      const word = vocabulary.find(w => w.word === randomWord);
+
+      if (!word) {
+        return ctx.reply('Помилка: слово не знайдено', { reply_markup: MAIN_KEYBOARD });
+      }
+
+      const progress = `⭐ Обране: ${stats.favoriteWords.size} слів`;
+      const exampleText = word.example ? `\n\n💬 Приклад:\n${word.example}` : '';
+
+      return ctx.reply(
+        `⭐ Обране слово:\n\n🇬🇧 *${word.word}*\n🇺🇦 ${word.translation}${exampleText}\n\n${progress}`,
+        {
+          parse_mode: 'Markdown',
+          reply_markup: {
+            inline_keyboard: [
+              [
+                { text: 'Ще обране слово 🔄', callback_data: 'next_favorite' }
+              ],
+              [
+                { text: '⭐ Видалити з обраного', callback_data: `unfav_${word.word}` }
+              ]
+            ]
+          }
+        }
+      );
+    }
+
     if (text === '🎯 Квіз') {
       return ctx.reply(
         '🎯 Оберіть напрямок квізу:',
@@ -459,6 +572,7 @@ function setupHandlers(bot) {
       return ctx.reply(
         `📊 Твоя статистика:\n\n` +
         `📚 Вивчено слів: ${stats.wordsLearned.size}/1021\n` +
+        `⭐ Обране: ${stats.favoriteWords.size} слів\n` +
         `🎯 Пройдено квізів: ${stats.quizzesTaken}\n` +
         `⭐ Середній результат: ${avgScore}/5\n` +
         `🔥 Серія днів: ${stats.streak}`,
@@ -607,11 +721,91 @@ function setupHandlers(bot) {
       stats.wordsLearned.add(word.word);
       updateStreak(userId);
 
+      const isFavorite = stats.favoriteWords.has(word.word);
+
       await ctx.answerCbQuery();
       return ctx.editMessageText(formatWordMessage(word, userId), {
         parse_mode: 'Markdown',
-        reply_markup: WORD_KEYBOARD
+        reply_markup: getWordKeyboard(word.word, userId, isFavorite)
       });
+    }
+
+    // Обработка добавления в избранное
+    if (data.startsWith('fav_')) {
+      const wordText = data.replace('fav_', '');
+      const userId = ctx.from.id;
+      const stats = getUserStats(userId);
+
+      stats.favoriteWords.add(wordText);
+
+      await ctx.answerCbQuery('⭐ Додано в обране!');
+
+      // Обновляем клавиатуру
+      const word = vocabulary.find(w => w.word === wordText);
+      if (word) {
+        return ctx.editMessageReplyMarkup(getWordKeyboard(wordText, userId, true));
+      }
+      return;
+    }
+
+    // Обработка удаления из избранного
+    if (data.startsWith('unfav_')) {
+      const wordText = data.replace('unfav_', '');
+      const userId = ctx.from.id;
+      const stats = getUserStats(userId);
+
+      stats.favoriteWords.delete(wordText);
+
+      await ctx.answerCbQuery('Видалено з обраного');
+
+      // Обновляем клавиатуру
+      const word = vocabulary.find(w => w.word === wordText);
+      if (word) {
+        return ctx.editMessageReplyMarkup(getWordKeyboard(wordText, userId, false));
+      }
+      return;
+    }
+
+    // Обработка кнопки "Ще обране слово"
+    if (data === 'next_favorite') {
+      const userId = ctx.from.id;
+      const stats = getUserStats(userId);
+
+      if (stats.favoriteWords.size === 0) {
+        await ctx.answerCbQuery('У вас немає обраних слів');
+        return;
+      }
+
+      // Получаем случайное слово из избранного
+      const favoriteWordsArray = Array.from(stats.favoriteWords);
+      const randomWord = favoriteWordsArray[Math.floor(Math.random() * favoriteWordsArray.length)];
+      const word = vocabulary.find(w => w.word === randomWord);
+
+      if (!word) {
+        await ctx.answerCbQuery('Помилка: слово не знайдено');
+        return;
+      }
+
+      const progress = `⭐ Обране: ${stats.favoriteWords.size} слів`;
+      const exampleText = word.example ? `\n\n💬 Приклад:\n${word.example}` : '';
+
+      await ctx.answerCbQuery();
+      return ctx.editMessageText(
+        `⭐ Обране слово:\n\n🇬🇧 *${word.word}*\n🇺🇦 ${word.translation}${exampleText}\n\n${progress}`,
+        {
+          parse_mode: 'Markdown',
+          reply_markup: {
+            inline_keyboard: [
+              [
+                { text: 'Ще обране слово 🔄', callback_data: 'next_favorite' }
+              ],
+              [
+                { text: '⭐ Видалити з обраного', callback_data: `unfav_${word.word}` }
+              ]
+            ]
+          }
+        }
+      );
     }
 
     // Обработка ответов в квизе
