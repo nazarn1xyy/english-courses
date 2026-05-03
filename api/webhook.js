@@ -42,6 +42,19 @@ const MAIN_KEYBOARD = {
   persistent: true
 };
 
+// Клавиатура выбора количества вопросов в квизе
+const QUIZ_SIZE_KEYBOARD = {
+  inline_keyboard: [
+    [
+      { text: '5 питань', callback_data: 'quiz_size_5' },
+      { text: '10 питань', callback_data: 'quiz_size_10' }
+    ],
+    [
+      { text: '20 питань', callback_data: 'quiz_size_20' }
+    ]
+  ]
+};
+
 // Инлайн клавиатура для слов (переиспользуется)
 const WORD_KEYBOARD = {
   inline_keyboard: [[
@@ -97,7 +110,8 @@ function getWrongAnswers(correctWord, count = 3) {
 function formatWordMessage(word, userId) {
   const stats = getUserStats(userId);
   const progress = `📚 Вивчено: ${stats.wordsLearned.size}/1021`;
-  return `📖 Слово:\n\n🇬🇧 *${word.word}*\n🇺🇦 ${word.translation}\n\n${progress}`;
+  const exampleText = word.example ? `\n\n💬 Приклад:\n${word.example}` : '';
+  return `📖 Слово:\n\n🇬🇧 *${word.word}*\n🇺🇦 ${word.translation}${exampleText}\n\n${progress}`;
 }
 
 // Функция для получения/инициализации статистики пользователя
@@ -174,33 +188,10 @@ function setupHandlers(bot) {
   });
 
   bot.command('quiz', (ctx) => {
-    const userId = ctx.from.id;
-    const quizWords = shuffleArray(vocabulary).slice(0, 5);
-
-    // Preload всех вопросов с ответами
-    const questions = quizWords.map(word => {
-      const correctAnswer = word.translation;
-      const wrongAnswers = getWrongAnswers(word.word, 3);
-      const allAnswers = shuffleArray([correctAnswer, ...wrongAnswers]);
-
-      return {
-        word: word.word,
-        correctAnswer: correctAnswer,
-        answers: allAnswers
-      };
-    });
-
-    // Обновляем streak
-    updateStreak(userId);
-
-    // Сохраняем сессию квиза
-    const session = userSessions.get(userId) || {};
-    session.questions = questions;
-    session.currentQuestion = 0;
-    session.score = 0;
-    userSessions.set(userId, session);
-
-    return sendQuizQuestion(ctx, userId);
+    return ctx.reply(
+      '🎯 Оберіть кількість питань для квізу:',
+      { reply_markup: QUIZ_SIZE_KEYBOARD }
+    );
   });
 
   bot.command('stats', (ctx) => {
@@ -241,33 +232,10 @@ function setupHandlers(bot) {
     }
 
     if (text === '🎯 Квіз') {
-      const userId = ctx.from.id;
-      const quizWords = shuffleArray(vocabulary).slice(0, 5);
-
-      // Preload всех вопросов с ответами
-      const questions = quizWords.map(word => {
-        const correctAnswer = word.translation;
-        const wrongAnswers = getWrongAnswers(word.word, 3);
-        const allAnswers = shuffleArray([correctAnswer, ...wrongAnswers]);
-
-        return {
-          word: word.word,
-          correctAnswer: correctAnswer,
-          answers: allAnswers
-        };
-      });
-
-      // Обновляем streak
-      updateStreak(userId);
-
-      // Сохраняем сессию квиза
-      const session = userSessions.get(userId) || {};
-      session.questions = questions;
-      session.currentQuestion = 0;
-      session.score = 0;
-      userSessions.set(userId, session);
-
-      return sendQuizQuestion(ctx, userId);
+      return ctx.reply(
+        '🎯 Оберіть кількість питань для квізу:',
+        { reply_markup: QUIZ_SIZE_KEYBOARD }
+      );
     }
 
     if (text === '📊 Статистика') {
@@ -295,6 +263,41 @@ function setupHandlers(bot) {
 
   bot.on('callback_query', async (ctx) => {
     const data = ctx.callbackQuery.data;
+
+    // Обработка выбора размера квиза
+    if (data.startsWith('quiz_size_')) {
+      const size = parseInt(data.replace('quiz_size_', ''));
+      const userId = ctx.from.id;
+      const quizWords = shuffleArray(vocabulary).slice(0, size);
+
+      // Preload всех вопросов с ответами
+      const questions = quizWords.map(word => {
+        const correctAnswer = word.translation;
+        const wrongAnswers = getWrongAnswers(word.word, 3);
+        const allAnswers = shuffleArray([correctAnswer, ...wrongAnswers]);
+
+        return {
+          word: word.word,
+          correctAnswer: correctAnswer,
+          answers: allAnswers
+        };
+      });
+
+      // Обновляем streak
+      updateStreak(userId);
+
+      // Сохраняем сессию квиза
+      const session = userSessions.get(userId) || {};
+      session.questions = questions;
+      session.currentQuestion = 0;
+      session.score = 0;
+      session.quizSize = size;
+      userSessions.set(userId, session);
+
+      await ctx.answerCbQuery();
+      await ctx.deleteMessage();
+      return sendQuizQuestion(ctx, userId);
+    }
 
     // Обработка кнопки "Ще слово"
     if (data === 'next_word') {
@@ -345,6 +348,7 @@ function sendQuizQuestion(ctx, userId) {
 
   if (!session || session.currentQuestion >= session.questions.length) {
     const finalScore = session ? session.score : 0;
+    const quizSize = session ? session.quizSize || 5 : 5;
 
     // Обновляем статистику после завершения квиза
     const stats = getUserStats(userId);
@@ -358,10 +362,10 @@ function sendQuizQuestion(ctx, userId) {
 
     userSessions.delete(userId);
 
-    const emoji = finalScore === 5 ? '🏆 Відмінно!' : finalScore >= 3 ? '👍 Добре!' : '💪 Продовжуй вчитися!';
+    const emoji = finalScore === quizSize ? '🏆 Відмінно!' : finalScore >= quizSize * 0.6 ? '👍 Добре!' : '💪 Продовжуй вчитися!';
     return ctx.reply(
       `✅ Квіз завершено!\n\n` +
-      `Ваш результат: ${finalScore}/5\n\n${emoji}\n\n` +
+      `Ваш результат: ${finalScore}/${quizSize}\n\n${emoji}\n\n` +
       `📊 Всього квізів: ${stats.quizzesTaken}\n` +
       `🔥 Серія: ${stats.streak} днів`,
       { reply_markup: MAIN_KEYBOARD }
@@ -369,6 +373,7 @@ function sendQuizQuestion(ctx, userId) {
   }
 
   const question = session.questions[session.currentQuestion];
+  const quizSize = session.quizSize || 5;
 
   const keyboard = {
     inline_keyboard: question.answers.map((answer, index) => [{
@@ -378,7 +383,7 @@ function sendQuizQuestion(ctx, userId) {
   };
 
   return ctx.reply(
-    `❓ Питання ${session.currentQuestion + 1}/5\n\nЯк перекладається слово:\n*${question.word}*`,
+    `❓ Питання ${session.currentQuestion + 1}/${quizSize}\n\nЯк перекладається слово:\n*${question.word}*`,
     { parse_mode: 'Markdown', reply_markup: keyboard }
   );
 }
@@ -388,6 +393,7 @@ function editQuizQuestion(ctx, userId) {
 
   if (!session || session.currentQuestion >= session.questions.length) {
     const finalScore = session ? session.score : 0;
+    const quizSize = session ? session.quizSize || 5 : 5;
 
     // Обновляем статистику после завершения квиза
     const stats = getUserStats(userId);
@@ -401,10 +407,10 @@ function editQuizQuestion(ctx, userId) {
 
     userSessions.delete(userId);
 
-    const emoji = finalScore === 5 ? '🏆 Відмінно!' : finalScore >= 3 ? '👍 Добре!' : '💪 Продовжуй вчитися!';
+    const emoji = finalScore === quizSize ? '🏆 Відмінно!' : finalScore >= quizSize * 0.6 ? '👍 Добре!' : '💪 Продовжуй вчитися!';
     return ctx.editMessageText(
       `✅ Квіз завершено!\n\n` +
-      `Ваш результат: ${finalScore}/5\n\n${emoji}\n\n` +
+      `Ваш результат: ${finalScore}/${quizSize}\n\n${emoji}\n\n` +
       `📊 Всього квізів: ${stats.quizzesTaken}\n` +
       `🔥 Серія: ${stats.streak} днів`,
       { parse_mode: 'Markdown' }
@@ -412,6 +418,7 @@ function editQuizQuestion(ctx, userId) {
   }
 
   const question = session.questions[session.currentQuestion];
+  const quizSize = session.quizSize || 5;
 
   const keyboard = {
     inline_keyboard: question.answers.map((answer, index) => [{
@@ -421,7 +428,7 @@ function editQuizQuestion(ctx, userId) {
   };
 
   return ctx.editMessageText(
-    `❓ Питання ${session.currentQuestion + 1}/5\n\nЯк перекладається слово:\n*${question.word}*`,
+    `❓ Питання ${session.currentQuestion + 1}/${quizSize}\n\nЯк перекладається слово:\n*${question.word}*`,
     { parse_mode: 'Markdown', reply_markup: keyboard }
   );
 }

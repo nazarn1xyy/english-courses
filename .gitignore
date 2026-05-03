@@ -30,3 +30,4 @@ Thumbs.db
 coverage/
 dist/
 build/
+.claude/

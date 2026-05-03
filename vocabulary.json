@@ -1,27 +1,33 @@
 [
   {
     "word": "apple",
-    "translation": "яблуко"
+    "translation": "яблуко",
+    "example": "I eat an apple every day. — Я їм яблуко щодня."
   },
   {
     "word": "book",
-    "translation": "книга"
+    "translation": "книга",
+    "example": "She is reading a book. — Вона читає книгу."
   },
   {
     "word": "car",
-    "translation": "машина"
+    "translation": "машина",
+    "example": "He drives a red car. — Він водить червону машину."
   },
   {
     "word": "dog",
-    "translation": "собака"
+    "translation": "собака",
+    "example": "My dog is very friendly. — Мій собака дуже дружелюбний."
   },
   {
     "word": "eye",
-    "translation": "око"
+    "translation": "око",
+    "example": "She has blue eyes. — У неї блакитні очі."
   },
   {
     "word": "fish",
-    "translation": "риба"
+    "translation": "риба",
+    "example": "We had fish for dinner. — У нас була риба на вечерю."
   },
   {
     "word": "girl",
@@ -29,7 +35,8 @@
   },
   {
     "word": "house",
-    "translation": "будинок"
+    "translation": "будинок",
+    "example": "They live in a big house. — Вони живуть у великому будинку."
   },
   {
     "word": "ice",
@@ -53,7 +60,8 @@
   },
   {
     "word": "night",
-    "translation": "ніч"
+    "translation": "ніч",
+    "example": "Good night! — Надобраніч!"
   },
   {
     "word": "orange",
@@ -89,7 +97,8 @@
   },
   {
     "word": "water",
-    "translation": "вода"
+    "translation": "вода",
+    "example": "Drink more water. — Пий більше води."
   },
   {
     "word": "box",
@@ -97,7 +106,8 @@
   },
   {
     "word": "year",
-    "translation": "рік"
+    "translation": "рік",
+    "example": "Happy New Year! — З Новим роком!"
   },
   {
     "word": "zero",
@@ -117,7 +127,8 @@
   },
   {
     "word": "door",
-    "translation": "двері"
+    "translation": "двері",
+    "example": "Close the door, please. — Закрий двері, будь ласка."
   },
   {
     "word": "earth",
@@ -129,11 +140,13 @@
   },
   {
     "word": "game",
-    "translation": "гра"
+    "translation": "гра",
+    "example": "They are playing a game. — Вони грають у гру."
   },
   {
     "word": "hand",
-    "translation": "рука"
+    "translation": "рука",
+    "example": "Wash your hands. — Мий руки."
   },
   {
     "word": "idea",
@@ -149,7 +162,8 @@
   },
   {
     "word": "life",
-    "translation": "життя"
+    "translation": "життя",
+    "example": "Life is beautiful. — Життя прекрасне."
   },
   {
     "word": "map",
@@ -161,7 +175,8 @@
   },
   {
     "word": "open",
-    "translation": "відкривати"
+    "translation": "відкривати",
+    "example": "Open your eyes. — Відкрий очі."
   },
   {
     "word": "park",
@@ -181,7 +196,8 @@
   },
   {
     "word": "time",
-    "translation": "час"
+    "translation": "час",
+    "example": "What time is it? — Котра година?"
   },
   {
     "word": "use",
@@ -193,7 +209,8 @@
   },
   {
     "word": "walk",
-    "translation": "ходити"
+    "translation": "ходити",
+    "example": "I walk to work. — Я ходжу на роботу пішки."
   },
   {
     "word": "exit",
@@ -213,15 +230,18 @@
   },
   {
     "word": "bed",
-    "translation": "ліжко"
+    "translation": "ліжко",
+    "example": "Go to bed early. — Йди спати рано."
   },
   {
     "word": "city",
-    "translation": "місто"
+    "translation": "місто",
+    "example": "I live in a big city. — Я живу у великому місті."
   },
   {
     "word": "day",
-    "translation": "день"
+    "translation": "день",
+    "example": "Have a nice day! — Гарного дня!"
   },
   {
     "word": "ear",
@@ -257,7 +277,8 @@
   },
   {
     "word": "milk",
-    "translation": "молоко"
+    "translation": "молоко",
+    "example": "Add milk to the coffee. — Додай молоко до кави."
   },
   {
     "word": "nose",
@@ -281,7 +302,8 @@
   },
   {
     "word": "tea",
-    "translation": "чай"
+    "translation": "чай",
+    "example": "Would you like some tea? — Хочеш чаю?"
   },
   {
     "word": "unit",
@@ -321,7 +343,8 @@
   },
   {
     "word": "egg",
-    "translation": "яйце"
+    "translation": "яйце",
+    "example": "Boil an egg. — Звари яйце."
   },
   {
     "word": "fan",
@@ -513,11 +536,13 @@
   },
   {
     "word": "also",
-    "translation": "також"
+    "translation": "також",
+    "example": "I also like it. — Мені це теж подобається."
   },
   {
     "word": "always",
-    "translation": "завжди"
+    "translation": "завжди",
+    "example": "I always help you. — Я завжди тобі допомагаю."
   },
   {
     "word": "among",
@@ -665,7 +690,8 @@
   },
   {
     "word": "black",
-    "translation": "чорний"
+    "translation": "чорний",
+    "example": "He has black hair. — У нього чорне волосся."
   },
   {
     "word": "blame",
@@ -777,7 +803,8 @@
   },
   {
     "word": "call",
-    "translation": "телефонувати"
+    "translation": "телефонувати",
+    "example": "Call me later. — Подзвони мені пізніше."
   },
   {
     "word": "calm",
@@ -893,7 +920,8 @@
   },
   {
     "word": "close",
-    "translation": "закривати"
+    "translation": "закривати",
+    "example": "Close the window. — Закрий вікно."
   },
   {
     "word": "cloud",
@@ -913,11 +941,13 @@
   },
   {
     "word": "color",
-    "translation": "колір"
+    "translation": "колір",
+    "example": "What's your favorite color? — Який твій улюблений колір?"
   },
   {
     "word": "come",
-    "translation": "приходити"
+    "translation": "приходити",
+    "example": "Come here! — Іди сюди!"
   },
   {
     "word": "common",
@@ -993,7 +1023,8 @@
   },
   {
     "word": "country",
-    "translation": "країна"
+    "translation": "країна",
+    "example": "Which country are you from? — З якої ти країни?"
   },
   {
     "word": "cover",
@@ -1141,7 +1172,8 @@
   },
   {
     "word": "early",
-    "translation": "ранній"
+    "translation": "ранній",
+    "example": "Come early. — Приходь рано."
   },
   {
     "word": "earn",
@@ -1149,7 +1181,8 @@
   },
   {
     "word": "easy",
-    "translation": "легкий"
+    "translation": "легкий",
+    "example": "This is easy! — Це легко!"
   },
   {
     "word": "edge",
@@ -1189,7 +1222,8 @@
   },
   {
     "word": "enough",
-    "translation": "достатньо"
+    "translation": "достатньо",
+    "example": "That's enough! — Досить!"
   },
   {
     "word": "enter",
@@ -1257,7 +1291,8 @@
   },
   {
     "word": "false",
-    "translation": "хибний"
+    "translation": "хибний",
+    "example": "That's false. — Це неправда."
   },
   {
     "word": "famous",
@@ -1269,7 +1304,8 @@
   },
   {
     "word": "fast",
-    "translation": "швидкий"
+    "translation": "швидкий",
+    "example": "He runs fast. — Він швидко бігає."
   },
   {
     "word": "favor",
@@ -1281,7 +1317,8 @@
   },
   {
     "word": "feel",
-    "translation": "відчувати"
+    "translation": "відчувати",
+    "example": "I feel great! — Я почуваюся чудово!"
   },
   {
     "word": "fight",
@@ -1297,7 +1334,8 @@
   },
   {
     "word": "find",
-    "translation": "знаходити"
+    "translation": "знаходити",
+    "example": "I can't find my keys. — Я не можу знайти свої ключі."
   },
   {
     "word": "fine",
@@ -1313,7 +1351,8 @@
   },
   {
     "word": "first",
-    "translation": "перший"
+    "translation": "перший",
+    "example": "This is my first time. — Це мій перший раз."
   },
   {
     "word": "fix",
@@ -1365,7 +1404,8 @@
   },
   {
     "word": "friend",
-    "translation": "друг"
+    "translation": "друг",
+    "example": "He is my best friend. — Він мій найкращий друг."
   },
   {
     "word": "front",
@@ -1389,7 +1429,8 @@
   },
   {
     "word": "give",
-    "translation": "давати"
+    "translation": "давати",
+    "example": "Give me your hand. — Дай мені руку."
   },
   {
     "word": "global",
@@ -1401,7 +1442,8 @@
   },
   {
     "word": "good",
-    "translation": "гарний"
+    "translation": "гарний",
+    "example": "That's a good idea! — Це гарна ідея!"
   },
   {
     "word": "government",
@@ -1413,7 +1455,8 @@
   },
   {
     "word": "green",
-    "translation": "зелений"
+    "translation": "зелений",
+    "example": "I like green apples. — Я люблю зелені яблука."
   },
   {
     "word": "group",
@@ -1433,11 +1476,13 @@
   },
   {
     "word": "happy",
-    "translation": "щасливий"
+    "translation": "щасливий",
+    "example": "I'm so happy! — Я такий щасливий!"
   },
   {
     "word": "hard",
-    "translation": "твердий"
+    "translation": "твердий",
+    "example": "This is hard. — Це важко."
   },
   {
     "word": "harm",
@@ -1469,7 +1514,8 @@
   },
   {
     "word": "help",
-    "translation": "допомагати"
+    "translation": "допомагати",
+    "example": "Can you help me? — Ти можеш мені допомогти?"
   },
   {
     "word": "high",
@@ -1485,7 +1531,8 @@
   },
   {
     "word": "home",
-    "translation": "дім"
+    "translation": "дім",
+    "example": "Welcome home! — Ласкаво просимо додому!"
   },
   {
     "word": "hope",
@@ -1493,11 +1540,13 @@
   },
   {
     "word": "hot",
-    "translation": "гарячий"
+    "translation": "гарячий",
+    "example": "The coffee is hot. — Кава гаряча."
   },
   {
     "word": "hour",
-    "translation": "година"
+    "translation": "година",
+    "example": "Wait one hour. — Почекай одну годину."
   },
   {
     "word": "huge",
@@ -1617,7 +1666,8 @@
   },
   {
     "word": "last",
-    "translation": "останній"
+    "translation": "останній",
+    "example": "This is the last chance. — Це останній шанс."
   },
   {
     "word": "later",
@@ -1637,7 +1687,8 @@
   },
   {
     "word": "learn",
-    "translation": "вчитися"
+    "translation": "вчитися",
+    "example": "I want to learn English. — Я хочу вивчити англійську."
   },
   {
     "word": "leave",
@@ -1677,7 +1728,8 @@
   },
   {
     "word": "look",
-    "translation": "дивитися"
+    "translation": "дивитися",
+    "example": "Look at this! — Подивись на це!"
   },
   {
     "word": "lose",
@@ -1685,7 +1737,8 @@
   },
   {
     "word": "love",
-    "translation": "любов"
+    "translation": "любов",
+    "example": "I love you. — Я люблю тебе."
   },
   {
     "word": "lower",
@@ -1757,7 +1810,8 @@
   },
   {
     "word": "minute",
-    "translation": "хвилина"
+    "translation": "хвилина",
+    "example": "Just a minute! — Хвилинку!"
   },
   {
     "word": "miss",
@@ -1769,15 +1823,18 @@
   },
   {
     "word": "money",
-    "translation": "гроші"
+    "translation": "гроші",
+    "example": "Money can't buy happiness. — Гроші не можуть купити щастя."
   },
   {
     "word": "month",
-    "translation": "місяць"
+    "translation": "місяць",
+    "example": "My birthday is next month. — Мій день народження наступного місяця."
   },
   {
     "word": "morning",
-    "translation": "ранок"
+    "translation": "ранок",
+    "example": "Good morning! — Доброго ранку!"
   },
   {
     "word": "most",
@@ -1793,11 +1850,13 @@
   },
   {
     "word": "much",
-    "translation": "багато"
+    "translation": "багато",
+    "example": "How much is it? — Скільки це коштує?"
   },
   {
     "word": "music",
-    "translation": "музика"
+    "translation": "музика",
+    "example": "I love listening to music. — Я люблю слухати музику."
   },
   {
     "word": "natural",
@@ -1805,19 +1864,23 @@
   },
   {
     "word": "need",
-    "translation": "потребувати"
+    "translation": "потребувати",
+    "example": "I need your help. — Мені потрібна твоя допомога."
   },
   {
     "word": "never",
-    "translation": "ніколи"
+    "translation": "ніколи",
+    "example": "Never give up! — Ніколи не здавайся!"
   },
   {
     "word": "new",
-    "translation": "новий"
+    "translation": "новий",
+    "example": "I bought a new phone. — Я купив новий телефон."
   },
   {
     "word": "next",
-    "translation": "наступний"
+    "translation": "наступний",
+    "example": "See you next time! — Побачимось наступного разу!"
   },
   {
     "word": "nice",
@@ -1849,7 +1912,8 @@
   },
   {
     "word": "often",
-    "translation": "часто"
+    "translation": "часто",
+    "example": "I often go there. — Я часто туди ходжу."
   },
   {
     "word": "once",
@@ -1857,7 +1921,8 @@
   },
   {
     "word": "only",
-    "translation": "тільки"
+    "translation": "тільки",
+    "example": "I only have one. — У мене є тільки один."
   },
   {
     "word": "option",
@@ -1869,7 +1934,8 @@
   },
   {
     "word": "other",
-    "translation": "інший"
+    "translation": "інший",
+    "example": "The other day I saw him. — Днями я бачив його."
   },
   {
     "word": "outside",
@@ -1913,7 +1979,8 @@
   },
   {
     "word": "people",
-    "translation": "люди"
+    "translation": "люди",
+    "example": "Many people came to the party. — Багато людей прийшло на вечірку."
   },
   {
     "word": "perfect",
@@ -1933,7 +2000,8 @@
   },
   {
     "word": "place",
-    "translation": "місце"
+    "translation": "місце",
+    "example": "This is a nice place. — Це гарне місце."
   },
   {
     "word": "plan",
@@ -1941,7 +2009,8 @@
   },
   {
     "word": "play",
-    "translation": "грати"
+    "translation": "грати",
+    "example": "Children love to play. — Діти люблять гратися."
   },
   {
     "word": "point",
@@ -2041,7 +2110,8 @@
   },
   {
     "word": "read",
-    "translation": "читати"
+    "translation": "читати",
+    "example": "I read books every day. — Я читаю книги щодня."
   },
   {
     "word": "ready",
@@ -2129,7 +2199,8 @@
   },
   {
     "word": "right",
-    "translation": "правий"
+    "translation": "правий",
+    "example": "You are right. — Ти правий."
   },
   {
     "word": "rise",
@@ -2145,7 +2216,8 @@
   },
   {
     "word": "run",
-    "translation": "бігти"
+    "translation": "бігти",
+    "example": "He runs every morning. — Він бігає щоранку."
   },
   {
     "word": "safe",
@@ -2153,7 +2225,8 @@
   },
   {
     "word": "same",
-    "translation": "однаковий"
+    "translation": "однаковий",
+    "example": "We have the same problem. — У нас та сама проблема."
   },
   {
     "word": "save",
@@ -2161,7 +2234,8 @@
   },
   {
     "word": "say",
-    "translation": "говорити"
+    "translation": "говорити",
+    "example": "What did you say? — Що ти сказав?"
   },
   {
     "word": "scene",
@@ -2169,7 +2243,8 @@
   },
   {
     "word": "school",
-    "translation": "школа"
+    "translation": "школа",
+    "example": "Children go to school. — Діти ходять до школи."
   },
   {
     "word": "search",
@@ -2189,7 +2264,8 @@
   },
   {
     "word": "sell",
-    "translation": "продавати"
+    "translation": "продавати",
+    "example": "They sell fresh vegetables. — Вони продають свіжі овочі."
   },
   {
     "word": "send",
@@ -2241,15 +2317,18 @@
   },
   {
     "word": "sleep",
-    "translation": "спати"
+    "translation": "спати",
+    "example": "I need to sleep. — Мені треба поспати."
   },
   {
     "word": "slow",
-    "translation": "повільний"
+    "translation": "повільний",
+    "example": "Drive slow! — Їдь повільно!"
   },
   {
     "word": "small",
-    "translation": "маленький"
+    "translation": "маленький",
+    "example": "The room is too small. — Кімната занадто маленька."
   },
   {
     "word": "smart",
@@ -2269,7 +2348,8 @@
   },
   {
     "word": "sorry",
-    "translation": "шкодувати"
+    "translation": "шкодувати",
+    "example": "I'm sorry. — Вибач."
   },
   {
     "word": "sound",
@@ -2277,7 +2357,8 @@
   },
   {
     "word": "speak",
-    "translation": "говорити"
+    "translation": "говорити",
+    "example": "Do you speak English? — Ти розмовляєш англійською?"
   },
   {
     "word": "special",
@@ -2293,11 +2374,13 @@
   },
   {
     "word": "stand",
-    "translation": "стояти"
+    "translation": "стояти",
+    "example": "Stand up, please. — Встань, будь ласка."
   },
   {
     "word": "start",
-    "translation": "починати"
+    "translation": "починати",
+    "example": "Let's start! — Давай почнемо!"
   },
   {
     "word": "stay",
@@ -2313,7 +2396,8 @@
   },
   {
     "word": "stop",
-    "translation": "зупиняти"
+    "translation": "зупиняти",
+    "example": "Stop talking! — Припини говорити!"
   },
   {
     "word": "store",
@@ -2333,7 +2417,8 @@
   },
   {
     "word": "study",
-    "translation": "навчатися"
+    "translation": "навчатися",
+    "example": "I study at university. — Я навчаюся в університеті."
   },
   {
     "word": "subject",
@@ -2369,11 +2454,13 @@
   },
   {
     "word": "table",
-    "translation": "стіл"
+    "translation": "стіл",
+    "example": "The book is on the table. — Книга на столі."
   },
   {
     "word": "take",
-    "translation": "брати"
+    "translation": "брати",
+    "example": "Take this book. — Візьми цю книгу."
   },
   {
     "word": "talk",
@@ -2385,7 +2472,8 @@
   },
   {
     "word": "teach",
-    "translation": "навчати"
+    "translation": "навчати",
+    "example": "She teaches math. — Вона викладає математику."
   },
   {
     "word": "team",
@@ -2393,7 +2481,8 @@
   },
   {
     "word": "tell",
-    "translation": "розповідати"
+    "translation": "розповідати",
+    "example": "Tell me the truth. — Скажи мені правду."
   },
   {
     "word": "term",
@@ -2409,7 +2498,8 @@
   },
   {
     "word": "think",
-    "translation": "думати"
+    "translation": "думати",
+    "example": "I think you're right. — Я думаю, ти правий."
   },
   {
     "word": "though",
@@ -2425,7 +2515,8 @@
   },
   {
     "word": "today",
-    "translation": "сьогодні"
+    "translation": "сьогодні",
+    "example": "What are you doing today? — Що ти робиш сьогодні?"
   },
   {
     "word": "together",
@@ -2433,7 +2524,8 @@
   },
   {
     "word": "tomorrow",
-    "translation": "завтра"
+    "translation": "завтра",
+    "example": "See you tomorrow! — Побачимось завтра!"
   },
   {
     "word": "touch",
@@ -2465,7 +2557,8 @@
   },
   {
     "word": "try",
-    "translation": "намагатися"
+    "translation": "намагатися",
+    "example": "Try again! — Спробуй ще раз!"
   },
   {
     "word": "turn",
@@ -2505,11 +2598,13 @@
   },
   {
     "word": "wait",
-    "translation": "чекати"
+    "translation": "чекати",
+    "example": "Wait for me! — Почекай на мене!"
   },
   {
     "word": "want",
-    "translation": "хотіти"
+    "translation": "хотіти",
+    "example": "I want to go home. — Я хочу додому."
   },
   {
     "word": "warm",
@@ -2521,7 +2616,8 @@
   },
   {
     "word": "week",
-    "translation": "тиждень"
+    "translation": "тиждень",
+    "example": "I'll call you next week. — Я подзвоню тобі наступного тижня."
   },
   {
     "word": "welcome",
@@ -2529,11 +2625,13 @@
   },
   {
     "word": "well",
-    "translation": "добре"
+    "translation": "добре",
+    "example": "Well done! — Молодець!"
   },
   {
     "word": "white",
-    "translation": "білий"
+    "translation": "білий",
+    "example": "Snow is white. — Сніг білий."
   },
   {
     "word": "wide",
@@ -2553,7 +2651,8 @@
   },
   {
     "word": "woman",
-    "translation": "жінка"
+    "translation": "жінка",
+    "example": "That woman is a doctor. — Та жінка - лікар."
   },
   {
     "word": "wonder",
@@ -2565,11 +2664,13 @@
   },
   {
     "word": "work",
-    "translation": "працювати"
+    "translation": "працювати",
+    "example": "I work from home. — Я працюю з дому."
   },
   {
     "word": "world",
-    "translation": "світ"
+    "translation": "світ",
+    "example": "Travel around the world. — Подорожуй світом."
   },
   {
     "word": "worry",
@@ -2581,11 +2682,13 @@
   },
   {
     "word": "write",
-    "translation": "писати"
+    "translation": "писати",
+    "example": "Write your name here. — Напиши своє ім'я тут."
   },
   {
     "word": "wrong",
-    "translation": "неправильний"
+    "translation": "неправильний",
+    "example": "That's wrong. — Це неправильно."
   },
   {
     "word": "young",
