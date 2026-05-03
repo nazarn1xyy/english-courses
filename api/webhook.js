@@ -1,8 +1,6 @@
 const { Telegraf } = require('telegraf');
 
-const bot = new Telegraf(process.env.BOT_TOKEN);
-
-// Vocabulary database
+// Vocabulary database - константа вне функции для переиспользования
 const vocabulary = [
   { word: 'serendipity', translation: 'счастливая случайность', example: 'Finding this job was pure serendipity.' },
   { word: 'ephemeral', translation: 'эфемерный, мимолетный', example: 'The beauty of cherry blossoms is ephemeral.' },
@@ -16,78 +14,115 @@ const vocabulary = [
   { word: 'candid', translation: 'откровенный, прямой', example: 'I appreciate your candid feedback.' }
 ];
 
-// User sessions for quiz
+// User sessions - глобальная переменная для сохранения между вызовами
 const userSessions = new Map();
 
-// Commands
-bot.command('start', (ctx) => {
-  ctx.reply(
-    '👋 Привет! Я бот для изучения английского языка.\n\n' +
-    'Доступные команды:\n' +
-    '/word - Получить случайное слово дня\n' +
-    '/quiz - Пройти мини-квиз (5 вопросов)\n' +
-    '/help - Показать помощь'
-  );
-});
+// Переиспользуемые сообщения
+const MESSAGES = {
+  start: '👋 Привет! Я бот для изучения английского языка.\n\nДоступные команды:\n/word - Получить случайное слово дня\n/quiz - Пройти мини-квиз (5 вопросов)\n/help - Показать помощь',
+  help: '📚 Как пользоваться ботом:\n\n/word - Узнай новое английское слово с переводом и примером\n/quiz - Проверь свои знания в коротком квизе\n\nУчи английский каждый день! 🚀'
+};
 
-bot.command('help', (ctx) => {
-  ctx.reply(
-    '📚 Как пользоваться ботом:\n\n' +
-    '/word - Узнай новое английское слово с переводом и примером\n' +
-    '/quiz - Проверь свои знания в коротком квизе\n\n' +
-    'Учи английский каждый день! 🚀'
-  );
-});
+// Инициализация бота один раз (переиспользуется между вызовами)
+let bot;
+function getBot() {
+  if (!bot) {
+    bot = new Telegraf(process.env.BOT_TOKEN);
+    setupHandlers(bot);
+  }
+  return bot;
+}
 
-bot.command('word', (ctx) => {
-  const randomWord = vocabulary[Math.floor(Math.random() * vocabulary.length)];
-  ctx.reply(
-    `📖 Слово дня:\n\n` +
-    `🇬🇧 *${randomWord.word}*\n` +
-    `🇷🇺 ${randomWord.translation}\n\n` +
-    `Пример: _"${randomWord.example}"_`,
-    { parse_mode: 'Markdown' }
-  );
-});
+// Быстрая функция для случайного элемента
+function getRandomItem(arr) {
+  return arr[Math.floor(Math.random() * arr.length)];
+}
 
-bot.command('quiz', (ctx) => {
-  const userId = ctx.from.id;
-  const quizWords = vocabulary.sort(() => 0.5 - Math.random()).slice(0, 5);
+// Быстрая функция для перемешивания массива (Fisher-Yates)
+function shuffleArray(arr) {
+  const result = [...arr];
+  for (let i = result.length - 1; i > 0; i--) {
+    const j = Math.floor(Math.random() * (i + 1));
+    [result[i], result[j]] = [result[j], result[i]];
+  }
+  return result;
+}
 
-  userSessions.set(userId, {
-    words: quizWords,
-    currentQuestion: 0,
-    score: 0
+function setupHandlers(bot) {
+
+  // Commands - используем прямые ответы без лишних конкатенаций
+  bot.command('start', (ctx) => ctx.reply(MESSAGES.start));
+  bot.command('help', (ctx) => ctx.reply(MESSAGES.help));
+
+  bot.command('word', (ctx) => {
+    const word = getRandomItem(vocabulary);
+    return ctx.reply(
+      `📖 Слово дня:\n\n🇬🇧 *${word.word}*\n🇷🇺 ${word.translation}\n\nПример: _"${word.example}"_`,
+      { parse_mode: 'Markdown' }
+    );
   });
 
-  sendQuizQuestion(ctx, userId);
-});
+  bot.command('quiz', (ctx) => {
+    const userId = ctx.from.id;
+    const quizWords = shuffleArray(vocabulary).slice(0, 5);
+
+    userSessions.set(userId, {
+      words: quizWords,
+      currentQuestion: 0,
+      score: 0
+    });
+
+    return sendQuizQuestion(ctx, userId);
+  });
+
+  bot.on('callback_query', async (ctx) => {
+    const data = ctx.callbackQuery.data;
+
+    if (data.startsWith('quiz_')) {
+      const [, userId, result] = data.split('_');
+      const session = userSessions.get(parseInt(userId));
+
+      if (!session) {
+        return ctx.answerCbQuery('Сессия истекла. Начните новый квиз с /quiz');
+      }
+
+      if (result === 'correct') {
+        session.score++;
+        await ctx.answerCbQuery('✅ Правильно!');
+      } else {
+        await ctx.answerCbQuery('❌ Неправильно');
+      }
+
+      session.currentQuestion++;
+      userSessions.set(parseInt(userId), session);
+
+      // Убираем setTimeout - отправляем сразу
+      return sendQuizQuestion(ctx, parseInt(userId));
+    }
+  });
+}
 
 function sendQuizQuestion(ctx, userId) {
   const session = userSessions.get(userId);
 
   if (!session || session.currentQuestion >= session.words.length) {
     const finalScore = session ? session.score : 0;
-    ctx.reply(
-      `✅ Квиз завершен!\n\n` +
-      `Ваш результат: ${finalScore}/5\n\n` +
-      `${finalScore === 5 ? '🏆 Отлично!' : finalScore >= 3 ? '👍 Хорошо!' : '💪 Продолжай учиться!'}`
-    );
     userSessions.delete(userId);
-    return;
+
+    const emoji = finalScore === 5 ? '🏆 Отлично!' : finalScore >= 3 ? '👍 Хорошо!' : '💪 Продолжай учиться!';
+    return ctx.reply(`✅ Квиз завершен!\n\nВаш результат: ${finalScore}/5\n\n${emoji}`);
   }
 
   const currentWord = session.words[session.currentQuestion];
   const correctAnswer = currentWord.translation;
 
-  // Generate wrong answers
+  // Оптимизированная генерация неправильных ответов
   const wrongAnswers = vocabulary
     .filter(w => w.word !== currentWord.word)
-    .sort(() => 0.5 - Math.random())
     .slice(0, 3)
     .map(w => w.translation);
 
-  const allAnswers = [correctAnswer, ...wrongAnswers].sort(() => 0.5 - Math.random());
+  const allAnswers = shuffleArray([correctAnswer, ...wrongAnswers]);
 
   const keyboard = {
     inline_keyboard: allAnswers.map((answer, index) => [{
@@ -96,52 +131,32 @@ function sendQuizQuestion(ctx, userId) {
     }])
   };
 
-  ctx.reply(
-    `❓ Вопрос ${session.currentQuestion + 1}/5\n\n` +
-    `Как переводится слово:\n*${currentWord.word}*`,
+  return ctx.reply(
+    `❓ Вопрос ${session.currentQuestion + 1}/5\n\nКак переводится слово:\n*${currentWord.word}*`,
     { parse_mode: 'Markdown', reply_markup: keyboard }
   );
 }
 
-bot.on('callback_query', (ctx) => {
-  const data = ctx.callbackQuery.data;
-
-  if (data.startsWith('quiz_')) {
-    const [, userId, result] = data.split('_');
-    const session = userSessions.get(parseInt(userId));
-
-    if (!session) {
-      ctx.answerCbQuery('Сессия истекла. Начните новый квиз с /quiz');
-      return;
-    }
-
-    if (result === 'correct') {
-      session.score++;
-      ctx.answerCbQuery('✅ Правильно!');
-    } else {
-      ctx.answerCbQuery('❌ Неправильно');
-    }
-
-    session.currentQuestion++;
-    userSessions.set(parseInt(userId), session);
-
-    setTimeout(() => {
-      sendQuizQuestion(ctx, parseInt(userId));
-    }, 500);
-  }
-});
-
-// Vercel serverless function handler
+// Vercel serverless function handler - оптимизированный
 module.exports = async (req, res) => {
+  // Быстрый ответ для GET запросов
+  if (req.method !== 'POST') {
+    return res.status(200).json({ status: 'ok' });
+  }
+
   try {
-    if (req.method === 'POST') {
-      await bot.handleUpdate(req.body);
-      res.status(200).json({ ok: true });
-    } else {
-      res.status(200).json({ status: 'Bot is running' });
-    }
+    const bot = getBot();
+
+    // Отправляем ответ Telegram сразу, не дожидаясь обработки
+    res.status(200).json({ ok: true });
+
+    // Обрабатываем update асинхронно после ответа
+    await bot.handleUpdate(req.body);
   } catch (error) {
     console.error('Error:', error);
-    res.status(500).json({ error: 'Internal server error' });
+    // Если ответ еще не отправлен
+    if (!res.headersSent) {
+      res.status(200).json({ ok: true });
+    }
   }
 };

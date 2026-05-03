@@ -1,18 +1,10 @@
 {
   "version": 2,
-  "builds": [
-    {
-      "src": "api/webhook.js",
-      "use": "@vercel/node"
+  "functions": {
+    "api/webhook.js": {
+      "maxDuration": 10,
+      "memory": 1024
     }
-  ],
-  "routes": [
-    {
-      "src": "/api/webhook",
-      "dest": "api/webhook.js"
-    }
-  ],
-  "env": {
-    "BOT_TOKEN": "@bot_token"
-  }
+  },
+  "regions": ["iad1"]
 }
