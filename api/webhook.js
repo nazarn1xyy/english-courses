@@ -26,6 +26,31 @@ const MESSAGES = {
   help: '📚 Як користуватися ботом:\n\n📖 Випадкове слово - Дізнайся нове англійське слово з перекладом\n🎯 Квіз - Перевір свої знання в короткому квізі (5 питань)\n\nВивчай англійську щодня! 🚀'
 };
 
+// Категории слов
+const CATEGORIES = {
+  all: { name: 'Всі слова', emoji: '📚' },
+  food: { name: 'Їжа', emoji: '🍎' },
+  family: { name: 'Сім\'я', emoji: '👨‍👩‍👧‍👦' },
+  home: { name: 'Дім', emoji: '🏠' },
+  body: { name: 'Тіло', emoji: '👤' },
+  clothes: { name: 'Одяг', emoji: '👕' },
+  nature: { name: 'Природа', emoji: '🌳' },
+  city: { name: 'Місто', emoji: '🏙️' },
+  transport: { name: 'Транспорт', emoji: '🚗' },
+  work: { name: 'Робота', emoji: '💼' },
+  education: { name: 'Освіта', emoji: '📖' },
+  time: { name: 'Час', emoji: '⏰' },
+  emotions: { name: 'Емоції', emoji: '😊' },
+  health: { name: 'Здоров\'я', emoji: '🏥' },
+  communication: { name: 'Спілкування', emoji: '💬' },
+  actions: { name: 'Дії', emoji: '🏃' },
+  numbers: { name: 'Числа', emoji: '🔢' },
+  colors: { name: 'Кольори', emoji: '🎨' },
+  size: { name: 'Розмір', emoji: '📏' },
+  quality: { name: 'Якість', emoji: '⭐' },
+  other: { name: 'Інше', emoji: '📦' }
+};
+
 // Постоянная клавиатура (reply keyboard)
 const MAIN_KEYBOARD = {
   keyboard: [
@@ -35,9 +60,10 @@ const MAIN_KEYBOARD = {
     ],
     [
       { text: '📅 Слово дня' },
-      { text: '📊 Статистика' }
+      { text: '📂 Категорії' }
     ],
     [
+      { text: '📊 Статистика' },
       { text: 'ℹ️ Допомога' }
     ]
   ],
@@ -98,6 +124,50 @@ function getWordOfTheDay() {
   const dayOfYear = Math.floor((today - new Date(today.getFullYear(), 0, 0)) / 86400000);
   const index = dayOfYear % vocabulary.length;
   return vocabulary[index];
+}
+
+// Функция для получения слов по категории
+function getWordsByCategory(category) {
+  if (category === 'all') {
+    return vocabulary;
+  }
+  return vocabulary.filter(word => word.category === category);
+}
+
+// Функция для создания клавиатуры категорий
+function getCategoriesKeyboard() {
+  const buttons = [];
+  const categoryKeys = Object.keys(CATEGORIES).filter(key => key !== 'all');
+
+  // Группируем по 2 кнопки в ряд
+  for (let i = 0; i < categoryKeys.length; i += 2) {
+    const row = [];
+    const cat1 = categoryKeys[i];
+    const wordsCount1 = getWordsByCategory(cat1).length;
+    row.push({
+      text: `${CATEGORIES[cat1].emoji} ${CATEGORIES[cat1].name} (${wordsCount1})`,
+      callback_data: `cat_${cat1}`
+    });
+
+    if (i + 1 < categoryKeys.length) {
+      const cat2 = categoryKeys[i + 1];
+      const wordsCount2 = getWordsByCategory(cat2).length;
+      row.push({
+        text: `${CATEGORIES[cat2].emoji} ${CATEGORIES[cat2].name} (${wordsCount2})`,
+        callback_data: `cat_${cat2}`
+      });
+    }
+
+    buttons.push(row);
+  }
+
+  // Добавляем кнопку "Всі слова" в конце
+  buttons.push([{
+    text: `${CATEGORIES.all.emoji} ${CATEGORIES.all.name} (${vocabulary.length})`,
+    callback_data: 'cat_all'
+  }]);
+
+  return { inline_keyboard: buttons };
 }
 
 // Быстрая функция для перемешивания массива (Fisher-Yates)
@@ -248,6 +318,13 @@ function setupHandlers(bot) {
     );
   });
 
+  bot.command('category', (ctx) => {
+    return ctx.reply(
+      '📂 Оберіть категорію слів:',
+      { reply_markup: getCategoriesKeyboard() }
+    );
+  });
+
   bot.command('quiz', (ctx) => {
     return ctx.reply(
       '🎯 Оберіть напрямок квізу:',
@@ -311,6 +388,13 @@ function setupHandlers(bot) {
       );
     }
 
+    if (text === '📂 Категорії') {
+      return ctx.reply(
+        '📂 Оберіть категорію слів:',
+        { reply_markup: getCategoriesKeyboard() }
+      );
+    }
+
     if (text === '🎯 Квіз') {
       return ctx.reply(
         '🎯 Оберіть напрямок квізу:',
@@ -343,6 +427,59 @@ function setupHandlers(bot) {
 
   bot.on('callback_query', async (ctx) => {
     const data = ctx.callbackQuery.data;
+
+    // Обработка выбора категории
+    if (data.startsWith('cat_')) {
+      const category = data.replace('cat_', '');
+      const userId = ctx.from.id;
+      const categoryWords = getWordsByCategory(category);
+
+      if (categoryWords.length === 0) {
+        await ctx.answerCbQuery('В цій категорії немає слів');
+        return;
+      }
+
+      // Получаем случайное слово из категории
+      const word = getRandomItem(categoryWords);
+
+      // Обновляем статистику
+      const stats = getUserStats(userId);
+      stats.wordsLearned.add(word.word);
+      updateStreak(userId);
+
+      const categoryInfo = CATEGORIES[category];
+      const progress = `📚 Вивчено: ${stats.wordsLearned.size}/1021`;
+      const exampleText = word.example ? `\n\n💬 Приклад:\n${word.example}` : '';
+
+      await ctx.answerCbQuery();
+      await ctx.editMessageText(
+        `${categoryInfo.emoji} Категорія: ${categoryInfo.name}\n\n🇬🇧 *${word.word}*\n🇺🇦 ${word.translation}${exampleText}\n\n${progress}`,
+        {
+          parse_mode: 'Markdown',
+          reply_markup: {
+            inline_keyboard: [
+              [
+                { text: 'Ще слово з категорії 🔄', callback_data: `cat_${category}` }
+              ],
+              [
+                { text: '📂 Назад до категорій', callback_data: 'back_to_categories' }
+              ]
+            ]
+          }
+        }
+      );
+      return;
+    }
+
+    // Обработка кнопки "Назад до категорій"
+    if (data === 'back_to_categories') {
+      await ctx.answerCbQuery();
+      await ctx.editMessageText(
+        '📂 Оберіть категорію слів:',
+        { reply_markup: getCategoriesKeyboard() }
+      );
+      return;
+    }
 
     // Обработка выбора направления квиза
     if (data.startsWith('quiz_dir_')) {

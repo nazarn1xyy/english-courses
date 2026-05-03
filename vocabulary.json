@@ -2,4188 +2,5209 @@
   {
     "word": "apple",
     "translation": "яблуко",
-    "example": "I eat an apple every day. — Я їм яблуко щодня."
+    "example": "I eat an apple every day. — Я їм яблуко щодня.",
+    "category": "food"
   },
   {
     "word": "book",
     "translation": "книга",
-    "example": "She is reading a book. — Вона читає книгу."
+    "example": "She is reading a book. — Вона читає книгу.",
+    "category": "education"
   },
   {
     "word": "car",
     "translation": "машина",
-    "example": "He drives a red car. — Він водить червону машину."
+    "example": "He drives a red car. — Він водить червону машину.",
+    "category": "transport"
   },
   {
     "word": "dog",
     "translation": "собака",
-    "example": "My dog is very friendly. — Мій собака дуже дружелюбний."
+    "example": "My dog is very friendly. — Мій собака дуже дружелюбний.",
+    "category": "nature"
   },
   {
     "word": "eye",
     "translation": "око",
-    "example": "She has blue eyes. — У неї блакитні очі."
+    "example": "She has blue eyes. — У неї блакитні очі.",
+    "category": "body"
   },
   {
     "word": "fish",
     "translation": "риба",
-    "example": "We had fish for dinner. — У нас була риба на вечерю."
+    "example": "We had fish for dinner. — У нас була риба на вечерю.",
+    "category": "food"
   },
   {
     "word": "girl",
-    "translation": "дівчина"
+    "translation": "дівчина",
+    "category": "family"
   },
   {
     "word": "house",
     "translation": "будинок",
-    "example": "They live in a big house. — Вони живуть у великому будинку."
+    "example": "They live in a big house. — Вони живуть у великому будинку.",
+    "category": "home"
   },
   {
     "word": "ice",
-    "translation": "лід"
+    "translation": "лід",
+    "category": "food"
   },
   {
     "word": "jump",
-    "translation": "стрибати"
+    "translation": "стрибати",
+    "category": "actions"
   },
   {
     "word": "key",
-    "translation": "ключ"
+    "translation": "ключ",
+    "category": "home"
   },
   {
     "word": "lamp",
-    "translation": "лампа"
+    "translation": "лампа",
+    "category": "home"
   },
   {
     "word": "moon",
-    "translation": "місяць"
+    "translation": "місяць",
+    "category": "nature"
   },
   {
     "word": "night",
     "translation": "ніч",
-    "example": "Good night! — Надобраніч!"
+    "example": "Good night! — Надобраніч!",
+    "category": "time"
   },
   {
     "word": "orange",
-    "translation": "апельсин"
+    "translation": "апельсин",
+    "category": "food"
   },
   {
     "word": "pen",
-    "translation": "ручка"
+    "translation": "ручка",
+    "category": "other"
   },
   {
     "word": "queen",
-    "translation": "королева"
+    "translation": "королева",
+    "category": "other"
   },
   {
     "word": "rain",
-    "translation": "дощ"
+    "translation": "дощ",
+    "category": "nature"
   },
   {
     "word": "sun",
-    "translation": "сонце"
+    "translation": "сонце",
+    "category": "nature"
   },
   {
     "word": "tree",
-    "translation": "дерево"
+    "translation": "дерево",
+    "category": "nature"
   },
   {
     "word": "umbrella",
-    "translation": "парасоля"
+    "translation": "парасоля",
+    "category": "other"
   },
   {
     "word": "voice",
-    "translation": "голос"
+    "translation": "голос",
+    "category": "other"
   },
   {
     "word": "water",
     "translation": "вода",
-    "example": "Drink more water. — Пий більше води."
+    "example": "Drink more water. — Пий більше води.",
+    "category": "food"
   },
   {
     "word": "box",
-    "translation": "коробка"
+    "translation": "коробка",
+    "category": "other"
   },
   {
     "word": "year",
     "translation": "рік",
-    "example": "Happy New Year! — З Новим роком!"
+    "example": "Happy New Year! — З Новим роком!",
+    "category": "time"
   },
   {
     "word": "zero",
-    "translation": "нуль"
+    "translation": "нуль",
+    "category": "other"
   },
   {
     "word": "air",
-    "translation": "повітря"
+    "translation": "повітря",
+    "category": "other"
   },
   {
     "word": "baby",
-    "translation": "дитина"
+    "translation": "дитина",
+    "category": "family"
   },
   {
     "word": "cake",
-    "translation": "торт"
+    "translation": "торт",
+    "category": "food"
   },
   {
     "word": "door",
     "translation": "двері",
-    "example": "Close the door, please. — Закрий двері, будь ласка."
+    "example": "Close the door, please. — Закрий двері, будь ласка.",
+    "category": "home"
   },
   {
     "word": "earth",
-    "translation": "земля"
+    "translation": "земля",
+    "category": "other"
   },
   {
     "word": "face",
-    "translation": "обличчя"
+    "translation": "обличчя",
+    "category": "body"
   },
   {
     "word": "game",
     "translation": "гра",
-    "example": "They are playing a game. — Вони грають у гру."
+    "example": "They are playing a game. — Вони грають у гру.",
+    "category": "other"
   },
   {
     "word": "hand",
     "translation": "рука",
-    "example": "Wash your hands. — Мий руки."
+    "example": "Wash your hands. — Мий руки.",
+    "category": "body"
   },
   {
     "word": "idea",
-    "translation": "ідея"
+    "translation": "ідея",
+    "category": "other"
   },
   {
     "word": "job",
-    "translation": "робота"
+    "translation": "робота",
+    "category": "work"
   },
   {
     "word": "king",
-    "translation": "король"
+    "translation": "король",
+    "category": "other"
   },
   {
     "word": "life",
     "translation": "життя",
-    "example": "Life is beautiful. — Життя прекрасне."
+    "example": "Life is beautiful. — Життя прекрасне.",
+    "category": "other"
   },
   {
     "word": "map",
-    "translation": "карта"
+    "translation": "карта",
+    "category": "transport"
   },
   {
     "word": "name",
-    "translation": "ім'я"
+    "translation": "ім'я",
+    "category": "family"
   },
   {
     "word": "open",
     "translation": "відкривати",
-    "example": "Open your eyes. — Відкрий очі."
+    "example": "Open your eyes. — Відкрий очі.",
+    "category": "actions"
   },
   {
     "word": "park",
-    "translation": "парк"
+    "translation": "парк",
+    "category": "city"
   },
   {
     "word": "question",
-    "translation": "питання"
+    "translation": "питання",
+    "category": "education"
   },
   {
     "word": "road",
-    "translation": "дорога"
+    "translation": "дорога",
+    "category": "city"
   },
   {
     "word": "sky",
-    "translation": "небо"
+    "translation": "небо",
+    "category": "nature"
   },
   {
     "word": "time",
     "translation": "час",
-    "example": "What time is it? — Котра година?"
+    "example": "What time is it? — Котра година?",
+    "category": "time"
   },
   {
     "word": "use",
-    "translation": "використовувати"
+    "translation": "використовувати",
+    "category": "other"
   },
   {
     "word": "view",
-    "translation": "вид"
+    "translation": "вид",
+    "category": "other"
   },
   {
     "word": "walk",
     "translation": "ходити",
-    "example": "I walk to work. — Я ходжу на роботу пішки."
+    "example": "I walk to work. — Я ходжу на роботу пішки.",
+    "category": "actions"
   },
   {
     "word": "exit",
-    "translation": "вихід"
+    "translation": "вихід",
+    "category": "actions"
   },
   {
     "word": "yard",
-    "translation": "двір"
+    "translation": "двір",
+    "category": "home"
   },
   {
     "word": "zone",
-    "translation": "зона"
+    "translation": "зона",
+    "category": "other"
   },
   {
     "word": "arm",
-    "translation": "рука"
+    "translation": "рука",
+    "category": "body"
   },
   {
     "word": "bed",
     "translation": "ліжко",
-    "example": "Go to bed early. — Йди спати рано."
+    "example": "Go to bed early. — Йди спати рано.",
+    "category": "home"
   },
   {
     "word": "city",
     "translation": "місто",
-    "example": "I live in a big city. — Я живу у великому місті."
+    "example": "I live in a big city. — Я живу у великому місті.",
+    "category": "city"
   },
   {
     "word": "day",
     "translation": "день",
-    "example": "Have a nice day! — Гарного дня!"
+    "example": "Have a nice day! — Гарного дня!",
+    "category": "time"
   },
   {
     "word": "ear",
-    "translation": "вухо"
+    "translation": "вухо",
+    "category": "body"
   },
   {
     "word": "fog",
-    "translation": "туман"
+    "translation": "туман",
+    "category": "other"
   },
   {
     "word": "gold",
-    "translation": "золото"
+    "translation": "золото",
+    "category": "other"
   },
   {
     "word": "hat",
-    "translation": "капелюх"
+    "translation": "капелюх",
+    "category": "clothes"
   },
   {
     "word": "ink",
-    "translation": "чорнило"
+    "translation": "чорнило",
+    "category": "other"
   },
   {
     "word": "joy",
-    "translation": "радість"
+    "translation": "радість",
+    "category": "other"
   },
   {
     "word": "kid",
-    "translation": "дитина"
+    "translation": "дитина",
+    "category": "other"
   },
   {
     "word": "leg",
-    "translation": "нога"
+    "translation": "нога",
+    "category": "body"
   },
   {
     "word": "milk",
     "translation": "молоко",
-    "example": "Add milk to the coffee. — Додай молоко до кави."
+    "example": "Add milk to the coffee. — Додай молоко до кави.",
+    "category": "food"
   },
   {
     "word": "nose",
-    "translation": "ніс"
+    "translation": "ніс",
+    "category": "body"
   },
   {
     "word": "oil",
-    "translation": "олія"
+    "translation": "олія",
+    "category": "food"
   },
   {
     "word": "page",
-    "translation": "сторінка"
+    "translation": "сторінка",
+    "category": "education"
   },
   {
     "word": "ring",
-    "translation": "кільце"
+    "translation": "кільце",
+    "category": "other"
   },
   {
     "word": "sand",
-    "translation": "пісок"
+    "translation": "пісок",
+    "category": "other"
   },
   {
     "word": "tea",
     "translation": "чай",
-    "example": "Would you like some tea? — Хочеш чаю?"
+    "example": "Would you like some tea? — Хочеш чаю?",
+    "category": "food"
   },
   {
     "word": "unit",
-    "translation": "одиниця"
+    "translation": "одиниця",
+    "category": "other"
   },
   {
     "word": "vine",
-    "translation": "виноград"
+    "translation": "виноград",
+    "category": "other"
   },
   {
     "word": "wind",
-    "translation": "вітер"
+    "translation": "вітер",
+    "category": "nature"
   },
   {
     "word": "exam",
-    "translation": "іспит"
+    "translation": "іспит",
+    "category": "education"
   },
   {
     "word": "zoo",
-    "translation": "зоопарк"
+    "translation": "зоопарк",
+    "category": "other"
   },
   {
     "word": "age",
-    "translation": "вік"
+    "translation": "вік",
+    "category": "family"
   },
   {
     "word": "bus",
-    "translation": "автобус"
+    "translation": "автобус",
+    "category": "transport"
   },
   {
     "word": "cup",
-    "translation": "чашка"
+    "translation": "чашка",
+    "category": "food"
   },
   {
     "word": "desk",
-    "translation": "стіл"
+    "translation": "стіл",
+    "category": "home"
   },
   {
     "word": "egg",
     "translation": "яйце",
-    "example": "Boil an egg. — Звари яйце."
+    "example": "Boil an egg. — Звари яйце.",
+    "category": "food"
   },
   {
     "word": "fan",
-    "translation": "вентилятор"
+    "translation": "вентилятор",
+    "category": "other"
   },
   {
     "word": "gun",
-    "translation": "зброя"
+    "translation": "зброя",
+    "category": "other"
   },
   {
     "word": "hip",
-    "translation": "стегно"
+    "translation": "стегно",
+    "category": "other"
   },
   {
     "word": "inn",
-    "translation": "готель"
+    "translation": "готель",
+    "category": "other"
   },
   {
     "word": "jar",
-    "translation": "банка"
+    "translation": "банка",
+    "category": "other"
   },
   {
     "word": "kit",
-    "translation": "набір"
+    "translation": "набір",
+    "category": "other"
   },
   {
     "word": "lip",
-    "translation": "губа"
+    "translation": "губа",
+    "category": "body"
   },
   {
     "word": "mud",
-    "translation": "бруд"
+    "translation": "бруд",
+    "category": "other"
   },
   {
     "word": "net",
-    "translation": "мережа"
+    "translation": "мережа",
+    "category": "other"
   },
   {
     "word": "oak",
-    "translation": "дуб"
+    "translation": "дуб",
+    "category": "other"
   },
   {
     "word": "pig",
-    "translation": "свиня"
+    "translation": "свиня",
+    "category": "nature"
   },
   {
     "word": "rug",
-    "translation": "килим"
+    "translation": "килим",
+    "category": "other"
   },
   {
     "word": "sea",
-    "translation": "море"
+    "translation": "море",
+    "category": "nature"
   },
   {
     "word": "tin",
-    "translation": "жерсть"
+    "translation": "жерсть",
+    "category": "other"
   },
   {
     "word": "urn",
-    "translation": "урна"
+    "translation": "урна",
+    "category": "other"
   },
   {
     "word": "vat",
-    "translation": "чан"
+    "translation": "чан",
+    "category": "other"
   },
   {
     "word": "wig",
-    "translation": "перука"
+    "translation": "перука",
+    "category": "other"
   },
   {
     "word": "ax",
-    "translation": "сокира"
+    "translation": "сокира",
+    "category": "other"
   },
   {
     "word": "yam",
-    "translation": "батат"
+    "translation": "батат",
+    "category": "other"
   },
   {
     "word": "ability",
-    "translation": "здатність"
+    "translation": "здатність",
+    "category": "other"
   },
   {
     "word": "above",
-    "translation": "вище"
+    "translation": "вище",
+    "category": "other"
   },
   {
     "word": "absent",
-    "translation": "відсутній"
+    "translation": "відсутній",
+    "category": "other"
   },
   {
     "word": "accept",
-    "translation": "приймати"
+    "translation": "приймати",
+    "category": "other"
   },
   {
     "word": "accident",
-    "translation": "аварія"
+    "translation": "аварія",
+    "category": "other"
   },
   {
     "word": "account",
-    "translation": "рахунок"
+    "translation": "рахунок",
+    "category": "other"
   },
   {
     "word": "accurate",
-    "translation": "точний"
+    "translation": "точний",
+    "category": "other"
   },
   {
     "word": "achieve",
-    "translation": "досягати"
+    "translation": "досягати",
+    "category": "other"
   },
   {
     "word": "across",
-    "translation": "через"
+    "translation": "через",
+    "category": "other"
   },
   {
     "word": "action",
-    "translation": "дія"
+    "translation": "дія",
+    "category": "other"
   },
   {
     "word": "active",
-    "translation": "активний"
+    "translation": "активний",
+    "category": "other"
   },
   {
     "word": "add",
-    "translation": "додавати"
+    "translation": "додавати",
+    "category": "numbers"
   },
   {
     "word": "address",
-    "translation": "адреса"
+    "translation": "адреса",
+    "category": "home"
   },
   {
     "word": "adult",
-    "translation": "дорослий"
+    "translation": "дорослий",
+    "category": "other"
   },
   {
     "word": "advance",
-    "translation": "просуватися"
+    "translation": "просуватися",
+    "category": "other"
   },
   {
     "word": "advice",
-    "translation": "порада"
+    "translation": "порада",
+    "category": "other"
   },
   {
     "word": "affect",
-    "translation": "впливати"
+    "translation": "впливати",
+    "category": "other"
   },
   {
     "word": "afraid",
-    "translation": "наляканий"
+    "translation": "наляканий",
+    "category": "emotions"
   },
   {
     "word": "after",
-    "translation": "після"
+    "translation": "після",
+    "category": "other"
   },
   {
     "word": "again",
-    "translation": "знову"
+    "translation": "знову",
+    "category": "other"
   },
   {
     "word": "against",
-    "translation": "проти"
+    "translation": "проти",
+    "category": "other"
   },
   {
     "word": "agent",
-    "translation": "агент"
+    "translation": "агент",
+    "category": "other"
   },
   {
     "word": "agree",
-    "translation": "погоджуватися"
+    "translation": "погоджуватися",
+    "category": "communication"
   },
   {
     "word": "ahead",
-    "translation": "попереду"
+    "translation": "попереду",
+    "category": "other"
   },
   {
     "word": "allow",
-    "translation": "дозволяти"
+    "translation": "дозволяти",
+    "category": "other"
   },
   {
     "word": "almost",
-    "translation": "майже"
+    "translation": "майже",
+    "category": "other"
   },
   {
     "word": "alone",
-    "translation": "один"
+    "translation": "один",
+    "category": "other"
   },
   {
     "word": "already",
-    "translation": "вже"
+    "translation": "вже",
+    "category": "time"
   },
   {
     "word": "also",
     "translation": "також",
-    "example": "I also like it. — Мені це теж подобається."
+    "example": "I also like it. — Мені це теж подобається.",
+    "category": "other"
   },
   {
     "word": "always",
     "translation": "завжди",
-    "example": "I always help you. — Я завжди тобі допомагаю."
+    "example": "I always help you. — Я завжди тобі допомагаю.",
+    "category": "time"
   },
   {
     "word": "among",
-    "translation": "серед"
+    "translation": "серед",
+    "category": "other"
   },
   {
     "word": "amount",
-    "translation": "кількість"
+    "translation": "кількість",
+    "category": "other"
   },
   {
     "word": "ancient",
-    "translation": "давній"
+    "translation": "давній",
+    "category": "quality"
   },
   {
     "word": "anger",
-    "translation": "гнів"
+    "translation": "гнів",
+    "category": "other"
   },
   {
     "word": "animal",
-    "translation": "тварина"
+    "translation": "тварина",
+    "category": "nature"
   },
   {
     "word": "answer",
-    "translation": "відповідь"
+    "translation": "відповідь",
+    "category": "education"
   },
   {
     "word": "anyone",
-    "translation": "будь-хто"
+    "translation": "будь-хто",
+    "category": "other"
   },
   {
     "word": "appear",
-    "translation": "з'являтися"
+    "translation": "з'являтися",
+    "category": "other"
   },
   {
     "word": "apply",
-    "translation": "застосовувати"
+    "translation": "застосовувати",
+    "category": "other"
   },
   {
     "word": "area",
-    "translation": "область"
+    "translation": "область",
+    "category": "other"
   },
   {
     "word": "argue",
-    "translation": "сперечатися"
+    "translation": "сперечатися",
+    "category": "communication"
   },
   {
     "word": "around",
-    "translation": "навколо"
+    "translation": "навколо",
+    "category": "other"
   },
   {
     "word": "arrive",
-    "translation": "прибувати"
+    "translation": "прибувати",
+    "category": "actions"
   },
   {
     "word": "article",
-    "translation": "стаття"
+    "translation": "стаття",
+    "category": "other"
   },
   {
     "word": "artist",
-    "translation": "художник"
+    "translation": "художник",
+    "category": "other"
   },
   {
     "word": "aspect",
-    "translation": "аспект"
+    "translation": "аспект",
+    "category": "other"
   },
   {
     "word": "attack",
-    "translation": "атакувати"
+    "translation": "атакувати",
+    "category": "other"
   },
   {
     "word": "attract",
-    "translation": "приваблювати"
+    "translation": "приваблювати",
+    "category": "other"
   },
   {
     "word": "author",
-    "translation": "автор"
+    "translation": "автор",
+    "category": "other"
   },
   {
     "word": "avoid",
-    "translation": "уникати"
+    "translation": "уникати",
+    "category": "other"
   },
   {
     "word": "award",
-    "translation": "нагорода"
+    "translation": "нагорода",
+    "category": "other"
   },
   {
     "word": "aware",
-    "translation": "обізнаний"
+    "translation": "обізнаний",
+    "category": "other"
   },
   {
     "word": "awful",
-    "translation": "жахливий"
+    "translation": "жахливий",
+    "category": "other"
   },
   {
     "word": "balance",
-    "translation": "баланс"
+    "translation": "баланс",
+    "category": "other"
   },
   {
     "word": "bank",
-    "translation": "банк"
+    "translation": "банк",
+    "category": "city"
   },
   {
     "word": "basic",
-    "translation": "базовий"
+    "translation": "базовий",
+    "category": "other"
   },
   {
     "word": "battle",
-    "translation": "битва"
+    "translation": "битва",
+    "category": "other"
   },
   {
     "word": "beach",
-    "translation": "пляж"
+    "translation": "пляж",
+    "category": "nature"
   },
   {
     "word": "beauty",
-    "translation": "краса"
+    "translation": "краса",
+    "category": "other"
   },
   {
     "word": "begin",
-    "translation": "починати"
+    "translation": "починати",
+    "category": "actions"
   },
   {
     "word": "belong",
-    "translation": "належати"
+    "translation": "належати",
+    "category": "other"
   },
   {
     "word": "benefit",
-    "translation": "користь"
+    "translation": "користь",
+    "category": "other"
   },
   {
     "word": "between",
-    "translation": "між"
+    "translation": "між",
+    "category": "other"
   },
   {
     "word": "beyond",
-    "translation": "за межами"
+    "translation": "за межами",
+    "category": "other"
   },
   {
     "word": "billion",
-    "translation": "мільярд"
+    "translation": "мільярд",
+    "category": "other"
   },
   {
     "word": "bitter",
-    "translation": "гіркий"
+    "translation": "гіркий",
+    "category": "other"
   },
   {
     "word": "black",
     "translation": "чорний",
-    "example": "He has black hair. — У нього чорне волосся."
+    "example": "He has black hair. — У нього чорне волосся.",
+    "category": "colors"
   },
   {
     "word": "blame",
-    "translation": "звинувачувати"
+    "translation": "звинувачувати",
+    "category": "other"
   },
   {
     "word": "blank",
-    "translation": "порожній"
+    "translation": "порожній",
+    "category": "other"
   },
   {
     "word": "blind",
-    "translation": "сліпий"
+    "translation": "сліпий",
+    "category": "other"
   },
   {
     "word": "blood",
-    "translation": "кров"
+    "translation": "кров",
+    "category": "body"
   },
   {
     "word": "blow",
-    "translation": "дути"
+    "translation": "дути",
+    "category": "other"
   },
   {
     "word": "board",
-    "translation": "дошка"
+    "translation": "дошка",
+    "category": "other"
   },
   {
     "word": "border",
-    "translation": "кордон"
+    "translation": "кордон",
+    "category": "other"
   },
   {
     "word": "borrow",
-    "translation": "позичати"
+    "translation": "позичати",
+    "category": "other"
   },
   {
     "word": "boss",
-    "translation": "начальник"
+    "translation": "начальник",
+    "category": "work"
   },
   {
     "word": "bottom",
-    "translation": "дно"
+    "translation": "дно",
+    "category": "other"
   },
   {
     "word": "branch",
-    "translation": "гілка"
+    "translation": "гілка",
+    "category": "other"
   },
   {
     "word": "brave",
-    "translation": "сміливий"
+    "translation": "сміливий",
+    "category": "other"
   },
   {
     "word": "break",
-    "translation": "ламати"
+    "translation": "ламати",
+    "category": "actions"
   },
   {
     "word": "breath",
-    "translation": "дихання"
+    "translation": "дихання",
+    "category": "other"
   },
   {
     "word": "bridge",
-    "translation": "міст"
+    "translation": "міст",
+    "category": "city"
   },
   {
     "word": "bright",
-    "translation": "яскравий"
+    "translation": "яскравий",
+    "category": "colors"
   },
   {
     "word": "bring",
-    "translation": "приносити"
+    "translation": "приносити",
+    "category": "actions"
   },
   {
     "word": "broad",
-    "translation": "широкий"
+    "translation": "широкий",
+    "category": "other"
   },
   {
     "word": "brother",
-    "translation": "брат"
+    "translation": "брат",
+    "category": "family"
   },
   {
     "word": "brown",
-    "translation": "коричневий"
+    "translation": "коричневий",
+    "category": "colors"
   },
   {
     "word": "build",
-    "translation": "будувати"
+    "translation": "будувати",
+    "category": "other"
   },
   {
     "word": "burn",
-    "translation": "горіти"
+    "translation": "горіти",
+    "category": "other"
   },
   {
     "word": "busy",
-    "translation": "зайнятий"
+    "translation": "зайнятий",
+    "category": "quality"
   },
   {
     "word": "button",
-    "translation": "кнопка"
+    "translation": "кнопка",
+    "category": "clothes"
   },
   {
     "word": "buyer",
-    "translation": "покупець"
+    "translation": "покупець",
+    "category": "other"
   },
   {
     "word": "cabinet",
-    "translation": "шафа"
+    "translation": "шафа",
+    "category": "other"
   },
   {
     "word": "cable",
-    "translation": "кабель"
+    "translation": "кабель",
+    "category": "other"
   },
   {
     "word": "call",
     "translation": "телефонувати",
-    "example": "Call me later. — Подзвони мені пізніше."
+    "example": "Call me later. — Подзвони мені пізніше.",
+    "category": "communication"
   },
   {
     "word": "calm",
-    "translation": "спокійний"
+    "translation": "спокійний",
+    "category": "other"
   },
   {
     "word": "camera",
-    "translation": "камера"
+    "translation": "камера",
+    "category": "other"
   },
   {
     "word": "cancel",
-    "translation": "скасувати"
+    "translation": "скасувати",
+    "category": "other"
   },
   {
     "word": "capital",
-    "translation": "столиця"
+    "translation": "столиця",
+    "category": "other"
   },
   {
     "word": "captain",
-    "translation": "капітан"
+    "translation": "капітан",
+    "category": "other"
   },
   {
     "word": "careful",
-    "translation": "обережний"
+    "translation": "обережний",
+    "category": "quality"
   },
   {
     "word": "carry",
-    "translation": "нести"
+    "translation": "нести",
+    "category": "actions"
   },
   {
     "word": "cash",
-    "translation": "готівка"
+    "translation": "готівка",
+    "category": "other"
   },
   {
     "word": "catch",
-    "translation": "ловити"
+    "translation": "ловити",
+    "category": "actions"
   },
   {
     "word": "cause",
-    "translation": "причина"
+    "translation": "причина",
+    "category": "other"
   },
   {
     "word": "central",
-    "translation": "центральний"
+    "translation": "центральний",
+    "category": "other"
   },
   {
     "word": "century",
-    "translation": "століття"
+    "translation": "століття",
+    "category": "other"
   },
   {
     "word": "chain",
-    "translation": "ланцюг"
+    "translation": "ланцюг",
+    "category": "other"
   },
   {
     "word": "chance",
-    "translation": "шанс"
+    "translation": "шанс",
+    "category": "other"
   },
   {
     "word": "change",
-    "translation": "змінювати"
+    "translation": "змінювати",
+    "category": "actions"
   },
   {
     "word": "chapter",
-    "translation": "розділ"
+    "translation": "розділ",
+    "category": "other"
   },
   {
     "word": "charge",
-    "translation": "заряд"
+    "translation": "заряд",
+    "category": "other"
   },
   {
     "word": "cheap",
-    "translation": "дешевий"
+    "translation": "дешевий",
+    "category": "quality"
   },
   {
     "word": "check",
-    "translation": "перевіряти"
+    "translation": "перевіряти",
+    "category": "other"
   },
   {
     "word": "choose",
-    "translation": "вибирати"
+    "translation": "вибирати",
+    "category": "other"
   },
   {
     "word": "circle",
-    "translation": "коло"
+    "translation": "коло",
+    "category": "other"
   },
   {
     "word": "claim",
-    "translation": "стверджувати"
+    "translation": "стверджувати",
+    "category": "other"
   },
   {
     "word": "class",
-    "translation": "клас"
+    "translation": "клас",
+    "category": "education"
   },
   {
     "word": "clean",
-    "translation": "чистий"
+    "translation": "чистий",
+    "category": "actions"
   },
   {
     "word": "clear",
-    "translation": "ясний"
+    "translation": "ясний",
+    "category": "quality"
   },
   {
     "word": "clever",
-    "translation": "розумний"
+    "translation": "розумний",
+    "category": "other"
   },
   {
     "word": "client",
-    "translation": "клієнт"
+    "translation": "клієнт",
+    "category": "other"
   },
   {
     "word": "climb",
-    "translation": "видиратися"
+    "translation": "видиратися",
+    "category": "actions"
   },
   {
     "word": "close",
     "translation": "закривати",
-    "example": "Close the window. — Закрий вікно."
+    "example": "Close the window. — Закрий вікно.",
+    "category": "actions"
   },
   {
     "word": "cloud",
-    "translation": "хмара"
+    "translation": "хмара",
+    "category": "nature"
   },
   {
     "word": "coach",
-    "translation": "тренер"
+    "translation": "тренер",
+    "category": "other"
   },
   {
     "word": "coast",
-    "translation": "берег"
+    "translation": "берег",
+    "category": "other"
   },
   {
     "word": "collect",
-    "translation": "збирати"
+    "translation": "збирати",
+    "category": "other"
   },
   {
     "word": "color",
     "translation": "колір",
-    "example": "What's your favorite color? — Який твій улюблений колір?"
+    "example": "What's your favorite color? — Який твій улюблений колір?",
+    "category": "colors"
   },
   {
     "word": "come",
     "translation": "приходити",
-    "example": "Come here! — Іди сюди!"
+    "example": "Come here! — Іди сюди!",
+    "category": "actions"
   },
   {
     "word": "common",
-    "translation": "спільний"
+    "translation": "спільний",
+    "category": "other"
   },
   {
     "word": "compare",
-    "translation": "порівнювати"
+    "translation": "порівнювати",
+    "category": "other"
   },
   {
     "word": "complete",
-    "translation": "завершувати"
+    "translation": "завершувати",
+    "category": "other"
   },
   {
     "word": "complex",
-    "translation": "складний"
+    "translation": "складний",
+    "category": "quality"
   },
   {
     "word": "concern",
-    "translation": "занепокоєння"
+    "translation": "занепокоєння",
+    "category": "other"
   },
   {
     "word": "confirm",
-    "translation": "підтверджувати"
+    "translation": "підтверджувати",
+    "category": "other"
   },
   {
     "word": "connect",
-    "translation": "з'єднувати"
+    "translation": "з'єднувати",
+    "category": "other"
   },
   {
     "word": "consider",
-    "translation": "розглядати"
+    "translation": "розглядати",
+    "category": "other"
   },
   {
     "word": "contact",
-    "translation": "контакт"
+    "translation": "контакт",
+    "category": "other"
   },
   {
     "word": "contain",
-    "translation": "містити"
+    "translation": "містити",
+    "category": "other"
   },
   {
     "word": "content",
-    "translation": "вміст"
+    "translation": "вміст",
+    "category": "other"
   },
   {
     "word": "control",
-    "translation": "контроль"
+    "translation": "контроль",
+    "category": "other"
   },
   {
     "word": "cook",
-    "translation": "готувати"
+    "translation": "готувати",
+    "category": "food"
   },
   {
     "word": "copy",
-    "translation": "копіювати"
+    "translation": "копіювати",
+    "category": "other"
   },
   {
     "word": "corner",
-    "translation": "кут"
+    "translation": "кут",
+    "category": "other"
   },
   {
     "word": "correct",
-    "translation": "правильний"
+    "translation": "правильний",
+    "category": "quality"
   },
   {
     "word": "cost",
-    "translation": "вартість"
+    "translation": "вартість",
+    "category": "work"
   },
   {
     "word": "count",
-    "translation": "рахувати"
+    "translation": "рахувати",
+    "category": "numbers"
   },
   {
     "word": "country",
     "translation": "країна",
-    "example": "Which country are you from? — З якої ти країни?"
+    "example": "Which country are you from? — З якої ти країни?",
+    "category": "other"
   },
   {
     "word": "cover",
-    "translation": "кришка"
+    "translation": "кришка",
+    "category": "other"
   },
   {
     "word": "create",
-    "translation": "створювати"
+    "translation": "створювати",
+    "category": "other"
   },
   {
     "word": "crime",
-    "translation": "злочин"
+    "translation": "злочин",
+    "category": "other"
   },
   {
     "word": "cross",
-    "translation": "перетинати"
+    "translation": "перетинати",
+    "category": "other"
   },
   {
     "word": "crowd",
-    "translation": "натовп"
+    "translation": "натовп",
+    "category": "other"
   },
   {
     "word": "culture",
-    "translation": "культура"
+    "translation": "культура",
+    "category": "other"
   },
   {
     "word": "current",
-    "translation": "поточний"
+    "translation": "поточний",
+    "category": "other"
   },
   {
     "word": "customer",
-    "translation": "покупець"
+    "translation": "покупець",
+    "category": "work"
   },
   {
     "word": "cut",
-    "translation": "різати"
+    "translation": "різати",
+    "category": "actions"
   },
   {
     "word": "damage",
-    "translation": "пошкодження"
+    "translation": "пошкодження",
+    "category": "other"
   },
   {
     "word": "danger",
-    "translation": "небезпека"
+    "translation": "небезпека",
+    "category": "other"
   },
   {
     "word": "dark",
-    "translation": "темний"
+    "translation": "темний",
+    "category": "colors"
   },
   {
     "word": "data",
-    "translation": "дані"
+    "translation": "дані",
+    "category": "work"
   },
   {
     "word": "dead",
-    "translation": "мертвий"
+    "translation": "мертвий",
+    "category": "other"
   },
   {
     "word": "deal",
-    "translation": "угода"
+    "translation": "угода",
+    "category": "other"
   },
   {
     "word": "death",
-    "translation": "смерть"
+    "translation": "смерть",
+    "category": "other"
   },
   {
     "word": "decide",
-    "translation": "вирішувати"
+    "translation": "вирішувати",
+    "category": "other"
   },
   {
     "word": "deep",
-    "translation": "глибокий"
+    "translation": "глибокий",
+    "category": "size"
   },
   {
     "word": "degree",
-    "translation": "ступінь"
+    "translation": "ступінь",
+    "category": "other"
   },
   {
     "word": "delay",
-    "translation": "затримка"
+    "translation": "затримка",
+    "category": "other"
   },
   {
     "word": "deliver",
-    "translation": "доставляти"
+    "translation": "доставляти",
+    "category": "other"
   },
   {
     "word": "demand",
-    "translation": "попит"
+    "translation": "попит",
+    "category": "other"
   },
   {
     "word": "design",
-    "translation": "дизайн"
+    "translation": "дизайн",
+    "category": "other"
   },
   {
     "word": "develop",
-    "translation": "розвивати"
+    "translation": "розвивати",
+    "category": "other"
   },
   {
     "word": "die",
-    "translation": "вмирати"
+    "translation": "вмирати",
+    "category": "other"
   },
   {
     "word": "differ",
-    "translation": "відрізнятися"
+    "translation": "відрізнятися",
+    "category": "other"
   },
   {
     "word": "direct",
-    "translation": "прямий"
+    "translation": "прямий",
+    "category": "other"
   },
   {
     "word": "discover",
-    "translation": "відкривати"
+    "translation": "відкривати",
+    "category": "other"
   },
   {
     "word": "discuss",
-    "translation": "обговорювати"
+    "translation": "обговорювати",
+    "category": "communication"
   },
   {
     "word": "distance",
-    "translation": "відстань"
+    "translation": "відстань",
+    "category": "transport"
   },
   {
     "word": "divide",
-    "translation": "ділити"
+    "translation": "ділити",
+    "category": "numbers"
   },
   {
     "word": "doubt",
-    "translation": "сумнів"
+    "translation": "сумнів",
+    "category": "other"
   },
   {
     "word": "dream",
-    "translation": "мрія"
+    "translation": "мрія",
+    "category": "health"
   },
   {
     "word": "drive",
-    "translation": "їхати"
+    "translation": "їхати",
+    "category": "transport"
   },
   {
     "word": "drop",
-    "translation": "падати"
+    "translation": "падати",
+    "category": "other"
   },
   {
     "word": "duty",
-    "translation": "обов'язок"
+    "translation": "обов'язок",
+    "category": "other"
   },
   {
     "word": "early",
     "translation": "ранній",
-    "example": "Come early. — Приходь рано."
+    "example": "Come early. — Приходь рано.",
+    "category": "time"
   },
   {
     "word": "earn",
-    "translation": "заробляти"
+    "translation": "заробляти",
+    "category": "other"
   },
   {
     "word": "easy",
     "translation": "легкий",
-    "example": "This is easy! — Це легко!"
+    "example": "This is easy! — Це легко!",
+    "category": "quality"
   },
   {
     "word": "edge",
-    "translation": "край"
+    "translation": "край",
+    "category": "other"
   },
   {
     "word": "effect",
-    "translation": "ефект"
+    "translation": "ефект",
+    "category": "other"
   },
   {
     "word": "effort",
-    "translation": "зусилля"
+    "translation": "зусилля",
+    "category": "other"
   },
   {
     "word": "either",
-    "translation": "або"
+    "translation": "або",
+    "category": "other"
   },
   {
     "word": "empty",
-    "translation": "порожній"
+    "translation": "порожній",
+    "category": "quality"
   },
   {
     "word": "end",
-    "translation": "кінець"
+    "translation": "кінець",
+    "category": "actions"
   },
   {
     "word": "enemy",
-    "translation": "ворог"
+    "translation": "ворог",
+    "category": "other"
   },
   {
     "word": "energy",
-    "translation": "енергія"
+    "translation": "енергія",
+    "category": "other"
   },
   {
     "word": "enjoy",
-    "translation": "насолоджуватися"
+    "translation": "насолоджуватися",
+    "category": "emotions"
   },
   {
     "word": "enough",
     "translation": "достатньо",
-    "example": "That's enough! — Досить!"
+    "example": "That's enough! — Досить!",
+    "category": "other"
   },
   {
     "word": "enter",
-    "translation": "входити"
+    "translation": "входити",
+    "category": "actions"
   },
   {
     "word": "equal",
-    "translation": "рівний"
+    "translation": "рівний",
+    "category": "other"
   },
   {
     "word": "escape",
-    "translation": "тікати"
+    "translation": "тікати",
+    "category": "other"
   },
   {
     "word": "even",
-    "translation": "навіть"
+    "translation": "навіть",
+    "category": "other"
   },
   {
     "word": "event",
-    "translation": "подія"
+    "translation": "подія",
+    "category": "other"
   },
   {
     "word": "every",
-    "translation": "кожний"
+    "translation": "кожний",
+    "category": "other"
   },
   {
     "word": "exact",
-    "translation": "точний"
+    "translation": "точний",
+    "category": "other"
   },
   {
     "word": "exist",
-    "translation": "існувати"
+    "translation": "існувати",
+    "category": "other"
   },
   {
     "word": "expect",
-    "translation": "очікувати"
+    "translation": "очікувати",
+    "category": "other"
   },
   {
     "word": "explain",
-    "translation": "пояснювати"
+    "translation": "пояснювати",
+    "category": "communication"
   },
   {
     "word": "explore",
-    "translation": "досліджувати"
+    "translation": "досліджувати",
+    "category": "other"
   },
   {
     "word": "express",
-    "translation": "виражати"
+    "translation": "виражати",
+    "category": "other"
   },
   {
     "word": "extra",
-    "translation": "додатковий"
+    "translation": "додатковий",
+    "category": "other"
   },
   {
     "word": "fail",
-    "translation": "зазнавати невдачі"
+    "translation": "зазнавати невдачі",
+    "category": "other"
   },
   {
     "word": "fair",
-    "translation": "справедливий"
+    "translation": "справедливий",
+    "category": "other"
   },
   {
     "word": "fall",
-    "translation": "падати"
+    "translation": "падати",
+    "category": "actions"
   },
   {
     "word": "false",
     "translation": "хибний",
-    "example": "That's false. — Це неправда."
+    "example": "That's false. — Це неправда.",
+    "category": "quality"
   },
   {
     "word": "famous",
-    "translation": "знаменитий"
+    "translation": "знаменитий",
+    "category": "other"
   },
   {
     "word": "far",
-    "translation": "далекий"
+    "translation": "далекий",
+    "category": "other"
   },
   {
     "word": "fast",
     "translation": "швидкий",
-    "example": "He runs fast. — Він швидко бігає."
+    "example": "He runs fast. — Він швидко бігає.",
+    "category": "quality"
   },
   {
     "word": "favor",
-    "translation": "послуга"
+    "translation": "послуга",
+    "category": "other"
   },
   {
     "word": "fear",
-    "translation": "страх"
+    "translation": "страх",
+    "category": "other"
   },
   {
     "word": "feel",
     "translation": "відчувати",
-    "example": "I feel great! — Я почуваюся чудово!"
+    "example": "I feel great! — Я почуваюся чудово!",
+    "category": "emotions"
   },
   {
     "word": "fight",
-    "translation": "боротися"
+    "translation": "боротися",
+    "category": "other"
   },
   {
     "word": "fill",
-    "translation": "наповнювати"
+    "translation": "наповнювати",
+    "category": "other"
   },
   {
     "word": "final",
-    "translation": "фінальний"
+    "translation": "фінальний",
+    "category": "other"
   },
   {
     "word": "find",
     "translation": "знаходити",
-    "example": "I can't find my keys. — Я не можу знайти свої ключі."
+    "example": "I can't find my keys. — Я не можу знайти свої ключі.",
+    "category": "other"
   },
   {
     "word": "fine",
-    "translation": "штраф"
+    "translation": "штраф",
+    "category": "other"
   },
   {
     "word": "finger",
-    "translation": "палець"
+    "translation": "палець",
+    "category": "body"
   },
   {
     "word": "fire",
-    "translation": "вогонь"
+    "translation": "вогонь",
+    "category": "other"
   },
   {
     "word": "first",
     "translation": "перший",
-    "example": "This is my first time. — Це мій перший раз."
+    "example": "This is my first time. — Це мій перший раз.",
+    "category": "numbers"
   },
   {
     "word": "fix",
-    "translation": "лагодити"
+    "translation": "лагодити",
+    "category": "other"
   },
   {
     "word": "flat",
-    "translation": "плаский"
+    "translation": "плаский",
+    "category": "other"
   },
   {
     "word": "floor",
-    "translation": "підлога"
+    "translation": "підлога",
+    "category": "home"
   },
   {
     "word": "flow",
-    "translation": "текти"
+    "translation": "текти",
+    "category": "other"
   },
   {
     "word": "focus",
-    "translation": "фокус"
+    "translation": "фокус",
+    "category": "other"
   },
   {
     "word": "follow",
-    "translation": "слідувати"
+    "translation": "слідувати",
+    "category": "other"
   },
   {
     "word": "force",
-    "translation": "сила"
+    "translation": "сила",
+    "category": "other"
   },
   {
     "word": "forget",
-    "translation": "забувати"
+    "translation": "забувати",
+    "category": "other"
   },
   {
     "word": "form",
-    "translation": "форма"
+    "translation": "форма",
+    "category": "other"
   },
   {
     "word": "forward",
-    "translation": "вперед"
+    "translation": "вперед",
+    "category": "other"
   },
   {
     "word": "free",
-    "translation": "вільний"
+    "translation": "вільний",
+    "category": "quality"
   },
   {
     "word": "fresh",
-    "translation": "свіжий"
+    "translation": "свіжий",
+    "category": "quality"
   },
   {
     "word": "friend",
     "translation": "друг",
-    "example": "He is my best friend. — Він мій найкращий друг."
+    "example": "He is my best friend. — Він мій найкращий друг.",
+    "category": "family"
   },
   {
     "word": "front",
-    "translation": "фронт"
+    "translation": "фронт",
+    "category": "other"
   },
   {
     "word": "full",
-    "translation": "повний"
+    "translation": "повний",
+    "category": "quality"
   },
   {
     "word": "future",
-    "translation": "майбутнє"
+    "translation": "майбутнє",
+    "category": "time"
   },
   {
     "word": "gather",
-    "translation": "збиратися"
+    "translation": "збиратися",
+    "category": "other"
   },
   {
     "word": "general",
-    "translation": "загальний"
+    "translation": "загальний",
+    "category": "other"
   },
   {
     "word": "give",
     "translation": "давати",
-    "example": "Give me your hand. — Дай мені руку."
+    "example": "Give me your hand. — Дай мені руку.",
+    "category": "actions"
   },
   {
     "word": "global",
-    "translation": "глобальний"
+    "translation": "глобальний",
+    "category": "other"
   },
   {
     "word": "goal",
-    "translation": "ціль"
+    "translation": "ціль",
+    "category": "other"
   },
   {
     "word": "good",
     "translation": "гарний",
-    "example": "That's a good idea! — Це гарна ідея!"
+    "example": "That's a good idea! — Це гарна ідея!",
+    "category": "quality"
   },
   {
     "word": "government",
-    "translation": "уряд"
+    "translation": "уряд",
+    "category": "other"
   },
   {
     "word": "great",
-    "translation": "великий"
+    "translation": "великий",
+    "category": "size"
   },
   {
     "word": "green",
     "translation": "зелений",
-    "example": "I like green apples. — Я люблю зелені яблука."
+    "example": "I like green apples. — Я люблю зелені яблука.",
+    "category": "colors"
   },
   {
     "word": "group",
-    "translation": "група"
+    "translation": "група",
+    "category": "other"
   },
   {
     "word": "grow",
-    "translation": "рости"
+    "translation": "рости",
+    "category": "actions"
   },
   {
     "word": "guess",
-    "translation": "вгадувати"
+    "translation": "вгадувати",
+    "category": "other"
   },
   {
     "word": "guide",
-    "translation": "гід"
+    "translation": "гід",
+    "category": "other"
   },
   {
     "word": "happy",
     "translation": "щасливий",
-    "example": "I'm so happy! — Я такий щасливий!"
+    "example": "I'm so happy! — Я такий щасливий!",
+    "category": "emotions"
   },
   {
     "word": "hard",
     "translation": "твердий",
-    "example": "This is hard. — Це важко."
+    "example": "This is hard. — Це важко.",
+    "category": "quality"
   },
   {
     "word": "harm",
-    "translation": "шкода"
+    "translation": "шкода",
+    "category": "other"
   },
   {
     "word": "hate",
-    "translation": "ненавидіти"
+    "translation": "ненавидіти",
+    "category": "emotions"
   },
   {
     "word": "have",
-    "translation": "мати"
+    "translation": "мати",
+    "category": "other"
   },
   {
     "word": "head",
-    "translation": "голова"
+    "translation": "голова",
+    "category": "body"
   },
   {
     "word": "health",
-    "translation": "здоров'я"
+    "translation": "здоров'я",
+    "category": "health"
   },
   {
     "word": "heart",
-    "translation": "серце"
+    "translation": "серце",
+    "category": "body"
   },
   {
     "word": "heavy",
-    "translation": "важкий"
+    "translation": "важкий",
+    "category": "size"
   },
   {
     "word": "help",
     "translation": "допомагати",
-    "example": "Can you help me? — Ти можеш мені допомогти?"
+    "example": "Can you help me? — Ти можеш мені допомогти?",
+    "category": "actions"
   },
   {
     "word": "high",
-    "translation": "високий"
+    "translation": "високий",
+    "category": "size"
   },
   {
     "word": "history",
-    "translation": "історія"
+    "translation": "історія",
+    "category": "education"
   },
   {
     "word": "hold",
-    "translation": "тримати"
+    "translation": "тримати",
+    "category": "actions"
   },
   {
     "word": "home",
     "translation": "дім",
-    "example": "Welcome home! — Ласкаво просимо додому!"
+    "example": "Welcome home! — Ласкаво просимо додому!",
+    "category": "home"
   },
   {
     "word": "hope",
-    "translation": "надія"
+    "translation": "надія",
+    "category": "emotions"
   },
   {
     "word": "hot",
     "translation": "гарячий",
-    "example": "The coffee is hot. — Кава гаряча."
+    "example": "The coffee is hot. — Кава гаряча.",
+    "category": "quality"
   },
   {
     "word": "hour",
     "translation": "година",
-    "example": "Wait one hour. — Почекай одну годину."
+    "example": "Wait one hour. — Почекай одну годину.",
+    "category": "time"
   },
   {
     "word": "huge",
-    "translation": "величезний"
+    "translation": "величезний",
+    "category": "size"
   },
   {
     "word": "human",
-    "translation": "людина"
+    "translation": "людина",
+    "category": "other"
   },
   {
     "word": "humor",
-    "translation": "гумор"
+    "translation": "гумор",
+    "category": "other"
   },
   {
     "word": "hunger",
-    "translation": "голод"
+    "translation": "голод",
+    "category": "other"
   },
   {
     "word": "hunt",
-    "translation": "полювати"
+    "translation": "полювати",
+    "category": "other"
   },
   {
     "word": "hurry",
-    "translation": "поспішати"
+    "translation": "поспішати",
+    "category": "other"
   },
   {
     "word": "hurt",
-    "translation": "завдавати болю"
+    "translation": "завдавати болю",
+    "category": "health"
   },
   {
     "word": "imagine",
-    "translation": "уявляти"
+    "translation": "уявляти",
+    "category": "other"
   },
   {
     "word": "impact",
-    "translation": "вплив"
+    "translation": "вплив",
+    "category": "other"
   },
   {
     "word": "improve",
-    "translation": "покращувати"
+    "translation": "покращувати",
+    "category": "other"
   },
   {
     "word": "include",
-    "translation": "включати"
+    "translation": "включати",
+    "category": "other"
   },
   {
     "word": "increase",
-    "translation": "збільшувати"
+    "translation": "збільшувати",
+    "category": "other"
   },
   {
     "word": "information",
-    "translation": "інформація"
+    "translation": "інформація",
+    "category": "work"
   },
   {
     "word": "inside",
-    "translation": "всередині"
+    "translation": "всередині",
+    "category": "other"
   },
   {
     "word": "instead",
-    "translation": "замість"
+    "translation": "замість",
+    "category": "other"
   },
   {
     "word": "interest",
-    "translation": "інтерес"
+    "translation": "інтерес",
+    "category": "other"
   },
   {
     "word": "interview",
-    "translation": "інтерв'ю"
+    "translation": "інтерв'ю",
+    "category": "other"
   },
   {
     "word": "introduce",
-    "translation": "представляти"
+    "translation": "представляти",
+    "category": "other"
   },
   {
     "word": "invest",
-    "translation": "інвестувати"
+    "translation": "інвестувати",
+    "category": "other"
   },
   {
     "word": "invite",
-    "translation": "запрошувати"
+    "translation": "запрошувати",
+    "category": "other"
   },
   {
     "word": "island",
-    "translation": "острів"
+    "translation": "острів",
+    "category": "nature"
   },
   {
     "word": "issue",
-    "translation": "питання"
+    "translation": "питання",
+    "category": "other"
   },
   {
     "word": "journey",
-    "translation": "подорож"
+    "translation": "подорож",
+    "category": "transport"
   },
   {
     "word": "judge",
-    "translation": "судити"
+    "translation": "судити",
+    "category": "other"
   },
   {
     "word": "keep",
-    "translation": "тримати"
+    "translation": "тримати",
+    "category": "other"
   },
   {
     "word": "knowledge",
-    "translation": "знання"
+    "translation": "знання",
+    "category": "education"
   },
   {
     "word": "land",
-    "translation": "земля"
+    "translation": "земля",
+    "category": "other"
   },
   {
     "word": "language",
-    "translation": "мова"
+    "translation": "мова",
+    "category": "education"
   },
   {
     "word": "large",
-    "translation": "великий"
+    "translation": "великий",
+    "category": "size"
   },
   {
     "word": "last",
     "translation": "останній",
-    "example": "This is the last chance. — Це останній шанс."
+    "example": "This is the last chance. — Це останній шанс.",
+    "category": "numbers"
   },
   {
     "word": "later",
-    "translation": "пізніше"
+    "translation": "пізніше",
+    "category": "other"
   },
   {
     "word": "laugh",
-    "translation": "сміятися"
+    "translation": "сміятися",
+    "category": "emotions"
   },
   {
     "word": "law",
-    "translation": "закон"
+    "translation": "закон",
+    "category": "other"
   },
   {
     "word": "lead",
-    "translation": "вести"
+    "translation": "вести",
+    "category": "other"
   },
   {
     "word": "learn",
     "translation": "вчитися",
-    "example": "I want to learn English. — Я хочу вивчити англійську."
+    "example": "I want to learn English. — Я хочу вивчити англійську.",
+    "category": "education"
   },
   {
     "word": "leave",
-    "translation": "покидати"
+    "translation": "покидати",
+    "category": "actions"
   },
   {
     "word": "level",
-    "translation": "рівень"
+    "translation": "рівень",
+    "category": "other"
   },
   {
     "word": "light",
-    "translation": "світло"
+    "translation": "світло",
+    "category": "home"
   },
   {
     "word": "likely",
-    "translation": "імовірно"
+    "translation": "імовірно",
+    "category": "quality"
   },
   {
     "word": "limit",
-    "translation": "ліміт"
+    "translation": "ліміт",
+    "category": "other"
   },
   {
     "word": "listen",
-    "translation": "слухати"
+    "translation": "слухати",
+    "category": "communication"
   },
   {
     "word": "live",
-    "translation": "жити"
+    "translation": "жити",
+    "category": "other"
   },
   {
     "word": "local",
-    "translation": "місцевий"
+    "translation": "місцевий",
+    "category": "other"
   },
   {
     "word": "long",
-    "translation": "довгий"
+    "translation": "довгий",
+    "category": "size"
   },
   {
     "word": "look",
     "translation": "дивитися",
-    "example": "Look at this! — Подивись на це!"
+    "example": "Look at this! — Подивись на це!",
+    "category": "other"
   },
   {
     "word": "lose",
-    "translation": "втрачати"
+    "translation": "втрачати",
+    "category": "other"
   },
   {
     "word": "love",
     "translation": "любов",
-    "example": "I love you. — Я люблю тебе."
+    "example": "I love you. — Я люблю тебе.",
+    "category": "family"
   },
   {
     "word": "lower",
-    "translation": "нижній"
+    "translation": "нижній",
+    "category": "other"
   },
   {
     "word": "lucky",
-    "translation": "удачливий"
+    "translation": "удачливий",
+    "category": "other"
   },
   {
     "word": "main",
-    "translation": "головний"
+    "translation": "головний",
+    "category": "other"
   },
   {
     "word": "major",
-    "translation": "головний"
+    "translation": "головний",
+    "category": "other"
   },
   {
     "word": "manage",
-    "translation": "керувати"
+    "translation": "керувати",
+    "category": "other"
   },
   {
     "word": "market",
-    "translation": "ринок"
+    "translation": "ринок",
+    "category": "city"
   },
   {
     "word": "matter",
-    "translation": "мати значення"
+    "translation": "мати значення",
+    "category": "other"
   },
   {
     "word": "mean",
-    "translation": "означати"
+    "translation": "означати",
+    "category": "communication"
   },
   {
     "word": "meet",
-    "translation": "зустрічати"
+    "translation": "зустрічати",
+    "category": "other"
   },
   {
     "word": "member",
-    "translation": "член"
+    "translation": "член",
+    "category": "other"
   },
   {
     "word": "memory",
-    "translation": "пам'ять"
+    "translation": "пам'ять",
+    "category": "other"
   },
   {
     "word": "mention",
-    "translation": "згадувати"
+    "translation": "згадувати",
+    "category": "other"
   },
   {
     "word": "message",
-    "translation": "повідомлення"
+    "translation": "повідомлення",
+    "category": "communication"
   },
   {
     "word": "method",
-    "translation": "метод"
+    "translation": "метод",
+    "category": "other"
   },
   {
     "word": "middle",
-    "translation": "середина"
+    "translation": "середина",
+    "category": "other"
   },
   {
     "word": "might",
-    "translation": "міць"
+    "translation": "міць",
+    "category": "other"
   },
   {
     "word": "mind",
-    "translation": "розум"
+    "translation": "розум",
+    "category": "other"
   },
   {
     "word": "minute",
     "translation": "хвилина",
-    "example": "Just a minute! — Хвилинку!"
+    "example": "Just a minute! — Хвилинку!",
+    "category": "time"
   },
   {
     "word": "miss",
-    "translation": "сумувати"
+    "translation": "сумувати",
+    "category": "other"
   },
   {
     "word": "model",
-    "translation": "модель"
+    "translation": "модель",
+    "category": "other"
   },
   {
     "word": "money",
     "translation": "гроші",
-    "example": "Money can't buy happiness. — Гроші не можуть купити щастя."
+    "example": "Money can't buy happiness. — Гроші не можуть купити щастя.",
+    "category": "work"
   },
   {
     "word": "month",
     "translation": "місяць",
-    "example": "My birthday is next month. — Мій день народження наступного місяця."
+    "example": "My birthday is next month. — Мій день народження наступного місяця.",
+    "category": "time"
   },
   {
     "word": "morning",
     "translation": "ранок",
-    "example": "Good morning! — Доброго ранку!"
+    "example": "Good morning! — Доброго ранку!",
+    "category": "time"
   },
   {
     "word": "most",
-    "translation": "більшість"
+    "translation": "більшість",
+    "category": "other"
   },
   {
     "word": "mother",
-    "translation": "мати"
+    "translation": "мати",
+    "category": "family"
   },
   {
     "word": "move",
-    "translation": "рухатися"
+    "translation": "рухатися",
+    "category": "actions"
   },
   {
     "word": "much",
     "translation": "багато",
-    "example": "How much is it? — Скільки це коштує?"
+    "example": "How much is it? — Скільки це коштує?",
+    "category": "other"
   },
   {
     "word": "music",
     "translation": "музика",
-    "example": "I love listening to music. — Я люблю слухати музику."
+    "example": "I love listening to music. — Я люблю слухати музику.",
+    "category": "education"
   },
   {
     "word": "natural",
-    "translation": "природний"
+    "translation": "природний",
+    "category": "other"
   },
   {
     "word": "need",
     "translation": "потребувати",
-    "example": "I need your help. — Мені потрібна твоя допомога."
+    "example": "I need your help. — Мені потрібна твоя допомога.",
+    "category": "emotions"
   },
   {
     "word": "never",
     "translation": "ніколи",
-    "example": "Never give up! — Ніколи не здавайся!"
+    "example": "Never give up! — Ніколи не здавайся!",
+    "category": "time"
   },
   {
     "word": "new",
     "translation": "новий",
-    "example": "I bought a new phone. — Я купив новий телефон."
+    "example": "I bought a new phone. — Я купив новий телефон.",
+    "category": "quality"
   },
   {
     "word": "next",
     "translation": "наступний",
-    "example": "See you next time! — Побачимось наступного разу!"
+    "example": "See you next time! — Побачимось наступного разу!",
+    "category": "numbers"
   },
   {
     "word": "nice",
-    "translation": "приємний"
+    "translation": "приємний",
+    "category": "quality"
   },
   {
     "word": "normal",
-    "translation": "нормальний"
+    "translation": "нормальний",
+    "category": "other"
   },
   {
     "word": "nothing",
-    "translation": "нічого"
+    "translation": "нічого",
+    "category": "other"
   },
   {
     "word": "notice",
-    "translation": "помічати"
+    "translation": "помічати",
+    "category": "other"
   },
   {
     "word": "number",
-    "translation": "число"
+    "translation": "число",
+    "category": "numbers"
   },
   {
     "word": "object",
-    "translation": "об'єкт"
+    "translation": "об'єкт",
+    "category": "other"
   },
   {
     "word": "offer",
-    "translation": "пропозиція"
+    "translation": "пропозиція",
+    "category": "other"
   },
   {
     "word": "often",
     "translation": "часто",
-    "example": "I often go there. — Я часто туди ходжу."
+    "example": "I often go there. — Я часто туди ходжу.",
+    "category": "time"
   },
   {
     "word": "once",
-    "translation": "одного разу"
+    "translation": "одного разу",
+    "category": "other"
   },
   {
     "word": "only",
     "translation": "тільки",
-    "example": "I only have one. — У мене є тільки один."
+    "example": "I only have one. — У мене є тільки один.",
+    "category": "other"
   },
   {
     "word": "option",
-    "translation": "варіант"
+    "translation": "варіант",
+    "category": "other"
   },
   {
     "word": "order",
-    "translation": "порядок"
+    "translation": "порядок",
+    "category": "other"
   },
   {
     "word": "other",
     "translation": "інший",
-    "example": "The other day I saw him. — Днями я бачив його."
+    "example": "The other day I saw him. — Днями я бачив його.",
+    "category": "other"
   },
   {
     "word": "outside",
-    "translation": "зовні"
+    "translation": "зовні",
+    "category": "other"
   },
   {
     "word": "over",
-    "translation": "над"
+    "translation": "над",
+    "category": "other"
   },
   {
     "word": "own",
-    "translation": "володіти"
+    "translation": "володіти",
+    "category": "other"
   },
   {
     "word": "pain",
-    "translation": "біль"
+    "translation": "біль",
+    "category": "health"
   },
   {
     "word": "part",
-    "translation": "частина"
+    "translation": "частина",
+    "category": "other"
   },
   {
     "word": "pass",
-    "translation": "проходити"
+    "translation": "проходити",
+    "category": "other"
   },
   {
     "word": "past",
-    "translation": "минуле"
+    "translation": "минуле",
+    "category": "time"
   },
   {
     "word": "path",
-    "translation": "шлях"
+    "translation": "шлях",
+    "category": "other"
   },
   {
     "word": "pattern",
-    "translation": "візерунок"
+    "translation": "візерунок",
+    "category": "other"
   },
   {
     "word": "peace",
-    "translation": "мир"
+    "translation": "мир",
+    "category": "other"
   },
   {
     "word": "people",
     "translation": "люди",
-    "example": "Many people came to the party. — Багато людей прийшло на вечірку."
+    "example": "Many people came to the party. — Багато людей прийшло на вечірку.",
+    "category": "family"
   },
   {
     "word": "perfect",
-    "translation": "ідеальний"
+    "translation": "ідеальний",
+    "category": "other"
   },
   {
     "word": "perform",
-    "translation": "виступати"
+    "translation": "виступати",
+    "category": "other"
   },
   {
     "word": "person",
-    "translation": "людина"
+    "translation": "людина",
+    "category": "family"
   },
   {
     "word": "picture",
-    "translation": "картина"
+    "translation": "картина",
+    "category": "other"
   },
   {
     "word": "place",
     "translation": "місце",
-    "example": "This is a nice place. — Це гарне місце."
+    "example": "This is a nice place. — Це гарне місце.",
+    "category": "actions"
   },
   {
     "word": "plan",
-    "translation": "план"
+    "translation": "план",
+    "category": "work"
   },
   {
     "word": "play",
     "translation": "грати",
-    "example": "Children love to play. — Діти люблять гратися."
+    "example": "Children love to play. — Діти люблять гратися.",
+    "category": "actions"
   },
   {
     "word": "point",
-    "translation": "точка"
+    "translation": "точка",
+    "category": "other"
   },
   {
     "word": "policy",
-    "translation": "політика"
+    "translation": "політика",
+    "category": "other"
   },
   {
     "word": "poor",
-    "translation": "бідний"
+    "translation": "бідний",
+    "category": "quality"
   },
   {
     "word": "popular",
-    "translation": "популярний"
+    "translation": "популярний",
+    "category": "other"
   },
   {
     "word": "power",
-    "translation": "влада"
+    "translation": "влада",
+    "category": "other"
   },
   {
     "word": "present",
-    "translation": "теперішній"
+    "translation": "теперішній",
+    "category": "time"
   },
   {
     "word": "press",
-    "translation": "натискати"
+    "translation": "натискати",
+    "category": "other"
   },
   {
     "word": "prevent",
-    "translation": "запобігати"
+    "translation": "запобігати",
+    "category": "other"
   },
   {
     "word": "price",
-    "translation": "ціна"
+    "translation": "ціна",
+    "category": "work"
   },
   {
     "word": "process",
-    "translation": "процес"
+    "translation": "процес",
+    "category": "other"
   },
   {
     "word": "produce",
-    "translation": "виробляти"
+    "translation": "виробляти",
+    "category": "other"
   },
   {
     "word": "profit",
-    "translation": "прибуток"
+    "translation": "прибуток",
+    "category": "other"
   },
   {
     "word": "program",
-    "translation": "програма"
+    "translation": "програма",
+    "category": "work"
   },
   {
     "word": "project",
-    "translation": "проєкт"
+    "translation": "проєкт",
+    "category": "work"
   },
   {
     "word": "promise",
-    "translation": "обіцянка"
+    "translation": "обіцянка",
+    "category": "other"
   },
   {
     "word": "protect",
-    "translation": "захищати"
+    "translation": "захищати",
+    "category": "other"
   },
   {
     "word": "prove",
-    "translation": "доводити"
+    "translation": "доводити",
+    "category": "other"
   },
   {
     "word": "provide",
-    "translation": "надавати"
+    "translation": "надавати",
+    "category": "other"
   },
   {
     "word": "public",
-    "translation": "громадський"
+    "translation": "громадський",
+    "category": "other"
   },
   {
     "word": "pull",
-    "translation": "тягнути"
+    "translation": "тягнути",
+    "category": "actions"
   },
   {
     "word": "push",
-    "translation": "штовхати"
+    "translation": "штовхати",
+    "category": "actions"
   },
   {
     "word": "put",
-    "translation": "класти"
+    "translation": "класти",
+    "category": "actions"
   },
   {
     "word": "raise",
-    "translation": "піднімати"
+    "translation": "піднімати",
+    "category": "other"
   },
   {
     "word": "reach",
-    "translation": "досягати"
+    "translation": "досягати",
+    "category": "other"
   },
   {
     "word": "read",
     "translation": "читати",
-    "example": "I read books every day. — Я читаю книги щодня."
+    "example": "I read books every day. — Я читаю книги щодня.",
+    "category": "education"
   },
   {
     "word": "ready",
-    "translation": "готовий"
+    "translation": "готовий",
+    "category": "other"
   },
   {
     "word": "real",
-    "translation": "справжній"
+    "translation": "справжній",
+    "category": "quality"
   },
   {
     "word": "reason",
-    "translation": "причина"
+    "translation": "причина",
+    "category": "other"
   },
   {
     "word": "receive",
-    "translation": "отримувати"
+    "translation": "отримувати",
+    "category": "other"
   },
   {
     "word": "record",
-    "translation": "запис"
+    "translation": "запис",
+    "category": "other"
   },
   {
     "word": "reduce",
-    "translation": "зменшувати"
+    "translation": "зменшувати",
+    "category": "other"
   },
   {
     "word": "refuse",
-    "translation": "відмовляти"
+    "translation": "відмовляти",
+    "category": "other"
   },
   {
     "word": "relate",
-    "translation": "пов'язувати"
+    "translation": "пов'язувати",
+    "category": "other"
   },
   {
     "word": "remain",
-    "translation": "залишатися"
+    "translation": "залишатися",
+    "category": "other"
   },
   {
     "word": "remember",
-    "translation": "пам'ятати"
+    "translation": "пам'ятати",
+    "category": "other"
   },
   {
     "word": "remove",
-    "translation": "видаляти"
+    "translation": "видаляти",
+    "category": "other"
   },
   {
     "word": "repeat",
-    "translation": "повторювати"
+    "translation": "повторювати",
+    "category": "other"
   },
   {
     "word": "replace",
-    "translation": "замінювати"
+    "translation": "замінювати",
+    "category": "other"
   },
   {
     "word": "report",
-    "translation": "доповідь"
+    "translation": "доповідь",
+    "category": "work"
   },
   {
     "word": "require",
-    "translation": "вимагати"
+    "translation": "вимагати",
+    "category": "other"
   },
   {
     "word": "research",
-    "translation": "дослідження"
+    "translation": "дослідження",
+    "category": "other"
   },
   {
     "word": "respect",
-    "translation": "повага"
+    "translation": "повага",
+    "category": "other"
   },
   {
     "word": "result",
-    "translation": "результат"
+    "translation": "результат",
+    "category": "other"
   },
   {
     "word": "return",
-    "translation": "повертати"
+    "translation": "повертати",
+    "category": "actions"
   },
   {
     "word": "reveal",
-    "translation": "розкривати"
+    "translation": "розкривати",
+    "category": "other"
   },
   {
     "word": "rich",
-    "translation": "багатий"
+    "translation": "багатий",
+    "category": "quality"
   },
   {
     "word": "right",
     "translation": "правий",
-    "example": "You are right. — Ти правий."
+    "example": "You are right. — Ти правий.",
+    "category": "quality"
   },
   {
     "word": "rise",
-    "translation": "підніматися"
+    "translation": "підніматися",
+    "category": "actions"
   },
   {
     "word": "risk",
-    "translation": "ризик"
+    "translation": "ризик",
+    "category": "other"
   },
   {
     "word": "rule",
-    "translation": "правило"
+    "translation": "правило",
+    "category": "other"
   },
   {
     "word": "run",
     "translation": "бігти",
-    "example": "He runs every morning. — Він бігає щоранку."
+    "example": "He runs every morning. — Він бігає щоранку.",
+    "category": "actions"
   },
   {
     "word": "safe",
-    "translation": "безпечний"
+    "translation": "безпечний",
+    "category": "quality"
   },
   {
     "word": "same",
     "translation": "однаковий",
-    "example": "We have the same problem. — У нас та сама проблема."
+    "example": "We have the same problem. — У нас та сама проблема.",
+    "category": "other"
   },
   {
     "word": "save",
-    "translation": "рятувати"
+    "translation": "рятувати",
+    "category": "other"
   },
   {
     "word": "say",
     "translation": "говорити",
-    "example": "What did you say? — Що ти сказав?"
+    "example": "What did you say? — Що ти сказав?",
+    "category": "communication"
   },
   {
     "word": "scene",
-    "translation": "сцена"
+    "translation": "сцена",
+    "category": "other"
   },
   {
     "word": "school",
     "translation": "школа",
-    "example": "Children go to school. — Діти ходять до школи."
+    "example": "Children go to school. — Діти ходять до школи.",
+    "category": "city"
   },
   {
     "word": "search",
-    "translation": "шукати"
+    "translation": "шукати",
+    "category": "other"
   },
   {
     "word": "season",
-    "translation": "пора року"
+    "translation": "пора року",
+    "category": "nature"
   },
   {
     "word": "secret",
-    "translation": "секрет"
+    "translation": "секрет",
+    "category": "other"
   },
   {
     "word": "seem",
-    "translation": "здаватися"
+    "translation": "здаватися",
+    "category": "other"
   },
   {
     "word": "sell",
     "translation": "продавати",
-    "example": "They sell fresh vegetables. — Вони продають свіжі овочі."
+    "example": "They sell fresh vegetables. — Вони продають свіжі овочі.",
+    "category": "work"
   },
   {
     "word": "send",
-    "translation": "надсилати"
+    "translation": "надсилати",
+    "category": "other"
   },
   {
     "word": "sense",
-    "translation": "відчуття"
+    "translation": "відчуття",
+    "category": "other"
   },
   {
     "word": "service",
-    "translation": "послуга"
+    "translation": "послуга",
+    "category": "work"
   },
   {
     "word": "set",
-    "translation": "встановлювати"
+    "translation": "встановлювати",
+    "category": "other"
   },
   {
     "word": "share",
-    "translation": "ділитися"
+    "translation": "ділитися",
+    "category": "other"
   },
   {
     "word": "show",
-    "translation": "показувати"
+    "translation": "показувати",
+    "category": "other"
   },
   {
     "word": "sign",
-    "translation": "знак"
+    "translation": "знак",
+    "category": "other"
   },
   {
     "word": "simple",
-    "translation": "простий"
+    "translation": "простий",
+    "category": "quality"
   },
   {
     "word": "since",
-    "translation": "з тих пір"
+    "translation": "з тих пір",
+    "category": "other"
   },
   {
     "word": "situation",
-    "translation": "ситуація"
+    "translation": "ситуація",
+    "category": "other"
   },
   {
     "word": "size",
-    "translation": "розмір"
+    "translation": "розмір",
+    "category": "size"
   },
   {
     "word": "skill",
-    "translation": "навичка"
+    "translation": "навичка",
+    "category": "other"
   },
   {
     "word": "sleep",
     "translation": "спати",
-    "example": "I need to sleep. — Мені треба поспати."
+    "example": "I need to sleep. — Мені треба поспати.",
+    "category": "health"
   },
   {
     "word": "slow",
     "translation": "повільний",
-    "example": "Drive slow! — Їдь повільно!"
+    "example": "Drive slow! — Їдь повільно!",
+    "category": "quality"
   },
   {
     "word": "small",
     "translation": "маленький",
-    "example": "The room is too small. — Кімната занадто маленька."
+    "example": "The room is too small. — Кімната занадто маленька.",
+    "category": "size"
   },
   {
     "word": "smart",
-    "translation": "розумний"
+    "translation": "розумний",
+    "category": "other"
   },
   {
     "word": "smile",
-    "translation": "посміхатися"
+    "translation": "посміхатися",
+    "category": "emotions"
   },
   {
     "word": "solve",
-    "translation": "вирішувати"
+    "translation": "вирішувати",
+    "category": "other"
   },
   {
     "word": "soon",
-    "translation": "скоро"
+    "translation": "скоро",
+    "category": "time"
   },
   {
     "word": "sorry",
     "translation": "шкодувати",
-    "example": "I'm sorry. — Вибач."
+    "example": "I'm sorry. — Вибач.",
+    "category": "communication"
   },
   {
     "word": "sound",
-    "translation": "звук"
+    "translation": "звук",
+    "category": "other"
   },
   {
     "word": "speak",
     "translation": "говорити",
-    "example": "Do you speak English? — Ти розмовляєш англійською?"
+    "example": "Do you speak English? — Ти розмовляєш англійською?",
+    "category": "communication"
   },
   {
     "word": "special",
-    "translation": "особливий"
+    "translation": "особливий",
+    "category": "other"
   },
   {
     "word": "spend",
-    "translation": "витрачати"
+    "translation": "витрачати",
+    "category": "other"
   },
   {
     "word": "spread",
-    "translation": "поширювати"
+    "translation": "поширювати",
+    "category": "other"
   },
   {
     "word": "stand",
     "translation": "стояти",
-    "example": "Stand up, please. — Встань, будь ласка."
+    "example": "Stand up, please. — Встань, будь ласка.",
+    "category": "actions"
   },
   {
     "word": "start",
     "translation": "починати",
-    "example": "Let's start! — Давай почнемо!"
+    "example": "Let's start! — Давай почнемо!",
+    "category": "actions"
   },
   {
     "word": "stay",
-    "translation": "залишатися"
+    "translation": "залишатися",
+    "category": "actions"
   },
   {
     "word": "step",
-    "translation": "крок"
+    "translation": "крок",
+    "category": "other"
   },
   {
     "word": "still",
-    "translation": "ще"
+    "translation": "ще",
+    "category": "time"
   },
   {
     "word": "stop",
     "translation": "зупиняти",
-    "example": "Stop talking! — Припини говорити!"
+    "example": "Stop talking! — Припини говорити!",
+    "category": "actions"
   },
   {
     "word": "store",
-    "translation": "магазин"
+    "translation": "магазин",
+    "category": "city"
   },
   {
     "word": "story",
-    "translation": "історія"
+    "translation": "історія",
+    "category": "other"
   },
   {
     "word": "strong",
-    "translation": "сильний"
+    "translation": "сильний",
+    "category": "health"
   },
   {
     "word": "student",
-    "translation": "студент"
+    "translation": "студент",
+    "category": "education"
   },
   {
     "word": "study",
     "translation": "навчатися",
-    "example": "I study at university. — Я навчаюся в університеті."
+    "example": "I study at university. — Я навчаюся в університеті.",
+    "category": "education"
   },
   {
     "word": "subject",
-    "translation": "предмет"
+    "translation": "предмет",
+    "category": "education"
   },
   {
     "word": "success",
-    "translation": "успіх"
+    "translation": "успіх",
+    "category": "other"
   },
   {
     "word": "such",
-    "translation": "такий"
+    "translation": "такий",
+    "category": "other"
   },
   {
     "word": "suggest",
-    "translation": "пропонувати"
+    "translation": "пропонувати",
+    "category": "other"
   },
   {
     "word": "support",
-    "translation": "підтримка"
+    "translation": "підтримка",
+    "category": "other"
   },
   {
     "word": "sure",
-    "translation": "впевнений"
+    "translation": "впевнений",
+    "category": "quality"
   },
   {
     "word": "switch",
-    "translation": "перемикати"
+    "translation": "перемикати",
+    "category": "other"
   },
   {
     "word": "system",
-    "translation": "система"
+    "translation": "система",
+    "category": "other"
   },
   {
     "word": "table",
     "translation": "стіл",
-    "example": "The book is on the table. — Книга на столі."
+    "example": "The book is on the table. — Книга на столі.",
+    "category": "home"
   },
   {
     "word": "take",
     "translation": "брати",
-    "example": "Take this book. — Візьми цю книгу."
+    "example": "Take this book. — Візьми цю книгу.",
+    "category": "actions"
   },
   {
     "word": "talk",
-    "translation": "розмовляти"
+    "translation": "розмовляти",
+    "category": "communication"
   },
   {
     "word": "task",
-    "translation": "завдання"
+    "translation": "завдання",
+    "category": "work"
   },
   {
     "word": "teach",
     "translation": "навчати",
-    "example": "She teaches math. — Вона викладає математику."
+    "example": "She teaches math. — Вона викладає математику.",
+    "category": "education"
   },
   {
     "word": "team",
-    "translation": "команда"
+    "translation": "команда",
+    "category": "work"
   },
   {
     "word": "tell",
     "translation": "розповідати",
-    "example": "Tell me the truth. — Скажи мені правду."
+    "example": "Tell me the truth. — Скажи мені правду.",
+    "category": "communication"
   },
   {
     "word": "term",
-    "translation": "строк"
+    "translation": "строк",
+    "category": "other"
   },
   {
     "word": "test",
-    "translation": "тест"
+    "translation": "тест",
+    "category": "education"
   },
   {
     "word": "thank",
-    "translation": "дякувати"
+    "translation": "дякувати",
+    "category": "other"
   },
   {
     "word": "think",
     "translation": "думати",
-    "example": "I think you're right. — Я думаю, ти правий."
+    "example": "I think you're right. — Я думаю, ти правий.",
+    "category": "communication"
   },
   {
     "word": "though",
-    "translation": "хоча"
+    "translation": "хоча",
+    "category": "other"
   },
   {
     "word": "through",
-    "translation": "крізь"
+    "translation": "крізь",
+    "category": "other"
   },
   {
     "word": "throw",
-    "translation": "кидати"
+    "translation": "кидати",
+    "category": "actions"
   },
   {
     "word": "today",
     "translation": "сьогодні",
-    "example": "What are you doing today? — Що ти робиш сьогодні?"
+    "example": "What are you doing today? — Що ти робиш сьогодні?",
+    "category": "time"
   },
   {
     "word": "together",
-    "translation": "разом"
+    "translation": "разом",
+    "category": "other"
   },
   {
     "word": "tomorrow",
     "translation": "завтра",
-    "example": "See you tomorrow! — Побачимось завтра!"
+    "example": "See you tomorrow! — Побачимось завтра!",
+    "category": "time"
   },
   {
     "word": "touch",
-    "translation": "торкатися"
+    "translation": "торкатися",
+    "category": "other"
   },
   {
     "word": "toward",
-    "translation": "до"
+    "translation": "до",
+    "category": "other"
   },
   {
     "word": "town",
-    "translation": "місто"
+    "translation": "місто",
+    "category": "city"
   },
   {
     "word": "train",
-    "translation": "тренувати"
+    "translation": "тренувати",
+    "category": "transport"
   },
   {
     "word": "travel",
-    "translation": "подорожувати"
+    "translation": "подорожувати",
+    "category": "transport"
   },
   {
     "word": "trust",
-    "translation": "довіряти"
+    "translation": "довіряти",
+    "category": "other"
   },
   {
     "word": "truth",
-    "translation": "правда"
+    "translation": "правда",
+    "category": "other"
   },
   {
     "word": "try",
     "translation": "намагатися",
-    "example": "Try again! — Спробуй ще раз!"
+    "example": "Try again! — Спробуй ще раз!",
+    "category": "actions"
   },
   {
     "word": "turn",
-    "translation": "повертати"
+    "translation": "повертати",
+    "category": "actions"
   },
   {
     "word": "type",
-    "translation": "тип"
+    "translation": "тип",
+    "category": "other"
   },
   {
     "word": "understand",
-    "translation": "розуміти"
+    "translation": "розуміти",
+    "category": "communication"
   },
   {
     "word": "until",
-    "translation": "поки"
+    "translation": "поки",
+    "category": "other"
   },
   {
     "word": "update",
-    "translation": "оновлювати"
+    "translation": "оновлювати",
+    "category": "other"
   },
   {
     "word": "upon",
-    "translation": "на"
+    "translation": "на",
+    "category": "other"
   },
   {
     "word": "value",
-    "translation": "цінність"
+    "translation": "цінність",
+    "category": "other"
   },
   {
     "word": "various",
-    "translation": "різний"
+    "translation": "різний",
+    "category": "other"
   },
   {
     "word": "visit",
-    "translation": "відвідувати"
+    "translation": "відвідувати",
+    "category": "other"
   },
   {
     "word": "wait",
     "translation": "чекати",
-    "example": "Wait for me! — Почекай на мене!"
+    "example": "Wait for me! — Почекай на мене!",
+    "category": "actions"
   },
   {
     "word": "want",
     "translation": "хотіти",
-    "example": "I want to go home. — Я хочу додому."
+    "example": "I want to go home. — Я хочу додому.",
+    "category": "emotions"
   },
   {
     "word": "warm",
-    "translation": "теплий"
+    "translation": "теплий",
+    "category": "quality"
   },
   {
     "word": "watch",
-    "translation": "спостерігати"
+    "translation": "спостерігати",
+    "category": "time"
   },
   {
     "word": "week",
     "translation": "тиждень",
-    "example": "I'll call you next week. — Я подзвоню тобі наступного тижня."
+    "example": "I'll call you next week. — Я подзвоню тобі наступного тижня.",
+    "category": "time"
   },
   {
     "word": "welcome",
-    "translation": "вітати"
+    "translation": "вітати",
+    "category": "communication"
   },
   {
     "word": "well",
     "translation": "добре",
-    "example": "Well done! — Молодець!"
+    "example": "Well done! — Молодець!",
+    "category": "other"
   },
   {
     "word": "white",
     "translation": "білий",
-    "example": "Snow is white. — Сніг білий."
+    "example": "Snow is white. — Сніг білий.",
+    "category": "colors"
   },
   {
     "word": "wide",
-    "translation": "широкий"
+    "translation": "широкий",
+    "category": "size"
   },
   {
     "word": "win",
-    "translation": "перемагати"
+    "translation": "перемагати",
+    "category": "other"
   },
   {
     "word": "wish",
-    "translation": "бажати"
+    "translation": "бажати",
+    "category": "emotions"
   },
   {
     "word": "within",
-    "translation": "всередині"
+    "translation": "всередині",
+    "category": "other"
   },
   {
     "word": "woman",
     "translation": "жінка",
-    "example": "That woman is a doctor. — Та жінка - лікар."
+    "example": "That woman is a doctor. — Та жінка - лікар.",
+    "category": "family"
   },
   {
     "word": "wonder",
-    "translation": "дивуватися"
+    "translation": "дивуватися",
+    "category": "other"
   },
   {
     "word": "word",
-    "translation": "слово"
+    "translation": "слово",
+    "category": "education"
   },
   {
     "word": "work",
     "translation": "працювати",
-    "example": "I work from home. — Я працюю з дому."
+    "example": "I work from home. — Я працюю з дому.",
+    "category": "work"
   },
   {
     "word": "world",
     "translation": "світ",
-    "example": "Travel around the world. — Подорожуй світом."
+    "example": "Travel around the world. — Подорожуй світом.",
+    "category": "other"
   },
   {
     "word": "worry",
-    "translation": "турбуватися"
+    "translation": "турбуватися",
+    "category": "other"
   },
   {
     "word": "worth",
-    "translation": "коштувати"
+    "translation": "коштувати",
+    "category": "other"
   },
   {
     "word": "write",
     "translation": "писати",
-    "example": "Write your name here. — Напиши своє ім'я тут."
+    "example": "Write your name here. — Напиши своє ім'я тут.",
+    "category": "education"
   },
   {
     "word": "wrong",
     "translation": "неправильний",
-    "example": "That's wrong. — Це неправильно."
+    "example": "That's wrong. — Це неправильно.",
+    "category": "quality"
   },
   {
     "word": "young",
-    "translation": "молодий"
+    "translation": "молодий",
+    "category": "quality"
   },
   {
     "word": "abolish",
-    "translation": "скасовувати"
+    "translation": "скасовувати",
+    "category": "other"
   },
   {
     "word": "absorb",
-    "translation": "поглинати"
+    "translation": "поглинати",
+    "category": "other"
   },
   {
     "word": "abstract",
-    "translation": "абстрактний"
+    "translation": "абстрактний",
+    "category": "other"
   },
   {
     "word": "abuse",
-    "translation": "зловживати"
+    "translation": "зловживати",
+    "category": "other"
   },
   {
     "word": "access",
-    "translation": "доступ"
+    "translation": "доступ",
+    "category": "other"
   },
   {
     "word": "adapt",
-    "translation": "адаптуватися"
+    "translation": "адаптуватися",
+    "category": "other"
   },
   {
     "word": "adjust",
-    "translation": "налаштовувати"
+    "translation": "налаштовувати",
+    "category": "other"
   },
   {
     "word": "admire",
-    "translation": "захоплюватися"
+    "translation": "захоплюватися",
+    "category": "other"
   },
   {
     "word": "admit",
-    "translation": "визнавати"
+    "translation": "визнавати",
+    "category": "other"
   },
   {
     "word": "adopt",
-    "translation": "приймати"
+    "translation": "приймати",
+    "category": "other"
   },
   {
     "word": "advertise",
-    "translation": "рекламувати"
+    "translation": "рекламувати",
+    "category": "other"
   },
   {
     "word": "aggressive",
-    "translation": "агресивний"
+    "translation": "агресивний",
+    "category": "other"
   },
   {
     "word": "aid",
-    "translation": "допомога"
+    "translation": "допомога",
+    "category": "other"
   },
   {
     "word": "allocate",
-    "translation": "розподіляти"
+    "translation": "розподіляти",
+    "category": "other"
   },
   {
     "word": "analyze",
-    "translation": "аналізувати"
+    "translation": "аналізувати",
+    "category": "other"
   },
   {
     "word": "announce",
-    "translation": "оголошувати"
+    "translation": "оголошувати",
+    "category": "other"
   },
   {
     "word": "anxiety",
-    "translation": "тривога"
+    "translation": "тривога",
+    "category": "other"
   },
   {
     "word": "appreciate",
-    "translation": "цінувати"
+    "translation": "цінувати",
+    "category": "other"
   },
   {
     "word": "approach",
-    "translation": "підхід"
+    "translation": "підхід",
+    "category": "other"
   },
   {
     "word": "approve",
-    "translation": "схвалювати"
+    "translation": "схвалювати",
+    "category": "other"
   },
   {
     "word": "arrange",
-    "translation": "організовувати"
+    "translation": "організовувати",
+    "category": "other"
   },
   {
     "word": "arrest",
-    "translation": "арешт"
+    "translation": "арешт",
+    "category": "other"
   },
   {
     "word": "assign",
-    "translation": "призначати"
+    "translation": "призначати",
+    "category": "other"
   },
   {
     "word": "assist",
-    "translation": "допомагати"
+    "translation": "допомагати",
+    "category": "other"
   },
   {
     "word": "assume",
-    "translation": "припускати"
+    "translation": "припускати",
+    "category": "other"
   },
   {
     "word": "attempt",
-    "translation": "спроба"
+    "translation": "спроба",
+    "category": "other"
   },
   {
     "word": "attend",
-    "translation": "відвідувати"
+    "translation": "відвідувати",
+    "category": "other"
   },
   {
     "word": "attitude",
-    "translation": "ставлення"
+    "translation": "ставлення",
+    "category": "other"
   },
   {
     "word": "auction",
-    "translation": "аукціон"
+    "translation": "аукціон",
+    "category": "other"
   },
   {
     "word": "audience",
-    "translation": "аудиторія"
+    "translation": "аудиторія",
+    "category": "other"
   },
   {
     "word": "available",
-    "translation": "доступний"
+    "translation": "доступний",
+    "category": "other"
   },
   {
     "word": "average",
-    "translation": "середнє"
+    "translation": "середнє",
+    "category": "other"
   },
   {
     "word": "barrier",
-    "translation": "бар'єр"
+    "translation": "бар'єр",
+    "category": "other"
   },
   {
     "word": "behaviour",
-    "translation": "поведінка"
+    "translation": "поведінка",
+    "category": "other"
   },
   {
     "word": "believe",
-    "translation": "вірити"
+    "translation": "вірити",
+    "category": "communication"
   },
   {
     "word": "bond",
-    "translation": "зв'язок"
+    "translation": "зв'язок",
+    "category": "other"
   },
   {
     "word": "bonus",
-    "translation": "бонус"
+    "translation": "бонус",
+    "category": "other"
   },
   {
     "word": "boost",
-    "translation": "підвищувати"
+    "translation": "підвищувати",
+    "category": "other"
   },
   {
     "word": "budget",
-    "translation": "бюджет"
+    "translation": "бюджет",
+    "category": "other"
   },
   {
     "word": "burden",
-    "translation": "тягар"
+    "translation": "тягар",
+    "category": "other"
   },
   {
     "word": "calculate",
-    "translation": "обчислювати"
+    "translation": "обчислювати",
+    "category": "numbers"
   },
   {
     "word": "capacity",
-    "translation": "місткість"
+    "translation": "місткість",
+    "category": "other"
   },
   {
     "word": "career",
-    "translation": "кар'єра"
+    "translation": "кар'єра",
+    "category": "other"
   },
   {
     "word": "challenge",
-    "translation": "виклик"
+    "translation": "виклик",
+    "category": "other"
   },
   {
     "word": "charity",
-    "translation": "благодійність"
+    "translation": "благодійність",
+    "category": "other"
   },
   {
     "word": "choice",
-    "translation": "вибір"
+    "translation": "вибір",
+    "category": "other"
   },
   {
     "word": "citizen",
-    "translation": "громадянин"
+    "translation": "громадянин",
+    "category": "other"
   },
   {
     "word": "collapse",
-    "translation": "руйнуватися"
+    "translation": "руйнуватися",
+    "category": "other"
   },
   {
     "word": "colleague",
-    "translation": "колега"
+    "translation": "колега",
+    "category": "work"
   },
   {
     "word": "combine",
-    "translation": "комбінувати"
+    "translation": "комбінувати",
+    "category": "other"
   },
   {
     "word": "commit",
-    "translation": "вчиняти"
+    "translation": "вчиняти",
+    "category": "other"
   },
   {
     "word": "compete",
-    "translation": "конкурувати"
+    "translation": "конкурувати",
+    "category": "other"
   },
   {
     "word": "complain",
-    "translation": "скаржитися"
+    "translation": "скаржитися",
+    "category": "other"
   },
   {
     "word": "compose",
-    "translation": "складати"
+    "translation": "складати",
+    "category": "other"
   },
   {
     "word": "concept",
-    "translation": "концепція"
+    "translation": "концепція",
+    "category": "other"
   },
   {
     "word": "conflict",
-    "translation": "конфлікт"
+    "translation": "конфлікт",
+    "category": "other"
   },
   {
     "word": "consume",
-    "translation": "споживати"
+    "translation": "споживати",
+    "category": "other"
   },
   {
     "word": "contract",
-    "translation": "контракт"
+    "translation": "контракт",
+    "category": "other"
   },
   {
     "word": "contribute",
-    "translation": "вносити внесок"
+    "translation": "вносити внесок",
+    "category": "other"
   },
   {
     "word": "convince",
-    "translation": "переконувати"
+    "translation": "переконувати",
+    "category": "other"
   },
   {
     "word": "cooperate",
-    "translation": "співпрацювати"
+    "translation": "співпрацювати",
+    "category": "other"
   },
   {
     "word": "courage",
-    "translation": "сміливість"
+    "translation": "сміливість",
+    "category": "other"
   },
   {
     "word": "creative",
-    "translation": "творчий"
+    "translation": "творчий",
+    "category": "other"
   },
   {
     "word": "critical",
-    "translation": "критичний"
+    "translation": "критичний",
+    "category": "other"
   },
   {
     "word": "curiosity",
-    "translation": "цікавість"
+    "translation": "цікавість",
+    "category": "other"
   },
   {
     "word": "deadline",
-    "translation": "дедлайн"
+    "translation": "дедлайн",
+    "category": "other"
   },
   {
     "word": "debate",
-    "translation": "дебати"
+    "translation": "дебати",
+    "category": "other"
   },
   {
     "word": "decrease",
-    "translation": "зменшувати"
+    "translation": "зменшувати",
+    "category": "other"
   },
   {
     "word": "define",
-    "translation": "визначати"
+    "translation": "визначати",
+    "category": "other"
   },
   {
     "word": "demonstrate",
-    "translation": "демонструвати"
+    "translation": "демонструвати",
+    "category": "other"
   },
   {
     "word": "depend",
-    "translation": "залежати"
+    "translation": "залежати",
+    "category": "other"
   },
   {
     "word": "describe",
-    "translation": "описувати"
+    "translation": "описувати",
+    "category": "communication"
   },
   {
     "word": "detail",
-    "translation": "деталь"
+    "translation": "деталь",
+    "category": "other"
   },
   {
     "word": "determine",
-    "translation": "визначати"
+    "translation": "визначати",
+    "category": "other"
   },
   {
     "word": "digital",
-    "translation": "цифровий"
+    "translation": "цифровий",
+    "category": "other"
   },
   {
     "word": "disability",
-    "translation": "інвалідність"
+    "translation": "інвалідність",
+    "category": "other"
   },
   {
     "word": "disappear",
-    "translation": "зникати"
+    "translation": "зникати",
+    "category": "other"
   },
   {
     "word": "discipline",
-    "translation": "дисципліна"
+    "translation": "дисципліна",
+    "category": "other"
   },
   {
     "word": "discrimination",
-    "translation": "дискримінація"
+    "translation": "дискримінація",
+    "category": "other"
   },
   {
     "word": "diversity",
-    "translation": "різноманіття"
+    "translation": "різноманіття",
+    "category": "other"
   },
   {
     "word": "domestic",
-    "translation": "домашній"
+    "translation": "домашній",
+    "category": "other"
   },
   {
     "word": "download",
-    "translation": "завантажувати"
+    "translation": "завантажувати",
+    "category": "other"
   },
   {
     "word": "dynamic",
-    "translation": "динамічний"
+    "translation": "динамічний",
+    "category": "other"
   },
   {
     "word": "economy",
-    "translation": "економіка"
+    "translation": "економіка",
+    "category": "other"
   },
   {
     "word": "education",
-    "translation": "освіта"
+    "translation": "освіта",
+    "category": "education"
   },
   {
     "word": "effective",
-    "translation": "ефективний"
+    "translation": "ефективний",
+    "category": "other"
   },
   {
     "word": "efficient",
-    "translation": "результативний"
+    "translation": "результативний",
+    "category": "other"
   },
   {
     "word": "eliminate",
-    "translation": "усувати"
+    "translation": "усувати",
+    "category": "other"
   },
   {
     "word": "emotion",
-    "translation": "емоція"
+    "translation": "емоція",
+    "category": "emotions"
   },
   {
     "word": "emphasize",
-    "translation": "підкреслювати"
+    "translation": "підкреслювати",
+    "category": "other"
   },
   {
     "word": "encourage",
-    "translation": "заохочувати"
+    "translation": "заохочувати",
+    "category": "other"
   },
   {
     "word": "environment",
-    "translation": "довкілля"
+    "translation": "довкілля",
+    "category": "other"
   },
   {
     "word": "equality",
-    "translation": "рівність"
+    "translation": "рівність",
+    "category": "other"
   },
   {
     "word": "evaluate",
-    "translation": "оцінювати"
+    "translation": "оцінювати",
+    "category": "other"
   },
   {
     "word": "evidence",
-    "translation": "доказ"
+    "translation": "доказ",
+    "category": "other"
   },
   {
     "word": "evolve",
-    "translation": "еволюціонувати"
+    "translation": "еволюціонувати",
+    "category": "other"
   },
   {
     "word": "exception",
-    "translation": "виняток"
+    "translation": "виняток",
+    "category": "other"
   },
   {
     "word": "exchange",
-    "translation": "обмін"
+    "translation": "обмін",
+    "category": "other"
   },
   {
     "word": "execute",
-    "translation": "виконувати"
+    "translation": "виконувати",
+    "category": "other"
   },
   {
     "word": "expand",
-    "translation": "розширювати"
+    "translation": "розширювати",
+    "category": "other"
   },
   {
     "word": "experience",
-    "translation": "досвід"
+    "translation": "досвід",
+    "category": "other"
   },
   {
     "word": "experiment",
-    "translation": "експеримент"
+    "translation": "експеримент",
+    "category": "other"
   },
   {
     "word": "extreme",
-    "translation": "крайній"
+    "translation": "крайній",
+    "category": "other"
   },
   {
     "word": "factor",
-    "translation": "фактор"
+    "translation": "фактор",
+    "category": "other"
   },
   {
     "word": "feature",
-    "translation": "особливість"
+    "translation": "особливість",
+    "category": "other"
   },
   {
     "word": "feedback",
-    "translation": "зворотній зв'язок"
+    "translation": "зворотній зв'язок",
+    "category": "other"
   },
   {
     "word": "flexible",
-    "translation": "гнучкий"
+    "translation": "гнучкий",
+    "category": "other"
   },
   {
     "word": "foundation",
-    "translation": "основа"
+    "translation": "основа",
+    "category": "other"
   },
   {
     "word": "freedom",
-    "translation": "свобода"
+    "translation": "свобода",
+    "category": "other"
   },
   {
     "word": "frequency",
-    "translation": "частота"
+    "translation": "частота",
+    "category": "other"
   },
   {
     "word": "frustration",
-    "translation": "розчарування"
+    "translation": "розчарування",
+    "category": "other"
   },
   {
     "word": "function",
-    "translation": "функція"
+    "translation": "функція",
+    "category": "other"
   },
   {
     "word": "fundamental",
-    "translation": "фундаментальний"
+    "translation": "фундаментальний",
+    "category": "other"
   },
   {
     "word": "generate",
-    "translation": "генерувати"
+    "translation": "генерувати",
+    "category": "other"
   },
   {
     "word": "genuine",
-    "translation": "справжній"
+    "translation": "справжній",
+    "category": "other"
   },
   {
     "word": "gesture",
-    "translation": "жест"
+    "translation": "жест",
+    "category": "other"
   },
   {
     "word": "grateful",
-    "translation": "вдячний"
+    "translation": "вдячний",
+    "category": "other"
   },
   {
     "word": "guarantee",
-    "translation": "гарантувати"
+    "translation": "гарантувати",
+    "category": "other"
   },
   {
     "word": "habit",
-    "translation": "звичка"
+    "translation": "звичка",
+    "category": "other"
   },
   {
     "word": "highlight",
-    "translation": "виділяти"
+    "translation": "виділяти",
+    "category": "other"
   },
   {
     "word": "honest",
-    "translation": "чесний"
+    "translation": "чесний",
+    "category": "other"
   },
   {
     "word": "identity",
-    "translation": "ідентичність"
+    "translation": "ідентичність",
+    "category": "other"
   },
   {
     "word": "immediate",
-    "translation": "негайний"
+    "translation": "негайний",
+    "category": "other"
   },
   {
     "word": "implement",
-    "translation": "впроваджувати"
+    "translation": "впроваджувати",
+    "category": "other"
   },
   {
     "word": "independent",
-    "translation": "незалежний"
+    "translation": "незалежний",
+    "category": "other"
   },
   {
     "word": "individual",
-    "translation": "індивідуальний"
+    "translation": "індивідуальний",
+    "category": "other"
   },
   {
     "word": "influence",
-    "translation": "впливати"
+    "translation": "впливати",
+    "category": "other"
   },
   {
     "word": "initiative",
-    "translation": "ініціатива"
+    "translation": "ініціатива",
+    "category": "other"
   },
   {
     "word": "innovation",
-    "translation": "інновація"
+    "translation": "інновація",
+    "category": "other"
   },
   {
     "word": "insight",
-    "translation": "розуміння"
+    "translation": "розуміння",
+    "category": "other"
   },
   {
     "word": "inspire",
-    "translation": "надихати"
+    "translation": "надихати",
+    "category": "other"
   },
   {
     "word": "interact",
-    "translation": "взаємодіяти"
+    "translation": "взаємодіяти",
+    "category": "other"
   },
   {
     "word": "interpret",
-    "translation": "інтерпретувати"
+    "translation": "інтерпретувати",
+    "category": "other"
   },
   {
     "word": "investigate",
-    "translation": "розслідувати"
+    "translation": "розслідувати",
+    "category": "other"
   },
   {
     "word": "justify",
-    "translation": "виправдовувати"
+    "translation": "виправдовувати",
+    "category": "other"
   },
   {
     "word": "launch",
-    "translation": "запускати"
+    "translation": "запускати",
+    "category": "other"
   },
   {
     "word": "leadership",
-    "translation": "лідерство"
+    "translation": "лідерство",
+    "category": "other"
   },
   {
     "word": "logical",
-    "translation": "логічний"
+    "translation": "логічний",
+    "category": "other"
   },
   {
     "word": "maintain",
-    "translation": "підтримувати"
+    "translation": "підтримувати",
+    "category": "other"
   },
   {
     "word": "maximize",
-    "translation": "максимізувати"
+    "translation": "максимізувати",
+    "category": "other"
   },
   {
     "word": "measure",
-    "translation": "вимірювати"
+    "translation": "вимірювати",
+    "category": "other"
   },
   {
     "word": "minimize",
-    "translation": "мінімізувати"
+    "translation": "мінімізувати",
+    "category": "other"
   },
   {
     "word": "mission",
-    "translation": "місія"
+    "translation": "місія",
+    "category": "other"
   },
   {
     "word": "monitor",
-    "translation": "моніторити"
+    "translation": "моніторити",
+    "category": "other"
   },
   {
     "word": "motivate",
-    "translation": "мотивувати"
+    "translation": "мотивувати",
+    "category": "other"
   },
   {
     "word": "negotiate",
-    "translation": "вести переговори"
+    "translation": "вести переговори",
+    "category": "other"
   },
   {
     "word": "objective",
-    "translation": "ціль"
+    "translation": "ціль",
+    "category": "other"
   },
   {
     "word": "obstacle",
-    "translation": "перешкода"
+    "translation": "перешкода",
+    "category": "other"
   },
   {
     "word": "obtain",
-    "translation": "отримувати"
+    "translation": "отримувати",
+    "category": "other"
   },
   {
     "word": "outcome",
-    "translation": "результат"
+    "translation": "результат",
+    "category": "other"
   },
   {
     "word": "overcome",
-    "translation": "долати"
+    "translation": "долати",
+    "category": "other"
   },
   {
     "word": "participate",
-    "translation": "брати участь"
+    "translation": "брати участь",
+    "category": "other"
   },
   {
     "word": "passion",
-    "translation": "пристрасть"
+    "translation": "пристрасть",
+    "category": "other"
   },
   {
     "word": "perceive",
-    "translation": "сприймати"
+    "translation": "сприймати",
+    "category": "other"
   },
   {
     "word": "perspective",
-    "translation": "перспектива"
+    "translation": "перспектива",
+    "category": "other"
   },
   {
     "word": "positive",
-    "translation": "позитивний"
+    "translation": "позитивний",
+    "category": "other"
   },
   {
     "word": "potential",
-    "translation": "потенціал"
+    "translation": "потенціал",
+    "category": "other"
   },
   {
     "word": "practical",
-    "translation": "практичний"
+    "translation": "практичний",
+    "category": "other"
   },
   {
     "word": "precise",
-    "translation": "точний"
+    "translation": "точний",
+    "category": "other"
   },
   {
     "word": "predict",
-    "translation": "передбачати"
+    "translation": "передбачати",
+    "category": "other"
   },
   {
     "word": "priority",
-    "translation": "пріоритет"
+    "translation": "пріоритет",
+    "category": "other"
   },
   {
     "word": "problem",
-    "translation": "проблема"
+    "translation": "проблема",
+    "category": "other"
   },
   {
     "word": "promote",
-    "translation": "просувати"
+    "translation": "просувати",
+    "category": "other"
   },
   {
     "word": "propose",
-    "translation": "пропонувати"
+    "translation": "пропонувати",
+    "category": "other"
   },
   {
     "word": "purpose",
-    "translation": "мета"
+    "translation": "мета",
+    "category": "other"
   },
   {
     "word": "quality",
-    "translation": "якість"
+    "translation": "якість",
+    "category": "other"
   },
   {
     "word": "recognize",
-    "translation": "визнавати"
+    "translation": "визнавати",
+    "category": "other"
   },
   {
     "word": "recommend",
-    "translation": "рекомендувати"
+    "translation": "рекомендувати",
+    "category": "other"
   },
   {
     "word": "reflect",
-    "translation": "відображати"
+    "translation": "відображати",
+    "category": "other"
   },
   {
     "word": "reform",
-    "translation": "реформа"
+    "translation": "реформа",
+    "category": "other"
   },
   {
     "word": "reinforce",
-    "translation": "підкріплювати"
+    "translation": "підкріплювати",
+    "category": "other"
   },
   {
     "word": "relevant",
-    "translation": "актуальний"
+    "translation": "актуальний",
+    "category": "other"
   },
   {
     "word": "reliable",
-    "translation": "надійний"
+    "translation": "надійний",
+    "category": "other"
   },
   {
     "word": "represent",
-    "translation": "представляти"
+    "translation": "представляти",
+    "category": "other"
   },
   {
     "word": "resource",
-    "translation": "ресурс"
+    "translation": "ресурс",
+    "category": "other"
   },
   {
     "word": "respond",
-    "translation": "відповідати"
+    "translation": "відповідати",
+    "category": "other"
   },
   {
     "word": "responsible",
-    "translation": "відповідальний"
+    "translation": "відповідальний",
+    "category": "other"
   },
   {
     "word": "review",
-    "translation": "переглядати"
+    "translation": "переглядати",
+    "category": "other"
   },
   {
     "word": "revolution",
-    "translation": "революція"
+    "translation": "революція",
+    "category": "other"
   },
   {
     "word": "reward",
-    "translation": "нагорода"
+    "translation": "нагорода",
+    "category": "other"
   },
   {
     "word": "significant",
-    "translation": "значний"
+    "translation": "значний",
+    "category": "other"
   },
   {
     "word": "solution",
-    "translation": "рішення"
+    "translation": "рішення",
+    "category": "other"
   },
   {
     "word": "specific",
-    "translation": "конкретний"
+    "translation": "конкретний",
+    "category": "other"
   },
   {
     "word": "strategy",
-    "translation": "стратегія"
+    "translation": "стратегія",
+    "category": "other"
   },
   {
     "word": "strengthen",
-    "translation": "зміцнювати"
+    "translation": "зміцнювати",
+    "category": "other"
   },
   {
     "word": "structure",
-    "translation": "структура"
+    "translation": "структура",
+    "category": "other"
   },
   {
     "word": "sustainable",
-    "translation": "сталий"
+    "translation": "сталий",
+    "category": "other"
   },
   {
     "word": "talent",
-    "translation": "талант"
+    "translation": "талант",
+    "category": "other"
   },
   {
     "word": "technology",
-    "translation": "технологія"
+    "translation": "технологія",
+    "category": "other"
   },
   {
     "word": "transparent",
-    "translation": "прозорий"
+    "translation": "прозорий",
+    "category": "other"
   },
   {
     "word": "trend",
-    "translation": "тренд"
+    "translation": "тренд",
+    "category": "other"
   },
   {
     "word": "unique",
-    "translation": "унікальний"
+    "translation": "унікальний",
+    "category": "other"
   },
   {
     "word": "upload",
-    "translation": "завантажувати"
+    "translation": "завантажувати",
+    "category": "other"
   },
   {
     "word": "version",
-    "translation": "версія"
+    "translation": "версія",
+    "category": "other"
   },
   {
     "word": "vision",
-    "translation": "бачення"
+    "translation": "бачення",
+    "category": "other"
   },
   {
     "word": "volunteer",
-    "translation": "волонтер"
+    "translation": "волонтер",
+    "category": "other"
   },
   {
     "word": "vulnerable",
-    "translation": "вразливий"
+    "translation": "вразливий",
+    "category": "other"
   },
   {
     "word": "welfare",
-    "translation": "добробут"
+    "translation": "добробут",
+    "category": "other"
   },
   {
     "word": "willing",
-    "translation": "готовий"
+    "translation": "готовий",
+    "category": "other"
   },
   {
     "word": "wisdom",
-    "translation": "мудрість"
+    "translation": "мудрість",
+    "category": "other"
   },
   {
     "word": "accomplish",
-    "translation": "виконувати"
+    "translation": "виконувати",
+    "category": "other"
   },
   {
     "word": "acknowledge",
-    "translation": "визнавати"
+    "translation": "визнавати",
+    "category": "other"
   },
   {
     "word": "acquisition",
-    "translation": "придбання"
+    "translation": "придбання",
+    "category": "other"
   },
   {
     "word": "adequate",
-    "translation": "достатній"
+    "translation": "достатній",
+    "category": "other"
   },
   {
     "word": "advocate",
-    "translation": "захищати"
+    "translation": "захищати",
+    "category": "other"
   },
   {
     "word": "ambiguous",
-    "translation": "двозначний"
+    "translation": "двозначний",
+    "category": "other"
   },
   {
     "word": "ambitious",
-    "translation": "амбітний"
+    "translation": "амбітний",
+    "category": "other"
   },
   {
     "word": "atmosphere",
-    "translation": "атмосфера"
+    "translation": "атмосфера",
+    "category": "other"
   },
   {
     "word": "authentic",
-    "translation": "автентичний"
+    "translation": "автентичний",
+    "category": "other"
   },
   {
     "word": "automate",
-    "translation": "автоматизувати"
+    "translation": "автоматизувати",
+    "category": "other"
   },
   {
     "word": "benchmark",
-    "translation": "еталон"
+    "translation": "еталон",
+    "category": "other"
   },
   {
     "word": "collaborate",
-    "translation": "співпрацювати"
+    "translation": "співпрацювати",
+    "category": "other"
   },
   {
     "word": "compassion",
-    "translation": "співчуття"
+    "translation": "співчуття",
+    "category": "other"
   },
   {
     "word": "comprehensive",
-    "translation": "всебічний"
+    "translation": "всебічний",
+    "category": "other"
   },
   {
     "word": "consistent",
-    "translation": "послідовний"
+    "translation": "послідовний",
+    "category": "other"
   },
   {
     "word": "construct",
-    "translation": "будувати"
+    "translation": "будувати",
+    "category": "other"
   },
   {
     "word": "context",
-    "translation": "контекст"
+    "translation": "контекст",
+    "category": "other"
   },
   {
     "word": "continuous",
-    "translation": "безперервний"
+    "translation": "безперервний",
+    "category": "other"
   },
   {
     "word": "crucial",
-    "translation": "важливий"
+    "translation": "важливий",
+    "category": "other"
   },
   {
     "word": "customize",
-    "translation": "налаштовувати"
+    "translation": "налаштовувати",
+    "category": "other"
   },
   {
     "word": "dedicate",
-    "translation": "присвячувати"
+    "translation": "присвячувати",
+    "category": "other"
   },
   {
     "word": "delegate",
-    "translation": "делегувати"
+    "translation": "делегувати",
+    "category": "other"
   },
   {
     "word": "deliberate",
-    "translation": "навмисний"
+    "translation": "навмисний",
+    "category": "other"
   },
   {
     "word": "diagnose",
-    "translation": "діагностувати"
+    "translation": "діагностувати",
+    "category": "other"
   },
   {
     "word": "distinguish",
-    "translation": "розрізняти"
+    "translation": "розрізняти",
+    "category": "other"
   },
   {
     "word": "elaborate",
-    "translation": "розробляти"
+    "translation": "розробляти",
+    "category": "other"
   },
   {
     "word": "enhance",
-    "translation": "покращувати"
+    "translation": "покращувати",
+    "category": "other"
   },
   {
     "word": "enormous",
-    "translation": "величезний"
+    "translation": "величезний",
+    "category": "other"
   },
   {
     "word": "establish",
-    "translation": "встановлювати"
+    "translation": "встановлювати",
+    "category": "other"
   },
   {
     "word": "estimate",
-    "translation": "оцінювати"
+    "translation": "оцінювати",
+    "category": "other"
   },
   {
     "word": "facilitate",
-    "translation": "полегшувати"
+    "translation": "полегшувати",
+    "category": "other"
   },
   {
     "word": "framework",
-    "translation": "структура"
+    "translation": "структура",
+    "category": "other"
   },
   {
     "word": "gratitude",
-    "translation": "вдячність"
+    "translation": "вдячність",
+    "category": "other"
   },
   {
     "word": "hypothesis",
-    "translation": "гіпотеза"
+    "translation": "гіпотеза",
+    "category": "other"
   },
   {
     "word": "illustrate",
-    "translation": "ілюструвати"
+    "translation": "ілюструвати",
+    "category": "other"
   },
   {
     "word": "immense",
-    "translation": "безмежний"
+    "translation": "безмежний",
+    "category": "other"
   },
   {
     "word": "inevitable",
-    "translation": "неминучий"
+    "translation": "неминучий",
+    "category": "other"
   },
   {
     "word": "infrastructure",
-    "translation": "інфраструктура"
+    "translation": "інфраструктура",
+    "category": "other"
   },
   {
     "word": "integrate",
-    "translation": "інтегрувати"
+    "translation": "інтегрувати",
+    "category": "other"
   },
   {
     "word": "intellectual",
-    "translation": "інтелектуальний"
+    "translation": "інтелектуальний",
+    "category": "other"
   },
   {
     "word": "international",
-    "translation": "міжнародний"
+    "translation": "міжнародний",
+    "category": "other"
   },
   {
     "word": "interrupt",
-    "translation": "переривати"
+    "translation": "переривати",
+    "category": "other"
   },
   {
     "word": "limitation",
-    "translation": "обмеження"
+    "translation": "обмеження",
+    "category": "other"
   },
   {
     "word": "mechanism",
-    "translation": "механізм"
+    "translation": "механізм",
+    "category": "other"
   },
   {
     "word": "methodology",
-    "translation": "методологія"
+    "translation": "методологія",
+    "category": "other"
   },
   {
     "word": "milestone",
-    "translation": "віха"
+    "translation": "віха",
+    "category": "other"
   },
   {
     "word": "narrative",
-    "translation": "наратив"
+    "translation": "наратив",
+    "category": "other"
   },
   {
     "word": "opportunity",
-    "translation": "можливість"
+    "translation": "можливість",
+    "category": "other"
   },
   {
     "word": "optimize",
-    "translation": "оптимізувати"
+    "translation": "оптимізувати",
+    "category": "other"
   },
   {
     "word": "organization",
-    "translation": "організація"
+    "translation": "організація",
+    "category": "other"
   },
   {
     "word": "outstanding",
-    "translation": "видатний"
+    "translation": "видатний",
+    "category": "other"
   },
   {
     "word": "phenomenon",
-    "translation": "явище"
+    "translation": "явище",
+    "category": "other"
   },
   {
     "word": "philosophy",
-    "translation": "філософія"
+    "translation": "філософія",
+    "category": "other"
   },
   {
     "word": "preference",
-    "translation": "перевага"
+    "translation": "перевага",
+    "category": "other"
   },
   {
     "word": "principle",
-    "translation": "принцип"
+    "translation": "принцип",
+    "category": "other"
   },
   {
     "word": "productivity",
-    "translation": "продуктивність"
+    "translation": "продуктивність",
+    "category": "other"
   },
   {
     "word": "profound",
-    "translation": "глибокий"
+    "translation": "глибокий",
+    "category": "other"
   },
   {
     "word": "proportion",
-    "translation": "пропорція"
+    "translation": "пропорція",
+    "category": "other"
   },
   {
     "word": "psychology",
-    "translation": "психологія"
+    "translation": "психологія",
+    "category": "other"
   },
   {
     "word": "recognition",
-    "translation": "визнання"
+    "translation": "визнання",
+    "category": "other"
   },
   {
     "word": "requirement",
-    "translation": "вимога"
+    "translation": "вимога",
+    "category": "other"
   },
   {
     "word": "resilience",
-    "translation": "стійкість"
+    "translation": "стійкість",
+    "category": "other"
   },
   {
     "word": "responsibility",
-    "translation": "відповідальність"
+    "translation": "відповідальність",
+    "category": "other"
   },
   {
     "word": "sophisticated",
-    "translation": "складний"
+    "translation": "складний",
+    "category": "other"
   },
   {
     "word": "stereotype",
-    "translation": "стереотип"
+    "translation": "стереотип",
+    "category": "other"
   },
   {
     "word": "stimulate",
-    "translation": "стимулювати"
+    "translation": "стимулювати",
+    "category": "other"
   },
   {
     "word": "subsequent",
-    "translation": "наступний"
+    "translation": "наступний",
+    "category": "other"
   },
   {
     "word": "substantial",
-    "translation": "суттєвий"
+    "translation": "суттєвий",
+    "category": "other"
   },
   {
     "word": "transformation",
-    "translation": "трансформація"
+    "translation": "трансформація",
+    "category": "other"
   },
   {
     "word": "undermine",
-    "translation": "підривати"
+    "translation": "підривати",
+    "category": "other"
   },
   {
     "word": "universal",
-    "translation": "універсальний"
+    "translation": "універсальний",
+    "category": "other"
   },
   {
     "word": "utilize",
-    "translation": "використовувати"
+    "translation": "використовувати",
+    "category": "other"
   },
   {
     "word": "variable",
-    "translation": "змінна"
+    "translation": "змінна",
+    "category": "other"
   },
   {
     "word": "verification",
-    "translation": "перевірка"
+    "translation": "перевірка",
+    "category": "other"
   },
   {
     "word": "virtually",
-    "translation": "практично"
+    "translation": "практично",
+    "category": "other"
   },
   {
     "word": "widespread",
-    "translation": "поширений"
+    "translation": "поширений",
+    "category": "other"
   },
   {
     "word": "abandon",
-    "translation": "кидати"
+    "translation": "кидати",
+    "category": "other"
   },
   {
     "word": "accelerate",
-    "translation": "прискорювати"
+    "translation": "прискорювати",
+    "category": "other"
   },
   {
     "word": "accommodate",
-    "translation": "розміщувати"
+    "translation": "розміщувати",
+    "category": "other"
   },
   {
     "word": "accumulate",
-    "translation": "накопичувати"
+    "translation": "накопичувати",
+    "category": "other"
   },
   {
     "word": "aftermath",
-    "translation": "наслідки"
+    "translation": "наслідки",
+    "category": "other"
   },
   {
     "word": "alienate",
-    "translation": "відчужувати"
+    "translation": "відчужувати",
+    "category": "other"
   },
   {
     "word": "allegation",
-    "translation": "звинувачення"
+    "translation": "звинувачення",
+    "category": "other"
   },
   {
     "word": "alliance",
-    "translation": "альянс"
+    "translation": "альянс",
+    "category": "other"
   },
   {
     "word": "ambassador",
-    "translation": "посол"
+    "translation": "посол",
+    "category": "other"
   },
   {
     "word": "ambition",
-    "translation": "амбіція"
+    "translation": "амбіція",
+    "category": "other"
   },
   {
     "word": "anticipate",
-    "translation": "передбачати"
+    "translation": "передбачати",
+    "category": "other"
   },
   {
     "word": "appetite",
-    "translation": "апетит"
+    "translation": "апетит",
+    "category": "other"
   },
   {
     "word": "architect",
-    "translation": "архітектор"
+    "translation": "архітектор",
+    "category": "other"
   },
   {
     "word": "assembly",
-    "translation": "збори"
+    "translation": "збори",
+    "category": "other"
   },
   {
     "word": "assertion",
-    "translation": "твердження"
+    "translation": "твердження",
+    "category": "other"
   },
   {
     "word": "assessment",
-    "translation": "оцінювання"
+    "translation": "оцінювання",
+    "category": "other"
   },
   {
     "word": "association",
-    "translation": "асоціація"
+    "translation": "асоціація",
+    "category": "other"
   },
   {
     "word": "assumption",
-    "translation": "припущення"
+    "translation": "припущення",
+    "category": "other"
   },
   {
     "word": "astronaut",
-    "translation": "космонавт"
+    "translation": "космонавт",
+    "category": "other"
   },
   {
     "word": "attachment",
-    "translation": "прив'язаність"
+    "translation": "прив'язаність",
+    "category": "other"
   },
   {
     "word": "authority",
-    "translation": "влада"
+    "translation": "влада",
+    "category": "other"
   },
   {
     "word": "automation",
-    "translation": "автоматизація"
+    "translation": "автоматизація",
+    "category": "other"
   },
   {
     "word": "awareness",
-    "translation": "обізнаність"
+    "translation": "обізнаність",
+    "category": "other"
   },
   {
     "word": "bargain",
-    "translation": "угода"
+    "translation": "угода",
+    "category": "other"
   },
   {
     "word": "biochemistry",
-    "translation": "біохімія"
+    "translation": "біохімія",
+    "category": "other"
   },
   {
     "word": "blockchain",
-    "translation": "блокчейн"
+    "translation": "блокчейн",
+    "category": "other"
   },
   {
     "word": "blueprint",
-    "translation": "креслення"
+    "translation": "креслення",
+    "category": "other"
   },
   {
     "word": "breakthrough",
-    "translation": "прорив"
+    "translation": "прорив",
+    "category": "other"
   },
   {
     "word": "bureaucracy",
-    "translation": "бюрократія"
+    "translation": "бюрократія",
+    "category": "other"
   },
   {
     "word": "catastrophe",
-    "translation": "катастрофа"
+    "translation": "катастрофа",
+    "category": "other"
   },
   {
     "word": "circumstance",
-    "translation": "обставина"
+    "translation": "обставина",
+    "category": "other"
   },
   {
     "word": "civilization",
-    "translation": "цивілізація"
+    "translation": "цивілізація",
+    "category": "other"
   },
   {
     "word": "classification",
-    "translation": "класифікація"
+    "translation": "класифікація",
+    "category": "other"
   },
   {
     "word": "coincidence",
-    "translation": "збіг"
+    "translation": "збіг",
+    "category": "other"
   },
   {
     "word": "communication",
-    "translation": "спілкування"
+    "translation": "спілкування",
+    "category": "other"
   },
   {
     "word": "community",
-    "translation": "спільнота"
+    "translation": "спільнота",
+    "category": "other"
   },
   {
     "word": "competition",
-    "translation": "змагання"
+    "translation": "змагання",
+    "category": "other"
   },
   {
     "word": "complication",
-    "translation": "ускладнення"
+    "translation": "ускладнення",
+    "category": "other"
   },
   {
     "word": "concentration",
-    "translation": "концентрація"
+    "translation": "концентрація",
+    "category": "other"
   },
   {
     "word": "consequence",
-    "translation": "наслідок"
+    "translation": "наслідок",
+    "category": "other"
   },
   {
     "word": "conservation",
-    "translation": "збереження"
+    "translation": "збереження",
+    "category": "other"
   },
   {
     "word": "considerable",
-    "translation": "значний"
+    "translation": "значний",
+    "category": "other"
   },
   {
     "word": "conspiracy",
-    "translation": "змова"
+    "translation": "змова",
+    "category": "other"
   },
   {
     "word": "constitution",
-    "translation": "конституція"
+    "translation": "конституція",
+    "category": "other"
   },
   {
     "word": "contradiction",
-    "translation": "суперечність"
+    "translation": "суперечність",
+    "category": "other"
   },
   {
     "word": "controversy",
-    "translation": "суперечки"
+    "translation": "суперечки",
+    "category": "other"
   },
   {
     "word": "conversation",
-    "translation": "розмова"
+    "translation": "розмова",
+    "category": "communication"
   },
   {
     "word": "corporation",
-    "translation": "корпорація"
+    "translation": "корпорація",
+    "category": "other"
   },
   {
     "word": "correlation",
-    "translation": "кореляція"
+    "translation": "кореляція",
+    "category": "other"
   },
   {
     "word": "counterpart",
-    "translation": "аналог"
+    "translation": "аналог",
+    "category": "other"
   },
   {
     "word": "creativity",
-    "translation": "творчість"
+    "translation": "творчість",
+    "category": "other"
   },
   {
     "word": "cultivation",
-    "translation": "культивування"
+    "translation": "культивування",
+    "category": "other"
   },
   {
     "word": "declaration",
-    "translation": "декларація"
+    "translation": "декларація",
+    "category": "other"
   },
   {
     "word": "democracy",
-    "translation": "демократія"
+    "translation": "демократія",
+    "category": "other"
   },
   {
     "word": "demonstration",
-    "translation": "демонстрація"
+    "translation": "демонстрація",
+    "category": "other"
   },
   {
     "word": "determination",
-    "translation": "рішучість"
+    "translation": "рішучість",
+    "category": "other"
   },
   {
     "word": "development",
-    "translation": "розвиток"
+    "translation": "розвиток",
+    "category": "other"
   },
   {
     "word": "disadvantage",
-    "translation": "недолік"
+    "translation": "недолік",
+    "category": "other"
   },
   {
     "word": "disappointment",
-    "translation": "розчарування"
+    "translation": "розчарування",
+    "category": "other"
   },
   {
     "word": "distribution",
-    "translation": "розподіл"
+    "translation": "розподіл",
+    "category": "other"
   },
   {
     "word": "documentation",
-    "translation": "документація"
+    "translation": "документація",
+    "category": "other"
   },
   {
     "word": "domination",
-    "translation": "домінування"
+    "translation": "домінування",
+    "category": "other"
   },
   {
     "word": "efficiency",
-    "translation": "ефективність"
+    "translation": "ефективність",
+    "category": "other"
   },
   {
     "word": "elaboration",
-    "translation": "розробка"
+    "translation": "розробка",
+    "category": "other"
   },
   {
     "word": "emergency",
-    "translation": "надзвичайна ситуація"
+    "translation": "надзвичайна ситуація",
+    "category": "other"
   },
   {
     "word": "empowerment",
-    "translation": "розширення прав"
+    "translation": "розширення прав",
+    "category": "other"
   },
   {
     "word": "encouragement",
-    "translation": "заохочення"
+    "translation": "заохочення",
+    "category": "other"
   },
   {
     "word": "entertainment",
-    "translation": "розваги"
+    "translation": "розваги",
+    "category": "other"
   },
   {
     "word": "enthusiasm",
-    "translation": "ентузіазм"
+    "translation": "ентузіазм",
+    "category": "other"
   },
   {
     "word": "entrepreneurship",
-    "translation": "підприємництво"
+    "translation": "підприємництво",
+    "category": "other"
   },
   {
     "word": "environmental",
-    "translation": "екологічний"
+    "translation": "екологічний",
+    "category": "other"
   },
   {
     "word": "establishment",
-    "translation": "установа"
+    "translation": "установа",
+    "category": "other"
   },
   {
     "word": "examination",
-    "translation": "обстеження"
+    "translation": "обстеження",
+    "category": "other"
   },
   {
     "word": "expectation",
-    "translation": "очікування"
+    "translation": "очікування",
+    "category": "other"
   },
   {
     "word": "exploitation",
-    "translation": "експлуатація"
+    "translation": "експлуатація",
+    "category": "other"
   },
   {
     "word": "exploration",
-    "translation": "дослідження"
+    "translation": "дослідження",
+    "category": "other"
   },
   {
     "word": "extraordinary",
-    "translation": "надзвичайний"
+    "translation": "надзвичайний",
+    "category": "other"
   },
   {
     "word": "facilitation",
-    "translation": "фасилітація"
+    "translation": "фасилітація",
+    "category": "other"
   },
   {
     "word": "fascination",
-    "translation": "захоплення"
+    "translation": "захоплення",
+    "category": "other"
   },
   {
     "word": "globalization",
-    "translation": "глобалізація"
+    "translation": "глобалізація",
+    "category": "other"
   },
   {
     "word": "implementation",
-    "translation": "реалізація"
+    "translation": "реалізація",
+    "category": "other"
   },
   {
     "word": "independence",
-    "translation": "незалежність"
+    "translation": "незалежність",
+    "category": "other"
   },
   {
     "word": "industrialization",
-    "translation": "індустріалізація"
+    "translation": "індустріалізація",
+    "category": "other"
   },
   {
     "word": "interpretation",
-    "translation": "інтерпретація"
+    "translation": "інтерпретація",
+    "category": "other"
   },
   {
     "word": "investigation",
-    "translation": "розслідування"
+    "translation": "розслідування",
+    "category": "other"
   },
   {
     "word": "marginalization",
-    "translation": "маргіналізація"
+    "translation": "маргіналізація",
+    "category": "other"
   },
   {
     "word": "modernization",
-    "translation": "модернізація"
+    "translation": "модернізація",
+    "category": "other"
   },
   {
     "word": "participation",
-    "translation": "участь"
+    "translation": "участь",
+    "category": "other"
   },
   {
     "word": "polarization",
-    "translation": "поляризація"
+    "translation": "поляризація",
+    "category": "other"
   },
   {
     "word": "privatization",
-    "translation": "приватизація"
+    "translation": "приватизація",
+    "category": "other"
   },
   {
     "word": "professionalism",
-    "translation": "професіоналізм"
+    "translation": "професіоналізм",
+    "category": "other"
   },
   {
     "word": "reconstruction",
-    "translation": "реконструкція"
+    "translation": "реконструкція",
+    "category": "other"
   },
   {
     "word": "representation",
-    "translation": "представництво"
+    "translation": "представництво",
+    "category": "other"
   },
   {
     "word": "specialization",
-    "translation": "спеціалізація"
+    "translation": "спеціалізація",
+    "category": "other"
   },
   {
     "word": "standardization",
-    "translation": "стандартизація"
+    "translation": "стандартизація",
+    "category": "other"
   },
   {
     "word": "urbanization",
-    "translation": "урбанізація"
+    "translation": "урбанізація",
+    "category": "other"
   },
   {
     "word": "vulnerability",
-    "translation": "вразливість"
+    "translation": "вразливість",
+    "category": "other"
   }
 ]
