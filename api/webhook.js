@@ -41,6 +41,13 @@ const MAIN_KEYBOARD = {
   persistent: true
 };
 
+// Инлайн клавиатура для слов (переиспользуется)
+const WORD_KEYBOARD = {
+  inline_keyboard: [[
+    { text: 'Ще слово 🔄', callback_data: 'next_word' }
+  ]]
+};
+
 // Инициализация бота один раз (переиспользуется между вызовами)
 let bot;
 function getBot() {
@@ -66,6 +73,30 @@ function shuffleArray(arr) {
   return result;
 }
 
+// Быстрая функция для получения случайных неправильных ответов
+function getWrongAnswers(correctWord, count = 3) {
+  const wrongAnswers = [];
+  const vocabLength = vocabulary.length;
+  const used = new Set([correctWord]);
+
+  while (wrongAnswers.length < count && wrongAnswers.length < vocabLength - 1) {
+    const randomIndex = Math.floor(Math.random() * vocabLength);
+    const word = vocabulary[randomIndex].word;
+
+    if (!used.has(word)) {
+      used.add(word);
+      wrongAnswers.push(vocabulary[randomIndex].translation);
+    }
+  }
+
+  return wrongAnswers;
+}
+
+// Функция для форматирования сообщения со словом
+function formatWordMessage(word) {
+  return `📖 Слово:\n\n🇬🇧 *${word.word}*\n🇺🇦 ${word.translation}`;
+}
+
 function setupHandlers(bot) {
 
   // Commands - используем прямые ответы без лишних конкатенаций
@@ -74,15 +105,10 @@ function setupHandlers(bot) {
 
   bot.command('word', (ctx) => {
     const word = getRandomItem(vocabulary);
-    const keyboard = {
-      inline_keyboard: [[
-        { text: 'Ще слово 🔄', callback_data: 'next_word' }
-      ]]
-    };
-    return ctx.reply(
-      `📖 Слово:\n\n🇬🇧 *${word.word}*\n🇺🇦 ${word.translation}`,
-      { parse_mode: 'Markdown', reply_markup: keyboard }
-    );
+    return ctx.reply(formatWordMessage(word), {
+      parse_mode: 'Markdown',
+      reply_markup: WORD_KEYBOARD
+    });
   });
 
   bot.command('quiz', (ctx) => {
@@ -104,15 +130,10 @@ function setupHandlers(bot) {
 
     if (text === '📖 Випадкове слово') {
       const word = getRandomItem(vocabulary);
-      const keyboard = {
-        inline_keyboard: [[
-          { text: 'Ще слово 🔄', callback_data: 'next_word' }
-        ]]
-      };
-      return ctx.reply(
-        `📖 Слово:\n\n🇬🇧 *${word.word}*\n🇺🇦 ${word.translation}`,
-        { parse_mode: 'Markdown', reply_markup: keyboard }
-      );
+      return ctx.reply(formatWordMessage(word), {
+        parse_mode: 'Markdown',
+        reply_markup: WORD_KEYBOARD
+      });
     }
 
     if (text === '🎯 Квіз') {
@@ -139,16 +160,11 @@ function setupHandlers(bot) {
     // Обработка кнопки "Ще слово"
     if (data === 'next_word') {
       const word = getRandomItem(vocabulary);
-      const keyboard = {
-        inline_keyboard: [[
-          { text: 'Ще слово 🔄', callback_data: 'next_word' }
-        ]]
-      };
       await ctx.answerCbQuery();
-      return ctx.editMessageText(
-        `📖 Слово:\n\n🇬🇧 *${word.word}*\n🇺🇦 ${word.translation}`,
-        { parse_mode: 'Markdown', reply_markup: keyboard }
-      );
+      return ctx.editMessageText(formatWordMessage(word), {
+        parse_mode: 'Markdown',
+        reply_markup: WORD_KEYBOARD
+      });
     }
 
     // Обработка ответов в квизе
@@ -194,11 +210,7 @@ function sendQuizQuestion(ctx, userId) {
   const correctAnswer = currentWord.translation;
 
   // Оптимизированная генерация неправильных ответов
-  const wrongAnswers = vocabulary
-    .filter(w => w.word !== currentWord.word)
-    .slice(0, 3)
-    .map(w => w.translation);
-
+  const wrongAnswers = getWrongAnswers(currentWord.word, 3);
   const allAnswers = shuffleArray([correctAnswer, ...wrongAnswers]);
 
   const keyboard = {
@@ -232,11 +244,7 @@ function editQuizQuestion(ctx, userId) {
   const correctAnswer = currentWord.translation;
 
   // Оптимизированная генерация неправильных ответов
-  const wrongAnswers = vocabulary
-    .filter(w => w.word !== currentWord.word)
-    .slice(0, 3)
-    .map(w => w.translation);
-
+  const wrongAnswers = getWrongAnswers(currentWord.word, 3);
   const allAnswers = shuffleArray([correctAnswer, ...wrongAnswers]);
 
   const keyboard = {
@@ -252,7 +260,7 @@ function editQuizQuestion(ctx, userId) {
   );
 }
 
-// Vercel serverless function handler - оптимизированный
+// Vercel serverless function handler - максимально оптимизированный
 module.exports = async (req, res) => {
   // Быстрый ответ для GET запросов
   if (req.method !== 'POST') {
@@ -262,13 +270,18 @@ module.exports = async (req, res) => {
   try {
     const bot = getBot();
 
-    // Обрабатываем update сначала
-    await bot.handleUpdate(req.body);
+    // Отправляем ответ Telegram сразу (не ждем обработки)
+    res.status(200).json({ ok: true });
 
-    // Отправляем ответ после обработки
-    res.status(200).json({ ok: true });
+    // Обрабатываем update асинхронно после ответа
+    bot.handleUpdate(req.body).catch(err => {
+      console.error('Update handling error:', err);
+    });
   } catch (error) {
-    console.error('Error:', error);
-    res.status(200).json({ ok: true });
+    console.error('Webhook error:', error);
+    // Всегда возвращаем 200 для Telegram
+    if (!res.headersSent) {
+      res.status(200).json({ ok: true });
+    }
   }
 };

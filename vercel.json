@@ -3,7 +3,7 @@
   "functions": {
     "api/webhook.js": {
       "maxDuration": 10,
-      "memory": 1024
+      "memory": 512
     }
   },
   "regions": ["iad1"]
