@@ -1,0 +1,4010 @@
+[
+  {
+    "word": "apple",
+    "translation": "яблоко"
+  },
+  {
+    "word": "book",
+    "translation": "книга"
+  },
+  {
+    "word": "car",
+    "translation": "машина"
+  },
+  {
+    "word": "dog",
+    "translation": "собака"
+  },
+  {
+    "word": "eye",
+    "translation": "глаз"
+  },
+  {
+    "word": "fish",
+    "translation": "рыба"
+  },
+  {
+    "word": "girl",
+    "translation": "девушка"
+  },
+  {
+    "word": "house",
+    "translation": "дом"
+  },
+  {
+    "word": "ice",
+    "translation": "лёд"
+  },
+  {
+    "word": "jump",
+    "translation": "прыгать"
+  },
+  {
+    "word": "key",
+    "translation": "ключ"
+  },
+  {
+    "word": "lamp",
+    "translation": "лампа"
+  },
+  {
+    "word": "moon",
+    "translation": "луна"
+  },
+  {
+    "word": "night",
+    "translation": "ночь"
+  },
+  {
+    "word": "orange",
+    "translation": "апельсин"
+  },
+  {
+    "word": "pen",
+    "translation": "ручка"
+  },
+  {
+    "word": "queen",
+    "translation": "королева"
+  },
+  {
+    "word": "rain",
+    "translation": "дождь"
+  },
+  {
+    "word": "sun",
+    "translation": "солнце"
+  },
+  {
+    "word": "tree",
+    "translation": "дерево"
+  },
+  {
+    "word": "umbrella",
+    "translation": "зонт"
+  },
+  {
+    "word": "voice",
+    "translation": "голос"
+  },
+  {
+    "word": "water",
+    "translation": "вода"
+  },
+  {
+    "word": "box",
+    "translation": "коробка"
+  },
+  {
+    "word": "year",
+    "translation": "год"
+  },
+  {
+    "word": "zero",
+    "translation": "ноль"
+  },
+  {
+    "word": "air",
+    "translation": "воздух"
+  },
+  {
+    "word": "baby",
+    "translation": "ребёнок"
+  },
+  {
+    "word": "cake",
+    "translation": "торт"
+  },
+  {
+    "word": "door",
+    "translation": "дверь"
+  },
+  {
+    "word": "earth",
+    "translation": "земля"
+  },
+  {
+    "word": "face",
+    "translation": "лицо"
+  },
+  {
+    "word": "game",
+    "translation": "игра"
+  },
+  {
+    "word": "hand",
+    "translation": "рука"
+  },
+  {
+    "word": "idea",
+    "translation": "идея"
+  },
+  {
+    "word": "job",
+    "translation": "работа"
+  },
+  {
+    "word": "king",
+    "translation": "король"
+  },
+  {
+    "word": "life",
+    "translation": "жизнь"
+  },
+  {
+    "word": "map",
+    "translation": "карта"
+  },
+  {
+    "word": "name",
+    "translation": "имя"
+  },
+  {
+    "word": "open",
+    "translation": "открывать"
+  },
+  {
+    "word": "park",
+    "translation": "парк"
+  },
+  {
+    "word": "question",
+    "translation": "вопрос"
+  },
+  {
+    "word": "road",
+    "translation": "дорога"
+  },
+  {
+    "word": "sky",
+    "translation": "небо"
+  },
+  {
+    "word": "time",
+    "translation": "время"
+  },
+  {
+    "word": "use",
+    "translation": "использовать"
+  },
+  {
+    "word": "view",
+    "translation": "вид"
+  },
+  {
+    "word": "walk",
+    "translation": "ходить"
+  },
+  {
+    "word": "exit",
+    "translation": "выход"
+  },
+  {
+    "word": "yard",
+    "translation": "двор"
+  },
+  {
+    "word": "zone",
+    "translation": "зона"
+  },
+  {
+    "word": "arm",
+    "translation": "рука/рычаг"
+  },
+  {
+    "word": "bed",
+    "translation": "кровать"
+  },
+  {
+    "word": "city",
+    "translation": "город"
+  },
+  {
+    "word": "day",
+    "translation": "день"
+  },
+  {
+    "word": "ear",
+    "translation": "ухо"
+  },
+  {
+    "word": "fog",
+    "translation": "туман"
+  },
+  {
+    "word": "gold",
+    "translation": "золото"
+  },
+  {
+    "word": "hat",
+    "translation": "шляпа"
+  },
+  {
+    "word": "ink",
+    "translation": "чернила"
+  },
+  {
+    "word": "joy",
+    "translation": "радость"
+  },
+  {
+    "word": "kid",
+    "translation": "ребёнок"
+  },
+  {
+    "word": "leg",
+    "translation": "нога"
+  },
+  {
+    "word": "milk",
+    "translation": "молоко"
+  },
+  {
+    "word": "nose",
+    "translation": "нос"
+  },
+  {
+    "word": "oil",
+    "translation": "масло"
+  },
+  {
+    "word": "page",
+    "translation": "страница"
+  },
+  {
+    "word": "ring",
+    "translation": "кольцо"
+  },
+  {
+    "word": "tea",
+    "translation": "чай"
+  },
+  {
+    "word": "unit",
+    "translation": "единица"
+  },
+  {
+    "word": "vine",
+    "translation": "виноград"
+  },
+  {
+    "word": "wind",
+    "translation": "ветер"
+  },
+  {
+    "word": "exam",
+    "translation": "экзамен"
+  },
+  {
+    "word": "zoo",
+    "translation": "зоопарк"
+  },
+  {
+    "word": "age",
+    "translation": "возраст"
+  },
+  {
+    "word": "bus",
+    "translation": "автобус"
+  },
+  {
+    "word": "cup",
+    "translation": "чашка"
+  },
+  {
+    "word": "desk",
+    "translation": "стол"
+  },
+  {
+    "word": "egg",
+    "translation": "яйцо"
+  },
+  {
+    "word": "fan",
+    "translation": "вентилятор"
+  },
+  {
+    "word": "gun",
+    "translation": "оружие"
+  },
+  {
+    "word": "hip",
+    "translation": "бедро"
+  },
+  {
+    "word": "inn",
+    "translation": "гостиница"
+  },
+  {
+    "word": "jar",
+    "translation": "банка"
+  },
+  {
+    "word": "kit",
+    "translation": "набор"
+  },
+  {
+    "word": "lip",
+    "translation": "губа"
+  },
+  {
+    "word": "mud",
+    "translation": "грязь"
+  },
+  {
+    "word": "net",
+    "translation": "сеть"
+  },
+  {
+    "word": "oak",
+    "translation": "дуб"
+  },
+  {
+    "word": "pig",
+    "translation": "свинья"
+  },
+  {
+    "word": "rug",
+    "translation": "ковёр"
+  },
+  {
+    "word": "sea",
+    "translation": "море"
+  },
+  {
+    "word": "tin",
+    "translation": "жесть"
+  },
+  {
+    "word": "urn",
+    "translation": "урна"
+  },
+  {
+    "word": "vat",
+    "translation": "чан"
+  },
+  {
+    "word": "wig",
+    "translation": "парик"
+  },
+  {
+    "word": "ax",
+    "translation": "топор"
+  },
+  {
+    "word": "yam",
+    "translation": "батат"
+  },
+  {
+    "word": "ability",
+    "translation": "способность"
+  },
+  {
+    "word": "above",
+    "translation": "выше"
+  },
+  {
+    "word": "absent",
+    "translation": "отсутствующий"
+  },
+  {
+    "word": "accept",
+    "translation": "принимать"
+  },
+  {
+    "word": "accident",
+    "translation": "авария"
+  },
+  {
+    "word": "account",
+    "translation": "счёт"
+  },
+  {
+    "word": "accurate",
+    "translation": "точный"
+  },
+  {
+    "word": "achieve",
+    "translation": "достигать"
+  },
+  {
+    "word": "across",
+    "translation": "через"
+  },
+  {
+    "word": "action",
+    "translation": "действие"
+  },
+  {
+    "word": "active",
+    "translation": "активный"
+  },
+  {
+    "word": "add",
+    "translation": "добавлять"
+  },
+  {
+    "word": "address",
+    "translation": "адрес"
+  },
+  {
+    "word": "adult",
+    "translation": "взрослый"
+  },
+  {
+    "word": "advance",
+    "translation": "продвигаться"
+  },
+  {
+    "word": "advice",
+    "translation": "совет"
+  },
+  {
+    "word": "affect",
+    "translation": "влиять"
+  },
+  {
+    "word": "afraid",
+    "translation": "боящийся"
+  },
+  {
+    "word": "after",
+    "translation": "после"
+  },
+  {
+    "word": "again",
+    "translation": "снова"
+  },
+  {
+    "word": "against",
+    "translation": "против"
+  },
+  {
+    "word": "agent",
+    "translation": "агент"
+  },
+  {
+    "word": "agree",
+    "translation": "соглашаться"
+  },
+  {
+    "word": "ahead",
+    "translation": "впереди"
+  },
+  {
+    "word": "allow",
+    "translation": "позволять"
+  },
+  {
+    "word": "almost",
+    "translation": "почти"
+  },
+  {
+    "word": "alone",
+    "translation": "один"
+  },
+  {
+    "word": "already",
+    "translation": "уже"
+  },
+  {
+    "word": "also",
+    "translation": "также"
+  },
+  {
+    "word": "always",
+    "translation": "всегда"
+  },
+  {
+    "word": "among",
+    "translation": "среди"
+  },
+  {
+    "word": "amount",
+    "translation": "количество"
+  },
+  {
+    "word": "ancient",
+    "translation": "древний"
+  },
+  {
+    "word": "anger",
+    "translation": "гнев"
+  },
+  {
+    "word": "animal",
+    "translation": "животное"
+  },
+  {
+    "word": "answer",
+    "translation": "ответ"
+  },
+  {
+    "word": "anyone",
+    "translation": "кто угодно"
+  },
+  {
+    "word": "appear",
+    "translation": "появляться"
+  },
+  {
+    "word": "apply",
+    "translation": "применять"
+  },
+  {
+    "word": "area",
+    "translation": "область"
+  },
+  {
+    "word": "argue",
+    "translation": "спорить"
+  },
+  {
+    "word": "around",
+    "translation": "вокруг"
+  },
+  {
+    "word": "arrive",
+    "translation": "прибывать"
+  },
+  {
+    "word": "article",
+    "translation": "статья"
+  },
+  {
+    "word": "artist",
+    "translation": "художник"
+  },
+  {
+    "word": "aspect",
+    "translation": "аспект"
+  },
+  {
+    "word": "attack",
+    "translation": "атаковать"
+  },
+  {
+    "word": "attract",
+    "translation": "привлекать"
+  },
+  {
+    "word": "author",
+    "translation": "автор"
+  },
+  {
+    "word": "avoid",
+    "translation": "избегать"
+  },
+  {
+    "word": "award",
+    "translation": "награда"
+  },
+  {
+    "word": "aware",
+    "translation": "осознающий"
+  },
+  {
+    "word": "awful",
+    "translation": "ужасный"
+  },
+  {
+    "word": "balance",
+    "translation": "баланс"
+  },
+  {
+    "word": "bank",
+    "translation": "банк"
+  },
+  {
+    "word": "basic",
+    "translation": "базовый"
+  },
+  {
+    "word": "battle",
+    "translation": "битва"
+  },
+  {
+    "word": "beach",
+    "translation": "пляж"
+  },
+  {
+    "word": "beauty",
+    "translation": "красота"
+  },
+  {
+    "word": "begin",
+    "translation": "начинать"
+  },
+  {
+    "word": "belong",
+    "translation": "принадлежать"
+  },
+  {
+    "word": "benefit",
+    "translation": "польза"
+  },
+  {
+    "word": "between",
+    "translation": "между"
+  },
+  {
+    "word": "beyond",
+    "translation": "за пределами"
+  },
+  {
+    "word": "billion",
+    "translation": "миллиард"
+  },
+  {
+    "word": "bitter",
+    "translation": "горький"
+  },
+  {
+    "word": "black",
+    "translation": "чёрный"
+  },
+  {
+    "word": "blame",
+    "translation": "винить"
+  },
+  {
+    "word": "blank",
+    "translation": "пустой"
+  },
+  {
+    "word": "blind",
+    "translation": "слепой"
+  },
+  {
+    "word": "blood",
+    "translation": "кровь"
+  },
+  {
+    "word": "blow",
+    "translation": "дуть"
+  },
+  {
+    "word": "board",
+    "translation": "доска"
+  },
+  {
+    "word": "border",
+    "translation": "граница"
+  },
+  {
+    "word": "borrow",
+    "translation": "одалживать"
+  },
+  {
+    "word": "boss",
+    "translation": "начальник"
+  },
+  {
+    "word": "bottom",
+    "translation": "дно"
+  },
+  {
+    "word": "branch",
+    "translation": "ветка"
+  },
+  {
+    "word": "brave",
+    "translation": "смелый"
+  },
+  {
+    "word": "break",
+    "translation": "ломать"
+  },
+  {
+    "word": "breath",
+    "translation": "дыхание"
+  },
+  {
+    "word": "bridge",
+    "translation": "мост"
+  },
+  {
+    "word": "bright",
+    "translation": "яркий"
+  },
+  {
+    "word": "bring",
+    "translation": "приносить"
+  },
+  {
+    "word": "broad",
+    "translation": "широкий"
+  },
+  {
+    "word": "brother",
+    "translation": "брат"
+  },
+  {
+    "word": "brown",
+    "translation": "коричневый"
+  },
+  {
+    "word": "build",
+    "translation": "строить"
+  },
+  {
+    "word": "burn",
+    "translation": "гореть"
+  },
+  {
+    "word": "busy",
+    "translation": "занятой"
+  },
+  {
+    "word": "button",
+    "translation": "кнопка"
+  },
+  {
+    "word": "buyer",
+    "translation": "покупатель"
+  },
+  {
+    "word": "cabinet",
+    "translation": "шкаф"
+  },
+  {
+    "word": "cable",
+    "translation": "кабель"
+  },
+  {
+    "word": "call",
+    "translation": "звонить"
+  },
+  {
+    "word": "calm",
+    "translation": "спокойный"
+  },
+  {
+    "word": "camera",
+    "translation": "камера"
+  },
+  {
+    "word": "cancel",
+    "translation": "отменить"
+  },
+  {
+    "word": "capital",
+    "translation": "столица"
+  },
+  {
+    "word": "captain",
+    "translation": "капитан"
+  },
+  {
+    "word": "careful",
+    "translation": "осторожный"
+  },
+  {
+    "word": "carry",
+    "translation": "нести"
+  },
+  {
+    "word": "cash",
+    "translation": "наличные"
+  },
+  {
+    "word": "catch",
+    "translation": "ловить"
+  },
+  {
+    "word": "cause",
+    "translation": "причина"
+  },
+  {
+    "word": "central",
+    "translation": "центральный"
+  },
+  {
+    "word": "century",
+    "translation": "век"
+  },
+  {
+    "word": "chain",
+    "translation": "цепь"
+  },
+  {
+    "word": "chance",
+    "translation": "шанс"
+  },
+  {
+    "word": "change",
+    "translation": "менять"
+  },
+  {
+    "word": "chapter",
+    "translation": "глава"
+  },
+  {
+    "word": "charge",
+    "translation": "заряд"
+  },
+  {
+    "word": "cheap",
+    "translation": "дешёвый"
+  },
+  {
+    "word": "check",
+    "translation": "проверять"
+  },
+  {
+    "word": "choose",
+    "translation": "выбирать"
+  },
+  {
+    "word": "circle",
+    "translation": "круг"
+  },
+  {
+    "word": "claim",
+    "translation": "утверждать"
+  },
+  {
+    "word": "class",
+    "translation": "класс"
+  },
+  {
+    "word": "clean",
+    "translation": "чистый"
+  },
+  {
+    "word": "clear",
+    "translation": "ясный"
+  },
+  {
+    "word": "clever",
+    "translation": "умный"
+  },
+  {
+    "word": "client",
+    "translation": "клиент"
+  },
+  {
+    "word": "climb",
+    "translation": "взбираться"
+  },
+  {
+    "word": "close",
+    "translation": "закрывать"
+  },
+  {
+    "word": "cloud",
+    "translation": "облако"
+  },
+  {
+    "word": "coach",
+    "translation": "тренер"
+  },
+  {
+    "word": "coast",
+    "translation": "берег"
+  },
+  {
+    "word": "collect",
+    "translation": "собирать"
+  },
+  {
+    "word": "color",
+    "translation": "цвет"
+  },
+  {
+    "word": "come",
+    "translation": "приходить"
+  },
+  {
+    "word": "common",
+    "translation": "общий"
+  },
+  {
+    "word": "compare",
+    "translation": "сравнивать"
+  },
+  {
+    "word": "complete",
+    "translation": "завершать"
+  },
+  {
+    "word": "complex",
+    "translation": "сложный"
+  },
+  {
+    "word": "concern",
+    "translation": "беспокойство"
+  },
+  {
+    "word": "confirm",
+    "translation": "подтверждать"
+  },
+  {
+    "word": "connect",
+    "translation": "соединять"
+  },
+  {
+    "word": "consider",
+    "translation": "рассматривать"
+  },
+  {
+    "word": "contact",
+    "translation": "контакт"
+  },
+  {
+    "word": "contain",
+    "translation": "содержать"
+  },
+  {
+    "word": "content",
+    "translation": "содержимое"
+  },
+  {
+    "word": "control",
+    "translation": "контроль"
+  },
+  {
+    "word": "cook",
+    "translation": "готовить"
+  },
+  {
+    "word": "copy",
+    "translation": "копировать"
+  },
+  {
+    "word": "corner",
+    "translation": "угол"
+  },
+  {
+    "word": "correct",
+    "translation": "правильный"
+  },
+  {
+    "word": "cost",
+    "translation": "стоимость"
+  },
+  {
+    "word": "count",
+    "translation": "считать"
+  },
+  {
+    "word": "country",
+    "translation": "страна"
+  },
+  {
+    "word": "cover",
+    "translation": "крышка"
+  },
+  {
+    "word": "create",
+    "translation": "создавать"
+  },
+  {
+    "word": "crime",
+    "translation": "преступление"
+  },
+  {
+    "word": "cross",
+    "translation": "пересекать"
+  },
+  {
+    "word": "crowd",
+    "translation": "толпа"
+  },
+  {
+    "word": "culture",
+    "translation": "культура"
+  },
+  {
+    "word": "current",
+    "translation": "текущий"
+  },
+  {
+    "word": "customer",
+    "translation": "покупатель"
+  },
+  {
+    "word": "cut",
+    "translation": "резать"
+  },
+  {
+    "word": "damage",
+    "translation": "повреждение"
+  },
+  {
+    "word": "danger",
+    "translation": "опасность"
+  },
+  {
+    "word": "dark",
+    "translation": "тёмный"
+  },
+  {
+    "word": "data",
+    "translation": "данные"
+  },
+  {
+    "word": "dead",
+    "translation": "мёртвый"
+  },
+  {
+    "word": "deal",
+    "translation": "сделка"
+  },
+  {
+    "word": "death",
+    "translation": "смерть"
+  },
+  {
+    "word": "decide",
+    "translation": "решать"
+  },
+  {
+    "word": "deep",
+    "translation": "глубокий"
+  },
+  {
+    "word": "degree",
+    "translation": "степень"
+  },
+  {
+    "word": "delay",
+    "translation": "задержка"
+  },
+  {
+    "word": "deliver",
+    "translation": "доставлять"
+  },
+  {
+    "word": "demand",
+    "translation": "спрос"
+  },
+  {
+    "word": "design",
+    "translation": "дизайн"
+  },
+  {
+    "word": "develop",
+    "translation": "развивать"
+  },
+  {
+    "word": "die",
+    "translation": "умирать"
+  },
+  {
+    "word": "differ",
+    "translation": "отличаться"
+  },
+  {
+    "word": "direct",
+    "translation": "прямой"
+  },
+  {
+    "word": "discover",
+    "translation": "открывать"
+  },
+  {
+    "word": "discuss",
+    "translation": "обсуждать"
+  },
+  {
+    "word": "distance",
+    "translation": "расстояние"
+  },
+  {
+    "word": "divide",
+    "translation": "делить"
+  },
+  {
+    "word": "doubt",
+    "translation": "сомнение"
+  },
+  {
+    "word": "dream",
+    "translation": "мечта"
+  },
+  {
+    "word": "drive",
+    "translation": "ехать"
+  },
+  {
+    "word": "drop",
+    "translation": "падать"
+  },
+  {
+    "word": "duty",
+    "translation": "долг"
+  },
+  {
+    "word": "early",
+    "translation": "ранний"
+  },
+  {
+    "word": "earn",
+    "translation": "зарабатывать"
+  },
+  {
+    "word": "easy",
+    "translation": "лёгкий"
+  },
+  {
+    "word": "edge",
+    "translation": "край"
+  },
+  {
+    "word": "effect",
+    "translation": "эффект"
+  },
+  {
+    "word": "effort",
+    "translation": "усилие"
+  },
+  {
+    "word": "either",
+    "translation": "либо"
+  },
+  {
+    "word": "empty",
+    "translation": "пустой"
+  },
+  {
+    "word": "end",
+    "translation": "конец"
+  },
+  {
+    "word": "enemy",
+    "translation": "враг"
+  },
+  {
+    "word": "energy",
+    "translation": "энергия"
+  },
+  {
+    "word": "enjoy",
+    "translation": "наслаждаться"
+  },
+  {
+    "word": "enough",
+    "translation": "достаточно"
+  },
+  {
+    "word": "enter",
+    "translation": "входить"
+  },
+  {
+    "word": "equal",
+    "translation": "равный"
+  },
+  {
+    "word": "escape",
+    "translation": "сбегать"
+  },
+  {
+    "word": "even",
+    "translation": "даже"
+  },
+  {
+    "word": "event",
+    "translation": "событие"
+  },
+  {
+    "word": "every",
+    "translation": "каждый"
+  },
+  {
+    "word": "exact",
+    "translation": "точный"
+  },
+  {
+    "word": "exist",
+    "translation": "существовать"
+  },
+  {
+    "word": "expect",
+    "translation": "ожидать"
+  },
+  {
+    "word": "explain",
+    "translation": "объяснять"
+  },
+  {
+    "word": "explore",
+    "translation": "исследовать"
+  },
+  {
+    "word": "express",
+    "translation": "выражать"
+  },
+  {
+    "word": "extra",
+    "translation": "дополнительный"
+  },
+  {
+    "word": "fail",
+    "translation": "терпеть неудачу"
+  },
+  {
+    "word": "fair",
+    "translation": "справедливый"
+  },
+  {
+    "word": "fall",
+    "translation": "падать"
+  },
+  {
+    "word": "false",
+    "translation": "ложный"
+  },
+  {
+    "word": "famous",
+    "translation": "знаменитый"
+  },
+  {
+    "word": "far",
+    "translation": "далёкий"
+  },
+  {
+    "word": "fast",
+    "translation": "быстрый"
+  },
+  {
+    "word": "favor",
+    "translation": "одолжение"
+  },
+  {
+    "word": "fear",
+    "translation": "страх"
+  },
+  {
+    "word": "feel",
+    "translation": "чувствовать"
+  },
+  {
+    "word": "fight",
+    "translation": "бороться"
+  },
+  {
+    "word": "fill",
+    "translation": "наполнять"
+  },
+  {
+    "word": "final",
+    "translation": "финальный"
+  },
+  {
+    "word": "find",
+    "translation": "находить"
+  },
+  {
+    "word": "fine",
+    "translation": "штраф"
+  },
+  {
+    "word": "finger",
+    "translation": "палец"
+  },
+  {
+    "word": "fire",
+    "translation": "огонь"
+  },
+  {
+    "word": "first",
+    "translation": "первый"
+  },
+  {
+    "word": "fix",
+    "translation": "чинить"
+  },
+  {
+    "word": "flat",
+    "translation": "плоский"
+  },
+  {
+    "word": "floor",
+    "translation": "пол"
+  },
+  {
+    "word": "flow",
+    "translation": "течь"
+  },
+  {
+    "word": "focus",
+    "translation": "фокус"
+  },
+  {
+    "word": "follow",
+    "translation": "следовать"
+  },
+  {
+    "word": "force",
+    "translation": "сила"
+  },
+  {
+    "word": "forget",
+    "translation": "забывать"
+  },
+  {
+    "word": "form",
+    "translation": "форма"
+  },
+  {
+    "word": "forward",
+    "translation": "вперёд"
+  },
+  {
+    "word": "free",
+    "translation": "свободный"
+  },
+  {
+    "word": "fresh",
+    "translation": "свежий"
+  },
+  {
+    "word": "friend",
+    "translation": "друг"
+  },
+  {
+    "word": "front",
+    "translation": "фронт"
+  },
+  {
+    "word": "full",
+    "translation": "полный"
+  },
+  {
+    "word": "future",
+    "translation": "будущее"
+  },
+  {
+    "word": "gather",
+    "translation": "собираться"
+  },
+  {
+    "word": "general",
+    "translation": "общий"
+  },
+  {
+    "word": "give",
+    "translation": "давать"
+  },
+  {
+    "word": "global",
+    "translation": "глобальный"
+  },
+  {
+    "word": "goal",
+    "translation": "цель"
+  },
+  {
+    "word": "good",
+    "translation": "хороший"
+  },
+  {
+    "word": "government",
+    "translation": "правительство"
+  },
+  {
+    "word": "great",
+    "translation": "великий"
+  },
+  {
+    "word": "green",
+    "translation": "зелёный"
+  },
+  {
+    "word": "group",
+    "translation": "группа"
+  },
+  {
+    "word": "grow",
+    "translation": "расти"
+  },
+  {
+    "word": "guess",
+    "translation": "угадывать"
+  },
+  {
+    "word": "guide",
+    "translation": "гид"
+  },
+  {
+    "word": "happy",
+    "translation": "счастливый"
+  },
+  {
+    "word": "hard",
+    "translation": "твёрдый"
+  },
+  {
+    "word": "harm",
+    "translation": "вред"
+  },
+  {
+    "word": "hate",
+    "translation": "ненавидеть"
+  },
+  {
+    "word": "have",
+    "translation": "иметь"
+  },
+  {
+    "word": "head",
+    "translation": "голова"
+  },
+  {
+    "word": "health",
+    "translation": "здоровье"
+  },
+  {
+    "word": "heart",
+    "translation": "сердце"
+  },
+  {
+    "word": "heavy",
+    "translation": "тяжёлый"
+  },
+  {
+    "word": "help",
+    "translation": "помогать"
+  },
+  {
+    "word": "high",
+    "translation": "высокий"
+  },
+  {
+    "word": "history",
+    "translation": "история"
+  },
+  {
+    "word": "hold",
+    "translation": "держать"
+  },
+  {
+    "word": "home",
+    "translation": "дом"
+  },
+  {
+    "word": "hope",
+    "translation": "надежда"
+  },
+  {
+    "word": "hot",
+    "translation": "горячий"
+  },
+  {
+    "word": "hour",
+    "translation": "час"
+  },
+  {
+    "word": "huge",
+    "translation": "огромный"
+  },
+  {
+    "word": "human",
+    "translation": "человек"
+  },
+  {
+    "word": "humor",
+    "translation": "юмор"
+  },
+  {
+    "word": "hunger",
+    "translation": "голод"
+  },
+  {
+    "word": "hunt",
+    "translation": "охотиться"
+  },
+  {
+    "word": "hurry",
+    "translation": "торопиться"
+  },
+  {
+    "word": "hurt",
+    "translation": "причинять боль"
+  },
+  {
+    "word": "imagine",
+    "translation": "воображать"
+  },
+  {
+    "word": "impact",
+    "translation": "влияние"
+  },
+  {
+    "word": "improve",
+    "translation": "улучшать"
+  },
+  {
+    "word": "include",
+    "translation": "включать"
+  },
+  {
+    "word": "increase",
+    "translation": "увеличивать"
+  },
+  {
+    "word": "information",
+    "translation": "информация"
+  },
+  {
+    "word": "inside",
+    "translation": "внутри"
+  },
+  {
+    "word": "instead",
+    "translation": "вместо"
+  },
+  {
+    "word": "interest",
+    "translation": "интерес"
+  },
+  {
+    "word": "interview",
+    "translation": "интервью"
+  },
+  {
+    "word": "introduce",
+    "translation": "представлять"
+  },
+  {
+    "word": "invest",
+    "translation": "инвестировать"
+  },
+  {
+    "word": "invite",
+    "translation": "приглашать"
+  },
+  {
+    "word": "island",
+    "translation": "остров"
+  },
+  {
+    "word": "issue",
+    "translation": "вопрос"
+  },
+  {
+    "word": "journey",
+    "translation": "путешествие"
+  },
+  {
+    "word": "judge",
+    "translation": "судить"
+  },
+  {
+    "word": "keep",
+    "translation": "держать"
+  },
+  {
+    "word": "knowledge",
+    "translation": "знание"
+  },
+  {
+    "word": "land",
+    "translation": "земля"
+  },
+  {
+    "word": "language",
+    "translation": "язык"
+  },
+  {
+    "word": "large",
+    "translation": "большой"
+  },
+  {
+    "word": "last",
+    "translation": "последний"
+  },
+  {
+    "word": "later",
+    "translation": "позже"
+  },
+  {
+    "word": "laugh",
+    "translation": "смеяться"
+  },
+  {
+    "word": "law",
+    "translation": "закон"
+  },
+  {
+    "word": "lead",
+    "translation": "вести"
+  },
+  {
+    "word": "learn",
+    "translation": "учиться"
+  },
+  {
+    "word": "leave",
+    "translation": "покидать"
+  },
+  {
+    "word": "level",
+    "translation": "уровень"
+  },
+  {
+    "word": "light",
+    "translation": "свет"
+  },
+  {
+    "word": "likely",
+    "translation": "вероятно"
+  },
+  {
+    "word": "limit",
+    "translation": "лимит"
+  },
+  {
+    "word": "listen",
+    "translation": "слушать"
+  },
+  {
+    "word": "live",
+    "translation": "жить"
+  },
+  {
+    "word": "local",
+    "translation": "местный"
+  },
+  {
+    "word": "long",
+    "translation": "длинный"
+  },
+  {
+    "word": "look",
+    "translation": "смотреть"
+  },
+  {
+    "word": "lose",
+    "translation": "терять"
+  },
+  {
+    "word": "love",
+    "translation": "любовь"
+  },
+  {
+    "word": "lower",
+    "translation": "нижний"
+  },
+  {
+    "word": "lucky",
+    "translation": "удачливый"
+  },
+  {
+    "word": "main",
+    "translation": "главный"
+  },
+  {
+    "word": "major",
+    "translation": "главный"
+  },
+  {
+    "word": "manage",
+    "translation": "управлять"
+  },
+  {
+    "word": "market",
+    "translation": "рынок"
+  },
+  {
+    "word": "matter",
+    "translation": "иметь значение"
+  },
+  {
+    "word": "mean",
+    "translation": "означать"
+  },
+  {
+    "word": "meet",
+    "translation": "встречать"
+  },
+  {
+    "word": "member",
+    "translation": "член"
+  },
+  {
+    "word": "memory",
+    "translation": "память"
+  },
+  {
+    "word": "mention",
+    "translation": "упоминать"
+  },
+  {
+    "word": "message",
+    "translation": "сообщение"
+  },
+  {
+    "word": "method",
+    "translation": "метод"
+  },
+  {
+    "word": "middle",
+    "translation": "середина"
+  },
+  {
+    "word": "might",
+    "translation": "мощь"
+  },
+  {
+    "word": "mind",
+    "translation": "разум"
+  },
+  {
+    "word": "minute",
+    "translation": "минута"
+  },
+  {
+    "word": "miss",
+    "translation": "скучать"
+  },
+  {
+    "word": "model",
+    "translation": "модель"
+  },
+  {
+    "word": "money",
+    "translation": "деньги"
+  },
+  {
+    "word": "month",
+    "translation": "месяц"
+  },
+  {
+    "word": "morning",
+    "translation": "утро"
+  },
+  {
+    "word": "most",
+    "translation": "большинство"
+  },
+  {
+    "word": "mother",
+    "translation": "мать"
+  },
+  {
+    "word": "move",
+    "translation": "двигаться"
+  },
+  {
+    "word": "much",
+    "translation": "много"
+  },
+  {
+    "word": "music",
+    "translation": "музыка"
+  },
+  {
+    "word": "natural",
+    "translation": "натуральный"
+  },
+  {
+    "word": "need",
+    "translation": "нуждаться"
+  },
+  {
+    "word": "never",
+    "translation": "никогда"
+  },
+  {
+    "word": "new",
+    "translation": "новый"
+  },
+  {
+    "word": "next",
+    "translation": "следующий"
+  },
+  {
+    "word": "nice",
+    "translation": "приятный"
+  },
+  {
+    "word": "normal",
+    "translation": "нормальный"
+  },
+  {
+    "word": "nothing",
+    "translation": "ничего"
+  },
+  {
+    "word": "notice",
+    "translation": "замечать"
+  },
+  {
+    "word": "number",
+    "translation": "число"
+  },
+  {
+    "word": "object",
+    "translation": "объект"
+  },
+  {
+    "word": "offer",
+    "translation": "предложение"
+  },
+  {
+    "word": "often",
+    "translation": "часто"
+  },
+  {
+    "word": "once",
+    "translation": "однажды"
+  },
+  {
+    "word": "only",
+    "translation": "только"
+  },
+  {
+    "word": "option",
+    "translation": "вариант"
+  },
+  {
+    "word": "order",
+    "translation": "порядок"
+  },
+  {
+    "word": "other",
+    "translation": "другой"
+  },
+  {
+    "word": "outside",
+    "translation": "снаружи"
+  },
+  {
+    "word": "over",
+    "translation": "над"
+  },
+  {
+    "word": "own",
+    "translation": "владеть"
+  },
+  {
+    "word": "pain",
+    "translation": "боль"
+  },
+  {
+    "word": "part",
+    "translation": "часть"
+  },
+  {
+    "word": "pass",
+    "translation": "проходить"
+  },
+  {
+    "word": "past",
+    "translation": "прошлое"
+  },
+  {
+    "word": "path",
+    "translation": "путь"
+  },
+  {
+    "word": "pattern",
+    "translation": "узор"
+  },
+  {
+    "word": "peace",
+    "translation": "мир"
+  },
+  {
+    "word": "people",
+    "translation": "люди"
+  },
+  {
+    "word": "perfect",
+    "translation": "идеальный"
+  },
+  {
+    "word": "perform",
+    "translation": "выступать"
+  },
+  {
+    "word": "person",
+    "translation": "человек"
+  },
+  {
+    "word": "picture",
+    "translation": "картина"
+  },
+  {
+    "word": "place",
+    "translation": "место"
+  },
+  {
+    "word": "plan",
+    "translation": "план"
+  },
+  {
+    "word": "play",
+    "translation": "играть"
+  },
+  {
+    "word": "point",
+    "translation": "точка"
+  },
+  {
+    "word": "policy",
+    "translation": "политика"
+  },
+  {
+    "word": "poor",
+    "translation": "бедный"
+  },
+  {
+    "word": "popular",
+    "translation": "популярный"
+  },
+  {
+    "word": "power",
+    "translation": "власть"
+  },
+  {
+    "word": "present",
+    "translation": "настоящий"
+  },
+  {
+    "word": "press",
+    "translation": "нажимать"
+  },
+  {
+    "word": "prevent",
+    "translation": "предотвращать"
+  },
+  {
+    "word": "price",
+    "translation": "цена"
+  },
+  {
+    "word": "process",
+    "translation": "процесс"
+  },
+  {
+    "word": "produce",
+    "translation": "производить"
+  },
+  {
+    "word": "profit",
+    "translation": "прибыль"
+  },
+  {
+    "word": "program",
+    "translation": "программа"
+  },
+  {
+    "word": "project",
+    "translation": "проект"
+  },
+  {
+    "word": "promise",
+    "translation": "обещание"
+  },
+  {
+    "word": "protect",
+    "translation": "защищать"
+  },
+  {
+    "word": "prove",
+    "translation": "доказывать"
+  },
+  {
+    "word": "provide",
+    "translation": "предоставлять"
+  },
+  {
+    "word": "public",
+    "translation": "общественный"
+  },
+  {
+    "word": "pull",
+    "translation": "тянуть"
+  },
+  {
+    "word": "push",
+    "translation": "толкать"
+  },
+  {
+    "word": "put",
+    "translation": "класть"
+  },
+  {
+    "word": "raise",
+    "translation": "поднимать"
+  },
+  {
+    "word": "reach",
+    "translation": "достигать"
+  },
+  {
+    "word": "read",
+    "translation": "читать"
+  },
+  {
+    "word": "ready",
+    "translation": "готовый"
+  },
+  {
+    "word": "real",
+    "translation": "настоящий"
+  },
+  {
+    "word": "reason",
+    "translation": "причина"
+  },
+  {
+    "word": "receive",
+    "translation": "получать"
+  },
+  {
+    "word": "record",
+    "translation": "запись"
+  },
+  {
+    "word": "reduce",
+    "translation": "уменьшать"
+  },
+  {
+    "word": "refuse",
+    "translation": "отказывать"
+  },
+  {
+    "word": "relate",
+    "translation": "связывать"
+  },
+  {
+    "word": "remain",
+    "translation": "оставаться"
+  },
+  {
+    "word": "remember",
+    "translation": "помнить"
+  },
+  {
+    "word": "remove",
+    "translation": "удалять"
+  },
+  {
+    "word": "repeat",
+    "translation": "повторять"
+  },
+  {
+    "word": "replace",
+    "translation": "заменять"
+  },
+  {
+    "word": "report",
+    "translation": "доклад"
+  },
+  {
+    "word": "require",
+    "translation": "требовать"
+  },
+  {
+    "word": "research",
+    "translation": "исследование"
+  },
+  {
+    "word": "respect",
+    "translation": "уважение"
+  },
+  {
+    "word": "result",
+    "translation": "результат"
+  },
+  {
+    "word": "return",
+    "translation": "возвращать"
+  },
+  {
+    "word": "reveal",
+    "translation": "раскрывать"
+  },
+  {
+    "word": "rich",
+    "translation": "богатый"
+  },
+  {
+    "word": "right",
+    "translation": "правый"
+  },
+  {
+    "word": "rise",
+    "translation": "подниматься"
+  },
+  {
+    "word": "risk",
+    "translation": "риск"
+  },
+  {
+    "word": "rule",
+    "translation": "правило"
+  },
+  {
+    "word": "run",
+    "translation": "бежать"
+  },
+  {
+    "word": "safe",
+    "translation": "безопасный"
+  },
+  {
+    "word": "same",
+    "translation": "одинаковый"
+  },
+  {
+    "word": "save",
+    "translation": "спасать"
+  },
+  {
+    "word": "say",
+    "translation": "говорить"
+  },
+  {
+    "word": "scene",
+    "translation": "сцена"
+  },
+  {
+    "word": "school",
+    "translation": "школа"
+  },
+  {
+    "word": "search",
+    "translation": "искать"
+  },
+  {
+    "word": "season",
+    "translation": "сезон"
+  },
+  {
+    "word": "secret",
+    "translation": "секрет"
+  },
+  {
+    "word": "seem",
+    "translation": "казаться"
+  },
+  {
+    "word": "sell",
+    "translation": "продавать"
+  },
+  {
+    "word": "send",
+    "translation": "отправлять"
+  },
+  {
+    "word": "sense",
+    "translation": "чувство"
+  },
+  {
+    "word": "service",
+    "translation": "услуга"
+  },
+  {
+    "word": "set",
+    "translation": "устанавливать"
+  },
+  {
+    "word": "share",
+    "translation": "делиться"
+  },
+  {
+    "word": "show",
+    "translation": "показывать"
+  },
+  {
+    "word": "sign",
+    "translation": "знак"
+  },
+  {
+    "word": "simple",
+    "translation": "простой"
+  },
+  {
+    "word": "since",
+    "translation": "с тех пор"
+  },
+  {
+    "word": "situation",
+    "translation": "ситуация"
+  },
+  {
+    "word": "size",
+    "translation": "размер"
+  },
+  {
+    "word": "skill",
+    "translation": "навык"
+  },
+  {
+    "word": "sleep",
+    "translation": "спать"
+  },
+  {
+    "word": "slow",
+    "translation": "медленный"
+  },
+  {
+    "word": "small",
+    "translation": "маленький"
+  },
+  {
+    "word": "smart",
+    "translation": "умный"
+  },
+  {
+    "word": "smile",
+    "translation": "улыбаться"
+  },
+  {
+    "word": "solve",
+    "translation": "решать"
+  },
+  {
+    "word": "soon",
+    "translation": "скоро"
+  },
+  {
+    "word": "sorry",
+    "translation": "сожалеть"
+  },
+  {
+    "word": "sound",
+    "translation": "звук"
+  },
+  {
+    "word": "speak",
+    "translation": "говорить"
+  },
+  {
+    "word": "special",
+    "translation": "особенный"
+  },
+  {
+    "word": "spend",
+    "translation": "тратить"
+  },
+  {
+    "word": "spread",
+    "translation": "распространять"
+  },
+  {
+    "word": "stand",
+    "translation": "стоять"
+  },
+  {
+    "word": "start",
+    "translation": "начинать"
+  },
+  {
+    "word": "stay",
+    "translation": "оставаться"
+  },
+  {
+    "word": "step",
+    "translation": "шаг"
+  },
+  {
+    "word": "still",
+    "translation": "всё ещё"
+  },
+  {
+    "word": "stop",
+    "translation": "останавливать"
+  },
+  {
+    "word": "store",
+    "translation": "магазин"
+  },
+  {
+    "word": "story",
+    "translation": "история"
+  },
+  {
+    "word": "strong",
+    "translation": "сильный"
+  },
+  {
+    "word": "student",
+    "translation": "студент"
+  },
+  {
+    "word": "study",
+    "translation": "учиться"
+  },
+  {
+    "word": "subject",
+    "translation": "предмет"
+  },
+  {
+    "word": "success",
+    "translation": "успех"
+  },
+  {
+    "word": "such",
+    "translation": "такой"
+  },
+  {
+    "word": "suggest",
+    "translation": "предлагать"
+  },
+  {
+    "word": "support",
+    "translation": "поддержка"
+  },
+  {
+    "word": "sure",
+    "translation": "уверенный"
+  },
+  {
+    "word": "switch",
+    "translation": "переключать"
+  },
+  {
+    "word": "system",
+    "translation": "система"
+  },
+  {
+    "word": "table",
+    "translation": "стол"
+  },
+  {
+    "word": "take",
+    "translation": "брать"
+  },
+  {
+    "word": "talk",
+    "translation": "говорить"
+  },
+  {
+    "word": "task",
+    "translation": "задача"
+  },
+  {
+    "word": "teach",
+    "translation": "учить"
+  },
+  {
+    "word": "team",
+    "translation": "команда"
+  },
+  {
+    "word": "tell",
+    "translation": "говорить"
+  },
+  {
+    "word": "term",
+    "translation": "срок"
+  },
+  {
+    "word": "test",
+    "translation": "тест"
+  },
+  {
+    "word": "thank",
+    "translation": "благодарить"
+  },
+  {
+    "word": "think",
+    "translation": "думать"
+  },
+  {
+    "word": "though",
+    "translation": "хотя"
+  },
+  {
+    "word": "through",
+    "translation": "через"
+  },
+  {
+    "word": "throw",
+    "translation": "бросать"
+  },
+  {
+    "word": "today",
+    "translation": "сегодня"
+  },
+  {
+    "word": "together",
+    "translation": "вместе"
+  },
+  {
+    "word": "tomorrow",
+    "translation": "завтра"
+  },
+  {
+    "word": "touch",
+    "translation": "касаться"
+  },
+  {
+    "word": "toward",
+    "translation": "к"
+  },
+  {
+    "word": "town",
+    "translation": "город"
+  },
+  {
+    "word": "train",
+    "translation": "тренировать"
+  },
+  {
+    "word": "travel",
+    "translation": "путешествовать"
+  },
+  {
+    "word": "trust",
+    "translation": "доверять"
+  },
+  {
+    "word": "truth",
+    "translation": "правда"
+  },
+  {
+    "word": "try",
+    "translation": "пытаться"
+  },
+  {
+    "word": "turn",
+    "translation": "поворачивать"
+  },
+  {
+    "word": "type",
+    "translation": "тип"
+  },
+  {
+    "word": "understand",
+    "translation": "понимать"
+  },
+  {
+    "word": "until",
+    "translation": "пока"
+  },
+  {
+    "word": "update",
+    "translation": "обновлять"
+  },
+  {
+    "word": "upon",
+    "translation": "на"
+  },
+  {
+    "word": "value",
+    "translation": "ценность"
+  },
+  {
+    "word": "various",
+    "translation": "различный"
+  },
+  {
+    "word": "visit",
+    "translation": "посещать"
+  },
+  {
+    "word": "wait",
+    "translation": "ждать"
+  },
+  {
+    "word": "want",
+    "translation": "хотеть"
+  },
+  {
+    "word": "warm",
+    "translation": "тёплый"
+  },
+  {
+    "word": "watch",
+    "translation": "наблюдать"
+  },
+  {
+    "word": "week",
+    "translation": "неделя"
+  },
+  {
+    "word": "welcome",
+    "translation": "приветствовать"
+  },
+  {
+    "word": "well",
+    "translation": "хорошо"
+  },
+  {
+    "word": "white",
+    "translation": "белый"
+  },
+  {
+    "word": "wide",
+    "translation": "широкий"
+  },
+  {
+    "word": "win",
+    "translation": "побеждать"
+  },
+  {
+    "word": "wish",
+    "translation": "желать"
+  },
+  {
+    "word": "within",
+    "translation": "внутри"
+  },
+  {
+    "word": "woman",
+    "translation": "женщина"
+  },
+  {
+    "word": "wonder",
+    "translation": "удивляться"
+  },
+  {
+    "word": "word",
+    "translation": "слово"
+  },
+  {
+    "word": "work",
+    "translation": "работать"
+  },
+  {
+    "word": "world",
+    "translation": "мир"
+  },
+  {
+    "word": "worry",
+    "translation": "беспокоиться"
+  },
+  {
+    "word": "worth",
+    "translation": "стоить"
+  },
+  {
+    "word": "write",
+    "translation": "писать"
+  },
+  {
+    "word": "wrong",
+    "translation": "неправильный"
+  },
+  {
+    "word": "young",
+    "translation": "молодой"
+  },
+  {
+    "word": "abolish",
+    "translation": "отменять"
+  },
+  {
+    "word": "absorb",
+    "translation": "поглощать"
+  },
+  {
+    "word": "abstract",
+    "translation": "абстрактный"
+  },
+  {
+    "word": "abuse",
+    "translation": "злоупотреблять"
+  },
+  {
+    "word": "access",
+    "translation": "доступ"
+  },
+  {
+    "word": "adapt",
+    "translation": "адаптироваться"
+  },
+  {
+    "word": "adjust",
+    "translation": "настраивать"
+  },
+  {
+    "word": "admire",
+    "translation": "восхищаться"
+  },
+  {
+    "word": "admit",
+    "translation": "признавать"
+  },
+  {
+    "word": "adopt",
+    "translation": "принимать"
+  },
+  {
+    "word": "advertise",
+    "translation": "рекламировать"
+  },
+  {
+    "word": "aggressive",
+    "translation": "агрессивный"
+  },
+  {
+    "word": "aid",
+    "translation": "помощь"
+  },
+  {
+    "word": "allocate",
+    "translation": "распределять"
+  },
+  {
+    "word": "analyze",
+    "translation": "анализировать"
+  },
+  {
+    "word": "announce",
+    "translation": "объявлять"
+  },
+  {
+    "word": "anxiety",
+    "translation": "тревога"
+  },
+  {
+    "word": "appreciate",
+    "translation": "ценить"
+  },
+  {
+    "word": "approach",
+    "translation": "подход"
+  },
+  {
+    "word": "approve",
+    "translation": "одобрять"
+  },
+  {
+    "word": "arrange",
+    "translation": "организовывать"
+  },
+  {
+    "word": "arrest",
+    "translation": "арест"
+  },
+  {
+    "word": "assign",
+    "translation": "назначать"
+  },
+  {
+    "word": "assist",
+    "translation": "помогать"
+  },
+  {
+    "word": "assume",
+    "translation": "предполагать"
+  },
+  {
+    "word": "attempt",
+    "translation": "попытка"
+  },
+  {
+    "word": "attend",
+    "translation": "посещать"
+  },
+  {
+    "word": "attitude",
+    "translation": "отношение"
+  },
+  {
+    "word": "auction",
+    "translation": "аукцион"
+  },
+  {
+    "word": "audience",
+    "translation": "аудитория"
+  },
+  {
+    "word": "available",
+    "translation": "доступный"
+  },
+  {
+    "word": "average",
+    "translation": "среднее"
+  },
+  {
+    "word": "barrier",
+    "translation": "барьер"
+  },
+  {
+    "word": "behaviour",
+    "translation": "поведение"
+  },
+  {
+    "word": "believe",
+    "translation": "верить"
+  },
+  {
+    "word": "bond",
+    "translation": "связь"
+  },
+  {
+    "word": "bonus",
+    "translation": "бонус"
+  },
+  {
+    "word": "boost",
+    "translation": "повышать"
+  },
+  {
+    "word": "budget",
+    "translation": "бюджет"
+  },
+  {
+    "word": "burden",
+    "translation": "бремя"
+  },
+  {
+    "word": "calculate",
+    "translation": "вычислять"
+  },
+  {
+    "word": "capacity",
+    "translation": "вместимость"
+  },
+  {
+    "word": "career",
+    "translation": "карьера"
+  },
+  {
+    "word": "challenge",
+    "translation": "вызов"
+  },
+  {
+    "word": "charity",
+    "translation": "благотворительность"
+  },
+  {
+    "word": "choice",
+    "translation": "выбор"
+  },
+  {
+    "word": "citizen",
+    "translation": "гражданин"
+  },
+  {
+    "word": "collapse",
+    "translation": "рушиться"
+  },
+  {
+    "word": "colleague",
+    "translation": "коллега"
+  },
+  {
+    "word": "combine",
+    "translation": "комбинировать"
+  },
+  {
+    "word": "commit",
+    "translation": "совершать"
+  },
+  {
+    "word": "compete",
+    "translation": "конкурировать"
+  },
+  {
+    "word": "complain",
+    "translation": "жаловаться"
+  },
+  {
+    "word": "compose",
+    "translation": "составлять"
+  },
+  {
+    "word": "concept",
+    "translation": "концепция"
+  },
+  {
+    "word": "conflict",
+    "translation": "конфликт"
+  },
+  {
+    "word": "consume",
+    "translation": "потреблять"
+  },
+  {
+    "word": "contract",
+    "translation": "контракт"
+  },
+  {
+    "word": "contribute",
+    "translation": "вносить вклад"
+  },
+  {
+    "word": "convince",
+    "translation": "убеждать"
+  },
+  {
+    "word": "cooperate",
+    "translation": "сотрудничать"
+  },
+  {
+    "word": "courage",
+    "translation": "смелость"
+  },
+  {
+    "word": "creative",
+    "translation": "творческий"
+  },
+  {
+    "word": "critical",
+    "translation": "критический"
+  },
+  {
+    "word": "curiosity",
+    "translation": "любопытство"
+  },
+  {
+    "word": "deadline",
+    "translation": "дедлайн"
+  },
+  {
+    "word": "debate",
+    "translation": "дебаты"
+  },
+  {
+    "word": "decrease",
+    "translation": "уменьшать"
+  },
+  {
+    "word": "define",
+    "translation": "определять"
+  },
+  {
+    "word": "demonstrate",
+    "translation": "демонстрировать"
+  },
+  {
+    "word": "depend",
+    "translation": "зависеть"
+  },
+  {
+    "word": "describe",
+    "translation": "описывать"
+  },
+  {
+    "word": "detail",
+    "translation": "деталь"
+  },
+  {
+    "word": "determine",
+    "translation": "определять"
+  },
+  {
+    "word": "digital",
+    "translation": "цифровой"
+  },
+  {
+    "word": "disability",
+    "translation": "инвалидность"
+  },
+  {
+    "word": "disappear",
+    "translation": "исчезать"
+  },
+  {
+    "word": "discipline",
+    "translation": "дисциплина"
+  },
+  {
+    "word": "discrimination",
+    "translation": "дискриминация"
+  },
+  {
+    "word": "diversity",
+    "translation": "разнообразие"
+  },
+  {
+    "word": "domestic",
+    "translation": "домашний"
+  },
+  {
+    "word": "download",
+    "translation": "скачивать"
+  },
+  {
+    "word": "dynamic",
+    "translation": "динамичный"
+  },
+  {
+    "word": "economy",
+    "translation": "экономика"
+  },
+  {
+    "word": "education",
+    "translation": "образование"
+  },
+  {
+    "word": "effective",
+    "translation": "эффективный"
+  },
+  {
+    "word": "efficient",
+    "translation": "эффективный"
+  },
+  {
+    "word": "eliminate",
+    "translation": "устранять"
+  },
+  {
+    "word": "emotion",
+    "translation": "эмоция"
+  },
+  {
+    "word": "emphasize",
+    "translation": "подчёркивать"
+  },
+  {
+    "word": "encourage",
+    "translation": "поощрять"
+  },
+  {
+    "word": "environment",
+    "translation": "окружающая среда"
+  },
+  {
+    "word": "equality",
+    "translation": "равенство"
+  },
+  {
+    "word": "evaluate",
+    "translation": "оценивать"
+  },
+  {
+    "word": "evidence",
+    "translation": "доказательство"
+  },
+  {
+    "word": "evolve",
+    "translation": "эволюционировать"
+  },
+  {
+    "word": "exception",
+    "translation": "исключение"
+  },
+  {
+    "word": "exchange",
+    "translation": "обмен"
+  },
+  {
+    "word": "execute",
+    "translation": "выполнять"
+  },
+  {
+    "word": "expand",
+    "translation": "расширять"
+  },
+  {
+    "word": "experience",
+    "translation": "опыт"
+  },
+  {
+    "word": "experiment",
+    "translation": "эксперимент"
+  },
+  {
+    "word": "extreme",
+    "translation": "крайний"
+  },
+  {
+    "word": "factor",
+    "translation": "фактор"
+  },
+  {
+    "word": "feature",
+    "translation": "особенность"
+  },
+  {
+    "word": "feedback",
+    "translation": "обратная связь"
+  },
+  {
+    "word": "flexible",
+    "translation": "гибкий"
+  },
+  {
+    "word": "foundation",
+    "translation": "основа"
+  },
+  {
+    "word": "freedom",
+    "translation": "свобода"
+  },
+  {
+    "word": "frequency",
+    "translation": "частота"
+  },
+  {
+    "word": "frustration",
+    "translation": "разочарование"
+  },
+  {
+    "word": "function",
+    "translation": "функция"
+  },
+  {
+    "word": "fundamental",
+    "translation": "фундаментальный"
+  },
+  {
+    "word": "generate",
+    "translation": "генерировать"
+  },
+  {
+    "word": "genuine",
+    "translation": "подлинный"
+  },
+  {
+    "word": "gesture",
+    "translation": "жест"
+  },
+  {
+    "word": "grateful",
+    "translation": "благодарный"
+  },
+  {
+    "word": "guarantee",
+    "translation": "гарантировать"
+  },
+  {
+    "word": "habit",
+    "translation": "привычка"
+  },
+  {
+    "word": "highlight",
+    "translation": "выделять"
+  },
+  {
+    "word": "honest",
+    "translation": "честный"
+  },
+  {
+    "word": "identity",
+    "translation": "идентичность"
+  },
+  {
+    "word": "immediate",
+    "translation": "немедленный"
+  },
+  {
+    "word": "implement",
+    "translation": "внедрять"
+  },
+  {
+    "word": "independent",
+    "translation": "независимый"
+  },
+  {
+    "word": "individual",
+    "translation": "индивидуальный"
+  },
+  {
+    "word": "influence",
+    "translation": "влиять"
+  },
+  {
+    "word": "initiative",
+    "translation": "инициатива"
+  },
+  {
+    "word": "innovation",
+    "translation": "инновация"
+  },
+  {
+    "word": "insight",
+    "translation": "понимание"
+  },
+  {
+    "word": "inspire",
+    "translation": "вдохновлять"
+  },
+  {
+    "word": "interact",
+    "translation": "взаимодействовать"
+  },
+  {
+    "word": "interpret",
+    "translation": "интерпретировать"
+  },
+  {
+    "word": "investigate",
+    "translation": "расследовать"
+  },
+  {
+    "word": "justify",
+    "translation": "оправдывать"
+  },
+  {
+    "word": "launch",
+    "translation": "запускать"
+  },
+  {
+    "word": "leadership",
+    "translation": "лидерство"
+  },
+  {
+    "word": "logical",
+    "translation": "логичный"
+  },
+  {
+    "word": "maintain",
+    "translation": "поддерживать"
+  },
+  {
+    "word": "maximize",
+    "translation": "максимизировать"
+  },
+  {
+    "word": "measure",
+    "translation": "измерять"
+  },
+  {
+    "word": "minimize",
+    "translation": "минимизировать"
+  },
+  {
+    "word": "mission",
+    "translation": "миссия"
+  },
+  {
+    "word": "monitor",
+    "translation": "мониторить"
+  },
+  {
+    "word": "motivate",
+    "translation": "мотивировать"
+  },
+  {
+    "word": "negotiate",
+    "translation": "переговоры"
+  },
+  {
+    "word": "objective",
+    "translation": "цель"
+  },
+  {
+    "word": "obstacle",
+    "translation": "препятствие"
+  },
+  {
+    "word": "obtain",
+    "translation": "получать"
+  },
+  {
+    "word": "outcome",
+    "translation": "результат"
+  },
+  {
+    "word": "overcome",
+    "translation": "преодолевать"
+  },
+  {
+    "word": "participate",
+    "translation": "участвовать"
+  },
+  {
+    "word": "passion",
+    "translation": "страсть"
+  },
+  {
+    "word": "perceive",
+    "translation": "воспринимать"
+  },
+  {
+    "word": "perspective",
+    "translation": "перспектива"
+  },
+  {
+    "word": "positive",
+    "translation": "позитивный"
+  },
+  {
+    "word": "potential",
+    "translation": "потенциал"
+  },
+  {
+    "word": "practical",
+    "translation": "практичный"
+  },
+  {
+    "word": "precise",
+    "translation": "точный"
+  },
+  {
+    "word": "predict",
+    "translation": "предсказывать"
+  },
+  {
+    "word": "priority",
+    "translation": "приоритет"
+  },
+  {
+    "word": "problem",
+    "translation": "проблема"
+  },
+  {
+    "word": "promote",
+    "translation": "продвигать"
+  },
+  {
+    "word": "propose",
+    "translation": "предлагать"
+  },
+  {
+    "word": "purpose",
+    "translation": "цель"
+  },
+  {
+    "word": "quality",
+    "translation": "качество"
+  },
+  {
+    "word": "recognize",
+    "translation": "признавать"
+  },
+  {
+    "word": "recommend",
+    "translation": "рекомендовать"
+  },
+  {
+    "word": "reflect",
+    "translation": "отражать"
+  },
+  {
+    "word": "reform",
+    "translation": "реформа"
+  },
+  {
+    "word": "reinforce",
+    "translation": "подкреплять"
+  },
+  {
+    "word": "relevant",
+    "translation": "актуальный"
+  },
+  {
+    "word": "reliable",
+    "translation": "надёжный"
+  },
+  {
+    "word": "represent",
+    "translation": "представлять"
+  },
+  {
+    "word": "resource",
+    "translation": "ресурс"
+  },
+  {
+    "word": "respond",
+    "translation": "отвечать"
+  },
+  {
+    "word": "responsible",
+    "translation": "ответственный"
+  },
+  {
+    "word": "review",
+    "translation": "пересматривать"
+  },
+  {
+    "word": "revolution",
+    "translation": "революция"
+  },
+  {
+    "word": "reward",
+    "translation": "награда"
+  },
+  {
+    "word": "significant",
+    "translation": "значительный"
+  },
+  {
+    "word": "solution",
+    "translation": "решение"
+  },
+  {
+    "word": "specific",
+    "translation": "конкретный"
+  },
+  {
+    "word": "strategy",
+    "translation": "стратегия"
+  },
+  {
+    "word": "strengthen",
+    "translation": "укреплять"
+  },
+  {
+    "word": "structure",
+    "translation": "структура"
+  },
+  {
+    "word": "sustainable",
+    "translation": "устойчивый"
+  },
+  {
+    "word": "talent",
+    "translation": "талант"
+  },
+  {
+    "word": "technology",
+    "translation": "технология"
+  },
+  {
+    "word": "transparent",
+    "translation": "прозрачный"
+  },
+  {
+    "word": "trend",
+    "translation": "тренд"
+  },
+  {
+    "word": "unique",
+    "translation": "уникальный"
+  },
+  {
+    "word": "upload",
+    "translation": "загружать"
+  },
+  {
+    "word": "version",
+    "translation": "версия"
+  },
+  {
+    "word": "vision",
+    "translation": "видение"
+  },
+  {
+    "word": "volunteer",
+    "translation": "волонтёр"
+  },
+  {
+    "word": "vulnerable",
+    "translation": "уязвимый"
+  },
+  {
+    "word": "welfare",
+    "translation": "благосостояние"
+  },
+  {
+    "word": "willing",
+    "translation": "готовый"
+  },
+  {
+    "word": "wisdom",
+    "translation": "мудрость"
+  },
+  {
+    "word": "accomplish",
+    "translation": "выполнять"
+  },
+  {
+    "word": "acknowledge",
+    "translation": "признавать"
+  },
+  {
+    "word": "acquisition",
+    "translation": "приобретение"
+  },
+  {
+    "word": "adequate",
+    "translation": "достаточный"
+  },
+  {
+    "word": "advocate",
+    "translation": "защищать"
+  },
+  {
+    "word": "ambiguous",
+    "translation": "двусмысленный"
+  },
+  {
+    "word": "ambitious",
+    "translation": "амбициозный"
+  },
+  {
+    "word": "atmosphere",
+    "translation": "атмосфера"
+  },
+  {
+    "word": "authentic",
+    "translation": "подлинный"
+  },
+  {
+    "word": "automate",
+    "translation": "автоматизировать"
+  },
+  {
+    "word": "benchmark",
+    "translation": "эталон"
+  },
+  {
+    "word": "collaborate",
+    "translation": "сотрудничать"
+  },
+  {
+    "word": "compassion",
+    "translation": "сострадание"
+  },
+  {
+    "word": "comprehensive",
+    "translation": "всесторонний"
+  },
+  {
+    "word": "consistent",
+    "translation": "последовательный"
+  },
+  {
+    "word": "construct",
+    "translation": "строить"
+  },
+  {
+    "word": "context",
+    "translation": "контекст"
+  },
+  {
+    "word": "continuous",
+    "translation": "непрерывный"
+  },
+  {
+    "word": "crucial",
+    "translation": "важный"
+  },
+  {
+    "word": "customize",
+    "translation": "настраивать"
+  },
+  {
+    "word": "dedicate",
+    "translation": "посвящать"
+  },
+  {
+    "word": "delegate",
+    "translation": "делегировать"
+  },
+  {
+    "word": "deliberate",
+    "translation": "преднамеренный"
+  },
+  {
+    "word": "diagnose",
+    "translation": "диагностировать"
+  },
+  {
+    "word": "distinguish",
+    "translation": "различать"
+  },
+  {
+    "word": "elaborate",
+    "translation": "разрабатывать"
+  },
+  {
+    "word": "enhance",
+    "translation": "улучшать"
+  },
+  {
+    "word": "enormous",
+    "translation": "огромный"
+  },
+  {
+    "word": "establish",
+    "translation": "устанавливать"
+  },
+  {
+    "word": "estimate",
+    "translation": "оценивать"
+  },
+  {
+    "word": "facilitate",
+    "translation": "облегчать"
+  },
+  {
+    "word": "framework",
+    "translation": "структура"
+  },
+  {
+    "word": "gratitude",
+    "translation": "благодарность"
+  },
+  {
+    "word": "hypothesis",
+    "translation": "гипотеза"
+  },
+  {
+    "word": "illustrate",
+    "translation": "иллюстрировать"
+  },
+  {
+    "word": "immense",
+    "translation": "огромный"
+  },
+  {
+    "word": "inevitable",
+    "translation": "неизбежный"
+  },
+  {
+    "word": "infrastructure",
+    "translation": "инфраструктура"
+  },
+  {
+    "word": "integrate",
+    "translation": "интегрировать"
+  },
+  {
+    "word": "intellectual",
+    "translation": "интеллектуальный"
+  },
+  {
+    "word": "international",
+    "translation": "международный"
+  },
+  {
+    "word": "interrupt",
+    "translation": "прерывать"
+  },
+  {
+    "word": "limitation",
+    "translation": "ограничение"
+  },
+  {
+    "word": "mechanism",
+    "translation": "механизм"
+  },
+  {
+    "word": "methodology",
+    "translation": "методология"
+  },
+  {
+    "word": "milestone",
+    "translation": "веха"
+  },
+  {
+    "word": "narrative",
+    "translation": "нарратив"
+  },
+  {
+    "word": "opportunity",
+    "translation": "возможность"
+  },
+  {
+    "word": "optimize",
+    "translation": "оптимизировать"
+  },
+  {
+    "word": "organization",
+    "translation": "организация"
+  },
+  {
+    "word": "outstanding",
+    "translation": "выдающийся"
+  },
+  {
+    "word": "phenomenon",
+    "translation": "явление"
+  },
+  {
+    "word": "philosophy",
+    "translation": "философия"
+  },
+  {
+    "word": "preference",
+    "translation": "предпочтение"
+  },
+  {
+    "word": "principle",
+    "translation": "принцип"
+  },
+  {
+    "word": "productivity",
+    "translation": "производительность"
+  },
+  {
+    "word": "profound",
+    "translation": "глубокий"
+  },
+  {
+    "word": "proportion",
+    "translation": "пропорция"
+  },
+  {
+    "word": "psychology",
+    "translation": "психология"
+  },
+  {
+    "word": "recognition",
+    "translation": "признание"
+  },
+  {
+    "word": "requirement",
+    "translation": "требование"
+  },
+  {
+    "word": "resilience",
+    "translation": "устойчивость"
+  },
+  {
+    "word": "responsibility",
+    "translation": "ответственность"
+  },
+  {
+    "word": "sophisticated",
+    "translation": "сложный"
+  },
+  {
+    "word": "stereotype",
+    "translation": "стереотип"
+  },
+  {
+    "word": "stimulate",
+    "translation": "стимулировать"
+  },
+  {
+    "word": "subsequent",
+    "translation": "последующий"
+  },
+  {
+    "word": "substantial",
+    "translation": "существенный"
+  },
+  {
+    "word": "transformation",
+    "translation": "трансформация"
+  },
+  {
+    "word": "undermine",
+    "translation": "подрывать"
+  },
+  {
+    "word": "universal",
+    "translation": "универсальный"
+  },
+  {
+    "word": "utilize",
+    "translation": "использовать"
+  },
+  {
+    "word": "variable",
+    "translation": "переменная"
+  },
+  {
+    "word": "verification",
+    "translation": "проверка"
+  },
+  {
+    "word": "virtually",
+    "translation": "практически"
+  },
+  {
+    "word": "widespread",
+    "translation": "широко распространённый"
+  },
+  {
+    "word": "abandon",
+    "translation": "бросать"
+  },
+  {
+    "word": "accelerate",
+    "translation": "ускорять"
+  },
+  {
+    "word": "accommodate",
+    "translation": "размещать"
+  },
+  {
+    "word": "accumulate",
+    "translation": "накапливать"
+  },
+  {
+    "word": "aftermath",
+    "translation": "последствия"
+  },
+  {
+    "word": "alienate",
+    "translation": "отчуждать"
+  },
+  {
+    "word": "allegation",
+    "translation": "обвинение"
+  },
+  {
+    "word": "alliance",
+    "translation": "альянс"
+  },
+  {
+    "word": "ambassador",
+    "translation": "посол"
+  },
+  {
+    "word": "ambition",
+    "translation": "амбиция"
+  },
+  {
+    "word": "anticipate",
+    "translation": "предвидеть"
+  },
+  {
+    "word": "appetite",
+    "translation": "аппетит"
+  },
+  {
+    "word": "architect",
+    "translation": "архитектор"
+  },
+  {
+    "word": "assembly",
+    "translation": "собрание"
+  },
+  {
+    "word": "assertion",
+    "translation": "утверждение"
+  },
+  {
+    "word": "assessment",
+    "translation": "оценка"
+  },
+  {
+    "word": "association",
+    "translation": "ассоциация"
+  },
+  {
+    "word": "assumption",
+    "translation": "предположение"
+  },
+  {
+    "word": "astronaut",
+    "translation": "космонавт"
+  },
+  {
+    "word": "attachment",
+    "translation": "привязанность"
+  },
+  {
+    "word": "authority",
+    "translation": "авторитет"
+  },
+  {
+    "word": "automation",
+    "translation": "автоматизация"
+  },
+  {
+    "word": "awareness",
+    "translation": "осознанность"
+  },
+  {
+    "word": "bargain",
+    "translation": "сделка"
+  },
+  {
+    "word": "biochemistry",
+    "translation": "биохимия"
+  },
+  {
+    "word": "blockchain",
+    "translation": "блокчейн"
+  },
+  {
+    "word": "blueprint",
+    "translation": "чертёж"
+  },
+  {
+    "word": "breakthrough",
+    "translation": "прорыв"
+  },
+  {
+    "word": "bureaucracy",
+    "translation": "бюрократия"
+  },
+  {
+    "word": "catastrophe",
+    "translation": "катастрофа"
+  },
+  {
+    "word": "circumstance",
+    "translation": "обстоятельство"
+  },
+  {
+    "word": "civilization",
+    "translation": "цивилизация"
+  },
+  {
+    "word": "classification",
+    "translation": "классификация"
+  },
+  {
+    "word": "coincidence",
+    "translation": "совпадение"
+  },
+  {
+    "word": "communication",
+    "translation": "общение"
+  },
+  {
+    "word": "community",
+    "translation": "сообщество"
+  },
+  {
+    "word": "competition",
+    "translation": "соревнование"
+  },
+  {
+    "word": "complication",
+    "translation": "осложнение"
+  },
+  {
+    "word": "concentration",
+    "translation": "концентрация"
+  },
+  {
+    "word": "consequence",
+    "translation": "последствие"
+  },
+  {
+    "word": "conservation",
+    "translation": "сохранение"
+  },
+  {
+    "word": "considerable",
+    "translation": "значительный"
+  },
+  {
+    "word": "conspiracy",
+    "translation": "заговор"
+  },
+  {
+    "word": "constitution",
+    "translation": "конституция"
+  },
+  {
+    "word": "contradiction",
+    "translation": "противоречие"
+  },
+  {
+    "word": "controversy",
+    "translation": "споры"
+  },
+  {
+    "word": "conversation",
+    "translation": "разговор"
+  },
+  {
+    "word": "corporation",
+    "translation": "корпорация"
+  },
+  {
+    "word": "correlation",
+    "translation": "корреляция"
+  },
+  {
+    "word": "counterpart",
+    "translation": "аналог"
+  },
+  {
+    "word": "creativity",
+    "translation": "творчество"
+  },
+  {
+    "word": "cultivation",
+    "translation": "культивирование"
+  },
+  {
+    "word": "declaration",
+    "translation": "декларация"
+  },
+  {
+    "word": "democracy",
+    "translation": "демократия"
+  },
+  {
+    "word": "demonstration",
+    "translation": "демонстрация"
+  },
+  {
+    "word": "determination",
+    "translation": "решимость"
+  },
+  {
+    "word": "development",
+    "translation": "развитие"
+  },
+  {
+    "word": "disadvantage",
+    "translation": "недостаток"
+  },
+  {
+    "word": "disappointment",
+    "translation": "разочарование"
+  },
+  {
+    "word": "distribution",
+    "translation": "распределение"
+  },
+  {
+    "word": "documentation",
+    "translation": "документация"
+  },
+  {
+    "word": "domination",
+    "translation": "доминирование"
+  },
+  {
+    "word": "efficiency",
+    "translation": "эффективность"
+  },
+  {
+    "word": "elaboration",
+    "translation": "разработка"
+  },
+  {
+    "word": "emergency",
+    "translation": "чрезвычайная ситуация"
+  },
+  {
+    "word": "empowerment",
+    "translation": "расширение прав"
+  },
+  {
+    "word": "encouragement",
+    "translation": "поощрение"
+  },
+  {
+    "word": "entertainment",
+    "translation": "развлечение"
+  },
+  {
+    "word": "enthusiasm",
+    "translation": "энтузиазм"
+  },
+  {
+    "word": "entrepreneurship",
+    "translation": "предпринимательство"
+  },
+  {
+    "word": "environmental",
+    "translation": "экологический"
+  },
+  {
+    "word": "establishment",
+    "translation": "учреждение"
+  },
+  {
+    "word": "examination",
+    "translation": "обследование"
+  },
+  {
+    "word": "expectation",
+    "translation": "ожидание"
+  },
+  {
+    "word": "exploitation",
+    "translation": "эксплуатация"
+  },
+  {
+    "word": "exploration",
+    "translation": "исследование"
+  },
+  {
+    "word": "extraordinary",
+    "translation": "экстраординарный"
+  },
+  {
+    "word": "facilitation",
+    "translation": "фасилитация"
+  },
+  {
+    "word": "fascination",
+    "translation": "восхищение"
+  }
+]

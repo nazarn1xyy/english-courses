@@ -1,26 +1,42 @@
 const { Telegraf } = require('telegraf');
+const fs = require('fs');
+const path = require('path');
 
-// Vocabulary database - константа вне функции для переиспользования
-const vocabulary = [
-  { word: 'serendipity', translation: 'счастливая случайность', example: 'Finding this job was pure serendipity.' },
-  { word: 'ephemeral', translation: 'эфемерный, мимолетный', example: 'The beauty of cherry blossoms is ephemeral.' },
-  { word: 'resilient', translation: 'устойчивый, выносливый', example: 'She is resilient in the face of adversity.' },
-  { word: 'ambiguous', translation: 'двусмысленный', example: 'His answer was ambiguous and confusing.' },
-  { word: 'eloquent', translation: 'красноречивый', example: 'She gave an eloquent speech at the conference.' },
-  { word: 'pragmatic', translation: 'прагматичный', example: 'We need a pragmatic solution to this problem.' },
-  { word: 'meticulous', translation: 'дотошный, скрупулезный', example: 'He is meticulous about his work.' },
-  { word: 'ubiquitous', translation: 'вездесущий', example: 'Smartphones are ubiquitous in modern society.' },
-  { word: 'benevolent', translation: 'доброжелательный', example: 'She has a benevolent attitude toward everyone.' },
-  { word: 'candid', translation: 'откровенный, прямой', example: 'I appreciate your candid feedback.' }
-];
+// Загружаем словарь из JSON файла
+let vocabulary = [];
+try {
+  const vocabPath = path.join(__dirname, 'vocabulary.json');
+  vocabulary = JSON.parse(fs.readFileSync(vocabPath, 'utf-8'));
+  console.log(`Loaded ${vocabulary.length} words`);
+} catch (error) {
+  console.error('Error loading vocabulary:', error);
+  // Fallback на минимальный словарь
+  vocabulary = [
+    { word: 'hello', translation: 'привет' },
+    { word: 'world', translation: 'мир' }
+  ];
+}
 
 // User sessions - глобальная переменная для сохранения между вызовами
 const userSessions = new Map();
 
 // Переиспользуемые сообщения
 const MESSAGES = {
-  start: '👋 Привет! Я бот для изучения английского языка.\n\nДоступные команды:\n/word - Получить случайное слово дня\n/quiz - Пройти мини-квиз (5 вопросов)\n/help - Показать помощь',
-  help: '📚 Как пользоваться ботом:\n\n/word - Узнай новое английское слово с переводом и примером\n/quiz - Проверь свои знания в коротком квизе\n\nУчи английский каждый день! 🚀'
+  start: `👋 Привет! Я бот для изучения английского языка.\n\n📚 База: ${vocabulary.length} слов\n\nВыбери действие из меню ниже:`,
+  help: '📚 Как пользоваться ботом:\n\n📖 Случайное слово - Узнай новое английское слово с переводом\n🎯 Квиз - Проверь свои знания в коротком квизе (5 вопросов)\n\nУчи английский каждый день! 🚀'
+};
+
+// Инлайн клавиатура с командами
+const MAIN_KEYBOARD = {
+  inline_keyboard: [
+    [
+      { text: '📖 Случайное слово', callback_data: 'cmd_word' },
+      { text: '🎯 Квиз', callback_data: 'cmd_quiz' }
+    ],
+    [
+      { text: 'ℹ️ Помощь', callback_data: 'cmd_help' }
+    ]
+  ]
 };
 
 // Инициализация бота один раз (переиспользуется между вызовами)
@@ -51,14 +67,14 @@ function shuffleArray(arr) {
 function setupHandlers(bot) {
 
   // Commands - используем прямые ответы без лишних конкатенаций
-  bot.command('start', (ctx) => ctx.reply(MESSAGES.start));
-  bot.command('help', (ctx) => ctx.reply(MESSAGES.help));
+  bot.command('start', (ctx) => ctx.reply(MESSAGES.start, { reply_markup: MAIN_KEYBOARD }));
+  bot.command('help', (ctx) => ctx.reply(MESSAGES.help, { reply_markup: MAIN_KEYBOARD }));
 
   bot.command('word', (ctx) => {
     const word = getRandomItem(vocabulary);
     return ctx.reply(
-      `📖 Слово дня:\n\n🇬🇧 *${word.word}*\n🇷🇺 ${word.translation}\n\nПример: _"${word.example}"_`,
-      { parse_mode: 'Markdown' }
+      `📖 Слово:\n\n🇬🇧 *${word.word}*\n🇷🇺 ${word.translation}`,
+      { parse_mode: 'Markdown', reply_markup: MAIN_KEYBOARD }
     );
   });
 
@@ -78,6 +94,40 @@ function setupHandlers(bot) {
   bot.on('callback_query', async (ctx) => {
     const data = ctx.callbackQuery.data;
 
+    // Обработка команд из главного меню
+    if (data.startsWith('cmd_')) {
+      const command = data.replace('cmd_', '');
+
+      if (command === 'word') {
+        const word = getRandomItem(vocabulary);
+        await ctx.answerCbQuery();
+        return ctx.reply(
+          `📖 Слово:\n\n🇬🇧 *${word.word}*\n🇷🇺 ${word.translation}`,
+          { parse_mode: 'Markdown', reply_markup: MAIN_KEYBOARD }
+        );
+      }
+
+      if (command === 'quiz') {
+        const userId = ctx.from.id;
+        const quizWords = shuffleArray(vocabulary).slice(0, 5);
+
+        userSessions.set(userId, {
+          words: quizWords,
+          currentQuestion: 0,
+          score: 0
+        });
+
+        await ctx.answerCbQuery();
+        return sendQuizQuestion(ctx, userId);
+      }
+
+      if (command === 'help') {
+        await ctx.answerCbQuery();
+        return ctx.reply(MESSAGES.help, { reply_markup: MAIN_KEYBOARD });
+      }
+    }
+
+    // Обработка ответов в квизе
     if (data.startsWith('quiz_')) {
       const [, userId, result] = data.split('_');
       const session = userSessions.get(parseInt(userId));
@@ -110,7 +160,10 @@ function sendQuizQuestion(ctx, userId) {
     userSessions.delete(userId);
 
     const emoji = finalScore === 5 ? '🏆 Отлично!' : finalScore >= 3 ? '👍 Хорошо!' : '💪 Продолжай учиться!';
-    return ctx.reply(`✅ Квиз завершен!\n\nВаш результат: ${finalScore}/5\n\n${emoji}`);
+    return ctx.reply(
+      `✅ Квиз завершен!\n\nВаш результат: ${finalScore}/5\n\n${emoji}`,
+      { reply_markup: MAIN_KEYBOARD }
+    );
   }
 
   const currentWord = session.words[session.currentQuestion];
@@ -147,16 +200,13 @@ module.exports = async (req, res) => {
   try {
     const bot = getBot();
 
-    // Отправляем ответ Telegram сразу, не дожидаясь обработки
-    res.status(200).json({ ok: true });
-
-    // Обрабатываем update асинхронно после ответа
+    // Обрабатываем update сначала
     await bot.handleUpdate(req.body);
+
+    // Отправляем ответ после обработки
+    res.status(200).json({ ok: true });
   } catch (error) {
     console.error('Error:', error);
-    // Если ответ еще не отправлен
-    if (!res.headersSent) {
-      res.status(200).json({ ok: true });
-    }
+    res.status(200).json({ ok: true });
   }
 };
