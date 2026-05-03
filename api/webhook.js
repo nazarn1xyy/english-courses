@@ -42,6 +42,18 @@ const MAIN_KEYBOARD = {
   persistent: true
 };
 
+// Клавиатура выбора направления квиза
+const QUIZ_DIRECTION_KEYBOARD = {
+  inline_keyboard: [
+    [
+      { text: '🇬🇧 → 🇺🇦 Англійська → Українська', callback_data: 'quiz_dir_en_ua' }
+    ],
+    [
+      { text: '🇺🇦 → 🇬🇧 Українська → Англійська', callback_data: 'quiz_dir_ua_en' }
+    ]
+  ]
+};
+
 // Клавиатура выбора количества вопросов в квизе
 const QUIZ_SIZE_KEYBOARD = {
   inline_keyboard: [
@@ -100,6 +112,25 @@ function getWrongAnswers(correctWord, count = 3) {
     if (!used.has(word)) {
       used.add(word);
       wrongAnswers.push(vocabulary[randomIndex].translation);
+    }
+  }
+
+  return wrongAnswers;
+}
+
+// Быстрая функция для получения случайных неправильных английских ответов (для обратного квиза)
+function getWrongAnswersReverse(correctWord, count = 3) {
+  const wrongAnswers = [];
+  const vocabLength = vocabulary.length;
+  const used = new Set([correctWord]);
+
+  while (wrongAnswers.length < count && wrongAnswers.length < vocabLength - 1) {
+    const randomIndex = Math.floor(Math.random() * vocabLength);
+    const word = vocabulary[randomIndex].word;
+
+    if (!used.has(word)) {
+      used.add(word);
+      wrongAnswers.push(vocabulary[randomIndex].word);  // Возвращаем английское слово
     }
   }
 
@@ -189,8 +220,8 @@ function setupHandlers(bot) {
 
   bot.command('quiz', (ctx) => {
     return ctx.reply(
-      '🎯 Оберіть кількість питань для квізу:',
-      { reply_markup: QUIZ_SIZE_KEYBOARD }
+      '🎯 Оберіть напрямок квізу:',
+      { reply_markup: QUIZ_DIRECTION_KEYBOARD }
     );
   });
 
@@ -233,8 +264,8 @@ function setupHandlers(bot) {
 
     if (text === '🎯 Квіз') {
       return ctx.reply(
-        '🎯 Оберіть кількість питань для квізу:',
-        { reply_markup: QUIZ_SIZE_KEYBOARD }
+        '🎯 Оберіть напрямок квізу:',
+        { reply_markup: QUIZ_DIRECTION_KEYBOARD }
       );
     }
 
@@ -264,30 +295,65 @@ function setupHandlers(bot) {
   bot.on('callback_query', async (ctx) => {
     const data = ctx.callbackQuery.data;
 
+    // Обработка выбора направления квиза
+    if (data.startsWith('quiz_dir_')) {
+      const direction = data.replace('quiz_dir_', '');
+      const userId = ctx.from.id;
+
+      // Сохраняем направление в сессии
+      let session = userSessions.get(userId) || {};
+      session.quizDirection = direction;
+      userSessions.set(userId, session);
+
+      await ctx.answerCbQuery();
+      await ctx.editMessageText(
+        '🎯 Оберіть кількість питань для квізу:',
+        { reply_markup: QUIZ_SIZE_KEYBOARD }
+      );
+      return;
+    }
+
     // Обработка выбора размера квиза
     if (data.startsWith('quiz_size_')) {
       const size = parseInt(data.replace('quiz_size_', ''));
       const userId = ctx.from.id;
       const quizWords = shuffleArray(vocabulary).slice(0, size);
 
+      // Получаем направление квиза из сессии
+      const session = userSessions.get(userId) || {};
+      const direction = session.quizDirection || 'en_ua';
+
       // Preload всех вопросов с ответами
       const questions = quizWords.map(word => {
-        const correctAnswer = word.translation;
-        const wrongAnswers = getWrongAnswers(word.word, 3);
-        const allAnswers = shuffleArray([correctAnswer, ...wrongAnswers]);
+        if (direction === 'ua_en') {
+          // Обратный квиз: показываем украинский, ищем английский
+          const correctAnswer = word.word;
+          const wrongAnswers = getWrongAnswersReverse(word.word, 3);
+          const allAnswers = shuffleArray([correctAnswer, ...wrongAnswers]);
 
-        return {
-          word: word.word,
-          correctAnswer: correctAnswer,
-          answers: allAnswers
-        };
+          return {
+            word: word.translation,  // Показываем украинский
+            correctAnswer: correctAnswer,  // Правильный - английский
+            answers: allAnswers
+          };
+        } else {
+          // Обычный квиз: показываем английский, ищем украинский
+          const correctAnswer = word.translation;
+          const wrongAnswers = getWrongAnswers(word.word, 3);
+          const allAnswers = shuffleArray([correctAnswer, ...wrongAnswers]);
+
+          return {
+            word: word.word,
+            correctAnswer: correctAnswer,
+            answers: allAnswers
+          };
+        }
       });
 
       // Обновляем streak
       updateStreak(userId);
 
       // Сохраняем сессию квиза
-      const session = userSessions.get(userId) || {};
       session.questions = questions;
       session.currentQuestion = 0;
       session.score = 0;
