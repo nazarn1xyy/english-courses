@@ -276,7 +276,7 @@ function editQuizQuestion(ctx, userId) {
   );
 }
 
-// Vercel serverless function handler - максимально оптимизированный
+// Vercel serverless function handler
 module.exports = async (req, res) => {
   // Быстрый ответ для GET запросов
   if (req.method !== 'POST') {
@@ -286,18 +286,13 @@ module.exports = async (req, res) => {
   try {
     const bot = getBot();
 
-    // Отправляем ответ Telegram сразу (не ждем обработки)
-    res.status(200).json({ ok: true });
+    // Обрабатываем update и ждем завершения
+    await bot.handleUpdate(req.body);
 
-    // Обрабатываем update асинхронно после ответа
-    bot.handleUpdate(req.body).catch(err => {
-      console.error('Update handling error:', err);
-    });
+    // Отправляем ответ после обработки
+    res.status(200).json({ ok: true });
   } catch (error) {
     console.error('Webhook error:', error);
-    // Всегда возвращаем 200 для Telegram
-    if (!res.headersSent) {
-      res.status(200).json({ ok: true });
-    }
+    res.status(200).json({ ok: true });
   }
 };
