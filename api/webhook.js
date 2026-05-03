@@ -34,6 +34,7 @@ const MAIN_KEYBOARD = {
       { text: '🎯 Квіз' }
     ],
     [
+      { text: '📊 Статистика' },
       { text: 'ℹ️ Допомога' }
     ]
   ],
@@ -93,8 +94,62 @@ function getWrongAnswers(correctWord, count = 3) {
 }
 
 // Функция для форматирования сообщения со словом
-function formatWordMessage(word) {
-  return `📖 Слово:\n\n🇬🇧 *${word.word}*\n🇺🇦 ${word.translation}`;
+function formatWordMessage(word, userId) {
+  const stats = getUserStats(userId);
+  const progress = `📚 Вивчено: ${stats.wordsLearned.size}/1021`;
+  return `📖 Слово:\n\n🇬🇧 *${word.word}*\n🇺🇦 ${word.translation}\n\n${progress}`;
+}
+
+// Функция для получения/инициализации статистики пользователя
+function getUserStats(userId) {
+  let session = userSessions.get(userId);
+
+  if (!session) {
+    session = {
+      stats: {
+        wordsLearned: new Set(),
+        quizzesTaken: 0,
+        quizScores: [],
+        lastActiveDate: null,
+        streak: 0
+      }
+    };
+    userSessions.set(userId, session);
+  }
+
+  if (!session.stats) {
+    session.stats = {
+      wordsLearned: new Set(),
+      quizzesTaken: 0,
+      quizScores: [],
+      lastActiveDate: null,
+      streak: 0
+    };
+  }
+
+  return session.stats;
+}
+
+// Функция для обновления streak (серии дней)
+function updateStreak(userId) {
+  const stats = getUserStats(userId);
+  const today = new Date().toISOString().split('T')[0];
+
+  if (stats.lastActiveDate === today) {
+    return; // Уже активен сегодня
+  }
+
+  const yesterday = new Date();
+  yesterday.setDate(yesterday.getDate() - 1);
+  const yesterdayStr = yesterday.toISOString().split('T')[0];
+
+  if (stats.lastActiveDate === yesterdayStr) {
+    stats.streak++; // Продолжаем серию
+  } else if (stats.lastActiveDate !== today) {
+    stats.streak = 1; // Начинаем новую серию
+  }
+
+  stats.lastActiveDate = today;
 }
 
 function setupHandlers(bot) {
@@ -104,8 +159,15 @@ function setupHandlers(bot) {
   bot.command('help', (ctx) => ctx.reply(MESSAGES.help, { reply_markup: MAIN_KEYBOARD }));
 
   bot.command('word', (ctx) => {
+    const userId = ctx.from.id;
     const word = getRandomItem(vocabulary);
-    return ctx.reply(formatWordMessage(word), {
+
+    // Обновляем статистику
+    const stats = getUserStats(userId);
+    stats.wordsLearned.add(word.word);
+    updateStreak(userId);
+
+    return ctx.reply(formatWordMessage(word, userId), {
       parse_mode: 'Markdown',
       reply_markup: WORD_KEYBOARD
     });
@@ -128,13 +190,35 @@ function setupHandlers(bot) {
       };
     });
 
-    userSessions.set(userId, {
-      questions: questions,
-      currentQuestion: 0,
-      score: 0
-    });
+    // Обновляем streak
+    updateStreak(userId);
+
+    // Сохраняем сессию квиза
+    const session = userSessions.get(userId) || {};
+    session.questions = questions;
+    session.currentQuestion = 0;
+    session.score = 0;
+    userSessions.set(userId, session);
 
     return sendQuizQuestion(ctx, userId);
+  });
+
+  bot.command('stats', (ctx) => {
+    const userId = ctx.from.id;
+    const stats = getUserStats(userId);
+
+    const avgScore = stats.quizScores.length > 0
+      ? (stats.quizScores.reduce((a, b) => a + b, 0) / stats.quizScores.length).toFixed(1)
+      : 0;
+
+    return ctx.reply(
+      `📊 Твоя статистика:\n\n` +
+      `📚 Вивчено слів: ${stats.wordsLearned.size}/1021\n` +
+      `🎯 Пройдено квізів: ${stats.quizzesTaken}\n` +
+      `⭐ Середній результат: ${avgScore}/5\n` +
+      `🔥 Серія днів: ${stats.streak}`,
+      { reply_markup: MAIN_KEYBOARD }
+    );
   });
 
   // Обработка текстовых сообщений с кнопок клавиатуры
@@ -142,8 +226,15 @@ function setupHandlers(bot) {
     const text = ctx.message.text;
 
     if (text === '📖 Випадкове слово') {
+      const userId = ctx.from.id;
       const word = getRandomItem(vocabulary);
-      return ctx.reply(formatWordMessage(word), {
+
+      // Обновляем статистику
+      const stats = getUserStats(userId);
+      stats.wordsLearned.add(word.word);
+      updateStreak(userId);
+
+      return ctx.reply(formatWordMessage(word, userId), {
         parse_mode: 'Markdown',
         reply_markup: WORD_KEYBOARD
       });
@@ -166,13 +257,35 @@ function setupHandlers(bot) {
         };
       });
 
-      userSessions.set(userId, {
-        questions: questions,
-        currentQuestion: 0,
-        score: 0
-      });
+      // Обновляем streak
+      updateStreak(userId);
+
+      // Сохраняем сессию квиза
+      const session = userSessions.get(userId) || {};
+      session.questions = questions;
+      session.currentQuestion = 0;
+      session.score = 0;
+      userSessions.set(userId, session);
 
       return sendQuizQuestion(ctx, userId);
+    }
+
+    if (text === '📊 Статистика') {
+      const userId = ctx.from.id;
+      const stats = getUserStats(userId);
+
+      const avgScore = stats.quizScores.length > 0
+        ? (stats.quizScores.reduce((a, b) => a + b, 0) / stats.quizScores.length).toFixed(1)
+        : 0;
+
+      return ctx.reply(
+        `📊 Твоя статистика:\n\n` +
+        `📚 Вивчено слів: ${stats.wordsLearned.size}/1021\n` +
+        `🎯 Пройдено квізів: ${stats.quizzesTaken}\n` +
+        `⭐ Середній результат: ${avgScore}/5\n` +
+        `🔥 Серія днів: ${stats.streak}`,
+        { reply_markup: MAIN_KEYBOARD }
+      );
     }
 
     if (text === 'ℹ️ Допомога') {
@@ -185,9 +298,16 @@ function setupHandlers(bot) {
 
     // Обработка кнопки "Ще слово"
     if (data === 'next_word') {
+      const userId = ctx.from.id;
       const word = getRandomItem(vocabulary);
+
+      // Обновляем статистику
+      const stats = getUserStats(userId);
+      stats.wordsLearned.add(word.word);
+      updateStreak(userId);
+
       await ctx.answerCbQuery();
-      return ctx.editMessageText(formatWordMessage(word), {
+      return ctx.editMessageText(formatWordMessage(word, userId), {
         parse_mode: 'Markdown',
         reply_markup: WORD_KEYBOARD
       });
@@ -202,11 +322,13 @@ function setupHandlers(bot) {
         return ctx.answerCbQuery('Сесія закінчилася. Почніть новий квіз');
       }
 
+      const currentQuestion = session.questions[session.currentQuestion];
+
       if (result === 'correct') {
         session.score++;
         await ctx.answerCbQuery('✅ Правильно!');
       } else {
-        await ctx.answerCbQuery('❌ Неправильно');
+        await ctx.answerCbQuery(`❌ Неправильно! Правильна відповідь: ${currentQuestion.correctAnswer}`);
       }
 
       session.currentQuestion++;
@@ -223,11 +345,25 @@ function sendQuizQuestion(ctx, userId) {
 
   if (!session || session.currentQuestion >= session.questions.length) {
     const finalScore = session ? session.score : 0;
+
+    // Обновляем статистику после завершения квиза
+    const stats = getUserStats(userId);
+    stats.quizzesTaken++;
+    stats.quizScores.push(finalScore);
+
+    // Добавляем все слова из квиза в изученные
+    if (session && session.questions) {
+      session.questions.forEach(q => stats.wordsLearned.add(q.word));
+    }
+
     userSessions.delete(userId);
 
     const emoji = finalScore === 5 ? '🏆 Відмінно!' : finalScore >= 3 ? '👍 Добре!' : '💪 Продовжуй вчитися!';
     return ctx.reply(
-      `✅ Квіз завершено!\n\nВаш результат: ${finalScore}/5\n\n${emoji}`,
+      `✅ Квіз завершено!\n\n` +
+      `Ваш результат: ${finalScore}/5\n\n${emoji}\n\n` +
+      `📊 Всього квізів: ${stats.quizzesTaken}\n` +
+      `🔥 Серія: ${stats.streak} днів`,
       { reply_markup: MAIN_KEYBOARD }
     );
   }
@@ -252,11 +388,25 @@ function editQuizQuestion(ctx, userId) {
 
   if (!session || session.currentQuestion >= session.questions.length) {
     const finalScore = session ? session.score : 0;
+
+    // Обновляем статистику после завершения квиза
+    const stats = getUserStats(userId);
+    stats.quizzesTaken++;
+    stats.quizScores.push(finalScore);
+
+    // Добавляем все слова из квиза в изученные
+    if (session && session.questions) {
+      session.questions.forEach(q => stats.wordsLearned.add(q.word));
+    }
+
     userSessions.delete(userId);
 
     const emoji = finalScore === 5 ? '🏆 Відмінно!' : finalScore >= 3 ? '👍 Добре!' : '💪 Продовжуй вчитися!';
     return ctx.editMessageText(
-      `✅ Квіз завершено!\n\nВаш результат: ${finalScore}/5\n\n${emoji}`,
+      `✅ Квіз завершено!\n\n` +
+      `Ваш результат: ${finalScore}/5\n\n${emoji}\n\n` +
+      `📊 Всього квізів: ${stats.quizzesTaken}\n` +
+      `🔥 Серія: ${stats.streak} днів`,
       { parse_mode: 'Markdown' }
     );
   }
