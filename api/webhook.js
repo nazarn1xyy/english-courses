@@ -23,7 +23,24 @@ const userSessions = new Map();
 // Переиспользуемые сообщения
 const MESSAGES = {
   start: `👋 Привіт! Я бот для вивчення англійської мови.\n\n📚 База: ${vocabulary.length} слів\n\nОбери дію з меню нижче:`,
-  help: '📚 Як користуватися ботом:\n\n📖 Випадкове слово - Дізнайся нове англійське слово з перекладом\n🎯 Квіз - Перевір свої знання в короткому квізі (5 питань)\n\nВивчай англійську щодня! 🚀'
+  help: `📚 Як користуватися ботом:\n\n` +
+    `📖 *Випадкове слово* - отримай випадкове слово з перекладом та прикладом\n\n` +
+    `📅 *Слово дня* - щоденне слово, однакове для всіх користувачів\n\n` +
+    `📂 *Категорії* - вивчай слова по темах:\n` +
+    `   • Їжа, Сім'я, Дім, Тіло, Одяг\n` +
+    `   • Природа, Місто, Транспорт\n` +
+    `   • Робота, Освіта, Час\n` +
+    `   • Емоції, Здоров'я, Спілкування\n` +
+    `   • Дії, Числа, Кольори та інше\n\n` +
+    `🎯 *Квіз* - перевір свої знання:\n` +
+    `   • Обери напрямок (англ→укр або укр→англ)\n` +
+    `   • Обери кількість питань (5, 10 або 20)\n` +
+    `   • Отримай результат та статистику\n\n` +
+    `📊 *Статистика* - переглядай свій прогрес:\n` +
+    `   • Кількість вивчених слів\n` +
+    `   • Пройдені квізи та середній результат\n` +
+    `   • Серія днів активності\n\n` +
+    `💡 Вивчай англійську щодня для кращих результатів! 🚀`
 };
 
 // Категории слов
@@ -281,8 +298,37 @@ function updateStreak(userId) {
 function setupHandlers(bot) {
 
   // Commands - используем прямые ответы без лишних конкатенаций
-  bot.command('start', (ctx) => ctx.reply(MESSAGES.start, { reply_markup: MAIN_KEYBOARD }));
-  bot.command('help', (ctx) => ctx.reply(MESSAGES.help, { reply_markup: MAIN_KEYBOARD }));
+  bot.command('start', (ctx) => {
+    const userId = ctx.from.id;
+    const stats = getUserStats(userId);
+
+    // Проверяем, новый ли пользователь
+    const isNewUser = stats.wordsLearned.size === 0 && stats.quizzesTaken === 0;
+
+    if (isNewUser) {
+      // Онбординг для новых пользователей
+      return ctx.reply(
+        `👋 Привіт! Я бот для вивчення англійської мови.\n\n` +
+        `📚 База: ${vocabulary.length} слів з перекладом та прикладами\n\n` +
+        `🎯 Що я вмію:\n\n` +
+        `📖 *Випадкове слово* - вивчай нові слова\n` +
+        `📅 *Слово дня* - щоденне слово для всіх\n` +
+        `📂 *Категорії* - слова по темах (їжа, сім'я, робота...)\n` +
+        `🎯 *Квіз* - перевір свої знання (5/10/20 питань)\n` +
+        `   • Англійська → Українська\n` +
+        `   • Українська → Англійська\n` +
+        `📊 *Статистика* - відстежуй свій прогрес\n\n` +
+        `💡 Почни з кнопки "📖 Випадкове слово" нижче!\n\n` +
+        `Вивчай англійську щодня! 🚀`,
+        { parse_mode: 'Markdown', reply_markup: MAIN_KEYBOARD }
+      );
+    } else {
+      // Обычное приветствие для существующих пользователей
+      return ctx.reply(MESSAGES.start, { reply_markup: MAIN_KEYBOARD });
+    }
+  });
+
+  bot.command('help', (ctx) => ctx.reply(MESSAGES.help, { parse_mode: 'Markdown', reply_markup: MAIN_KEYBOARD }));
 
   bot.command('word', (ctx) => {
     const userId = ctx.from.id;
@@ -421,7 +467,7 @@ function setupHandlers(bot) {
     }
 
     if (text === 'ℹ️ Допомога') {
-      return ctx.reply(MESSAGES.help, { reply_markup: MAIN_KEYBOARD });
+      return ctx.reply(MESSAGES.help, { parse_mode: 'Markdown', reply_markup: MAIN_KEYBOARD });
     }
   });
 
