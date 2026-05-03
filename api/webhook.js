@@ -74,9 +74,14 @@ function setupHandlers(bot) {
 
   bot.command('word', (ctx) => {
     const word = getRandomItem(vocabulary);
+    const keyboard = {
+      inline_keyboard: [[
+        { text: 'Ще слово 🔄', callback_data: 'next_word' }
+      ]]
+    };
     return ctx.reply(
       `📖 Слово:\n\n🇬🇧 *${word.word}*\n🇺🇦 ${word.translation}`,
-      { parse_mode: 'Markdown', reply_markup: MAIN_KEYBOARD }
+      { parse_mode: 'Markdown', reply_markup: keyboard }
     );
   });
 
@@ -99,9 +104,14 @@ function setupHandlers(bot) {
 
     if (text === '📖 Випадкове слово') {
       const word = getRandomItem(vocabulary);
+      const keyboard = {
+        inline_keyboard: [[
+          { text: 'Ще слово 🔄', callback_data: 'next_word' }
+        ]]
+      };
       return ctx.reply(
         `📖 Слово:\n\n🇬🇧 *${word.word}*\n🇺🇦 ${word.translation}`,
-        { parse_mode: 'Markdown', reply_markup: MAIN_KEYBOARD }
+        { parse_mode: 'Markdown', reply_markup: keyboard }
       );
     }
 
@@ -125,6 +135,21 @@ function setupHandlers(bot) {
 
   bot.on('callback_query', async (ctx) => {
     const data = ctx.callbackQuery.data;
+
+    // Обработка кнопки "Ще слово"
+    if (data === 'next_word') {
+      const word = getRandomItem(vocabulary);
+      const keyboard = {
+        inline_keyboard: [[
+          { text: 'Ще слово 🔄', callback_data: 'next_word' }
+        ]]
+      };
+      await ctx.answerCbQuery();
+      return ctx.editMessageText(
+        `📖 Слово:\n\n🇬🇧 *${word.word}*\n🇺🇦 ${word.translation}`,
+        { parse_mode: 'Markdown', reply_markup: keyboard }
+      );
+    }
 
     // Обработка ответов в квизе
     if (data.startsWith('quiz_')) {
